@@ -46,8 +46,8 @@ const data = {
           url: "/dashboard/creation/commencer",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Decoupage",
+          url: "/dashboard/creation/decoupage",
         },
         {
           title: "Settings",
