@@ -79,8 +79,8 @@ export default function HomePage() {
             </div>
           </section>
           <div className="flex justify-center relative w-full">
-        {/* Image affichée uniquement en mode clair */}
- <Image
+            {/* Image affichée uniquement en mode clair */}
+            <Image
               src="/images/demo-light-min.png"
               width={1080}
               height={608}
