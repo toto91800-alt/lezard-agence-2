@@ -5,7 +5,7 @@ import Image from "next/image"
 import { PanelsTopLeft, Github, ArrowRight } from "lucide-react" // <-- lucide-react icons
 
 import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/ModeToggle"
+import { ModeToggle } from "@/components/menu/ModeToggle"
 
 export default function HomePage() {
   return (

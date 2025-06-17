@@ -1,5 +1,5 @@
 "use client"
-import { ModeToggle } from "@/components/ModeToggle"
+import { ModeToggle } from "@/components/menu/ModeToggle"
 import * as React from "react"
 import {
   BookOpen,
@@ -14,10 +14,10 @@ import {
   SquareTerminal,
 } from "lucide-react"
 
-import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
-import { NavSecondary } from "@/components/nav-secondary"
-import { NavUser } from "@/components/nav-user"
+import { NavMain } from "@/components/menu/nav-main"
+import { NavProjects } from "@/components/menu/nav-projects"
+import { NavSecondary } from "@/components/menu/nav-secondary"
+import { NavUser } from "@/components/menu/nav-user"
 import {
   Sidebar,
   SidebarContent,
