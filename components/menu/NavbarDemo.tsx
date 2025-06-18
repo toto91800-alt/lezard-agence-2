@@ -18,7 +18,7 @@ export function NavbarDemo() {
     { name: "Features", link: "#features" },
     { name: "Pricing", link: "#pricing" },
     { name: "Contact", link: "#contact" },
-  ];
+  ];  
  
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
