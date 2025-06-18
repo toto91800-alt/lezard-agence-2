@@ -5,7 +5,8 @@ import { NavbarDemo } from "@/components/menu/NavbarDemo";
 import SliderProjets1 from "@/components/sliderproject/SliderProjets1";
 import Home from "@/components/ui/Home";
 import { SectionBadge } from "@/components/ui/section-bade";
-
+import { MarqueeDemo1 } from "@/components/ui/reviews1";
+import Portfolio from "@/components/ui/footerExpert";
 
 export default function HomePage() {
   return (
@@ -27,6 +28,8 @@ export default function HomePage() {
         <SliderProjets1 />
 
         <Home />
+           <MarqueeDemo1 />
+            <Portfolio />
       </main>
     </div>
   );
