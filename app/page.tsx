@@ -6,51 +6,12 @@ import { PanelsTopLeft, Github, ArrowRight } from "lucide-react" // <-- lucide-r
 
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/menu/ModeToggle"
-
+import { NavbarDemo } from "@/components/menu/NavbarDemo"
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="z-[50] sticky top-0 w-full bg-background/95 border-b backdrop-blur-sm dark:bg-black/[0.6] border-border/40">
-        <div className="container h-14 flex items-center">
-          <Link
-            href="/"
-            className="flex justify-start items-center hover:opacity-85 transition-opacity duration-300 pl-4"
-          >
-            {/* Logo pour le mode clair */}
-            <Image
-              src="/svg/lezard_noir.svg"
-              alt="Logo clair"
-              width={30}
-              height={30}
-              priority
-              className="dark:hidden"
-            />
-            {/* Logo pour le mode sombre */}
-            <Image
-              src="/svg/lezard_blanc.svg"
-              alt="Logo sombre"
-              width={30}
-              height={30}
-              priority
-              className="hidden dark:block"
-            />
-          </Link>
-
-
-
-          <nav className="ml-auto flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="icon"
-              className="rounded-full w-8 h-8 bg-background"
-              asChild
-            >
-            </Button>
-            <ModeToggle />
-          </nav>
-        </div>
-      </header>
       <main className="flex-1 w-full px-4">
+         <NavbarDemo />
         <div className="max-w-7xl mx-auto w-full pb-10">
           <section className="mx-auto flex max-w-[980px] flex-col items-center gap-2 py-8 md:py-12 md:pb-8 lg:py-24 lg:pb-6">
             <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1]">
@@ -99,6 +60,16 @@ export default function HomePage() {
             />
           </div>
         </div>
+          <nav className="ml-auto flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="icon"
+              className="rounded-full w-8 h-8 bg-background"
+              asChild
+            >
+            </Button>
+            <ModeToggle />
+          </nav>
       </main>
 
     </div>
