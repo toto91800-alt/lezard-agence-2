@@ -1,8 +1,7 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation, HTMLMotionProps } from 'framer-motion';
-import { Button } from '@/components/ui/button';
 
 interface RevealProps extends HTMLMotionProps<'span'> {
   children: React.ReactNode;
@@ -31,16 +30,15 @@ const Reveal: React.FC<RevealProps> = ({
       ref={ref}
       style={{
         position: 'relative',
-        display: 'inline-flex', // inline-flex gives opacity cool
-        // verticalAlign: 'top',
+        display: 'inline-flex',
         width: width,
-        overflow: 'hidden'
+        overflow: 'hidden',
       }}
     >
       <motion.span
         variants={{
           hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 }
+          visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControls}
