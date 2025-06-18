@@ -7,14 +7,14 @@ import Banner from "@/components/ui/banner";
 import { NavbarDemo } from "@/components/menu/NavbarDemo"
 import SliderProjets1 from "@/components/sliderproject/SliderProjets1";
 import Home from "@/components/ui/Home";
-import {SectionBadge} from "@/components/ui/section-bade";
+import { SectionBadge } from "@/components/ui/section-bade";
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1 w-full">
         <NavbarDemo />
         <Banner />
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto  pt-12">
+        <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Production audiovisuelle" />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
             Donnez vie à vos projets avec style et impact
@@ -23,10 +23,11 @@ export default function HomePage() {
             Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
           </p>
         </div>
+
 
         <SliderProjets1 />
 
-       <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
+        <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Production audiovisuelle" />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
             Donnez vie à vos projets avec style et impact
@@ -35,6 +36,7 @@ export default function HomePage() {
             Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
           </p>
         </div>
+
         <Home />
 
       </main>
