@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Providers } from "@/components/menu/providers"; // <-- ajout ici
+import { Providers } from "@/components/menu/providers";
+import { NavbarDemo } from "@/components/menu/NavbarDemo"; // ✅ Import de ta navbar
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Providers>{children}</Providers> {/* <- injection du provider */}
+        <Providers>
+          <NavbarDemo /> {/* ✅ navbar visible sur TOUTES les pages */}
+          {children}
+        </Providers>
       </body>
     </html>
   );
