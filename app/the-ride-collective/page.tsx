@@ -4,7 +4,7 @@ import { SectionBadge } from "@/components/ui/section-bade";
 import AlternatingCards from "@/components/ui/AlternatingCards";
 import ProductGrid from "@/components/ui/ProductGrid";
 import SimpleProductGrid from "@/components/ui/SimpleProductGrid";
-export default function WorkPage() {
+export default function RidePage() {
     return (
         <div className="flex flex-col min-h-screen">
             <main className="flex-1 w-full">

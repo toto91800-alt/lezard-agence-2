@@ -46,7 +46,7 @@ const SliderProjets1: React.FC = () => {
       img: "/images/slider/ride.webp",
       title: "The Ride Collective",
       text: "Un projet immersif combinant design et technologie.",
-      link: "/menu/features/production/the-ride-collective",
+      link: "/the-ride-collective",
     },
     {
       img: "/images/slider/kora.webp",
