@@ -70,7 +70,7 @@ const SliderProjets1: React.FC = () => {
       img: "/images/slider/hos.webp",
       title: "Hospitality",
       text: "Une série photo autour de la food.",
-      link: "/menu/features/production/coffee",
+      link: "/hospitality",
     },
   ];
 
