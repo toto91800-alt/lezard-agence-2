@@ -52,7 +52,7 @@ const SliderProjets1: React.FC = () => {
       img: "/images/slider/kora.webp",
       title: "Igloofest",
       text: "Festival en plein air emblématique de Montréal.",
-      link: "/menu/features/production/Igloofest",
+      link: "/igloofest",
     },
     {
       img: "/images/slider/kat.webp",
@@ -64,7 +64,7 @@ const SliderProjets1: React.FC = () => {
       img: "/images/slider/madeleine.webp",
       title: "Coffee Series",
       text: "Une série photo autour du rituel du café.",
-      link: "/menu/features/production/coffee",
+      link: "/coffee",
     },
      {
       img: "/images/slider/hos.webp",

@@ -1,7 +1,7 @@
 "use client";
 
 import { SectionBadge } from "@/components/ui/section-bade";
-import SimpleProductGrid from "@/components/ui/SimpleProductGrid";
+import SimpleProductGrid from "@/components/SimpleProductGrid/SimpleProductGrid";
 export default function RidePage() {
     return (
         <div className="flex flex-col min-h-screen">
