@@ -43,6 +43,26 @@ const products = [
     title: "FLEUR VANILLE CHOCOLAT",
     price: "À partir de 45,00 €",
   },
+  {
+    img: "/images/coffee/dep1.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/dep2.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+  {
+    img: "/images/coffee/alphabet1.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/alphabet2.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
 ];
 
 export default function CoffeeProductGrid() {
