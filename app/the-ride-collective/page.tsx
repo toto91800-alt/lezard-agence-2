@@ -1,8 +1,6 @@
 "use client";
 
 import { SectionBadge } from "@/components/ui/section-bade";
-import AlternatingCards from "@/components/ui/AlternatingCards";
-import ProductGrid from "@/components/ui/ProductGrid";
 import SimpleProductGrid from "@/components/ui/SimpleProductGrid";
 export default function RidePage() {
     return (
@@ -17,8 +15,6 @@ export default function RidePage() {
                         Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
                     </p>
                 </div>
-                <ProductGrid />
-                <AlternatingCards />
                 <SimpleProductGrid />
             </main>
         </div>
