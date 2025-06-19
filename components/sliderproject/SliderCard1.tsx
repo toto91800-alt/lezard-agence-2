@@ -64,13 +64,13 @@ const SliderCard1: React.FC<SliderCardProps> = ({
           />
         </a>
       ) : (
-        <Link href={link} legacyBehavior>
-          <a
+        <Link href={link}>
+          <div
             style={{
               position: "absolute",
               width: "100%",
               height: "100%",
-              zIndex: 2, // ✅ Met l'image devant
+              zIndex: 2,
             }}
           >
             <Image
@@ -80,8 +80,10 @@ const SliderCard1: React.FC<SliderCardProps> = ({
               objectFit="cover"
               quality={100}
             />
-          </a>
+          </div>
         </Link>
+
+
       )}
 
       {/* Overlay sombre pour améliorer la lisibilité, mais ne bloque pas les clics */}
