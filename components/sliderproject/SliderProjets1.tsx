@@ -67,9 +67,9 @@ const SliderProjets1: React.FC = () => {
       link: "/menu/features/production/coffee",
     },
      {
-      img: "/images/slider/22.webp",
-      title: "Coffee Series",
-      text: "Une série photo autour du rituel du café.",
+      img: "/images/slider/hos.webp",
+      title: "Hospitality",
+      text: "Une série photo autour de la food.",
       link: "/menu/features/production/coffee",
     },
   ];

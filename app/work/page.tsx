@@ -17,7 +17,7 @@ export default function WorkPage() {
                         Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
                     </p>
                 </div>
-
+<ProductGrid />
                 <AlternatingCards />
                 <SimpleProductGrid />
             </main>
