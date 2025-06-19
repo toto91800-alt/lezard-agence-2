@@ -58,7 +58,7 @@ const SliderProjets1: React.FC = () => {
       img: "/images/slider/kat.webp",
       title: "Catherine Project",
       text: "Exploration visuelle et narrative puissante.",
-      link: "/menu/features/production/catherine",
+      link: "/catherine",
     },
     {
       img: "/images/slider/madeleine.webp",
