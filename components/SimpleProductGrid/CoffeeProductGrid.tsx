@@ -63,6 +63,41 @@ const products = [
     title: "FLEUR VANILLE CHOCOLAT",
     price: "À partir de 45,00 €",
   },
+   {
+    img: "/images/coffee/moineau4.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/moineau5.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/moineau6.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/moineau7.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/moineau8.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/moineau9.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/coffee/moineau10.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
 ];
 
 export default function CoffeeProductGrid() {
