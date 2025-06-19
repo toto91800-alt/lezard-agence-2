@@ -1,7 +1,7 @@
 "use client";
 
 import { SectionBadge } from "@/components/ui/section-bade";
-import SimpleProductGrid from "@/components/SimpleProductGrid/SimpleProductGrid";
+import TheRideProductGrid from "@/components/SimpleProductGrid/TheRideProductGrid";
 export default function RidePage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -15,7 +15,7 @@ export default function RidePage() {
                         Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
                     </p>
                 </div>
-                <SimpleProductGrid />
+                <TheRideProductGrid />
             </main>
         </div>
     );
