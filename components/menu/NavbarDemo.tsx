@@ -15,9 +15,9 @@ import { ModeToggle } from "@/components/menu/ModeToggle";
 
 export function NavbarDemo() {
   const navItems = [
-    { name: "About me", link: "#features" },
-    { name: "My work", link: "#pricing" },
-    { name: "Contact", link: "#contact" },
+    { name: "About me", link: "about" },
+    { name: "My work", link: "work" },
+    { name: "Contact", link: "contact" },
   ];  
  
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

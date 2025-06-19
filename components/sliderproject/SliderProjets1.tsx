@@ -43,31 +43,31 @@ const SliderProjets1: React.FC = () => {
 
   const cardData = [
     {
-      img: "/image/production/theridecollective.png",
+      img: "/images/slider/ride.webp",
       title: "The Ride Collective",
       text: "Un projet immersif combinant design et technologie.",
       link: "/menu/features/production/the-ride-collective",
     },
     {
-      img: "/image/BigProjet/igloofest/KORA_2.webp",
+      img: "/images/slider/kora.webp",
       title: "Igloofest",
       text: "Festival en plein air emblématique de Montréal.",
       link: "/menu/features/production/Igloofest",
     },
     {
-      img: "/image/BigProjet/cath/CATH-10.webp",
+      img: "/images/slider/kat.webp",
       title: "Catherine Project",
       text: "Exploration visuelle et narrative puissante.",
       link: "/menu/features/production/catherine",
     },
     {
-      img: "/image/BigProjet/coffee/6P3A2831.webp",
+      img: "/images/slider/madeleine.webp",
       title: "Coffee Series",
       text: "Une série photo autour du rituel du café.",
       link: "/menu/features/production/coffee",
     },
      {
-      img: "/image/BigProjet/coffee/6P3A2831.webp",
+      img: "/images/slider/22.webp",
       title: "Coffee Series",
       text: "Une série photo autour du rituel du café.",
       link: "/menu/features/production/coffee",
