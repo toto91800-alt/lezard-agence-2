@@ -15,8 +15,8 @@ import { ModeToggle } from "@/components/menu/ModeToggle";
 
 export function NavbarDemo() {
   const navItems = [
-    { name: "Features", link: "#features" },
-    { name: "Pricing", link: "#pricing" },
+    { name: "About me", link: "#features" },
+    { name: "My work", link: "#pricing" },
     { name: "Contact", link: "#contact" },
   ];  
  
@@ -31,7 +31,6 @@ export function NavbarDemo() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4 relative z-50">
             <ModeToggle />
-            <NavbarButton variant="secondary">Login</NavbarButton>
             <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>
         </NavBody>
@@ -69,13 +68,6 @@ export function NavbarDemo() {
                 className="w-full"
               >
                 Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
               </NavbarButton>
             </div>
           </MobileNavMenu>

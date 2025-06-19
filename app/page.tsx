@@ -10,7 +10,7 @@ import Portfolio from "@/components/ui/footerExpert";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col h-full space-y-10 px-[2%] lg:px-0">
       <main className="flex-1 w-full">
         <NavbarDemo />
         <Banner />
@@ -26,7 +26,7 @@ export default function HomePage() {
         </div>
 
         <SliderProjets1 />
-<div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
+        <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Production audiovisuelle" />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
             Donnez vie à vos projets avec style et impact
@@ -45,8 +45,8 @@ export default function HomePage() {
             Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
           </p>
         </div>
-           <MarqueeDemo1 />
-            <Portfolio />
+        <MarqueeDemo1 />
+        <Portfolio />
       </main>
     </div>
   );
