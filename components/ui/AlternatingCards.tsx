@@ -8,7 +8,7 @@ const cardData = [
     title: "The Ride Collective",
     text: "Un projet immersif combinant design et technologie.",
     link: "/projects/the-ride-collective",
-  },
+  }, 
   {
     img: "/images/slider/kora.webp",
     title: "Igloofest",
