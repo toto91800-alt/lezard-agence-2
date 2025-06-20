@@ -7,6 +7,8 @@ import Home from "@/components/ui/Home";
 import { SectionBadge } from "@/components/ui/section-bade";
 import { MarqueeDemo1 } from "@/components/ui/reviews1";
 import Portfolio from "@/components/ui/footerExpert";
+import AlternatingCards from "@/components/ui/AlternatingCards";
+import CreativeTriad from "@/components/ui/CreativeTriad";
 
 export default function HomePage() {
   return (
@@ -26,6 +28,15 @@ export default function HomePage() {
         </div>
 
         <SliderProjets1 />
+        <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
+          <SectionBadge title="Production audiovisuelle" />
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
+            Donnez vie à vos projets avec style et impact
+          </h2>
+  
+        </div>
+               <CreativeTriad />
+        <AlternatingCards />
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Production audiovisuelle" />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">

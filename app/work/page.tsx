@@ -1,9 +1,7 @@
 "use client";
 
 import { SectionBadge } from "@/components/ui/section-bade";
-import AlternatingCards from "@/components/ui/AlternatingCards";
 import ProductGrid from "@/components/ui/ProductGrid";
-import SimpleProductGrid from "@/components/SimpleProductGrid/SimpleProductGrid";
 export default function WorkPage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -18,8 +16,6 @@ export default function WorkPage() {
                     </p>
                 </div>
                 <ProductGrid />
-                <AlternatingCards />
-                <SimpleProductGrid />
             </main>
         </div>
     );
