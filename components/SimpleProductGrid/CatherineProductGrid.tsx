@@ -4,22 +4,22 @@ import Image from "next/image";
 
 const products = [
   {
-    img: "/images/Igloofest/1.webp",
+    img: "/images/igloofest/1.webp",
     title: "FLEUR CHOCOLAT VANILLE",
-    price: "À partir de 18,00 €",
+    price: "À partir de 18,00 €", 
   },
   {
-    img: "/images/Igloofest/2.webp",
+    img: "/images/igloofest/2.webp",
     title: "GOUSSE DE VANILLE",
     price: "À partir de 18,00 €",
   },
   {
-    img: "/images/Igloofest/3.webp",
+    img: "/images/igloofest/3.webp",
     title: "FLEUR PAVLOVA FRAISE",
     price: "À partir de 45,00 €",
   },
   {
-    img: "/images/Igloofest/4.webp",
+    img: "/images/igloofest/4.webp",
     title: "FLEUR VANILLE CHOCOLAT",
     price: "À partir de 45,00 €",
   },
