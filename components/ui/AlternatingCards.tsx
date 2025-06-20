@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const cardData = [
   {
-    img: "/images/slider/22.webp",
+    img: "/images/mountain.webp",
     title: "The Ride Collective",
     text: "Un projet immersif combinant design et technologie.",
     link: "/projects/the-ride-collective",
@@ -36,7 +36,7 @@ export default function AlternatingPairCards() {
   }
 
   return (
-    <div className="flex flex-col gap-12 px-4 py-16">
+    <div className="flex flex-col gap-12 px-4 ">
       {pairs.map((pair, index) => (
         <div key={index} className="flex gap-8 justify-center flex-wrap">
           {pair.map((card, subIndex) => (
