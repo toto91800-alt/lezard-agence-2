@@ -6,7 +6,7 @@ const products = [
   {
     img: "/images/Igloofest/1.webp",
     title: "FLEUR CHOCOLAT VANILLE",
-    price: "À partir de 18,00 €",
+    price: "À partir de 18,00 €", 
   },
   {
     img: "/images/Igloofest/2.webp",
