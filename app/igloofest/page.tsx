@@ -2,6 +2,7 @@
 
 import { SectionBadge } from "@/components/ui/section-bade";
 import IgloofestProductGrid from "@/components/SimpleProductGrid/IgloofestProductGrid";
+import { HeroVideoTop } from "@/components/video/HeroVideoKora";
 export default function IgloofestPage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -15,6 +16,11 @@ export default function IgloofestPage() {
                         Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
                     </p>
                 </div>
+
+                <div className="px-6 sm:px-12 lg:px-24 xl:px-40 max-w-5xl mx-auto">
+                    <HeroVideoTop />
+                </div>
+
                 <IgloofestProductGrid />
             </main>
         </div>
