@@ -3,6 +3,7 @@
 import { SectionBadge } from "@/components/ui/section-bade";
 import IgloofestProductGrid from "@/components/SimpleProductGrid/IgloofestProductGrid";
 import { HeroVideoTop } from "@/components/video/HeroVideoKora";
+import  IgloofestLandscapeGrid  from "@/components/SimpleLandscapeGrid/IgloofestLandscapeGrid";
 export default function IgloofestPage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -22,6 +23,7 @@ export default function IgloofestPage() {
                 </div>
 
                 <IgloofestProductGrid />
+                <IgloofestLandscapeGrid />
             </main>
         </div>
     );

@@ -6,7 +6,6 @@ import SliderProjets1 from "@/components/sliderproject/SliderProjets1";
 import Home from "@/components/ui/Home";
 import { SectionBadge } from "@/components/ui/section-bade";
 import { MarqueeDemo1 } from "@/components/ui/reviews1";
-import Portfolio from "@/components/ui/footerExpert";
 import AlternatingCards from "@/components/ui/AlternatingCards";
 import CreativeTriad from "@/components/ui/CreativeTriad";
 
@@ -61,7 +60,6 @@ export default function HomePage() {
 
         </div>
         <MarqueeDemo1 />
-        <Portfolio />
       </main>
     </div>
   );
