@@ -11,7 +11,7 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    img: "/images/lezard.png",
+    img: "/images/work/LezardLogo.jpg",
     title: "Lezard Agency",
     role: "UX Engineer",
     date: "October 2024 - December 2024",
@@ -19,7 +19,7 @@ const experiences: Experience[] = [
       "Designed and developed a dashboard using React, HTML, and CSS, with a strong focus on UX and intuitive interface design. Took full responsibility for the visual identity, including logo creation and branding. Additionally contributed to the back-end to ensure seamless technical integration. This dashboard helps users gain real and qualified followers on Instagram, boosting their digital growth.",
   },
   {
-    img: "/images/ride-logo.png",
+    img: "/images/work/Ride.svg",
     title: "The Ride Collective",
     role: "Web & Brand Designer",
     date: "January 2023 - January 2024",
