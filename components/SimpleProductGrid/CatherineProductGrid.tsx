@@ -4,22 +4,42 @@ import Image from "next/image";
 
 const products = [
   {
-    img: "/images/igloofest/1.webp",
+    img: "/images/catherine/CATH-10.webp",
     title: "FLEUR CHOCOLAT VANILLE",
     price: "À partir de 18,00 €", 
   },
   {
-    img: "/images/igloofest/2.webp",
+    img: "/images/catherine/CATH-03.webp",
     title: "GOUSSE DE VANILLE",
     price: "À partir de 18,00 €",
   },
   {
-    img: "/images/igloofest/3.webp",
+    img: "/images/catherine/CATH-04.webp",
     title: "FLEUR PAVLOVA FRAISE",
     price: "À partir de 45,00 €",
   },
   {
-    img: "/images/igloofest/4.webp",
+    img: "/images/catherine/CATH-05.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+   {
+    img: "/images/catherine/CATH-02.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+  {
+    img: "/images/catherine/CATH-01.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+  {
+    img: "/images/catherine/CATH-07.webp",
+    title: "FLEUR VANILLE CHOCOLAT",
+    price: "À partir de 45,00 €",
+  },
+  {
+    img: "/images/catherine/CATH-06.webp",
     title: "FLEUR VANILLE CHOCOLAT",
     price: "À partir de 45,00 €",
   },

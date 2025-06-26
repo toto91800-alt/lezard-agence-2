@@ -2,6 +2,7 @@
 
 import { SectionBadge } from "@/components/ui/section-bade";
 import CatherineProductGrid from "@/components/SimpleProductGrid/CatherineProductGrid";
+import CatherineLandscapeGrid from "@/components/SimpleLandscapeGrid/CatherineLandscapeGrid";
 export default function CatherinePage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -16,6 +17,7 @@ export default function CatherinePage() {
                     </p>
                 </div>
                 <CatherineProductGrid />
+                <CatherineLandscapeGrid />
             </main>
         </div>
     );
