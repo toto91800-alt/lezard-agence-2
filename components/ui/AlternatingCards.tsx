@@ -4,28 +4,16 @@ import Image from "next/image";
 
 const cardData = [
   {
-    img: "/images/mountain.webp",
+    img: "/images/branding/theride.png",
     title: "The Ride Collective",
-    text: "Un projet immersif combinant design et technologie.",
+    text: "Designer le sport extreme.",
     link: "/projects/the-ride-collective",
   }, 
   {
-    img: "/images/slider/kora.webp",
-    title: "Igloofest",
-    text: "Festival en plein air emblématique de Montréal.",
+    img: "/images/branding/1.png",
+    title: "Utopia Events",
+    text: "Designer la nuit montrealaise et sa ferveur.",
     link: "/projects/igloofest",
-  },
-  {
-    img: "/images/slider/22.webp",
-    title: "Catherine Project",
-    text: "Exploration visuelle et narrative puissante.",
-    link: "/projects/catherine-project",
-  },
-  {
-    img: "/images/slider/22.webp",
-    title: "Coffee Series",
-    text: "Une série photo autour du rituel du café.",
-    link: "/projects/coffee-series",
   },
 ];
 

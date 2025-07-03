@@ -9,7 +9,7 @@ export default function Home() {
         image="/images/montain.png"
         video="/video/9ac8c53109a44a11badce0f261775b39.mp4"
         title="Un univers visuel immersif"
-        subtitle="Découvrez notre expertise à travers des projets captivants"
+        subtitle="Découvrez mon expertise à travers des projets captivants"
       />
     </div>
   );

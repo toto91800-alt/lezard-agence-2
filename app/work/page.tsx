@@ -1,7 +1,6 @@
 "use client";
 
 import { SectionBadge } from "@/components/ui/section-bade";
-import ProductGrid from "@/components/ui/ProductGrid";
 import AboutMe from "@/components/AboutMe/AboutMe";
 export default function WorkPage() {
     return (
@@ -16,7 +15,6 @@ export default function WorkPage() {
                         Nous combinons créativité et technologie pour produire des contenus qui captivent et engagent.
                     </p>
                 </div>
-                <ProductGrid />
                 <AboutMe />
             </main>
         </div>
