@@ -7,13 +7,13 @@ const cardData = [
     img: "/images/branding/theride.png",
     title: "The Ride Collective",
     text: "Designer le sport extreme.",
-    link: "/projects/the-ride-collective",
+    link: "/branding/the-ride-collective",
   }, 
   {
     img: "/images/branding/1.png",
     title: "Utopia Events",
     text: "Designer la nuit montrealaise et sa ferveur.",
-    link: "/projects/igloofest",
+    link: "/branding/utopia",
   },
 ];
 
