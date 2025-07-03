@@ -2,6 +2,7 @@
 
 import { SectionBadge } from "@/components/ui/section-bade";
 import TheRideBrand from "@/components/branding/TheRideBrand";
+import TheRideCharterCard from "@/components/branding/TheRideCharterCard";
 export default function TheRideCollectivePage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -15,6 +16,7 @@ export default function TheRideCollectivePage() {
                        Un aperçu détaillé de mes multiples expériences professionnelles.
                     </p>
                 </div>
+                <TheRideCharterCard />
                 <TheRideBrand />
             </main>
         </div>
