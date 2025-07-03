@@ -3,7 +3,7 @@
 import { SectionBadge } from "@/components/ui/section-bade";
 import IgloofestProductGrid from "@/components/SimpleProductGrid/IgloofestProductGrid";
 import { HeroVideoTop } from "@/components/video/HeroVideoKora";
-import  IgloofestLandscapeGrid  from "@/components/SimpleLandscapeGrid/IgloofestLandscapeGrid";
+import IgloofestLandscapeGrid from "@/components/SimpleLandscapeGrid/IgloofestLandscapeGrid";
 export default function IgloofestPage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -14,8 +14,9 @@ export default function IgloofestPage() {
                         Igloofest, le festival le plus froid du monde
                     </h2>
                     <p className="text-base md:text-lg text-center text-black dark:text-accent-foreground/80 mt-6">
-                        Plongez au cœur du film de l'édition 2025 du DJ québécois Kora Musique et des artistes de son label “Saisons”.
+                        Plongez au cœur du film de l&rsquo;édition 2025 du DJ québécois Kora Musique et des artistes de son label “Saisons”.
                     </p>
+
                 </div>
 
                 <div className="px-6 sm:px-12 lg:px-24 xl:px-40 max-w-5xl mx-auto">
