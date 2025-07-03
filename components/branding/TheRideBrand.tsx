@@ -95,6 +95,18 @@ const products = [
     img: "/images/branding/theride/22.jpg",
     title: "FLEUR VANILLE CHOCOLAT",
   },
+    {
+    img: "/images/branding/theride/23.jpg",
+    title: "FLEUR VANILLE CHOCOLAT",
+  },
+    {
+    img: "/images/branding/theride/24.jpg",
+    title: "FLEUR VANILLE CHOCOLAT",
+  },
+    {
+    img: "/images/branding/theride/25.jpg",
+    title: "FLEUR VANILLE CHOCOLAT",
+  },
 ];
 
 export default function TheRideBrand() {
