@@ -2,6 +2,7 @@
 
 import { SectionBadge } from "@/components/ui/section-bade";
 import AboutMe from "@/components/AboutMe/AboutMe";
+import EducationSection from "@/components/AboutMe/EducationSection";
 export default function WorkPage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -16,6 +17,7 @@ export default function WorkPage() {
                     </p>
                 </div>
                 <AboutMe />
+                <EducationSection />
             </main>
         </div>
     );
