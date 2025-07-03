@@ -1,7 +1,8 @@
 "use client";
 
 import { SectionBadge } from "@/components/ui/section-bade";
-import AboutMe from "@/components/AboutMe/AboutMe";
+import UtopiaBrand from "@/components/branding/UtopiaBrand";
+import UtopiaCharterCard from "@/components/branding/UtopiaCharterCard";
 export default function UtopiaPage() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -15,7 +16,8 @@ export default function UtopiaPage() {
                        Un aperçu détaillé de mes multiples expériences professionnelles.
                     </p>
                 </div>
-                <AboutMe />
+                <UtopiaCharterCard />
+                <UtopiaBrand />
             </main>
         </div>
     );
