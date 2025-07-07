@@ -12,7 +12,7 @@ export default function WorkPage() {
                         Discutons ensemble
                     </h2>
                     <p className="text-base md:text-lg text-center text-black dark:text-accent-foreground/80 mt-6">
-                       Vous avez un projet en photo, vidéo ou stratégie marketing pour votre entreprise ou votre marque ? Remplissez le formulaire ci-dessous ou contactez-moi directement par courriel ou téléphone.
+                      Une idée, un projet ou simplement l’envie d’échanger ? Je suis à votre écoute. Remplissez le formulaire ci-dessous ou écrivez-moi directement, je vous répondrai dans les plus brefs délais.
                     </p>
                 </div>
 

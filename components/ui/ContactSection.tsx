@@ -9,11 +9,10 @@ export default function ContactSection() {
                 {/* Texte gauche */}
                 <div className="text-foreground">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
-                        NOUS CONTACTER
+                        ME CONTACTER
                     </h2>
                     <p className="text-lg leading-relaxed text-center md:text-left text-muted-foreground">
-                        Vous avez un projet photo ou vidéo pour un mariage, un événement corporatif, un anniversaire ou toute autre occasion ? <br />
-                        Remplissez le formulaire ci-dessous ou contactez-nous directement par courriel ou téléphone.
+                      Vous avez un projet en photo, vidéo ou stratégie marketing pour votre entreprise ou votre marque ? Remplissez le formulaire ci-dessous ou contactez-moi directement par courriel ou téléphone.
                     </p>
 
 
