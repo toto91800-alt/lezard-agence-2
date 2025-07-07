@@ -5,107 +5,107 @@ import Image from "next/image";
 const products = [
   {
     img: "/images/branding/theride/1.1.jpg",
-    title: "FLEUR CHOCOLAT VANILLE",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/1.jpg",
-    title: "GOUSSE DE VANILLE",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/2.jpg",
-    title: "FLEUR PAVLOVA FRAISE",
+ title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/2.1.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+   title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/3.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/4.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/5.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/6.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/7.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/8.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/9.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/10.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/12.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/13.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+  title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/14.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/15.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/16.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/17.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/18.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/19.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/20.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
    {
     img: "/images/branding/theride/21.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
   {
     img: "/images/branding/theride/22.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
     {
     img: "/images/branding/theride/23.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
     {
     img: "/images/branding/theride/24.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
     {
     img: "/images/branding/theride/25.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "THE RIDE COLLECTIVE",
   },
 ];
 

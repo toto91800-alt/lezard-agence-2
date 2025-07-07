@@ -5,51 +5,51 @@ import Image from "next/image";
 const products = [
   {
     img: "/images/branding/utopia/1.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/2.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/3.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/4.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/5.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/6.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/7.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/8.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/9.png",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/10.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/11.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
   {
     img: "/images/branding/utopia/12.jpg",
-    title: "FLEUR VANILLE CHOCOLAT",
+    title: "UTOPIA DESIGN",
   },
 
 ];
