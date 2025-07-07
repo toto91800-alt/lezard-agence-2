@@ -13,20 +13,20 @@ type EducationItem = {
 
 const educations: EducationItem[] = [
   {
-    img: "/images/education/uni1.png",
-    school: "Université de Montréal",
-    degree: "Bachelor in Communication & Digital Media",
-    date: "2019 - 2022",
+    img: "/svg/Adobe.svg",
+    school: "Adobe Digital Learning",
+    degree: "Certification professionnelle",
+    date: "Septembre 2022 – Août 2024",
     description:
-      "Studied media theory, content production, and digital strategy. Participated in several creative projects and collaborated with real clients as part of applied workshops.",
+      "Certification reconnue attestant d’une maîtrise avancée des outils Adobe (Photoshop, Premiere Pro, After Effects, etc.) appliqués à la création de contenu visuel, au marketing digital et à la stratégie de marque. Formation orientée production, storytelling visuel et optimisation des performances sur les supports numériques.",
   },
   {
-    img: "/images/education/college1.png",
-    school: "Collège André-Grasset",
-    degree: "DEC in Arts, Literature & Communication",
-    date: "2017 - 2019",
+    img: "/svg/Iledefrance.svg",
+    school: "BTS Management des Opérations de Sécurité Privée et Gouvernementale",
+    degree: "Formation en alternance",
+   date: "Septembre 2020 – Août 2022",
     description:
-      "Focused on audiovisual communication and graphic design fundamentals. Developed strong storytelling and visual composition skills.",
+      "Étude de la gestion opérationnelle et stratégique des dispositifs de sécurité, dans les secteurs public et privé. Formation axée sur le management, le droit de la sécurité, la planification d’interventions, la gestion des équipes et la relation client dans un contexte de sûreté.",
   },
 ];
 

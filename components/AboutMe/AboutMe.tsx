@@ -13,18 +13,26 @@ const experiences: Experience[] = [
   {
     img: "/images/work/LezardLogo.jpg",
     title: "Lezard Agency",
-    role: "UX Engineer",
-    date: "October 2024 - December 2024",
+    role: "Chef de projet digital & contenu / Montréal",
+    date: "Octobre 2024 - Juin 2025",
     description:
-      "Designed and developed a dashboard using React, HTML, and CSS, with a strong focus on UX and intuitive interface design. Took full responsibility for the visual identity, including logo creation and branding. Additionally contributed to the back-end to ensure seamless technical integration. This dashboard helps users gain real and qualified followers on Instagram, boosting their digital growth.",
+      "Gestion de projets de création de contenu (photo, vidéo, réseaux sociaux) pour divers clients. Conseil en stratégie digitale, production audiovisuelle et accompagnement de la vision de marque. Participation active au développement commercial et relation client.",
   },
   {
     img: "/images/work/Ride.svg",
-    title: "The Ride Collective",
-    role: "Web & Brand Designer",
-    date: "January 2023 - January 2024",
+    title: "Photographe & vidéaste",
+    role: "freelance",
+    date: "Septembre 2021 – Septembre 2024",
     description:
-      "Built and launched the brand's e-commerce website on Shopify using HTML, CSS, and Liquid, while designing the entire brand identity. Handled the creation and sale of clothing, from product design to online integration. Managed social media presence through content creation (photos, videos, and production) and editing with Adobe Suite, ensuring impactful storytelling and audience engagement.",
+      "Création de contenu photo et vidéo pour des marques locales et internationales en Australie, Asie, Europe et Amérique. Gestion de projets de A à Z : direction artistique, production, montage et livraison. Collaboration avec des entreprises variées, du commerce familial aux grandes enseignes, avec une approche humaine et personnalisée.",
+  },
+  {
+    img: "/images/octopus_securite_logo.webp",
+    title: "Octopus Sécurité | Business Developer",
+    role: "Alternant",
+    date: "Septembre 2020 – Août 2022",
+    description:
+      "Alternance au sein de l’une des 50 plus grandes entreprises de sécurité en Europe. Prospection B2B, gestion de leads, élaboration d’offres commerciales et suivi client. Participation active à la stratégie de développement commercial, en lien avec les équipes techniques et marketing. Contribution directe à l’expansion du portefeuille client sur plusieurs régions.",
   },
 ];
 

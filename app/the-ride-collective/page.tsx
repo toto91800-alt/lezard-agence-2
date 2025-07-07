@@ -12,7 +12,7 @@ export default function RidePage() {
                         Shooting sous conditions extrêmes
                     </h2>
                     <p className="text-base md:text-lg text-center text-black dark:text-accent-foreground/80 mt-6">
-                       Depuis maintenant 3 ans, je suis régulièrement amené à suivre dans leur aventures le groupe de sport extreme THE RIDE COLLECTIVE. Voici un panel de photos et vidéos réalisées pour le collectif.
+                      Depuis maintenant 3 ans, je suis régulièrement amené à suivre dans leur aventure le groupe de sport extrême THE RIDE COLLECTIVE. Voici un panel de photos et vidéos réalisées pour le collectif.
                     </p>
                 </div>
                 <TheRideProductGrid />
