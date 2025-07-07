@@ -5,23 +5,23 @@ import Image from "next/image";
 const landscapeProducts = [
   {
     img: "/images/igloofest/portrait-kora1.webp",
-    title: "ASSIETTE MANGUE PASSION",
-    price: "À partir de 22,00 €",
+    title: "Moti",
+    price: "Igloofest 2025",
   },
   {
     img: "/images/igloofest/portrait-kora2.webp",
-    title: "DESSERT NOIX DE COCO",
-    price: "À partir de 19,00 €",
+    title: "Moti",
+    price: "Igloofest 2025",
   },
   {
     img: "/images/igloofest/portrait-kora3.webp",
-    title: "TARTELETTE FRAMBOISE",
-    price: "À partir de 24,00 €",
+    title: "Oiseau de nuit b2b Döb",
+    price: "Igloofest 2025",
   },
   {
     img: "/images/igloofest/portrait-kora4.webp",
-    title: "CARRÉ CHOCOLAT CARAMEL",
-    price: "À partir de 26,00 €",
+    title: "Oiseau de nuit b2b Döb",
+    price: "Igloofest 2025",
   },
 ];
 
