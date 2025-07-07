@@ -13,8 +13,9 @@ export default function UtopiaPage() {
                         Charte graphique pour Utopia Events
                     </h2>
                     <p className="text-base md:text-lg text-center text-black dark:text-accent-foreground/80 mt-6">
-                      Réalisation d'une charte graphique pour l'agence d'événementiel Utopia Events.
+                        Réalisation d&apos;une charte graphique pour l&apos;agence d&apos;événementiel Utopia Events.
                     </p>
+
                 </div>
                 <UtopiaCharterCard />
                 <UtopiaBrand />
