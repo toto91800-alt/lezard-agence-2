@@ -5,43 +5,43 @@ import Image from "next/image";
 const products = [
   {
     img: "/images/catherine/CATH-10.webp",
-    title: "FLEUR CHOCOLAT VANILLE",
-    price: "À partir de 18,00 €", 
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-03.webp",
-    title: "GOUSSE DE VANILLE",
-    price: "À partir de 18,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-04.webp",
-    title: "FLEUR PAVLOVA FRAISE",
-    price: "À partir de 45,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-05.webp",
-    title: "FLEUR VANILLE CHOCOLAT",
-    price: "À partir de 45,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
    {
     img: "/images/catherine/CATH-02.webp",
-    title: "FLEUR VANILLE CHOCOLAT",
-    price: "À partir de 45,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-01.webp",
-    title: "FLEUR VANILLE CHOCOLAT",
-    price: "À partir de 45,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-07.webp",
-    title: "FLEUR VANILLE CHOCOLAT",
-    price: "À partir de 45,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-06.webp",
-    title: "FLEUR VANILLE CHOCOLAT",
-    price: "À partir de 45,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
 ];
 

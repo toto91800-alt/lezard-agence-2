@@ -5,33 +5,33 @@ import Image from "next/image";
 const landscapeProducts = [
   {
     img: "/images/catherine/CATH_012.webp",
-    title: "ASSIETTE MANGUE PASSION",
-    price: "À partir de 22,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH_011.webp",
-    title: "DESSERT NOIX DE COCO",
-    price: "À partir de 19,00 €",
+     title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-08.webp",
-    title: "TARTELETTE FRAMBOISE",
-    price: "À partir de 24,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/catherine3.webp",
-    title: "CARRÉ CHOCOLAT CARAMEL",
-    price: "À partir de 26,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
   {
     img: "/images/catherine/CATH-09.webp",
-    title: "CARRÉ CHOCOLAT CARAMEL",
-    price: "À partir de 26,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
    {
     img: "/images/catherine/catherine1.webp",
-    title: "CARRÉ CHOCOLAT CARAMEL",
-    price: "À partir de 26,00 €",
+    title: "Catherine Gleduc",
+    price: "Mannequin Montréalais", 
   },
 ];
 
