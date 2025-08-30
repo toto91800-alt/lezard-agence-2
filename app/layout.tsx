@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/menu/providers";
 import { NavbarDemo } from "@/components/menu/NavbarDemo";
-import Portfolio from "@/components/ui/footerExpert"; // ✅ Import du footer
-
+import Portfolio from "@/components/footer/footerExpert"; 
+import Footerprincipal from "@/components/footer/footer-principal";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,9 +29,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
-          <NavbarDemo /> {/* ✅ navbar visible sur toutes les pages */}
+          <NavbarDemo /> 
           {children}
-          <Portfolio /> {/* ✅ footer ajouté en bas */}
+             <Footerprincipal />
+          <Portfolio /> 
         </Providers>
       </body>
     </html>
