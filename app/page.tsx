@@ -3,6 +3,8 @@
 import { NavbarDemo } from "@/components/menu/NavbarDemo";
 import { SectionBadge } from "@/components/ui/section-bade";
 import { MarqueeDemo1 } from "@/components/ui/reviews1";
+import TopLabHeroSection from "@/components/background/TopLabHeroSection";
+import LabBgSection from "@/components/background/LabBgSection";
 
 export default function HomePage() {
   return (
@@ -20,8 +22,8 @@ export default function HomePage() {
            En chacun et chacune se cache une histoire à raconter. Je capture la votre et lui donne vie sous un nouveau format, la vidéo.
           </p>
         </div>
-
-     
+        <TopLabHeroSection />
+    
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Conception visuelle" />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
@@ -30,7 +32,7 @@ export default function HomePage() {
 
         </div>
    
-
+        <LabBgSection />
       
          <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Avis" />

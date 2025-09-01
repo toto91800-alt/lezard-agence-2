@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'app.lezard-agency.com',
+        port: '',              // leave empty for default
+        pathname: '/api/ig/pdp/**', // narrow to the path you use
+      },
+    ],
+  },
 };
-
-export default nextConfig;
+module.exports = nextConfig;
