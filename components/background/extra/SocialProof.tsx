@@ -25,7 +25,6 @@ export default function SocialProof({
 }: Props) {
   const formattedUsers = new Intl.NumberFormat("fr-FR").format(usersCount);
 
-  // Recouvrement horizontal (≈ 28% de la taille, min 8px)
   const overlap = Math.max(8, Math.round(sizePx * 0.28));
 
   const full = Math.floor(rating);
@@ -43,8 +42,8 @@ export default function SocialProof({
             style={{
               width: sizePx,
               height: sizePx,
-              marginLeft: i === 0 ? 0 : -overlap, // chevauchement
-              zIndex: 10 + i, // chaque suivant au-dessus
+              marginLeft: i === 0 ? 0 : -overlap,
+              zIndex: 10 + i,
             }}
             aria-hidden
           >
@@ -86,7 +85,10 @@ export default function SocialProof({
           ))}
         </div>
 
-        <span className="text-base text-neutral-900">by {formattedUsers} users</span>
+        {/* ← Couleur via variable CSS --secondary */}
+        <span className="text-base text-[oklch(var(--secondary))]">
+          by {formattedUsers} users
+        </span>
       </div>
     </div>
   );

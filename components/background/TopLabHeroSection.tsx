@@ -7,15 +7,18 @@ import BannerAvantages from "@/components/background/extra/BannerAvantages";
 import HeroTitleWithMarker from "@/components/background/extra/HeroTitleWithMarker";
 
 type Tone = 1 | 2 | 3;
-type BgTone = 1 | 2 | 3 | 4;
+type BgTone = 1 | 2 | 3 | 4 | 5; // ← supporte 5
 type CSSVar = string | number;
 
 type SectionVars = React.CSSProperties & {
   ["--cb-bg"]?: CSSVar;
   ["--cb-tint"]?: CSSVar;
   ["--cb-glow"]?: CSSVar;
-  ["--cb-top"]?: CSSVar;   // couleur du feather haut
-  ["--joint-a"]?: CSSVar;  // opacité de départ de la ligne de jointure
+  ["--cb-top"]?: CSSVar;
+  ["--joint-a"]?: CSSVar;
+
+  // ↓ nouveau : couleur utilisée pour recolorer le blanc via multiply
+  ["--cb-recolor"]?: CSSVar;
 };
 
 type Props = {
@@ -24,7 +27,7 @@ type Props = {
   height?: number | string;
 
   /** Presets basés sur --colorbackground-N */
-  bgTone?: BgTone;           // fond (1..4)
+  bgTone?: BgTone;           // fond (1..5)
   tintTone?: Tone;           // teinte linéaire
   glowTone?: Tone;           // lueur radiale
   topFeatherTone?: Tone;     // dégradé HAUT
@@ -49,7 +52,11 @@ type Props = {
 
   /** Dégradé de jointure en BAS */
   jointLineHeightPx?: number;
-  jointLineOpacity?: number; // 0..1 (non utilisé dans le calcul demandé)
+  jointLineOpacity?: number; // 0..1
+
+  /** Recolor du BLANC de l'AVIF (via multiply) */
+  recolorWhiteTone?: BgTone;     // par défaut 5 → --colorbackground-5
+  recolorWhiteOpacity?: number;  // force de teinte (0..1), 1 = pleine
 };
 
 export default function TopLabSection({
@@ -57,7 +64,7 @@ export default function TopLabSection({
   src = "/avif/bg_solutions_top-min.avif",
   height = 880,
 
-  bgTone = 4,
+  bgTone = 5,           // ← fond de la section
   tintTone = 2,
   glowTone = 3,
   topFeatherTone,
@@ -81,6 +88,10 @@ export default function TopLabSection({
 
   jointLineHeightPx = 34,
   jointLineOpacity = 1,
+
+  // ↓ par défaut on recolore le blanc avec --colorbackground-5
+  recolorWhiteTone = 5,
+  recolorWhiteOpacity = 1,
 }: Props) {
   const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
@@ -90,6 +101,9 @@ export default function TopLabSection({
     "--cb-glow": `var(--colorbackground-${glowTone})`,
     ...(topFeatherTone ? { ["--cb-top"]: `var(--colorbackground-${topFeatherTone})` } : {}),
     "--joint-a": jointLineOpacity,
+
+    // couleur utilisée pour recolorer les zones BLANCHES
+    "--cb-recolor": `var(--colorbackground-${recolorWhiteTone})`,
   };
 
   const tintColorResolved = tintColor ?? "rgb(var(--cb-tint))";
@@ -105,7 +119,7 @@ export default function TopLabSection({
         background: `rgb(var(--cb-bg))`,
       }}
     >
-      {/* ▼▼▼ Dégradé de jointure EN BAS — 100% en bas → 0% en haut ▼▼▼ */}
+      {/* Dégradé de jointure EN BAS — 100% en bas → 0% en haut */}
       {jointLineHeightPx > 0 && (
         <div
           aria-hidden
@@ -130,6 +144,17 @@ export default function TopLabSection({
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+        }}
+      />
+
+      {/* 🔴 Recolor des zones BLANCHES de l'image (multiply) */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `rgb(var(--cb-recolor))`,
+          mixBlendMode: "multiply",
+          opacity: recolorWhiteOpacity,
         }}
       />
 
@@ -171,7 +196,7 @@ export default function TopLabSection({
         }}
       />
 
-      {/* Feather TOP uniquement */}
+      {/* Feather TOP (optionnel) */}
       {topFeatherPx > 0 && (
         <div
           aria-hidden

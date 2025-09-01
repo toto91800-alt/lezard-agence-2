@@ -77,10 +77,12 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  --colorbackground-1: 255 255 255; /* blanc pur */
+  
   --colorbackground-2: 240 243 247; /* blanc cassé / gris très clair */
   --colorbackground-3: 208 213 221; /* gris clair */
   --colorbackground-4: 255 255 255;
+  --colorbackground-5: 255 255 255;
+  --colorbackground-6: 255 255 255;
 }
 
 .dark {
@@ -116,11 +118,12 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 
-  --colorbackground-1: 10 10 10;
-  --colorbackground-2: 34 197 94; /* vert moyen (emerald-500) */
-  --colorbackground-3: 4 120 87;  /* vert foncé (emerald-700) */
+ 
+  --colorbackground-2: 219 234 254; /* bleu très clair — #DBEAFE (blue-100) */
+  --colorbackground-3: 147 197 253; /* bleu clair       — #93C5FD (blue-300) */
   --colorbackground-4: 10 10 10;
-  
+  --colorbackground-5: 10 10 10;
+  --colorbackground-6: 10 10 10;
 
 }
 
@@ -158,10 +161,12 @@
   --sidebar-border: oklch(0.82 0.01 85);
   --sidebar-ring: oklch(0.55 0.14 55);
 
-  --colorbackground-1: 255 250 245; /* ivoire chaud */
+
   --colorbackground-2: 255 154 77;  /* orange moyen (accent) */
   --colorbackground-3: 181 81 29;   /* orange bruné (foncé) */
   --colorbackground-4: 245 238 224;
+  --colorbackground-5: 245 238 224;
+  --colorbackground-6: 245 238 224;
 }
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
