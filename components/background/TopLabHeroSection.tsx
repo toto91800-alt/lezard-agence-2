@@ -1,11 +1,10 @@
-// components/trial/LabBgSection.tsx
+// components/TopLabHeroSection.tsx
 "use client";
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import BannerAvantages from "@/components/background/extra/BannerAvantages";
+import SocialProof from "@/components/background/extra/SocialProof";
 import HeroTitleWithMarker from "@/components/background/extra/HeroTitleWithMarker";
-
 type Tone = 1 | 2 | 3;
 type BgTone = 1 | 2 | 3 | 4 | 5; // ← supporte 5
 type CSSVar = string | number;
@@ -211,10 +210,20 @@ export default function TopLabSection({
       {/* Contenu */}
       <div className="relative z-[3] flex h-full px-6 flex-col items-center justify-center gap-6 md:flex-col md:items-center md:justify-center">
         <HeroTitleWithMarker />
-        <BannerAvantages className="w-full md:w-auto md:self-center" />
+        <SocialProof
+          images={[
+            { src: "https://app.lezard-agency.com/api/ig/pdp/theo.leraillez", alt: "Alice" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/julia_nadal_?cb=1756323670092", alt: "Bob" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/ericflag?cb=1756323886796", alt: "Carla" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/alextournier_?cb=1756323986311", alt: "David" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/mavii.off?cb=1756323775730", alt: "Eva" },
+          ]}
+          rating={5}
+          usersCount={1200}
+          sizePx={56}
+        />
       </div>
-
-      <div className="relative h-full" />
+  
     </section>
   );
 }
