@@ -83,6 +83,9 @@
   --colorbackground-4: 255 255 255;
   --colorbackground-5: 255 255 255;
   --colorbackground-6: 255 255 255;
+
+  --AboutTitle: oklch(0.145 0 0); /* Noir */
+  --AboutText: oklch(0.65 0.18 55); /* orange moyen */
 }
 
 .dark {
@@ -124,6 +127,9 @@
   --colorbackground-4: 10 10 10;
   --colorbackground-5: 10 10 10;
   --colorbackground-6: 10 10 10;
+
+  --AboutTitle: oklch(1 0 0); /* white */
+  --AboutText: oklch(0.65 0.18 55); /* orange moyen */
 
 }
 
@@ -167,6 +173,9 @@
   --colorbackground-4: 245 238 224;
   --colorbackground-5: 245 238 224;
   --colorbackground-6: 245 238 224;
+
+  --AboutTitle: oklch(0.145 0 0); /* Noir */
+  --AboutText: oklch(0.65 0.18 55); /* orange moyen */
 }
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
