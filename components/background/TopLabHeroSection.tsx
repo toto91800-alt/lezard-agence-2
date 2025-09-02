@@ -3,8 +3,7 @@
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import SocialProof from "@/components/background/extra/SocialProof";
-import HeroTitleWithMarker from "@/components/background/extra/HeroTitleWithMarker";
+
 type Tone = 1 | 2 | 3;
 type BgTone = 1 | 2 | 3 | 4 | 5; // ← supporte 5
 type CSSVar = string | number;
@@ -15,12 +14,10 @@ type SectionVars = React.CSSProperties & {
   ["--cb-glow"]?: CSSVar;
   ["--cb-top"]?: CSSVar;
   ["--joint-a"]?: CSSVar;
-
-  // ↓ nouveau : couleur utilisée pour recolorer le blanc via multiply
-  ["--cb-recolor"]?: CSSVar;
+  ["--cb-recolor"]?: CSSVar; // recolor des zones blanches
 };
 
-type Props = {
+export type TopLabHeroSectionProps = {
   className?: string;
   src?: string;
   height?: number | string;
@@ -58,10 +55,13 @@ type Props = {
   recolorWhiteOpacity?: number;  // force de teinte (0..1), 1 = pleine
 };
 
-export default function TopLabSection({
+/** ✅ Constante exportée: ajuste le default height ici (ou passe `height` en prop) */
+export const HERO_SECTION_DEFAULT_HEIGHT = 480;
+
+export default function TopLabHeroSection({
   className,
   src = "/avif/bg_solutions_top-min.avif",
-  height = 880,
+  height = HERO_SECTION_DEFAULT_HEIGHT,
 
   bgTone = 5,           // ← fond de la section
   tintTone = 2,
@@ -91,7 +91,7 @@ export default function TopLabSection({
   // ↓ par défaut on recolore le blanc avec --colorbackground-5
   recolorWhiteTone = 5,
   recolorWhiteOpacity = 1,
-}: Props) {
+}: TopLabHeroSectionProps) {
   const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   const styleVars: SectionVars = {
@@ -100,8 +100,6 @@ export default function TopLabSection({
     "--cb-glow": `var(--colorbackground-${glowTone})`,
     ...(topFeatherTone ? { ["--cb-top"]: `var(--colorbackground-${topFeatherTone})` } : {}),
     "--joint-a": jointLineOpacity,
-
-    // couleur utilisée pour recolorer les zones BLANCHES
     "--cb-recolor": `var(--colorbackground-${recolorWhiteTone})`,
   };
 
@@ -122,7 +120,7 @@ export default function TopLabSection({
       {jointLineHeightPx > 0 && (
         <div
           aria-hidden
-          className="absolute left-0 right-0 bottom-0 pointer-events-none z-[2]"
+          className="absolute left-0 right-0 bottom-0 pointer-events-none z-[1]"
           style={{
             height: jointLineHeightPx,
             background: `linear-gradient(
@@ -206,24 +204,6 @@ export default function TopLabSection({
           }}
         />
       )}
-
-      {/* Contenu */}
-      <div className="relative z-[3] flex h-full px-6 flex-col items-center justify-center gap-6 md:flex-col md:items-center md:justify-center">
-        <HeroTitleWithMarker />
-        <SocialProof
-          images={[
-            { src: "https://app.lezard-agency.com/api/ig/pdp/theo.leraillez", alt: "Alice" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/julia_nadal_?cb=1756323670092", alt: "Bob" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/ericflag?cb=1756323886796", alt: "Carla" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/alextournier_?cb=1756323986311", alt: "David" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/mavii.off?cb=1756323775730", alt: "Eva" },
-          ]}
-          rating={5}
-          usersCount={1200}
-          sizePx={56}
-        />
-      </div>
-  
     </section>
   );
 }

@@ -32,9 +32,16 @@ export default function SocialProof({
   const empty = 5 - full - (hasHalf ? 1 : 0);
 
   return (
-    <div className={cn("flex items-center gap-4", className)}>
+    <div
+      className={cn(
+        // mobile: colonne (avatars en haut, étoiles en dessous)
+        // desktop: ligne (avatars à gauche, étoiles à droite)
+        "flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4",
+        className
+      )}
+    >
       {/* Avatars en cascade */}
-      <div className="flex">
+      <div className="flex justify-center sm:justify-start">
         {images.slice(0, 5).map((img, i) => (
           <span
             key={`${img.src}-${i}`}
@@ -61,8 +68,8 @@ export default function SocialProof({
         ))}
       </div>
 
-      {/* Étoiles + libellé */}
-      <div className="flex items-center gap-3">
+      {/* Bloc étoiles + libellé (en dessous sur mobile) */}
+      <div className="flex items-center justify-center gap-2 sm:gap-3 mt-1 sm:mt-0 text-center sm:text-left">
         <div className="flex items-center">
           {Array.from({ length: full }).map((_, i) => (
             <Star key={`f-${i}`} className="h-5 w-5 text-orange-500" fill="currentColor" stroke="none" />
@@ -85,8 +92,7 @@ export default function SocialProof({
           ))}
         </div>
 
-        {/* ← Couleur via variable CSS --secondary */}
-        <span className="text-base text-[oklch(var(--secondary))]">
+        <span className="text-sm sm:text-base text-[oklch(var(--secondary))]">
           by {formattedUsers} users
         </span>
       </div>
