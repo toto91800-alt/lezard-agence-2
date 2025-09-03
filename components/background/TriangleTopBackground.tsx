@@ -48,7 +48,7 @@ type Props = {
   topFeatherPx?: number; // appliqué en BAS
 };
 
-export default function HeroLabSection({
+export default function TriangleTopBackground({
   className,
   src = "/avif/bg_solutions_top-min2.avif",
   height = 880,

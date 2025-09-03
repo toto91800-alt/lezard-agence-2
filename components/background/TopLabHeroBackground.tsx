@@ -17,7 +17,7 @@ type SectionVars = React.CSSProperties & {
   ["--cb-recolor"]?: CSSVar; // recolor des zones blanches
 };
 
-export type TopLabHeroSectionProps = {
+export type TopLabHeroBackgroundProps = {
   className?: string;
   src?: string;
   height?: number | string;
@@ -58,7 +58,7 @@ export type TopLabHeroSectionProps = {
 /** ✅ Constante exportée: ajuste le default height ici (ou passe `height` en prop) */
 export const HERO_SECTION_DEFAULT_HEIGHT = 480;
 
-export default function TopLabHeroSection({
+export default function TopLabHeroBackground({
   className,
   src = "/avif/bg_solutions_top-min.avif",
   height = HERO_SECTION_DEFAULT_HEIGHT,
@@ -91,7 +91,7 @@ export default function TopLabHeroSection({
   // ↓ par défaut on recolore le blanc avec --colorbackground-5
   recolorWhiteTone = 5,
   recolorWhiteOpacity = 1,
-}: TopLabHeroSectionProps) {
+}: TopLabHeroBackgroundProps) {
   const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   const styleVars: SectionVars = {

@@ -19,6 +19,7 @@ export default function HomePage() {
           <Presentation />
         </div>
         <MainResultat />
+       
 
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Conception visuelle" />

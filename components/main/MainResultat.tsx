@@ -4,6 +4,7 @@
 import * as React from "react";
 import Image from "next/image";
 import ButtonResultats from "@/components/background/extra/ButtonResultats";
+import BottomLabHeroBackground from "@/components/background/BottomLabHeroBackground";
 
 type Props = {
   className?: string;
@@ -16,8 +17,25 @@ const MainResultat: React.FC<Props> = ({
 }) => {
   return (
     <section className={`relative overflow-hidden w-full ${className}`}>
+      {/* ✅ Background plein écran, légèrement agrandi */}
+      <BottomLabHeroBackground
+        className="absolute inset-0 -z-10 transform-gpu scale-[1.03]" // ← léger zoom
+        height="auto"
+        src="/avif/bg_solutions_top-min.avif"
+        rotateAvif180
+        jointLineHeightPx={34}
+        topFeatherPx={40}
+        bgTone={5}
+        tintTone={2}
+        glowTone={3}
+        leftTintCenter="0% 100%"
+      />
+
       {/* Décorations SVG (gauche / droite) — cachées sur mobile */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 z-[1] hidden sm:block">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[1] hidden sm:block"
+      >
         <Image
           src="/svg/coeur.svg"
           alt=""
@@ -37,10 +55,10 @@ const MainResultat: React.FC<Props> = ({
       </div>
 
       {/* Contenu */}
-      <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6">
+      <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6 py-14 sm:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
-            <span className="block mt-[0.25em] text-[oklch(var(--secondary))]">
+            <span className="block mt-[0.25em] text-white">
               <span className="whitespace-nowrap">Leurs Instagram</span>
               <br className="hidden lg:block" />
               <span> explose</span>

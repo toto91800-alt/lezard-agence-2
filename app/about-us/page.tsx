@@ -1,7 +1,7 @@
 // app/about/page.tsx
 import React from "react";
 import AboutUS from "@/components/about-us/AboutUS";
-import HeroLabSection from "@/components/background/HeroLabSection";
+import HeroLabSection from "@/components/background/TriangleTopBackground";
 import { SectionBadge } from "@/components/ui/section-bade";
 import ButtonStrike from "@/components/background/extra/ButtonStrike";
 

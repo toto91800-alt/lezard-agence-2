@@ -1,7 +1,7 @@
 // components/MainSection.tsx
 "use client";
 import * as React from "react";
-import TopLabHeroSection from "@/components/background/TopLabHeroSection";
+import TopLabHeroBackground from "@/components/background/TopLabHeroBackground";
 import SocialProof from "@/components/background/extra/SocialProof";
 import HeroTitleWithMarker from "@/components/background/extra/HeroTitleWithMarker";
 import ButtonStrike from "@/components/background/extra/ButtonStrike";
@@ -14,7 +14,7 @@ const HERO_HEIGHT = "clamp(360px, 60svh, 820px)";
 const MainSection: React.FC = () => {
   return (
     <section className="relative">
-      <TopLabHeroSection
+      <TopLabHeroBackground
         height={HERO_HEIGHT}
         className="
           md:!h-[66svh]

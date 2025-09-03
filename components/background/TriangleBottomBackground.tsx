@@ -58,7 +58,7 @@ function invertCenter(pos: string | undefined): string | undefined {
   return `${x}% ${y}%`;
 }
 
-export default function HeroLabSectionInverted({
+export default function TriangleBottomBackground({
   className,
   src = "/avif/bg_solutions_top-min2.avif",
   height = 880,
