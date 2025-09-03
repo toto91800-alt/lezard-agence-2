@@ -5,6 +5,7 @@ import * as React from "react";
 import Image from "next/image";
 import ButtonResultats from "@/components/background/extra/ButtonResultats";
 import BottomLabHeroBackground from "@/components/background/BottomLabHeroBackground";
+import CarouselResultats from "@/components/main/CarouselResultats";
 
 type Props = {
   className?: string;
@@ -19,7 +20,7 @@ const MainResultat: React.FC<Props> = ({
     <section className={`relative overflow-hidden w-full ${className}`}>
       {/* ✅ Background plein écran, légèrement agrandi */}
       <BottomLabHeroBackground
-        className="absolute inset-0 -z-10 transform-gpu scale-[1.03]" // ← léger zoom
+        className="absolute inset-0 -z-10 transform-gpu scale-[1.03]"
         height="auto"
         src="/avif/bg_solutions_top-min.avif"
         rotateAvif180
@@ -49,7 +50,7 @@ const MainResultat: React.FC<Props> = ({
           alt=""
           width={220}
           height={220}
-          className="absolute right-[100px] top-[54%] w-20 sm:w-24 lg:w-36 opacity-100 drop-shadow-[0_10px_25px_rgba(0,0,0,.25)] -scale-x-100 transform-gpu"
+          className="absolute right-[100px] top-[34%] w-20 sm:w-24 lg:w-36 opacity-100 drop-shadow-[0_10px_25px_rgba(0,0,0,.25)] -scale-x-100 transform-gpu"
           priority
         />
       </div>
@@ -67,6 +68,11 @@ const MainResultat: React.FC<Props> = ({
         </div>
 
         <ButtonResultats href={href} className="mt-2" />
+      </div>
+
+      {/* Carrousel + padding bottom en dessous */}
+      <div className="w-full pb-14 sm:pb-20">
+        <CarouselResultats />
       </div>
     </section>
   );
