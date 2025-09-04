@@ -2,6 +2,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import ButtonStrike from "@/components/background/extra/ButtonStrike";
 import TriangleTopBackground from "@/components/background/TriangleTopBackground";
@@ -31,8 +32,31 @@ export default function Benefit({ className, items }: Props) {
   return (
     <section className={cn("relative overflow-hidden w-full", className)}>
       {/* 🔺 Background triangulaire */}
-      <div className="absolute w-full h-120vh">
+      <div className="absolute w-full h-140vh">
         <TriangleTopBackground />
+      </div>
+
+      {/* ⚡ Calque d'éclairs (desktop & au-dessus) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[1] hidden sm:block"
+      >
+        <Image
+          src="/svg/eclair.svg"
+          alt=""
+          width={200}
+          height={200}
+          className="absolute left-[100px] top-[12%] w-20 sm:w-24 lg:w-32 opacity-100 drop-shadow-[0_10px_25px_rgba(0,0,0,.25)]"
+          priority
+        />
+        <Image
+          src="/svg/eclair.svg"
+          alt=""
+          width={220}
+          height={220}
+          className="absolute right-[100px] top-[34%] w-20 sm:w-24 lg:w-36 opacity-100 drop-shadow-[0_10px_25px_rgba(0,0,0,.25)] -scale-x-100 transform-gpu"
+          priority
+        />
       </div>
 
       {/* Header + CTA */}
@@ -40,9 +64,9 @@ export default function Benefit({ className, items }: Props) {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
             <span className="block mt-[0.25em] text-white">
-              <span className="whitespace-nowrap">Notre technologie</span>
+              <span className="whitespace-nowrap">Les Bénéfices</span>
               <br className="hidden lg:block" />
-              <span> explosive</span>
+              <span> Explosif</span>
             </span>
           </h2>
         </div>

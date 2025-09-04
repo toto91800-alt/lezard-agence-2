@@ -19,16 +19,14 @@ type SectionVars = React.CSSProperties & {
 type Props = {
   className?: string;
   src?: string;
-  height?: number | string;
-  children?: React.ReactNode; // ✅ on accepte du contenu
+  height?: number | string;            // <- si non fourni, on applique 160vh/130vh via Tailwind
+  children?: React.ReactNode;
 
-  /** Presets basés sur --colorbackground-N */
-  bgTone?: BgTone;       // 1..5
-  tintTone?: Tone;       // 1..3
-  glowTone?: Tone;       // 1..3
-  featherTone?: Tone;    // 1..3 (dégradé bas)
+  bgTone?: BgTone;
+  tintTone?: Tone;
+  glowTone?: Tone;
+  featherTone?: Tone;
 
-  // Overrides explicites
   tintColor?: string;
   tintOpacity?: number;
   tintAngleDeg?: number;
@@ -44,28 +42,26 @@ type Props = {
   leftTintFadeStop?: string;
   leftTintOpacity?: number;
 
-  /** Feather en bas (hauteur) */
-  topFeatherPx?: number; // appliqué en BAS
+  topFeatherPx?: number;
 };
 
 export default function TriangleTopBackground({
   className,
   src = "/avif/bg_solutions_top-min2.avif",
-  height = 880,
 
-  // choix des presets
+  // pas de hauteur par défaut -> on laisse les classes responsives agir
+  height,
+
   bgTone = 5,
   tintTone = 2,
   glowTone = 3,
   featherTone,
 
-  // teinte linéaire
   tintColor,
   tintOpacity = 0.78,
   tintAngleDeg = 135,
   tintStart = "54%",
 
-  // lueur radiale
   leftTintColor,
   leftBlendMode = "color",
   leftTintRadius = "150% 125%",
@@ -74,13 +70,12 @@ export default function TriangleTopBackground({
   leftTintFadeStop = "78%",
   leftTintOpacity = 0.68,
 
-  // hauteur du dégradé bas
   topFeatherPx = 80,
 
-  // ✅ children
   children,
 }: Props) {
-  const resolvedHeight = typeof height === "number" ? `${height}px` : height;
+  const resolvedHeight =
+    typeof height === "number" ? `${height}px` : height || undefined;
 
   const styleVars: SectionVars = {
     "--cb-bg": `var(--colorbackground-${bgTone})`,
@@ -95,10 +90,15 @@ export default function TriangleTopBackground({
 
   return (
     <section
-      className={cn("relative overflow-hidden", className)}
+      className={cn(
+        "relative overflow-hidden",
+        // Par défaut: 160vh sur mobile, 130vh sur desktop (≥1024px)
+        !resolvedHeight && "h-[150vh] lg:h-[130vh]",
+        className
+      )}
       style={{
         ...styleVars,
-        height: resolvedHeight,
+        ...(resolvedHeight ? { height: resolvedHeight } : {}),
         background: `rgb(var(--cb-bg))`,
       }}
     >
