@@ -8,6 +8,7 @@ import Presentation from "@/components/main/Presentation";
 import MainResultat from "@/components/main/MainResultat";
 import Technologie from "@/components/main/Technologie";
 import Benefit from "@/components/main/Benefit";
+import New_Pricing from "@/components/prix/New_Pricing";
 
 export default function HomePage() {
   return (
@@ -25,7 +26,7 @@ export default function HomePage() {
 
         <Technologie />
         <Benefit />
-       
+        <New_Pricing />
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Avis" />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">

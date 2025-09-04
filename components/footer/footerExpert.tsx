@@ -61,7 +61,7 @@ const Portfolio: React.FC = () => {
           margin: 0,
         }}
       >
-        Theo Novais
+        Lezard Agence
       </h1>
 
       {/* Footer text */}
