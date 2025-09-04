@@ -4,9 +4,10 @@ import { NavbarDemo } from "@/components/menu/NavbarDemo";
 import { SectionBadge } from "@/components/ui/section-bade";
 import { MarqueeDemo1 } from "@/components/ui/reviews1";
 import MainSection from "@/components/main/MainSection";
-import LabBgSection from "@/components/background/LabBgSection";
 import Presentation from "@/components/main/Presentation";
 import MainResultat from "@/components/main/MainResultat";
+import Technologie from "@/components/main/Technologie";
+import Benefit from "@/components/main/Benefit";
 
 export default function HomePage() {
   return (
@@ -19,21 +20,12 @@ export default function HomePage() {
           <Presentation />
         </div>
         <MainResultat />
+
+    
+
+        <Technologie />
+        <Benefit />
        
-
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
-          <SectionBadge title="Conception visuelle" />
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
-            Donnez vie à vos projets avec style et impact
-          </h2>
-          <p className="text-base md:text-lg text-center text-black dark:text-accent-foreground/80 mt-6">
-            En chacun et chacune se cache une histoire à raconter. Je capture la
-            votre et lui donne vie sous un nouveau format, la vidéo.
-          </p>
-        </div>
-
-        <LabBgSection />
-
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Avis" />
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">

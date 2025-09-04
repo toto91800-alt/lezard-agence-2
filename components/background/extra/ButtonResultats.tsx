@@ -22,10 +22,22 @@ export default function ButtonResultats({ className, href, onClick }: Props) {
 
   const content = (
     <>
-      {/* Éclair SVG inline */}
+      {/* Icône cœur */}
       <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
-        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" className="icon-thunder">
-          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="16"
+          height="16"
+          aria-hidden="true"
+          className="icon-heart"
+        >
+          {/* Option A: suit la couleur du texte (reco) */}
+          <path
+            d="M8.59,6.09c.99-.07,1.9.35,2.61.99.14.21.35.42.49.56.21.28.35.21.56-.07.64-.78,1.55-1.34,2.54-1.55,1.2-.14,2.4.35,3.17,1.34,1.48,1.76,1.41,3.67.28,5.64-.85,1.34-1.98,2.47-3.32,3.32-.85.56-1.76,1.06-2.75,1.62-.14.07-.35.07-.49,0-1.41-.71-2.68-1.55-3.88-2.47-1.48-1.06-2.54-2.75-2.89-4.73-.21-2.05,1.06-3.95,3.03-4.59.21,0,.42-.07.63-.07Z"
+            fill="currentColor"
+          />
+          {/* Option B: si tu veux le forcer en blanc, remplace par fill="#fff" */}
         </svg>
       </span>
 
@@ -77,11 +89,11 @@ export default function ButtonResultats({ className, href, onClick }: Props) {
           to { transform: translateX(200%); }
         }
 
-        /* Éclair: tilt + léger glow au hover */
+        /* Icône cœur: petite translation + glow au hover */
         .btn-resultat .icon-wrap { transition: transform .2s ease, filter .2s ease; color:#fff; }
-        .btn-resultat:hover .icon-wrap { transform: rotate(-12deg) scale(1.1); filter: drop-shadow(0 0 10px rgba(255,255,255,.45)); }
-        .btn-resultat .icon-thunder { transition: transform .2s ease; display:block; }
-        .btn-resultat:hover .icon-thunder { transform: translateX(1px); }
+        .btn-resultat:hover .icon-wrap { transform: translateX(2px) scale(1.05); filter: drop-shadow(0 0 10px rgba(255,255,255,.45)); }
+        .btn-resultat .icon-heart { display:block; transition: transform .2s ease; }
+        .btn-resultat:hover .icon-heart { transform: translateX(1px); }
       `}</style>
     </>
   );
