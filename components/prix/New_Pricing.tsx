@@ -7,7 +7,6 @@ import { X } from "lucide-react";
 import Link from "next/link";
 import Container from "@/components/ui/container";
 import { Button } from "../ui/button";
-import { SectionBadge } from "@/components/ui/section-bade";
 import { fixedPrices, getPlans } from "@/lib/plans"; // ⬅️ on tire les plans du TS
 import { useState, useEffect, useMemo } from "react";
 import CurrencySelector from "@/components/prix/CurrencySelector";
@@ -80,12 +79,7 @@ const New_Pricing: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full relative">
-      <Container>
-        <div className="flex flex-col items-center text-center max-w-xl mx-auto">
-          <SectionBadge title="Tarifs" />
-        </div>
-      </Container>
+    <div className="flex flex-col items-center justify-center py-12 md:py-10 lg:py-10 w-full relative">
 
       <div className="mt-8 w-full relative flex flex-col items-center justify-center">
         <Container>

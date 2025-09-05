@@ -12,13 +12,15 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { ModeToggle } from "@/components/menu/ModeToggle";
+import Link from "next/link";
 
 export function NavbarDemo() {
   const navItems = [
     { name: "About us", link: "about-us" },
     { name: "Contact", link: "contact" },
-  ];  
- 
+    { name: "How is work", link: "how-is-work" },
+  ];
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -30,7 +32,12 @@ export function NavbarDemo() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4 relative z-50">
             <ModeToggle />
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <Link
+              href="https://app.lezard-agency.com/registerv2"
+              className="inline-flex items-center rounded-xl bg-orange-500 px-4 py-2 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50"
+            >
+              Essai gratuit de 5 jours →
+            </Link>
           </div>
         </NavBody>
 

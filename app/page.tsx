@@ -22,10 +22,19 @@ export default function HomePage() {
         </div>
         <MainResultat />
 
-    
-
         <Technologie />
         <Benefit />
+
+        <div className="relative z-[2] w-full flex flex-col items-center pt-10 pb-1 sm:pt-8 sm:pb-0">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
+              <span className="block mt-[0.25em] text-[var(--MainTitle)]">
+                <span className="whitespace-nowrap">Nos Tarifs</span>
+              </span>
+            </h2>
+          </div>
+        </div>
+
         <New_Pricing />
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
           <SectionBadge title="Avis" />

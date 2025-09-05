@@ -7,20 +7,21 @@ import { cn } from "@/lib/utils";
 import ButtonStrike from "@/components/background/extra/ButtonStrike";
 import TriangleTopBackground from "@/components/background/TriangleTopBackground";
 
-type BenefitItem = {
-  title: string;
-  text: string;
-};
+// ⬇️ Import des 6 composants de card
+import Cards1 from "@/components/main/cards/cards1";
+import Cards2 from "@/components/main/cards/cards2";
+import Cards3 from "@/components/main/cards/cards3";
+import Cards4 from "@/components/main/cards/cards4";
+import Cards5 from "@/components/main/cards/cards5";
+import Cards6 from "@/components/main/cards/cards6";
 
-type Props = {
-  className?: string;
-  items?: BenefitItem[];
-};
+type BenefitItem = { title: string; text: string; };
+type Props = { className?: string; items?: BenefitItem[]; };
 
 const DEFAULT_ITEMS: BenefitItem[] = [
-  { title: "Analyse IA en temps réel", text: "Nos modèles évaluent l’impact de vos contenus en continu pour optimiser chaque publication." },
-  { title: "Ciblage plus intelligent", text: "Identifiez les audiences qui convertissent vraiment grâce à des signaux comportementaux." },
-  { title: "Automations flexibles", text: "Planifiez, orchestrez et ajustez vos campagnes avec des scénarios dynamiques." },
+  { title: "Nouveux Abonnées", text: "Développez votre audience organiquement." },
+  { title: "Plus de likes / commentaires", text: "Augmentez l'engagement sur vos publications." },
+  { title: "Plus de clients", text: "Transformez vos abonnés en clients fidèles et payants." },
   { title: "Mesures actionnables", text: "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics." },
   { title: "Intégration simple", text: "Se connecte à vos outils existants sans friction, via API et connecteurs natifs." },
   { title: "Sécurité & conformité", text: "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout." },
@@ -29,11 +30,14 @@ const DEFAULT_ITEMS: BenefitItem[] = [
 export default function Benefit({ className, items }: Props) {
   const data = (items && items.length ? items : DEFAULT_ITEMS).slice(0, 6);
 
+  // Tableau des composants de cartes par index
+  const CardComponents = [Cards1, Cards2, Cards3, Cards4, Cards5, Cards6] as const;
+
   return (
     <section className={cn("relative overflow-hidden w-full", className)}>
       {/* 🔺 Background triangulaire */}
-      <div className="absolute w-full h-140vh">
-        <TriangleTopBackground />
+      <div className="absolute inset-0 h-[140vh]">
+        <TriangleTopBackground height="100%" />
       </div>
 
       {/* ⚡ Calque d'éclairs (desktop & au-dessus) */}
@@ -82,25 +86,16 @@ export default function Benefit({ className, items }: Props) {
             "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
           )}
         >
-          {data.map((item, i) => (
-            <article
-              key={i}
-              className={cn(
-                "rounded-2xl border",
-                "bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/70",
-                "border-black/10 shadow-[0_8px_24px_rgba(0,0,0,0.06)]",
-                "p-6 sm:p-7",
-                "min-h-[170px] sm:min-h-[190px]"
-              )}
-            >
-              <h3 className="text-lg font-semibold leading-tight text-neutral-900">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm sm:text-[15px] leading-relaxed text-neutral-600">
-                {item.text}
-              </p>
-            </article>
-          ))}
+          {data.map((item, i) => {
+            const Card = CardComponents[i] ?? Cards1;
+            return (
+              <Card
+                key={`${item.title}-${i}`}
+                title={item.title}
+                text={item.text}
+              />
+            );
+          })}
         </div>
 
         {/* Espace supplémentaire sous la partie cards */}
