@@ -35,7 +35,7 @@ export function NavbarDemo() {
           <div className="relative z-50 flex items-center gap-4">
             <ModeToggle />
 
-            {/* CTA avec thunder + shine + tilt */}
+            {/* CTA desktop */}
             <Link
               href="https://app.lezard-agency.com/registerv2"
               className="cta-strike group relative inline-flex items-center rounded-full bg-orange-500 px-4 py-2 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
@@ -45,10 +45,7 @@ export function NavbarDemo() {
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
                 </svg>
               </span>
-
               <span>5 jours d’essai gratuits</span>
-
-              {/* fine ring overlay */}
               <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
             </Link>
           </div>
@@ -79,14 +76,21 @@ export function NavbarDemo() {
               </a>
             ))}
 
+            {/* CTA mobile (remplace Login) */}
             <div className="mt-4 flex w-full flex-col gap-4">
-              <NavbarButton
+              <Link
+                href="https://app.lezard-agency.com/registerv2"
+                className="cta-strike group relative inline-flex items-center justify-center w-full rounded-full bg-orange-500 px-4 py-3 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
                 onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
               >
-                Login
-              </NavbarButton>
+                <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
+                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" className="icon-thunder">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>5 jours d’essai gratuits</span>
+                <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
+              </Link>
             </div>
           </MobileNavMenu>
         </MobileNav>

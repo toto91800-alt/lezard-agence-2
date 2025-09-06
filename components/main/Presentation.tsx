@@ -22,7 +22,7 @@ export default function Presentation({ className }: Props) {
         <picture>
           {/* Mobile Image */}
           <source
-            srcSet="/image/dashboard-mobile.webp"
+            srcSet="/svg/dashboard.svg"
             media="(max-width: 768px)"
             type="image/webp"
           />
