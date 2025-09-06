@@ -92,7 +92,7 @@ export default function Benefit({ className, items }: Props) {
       <div className="relative z-[2] w-full flex flex-col items-center pt-10 pb-16 sm:pt-8 sm:pb-12">
         <div className="w-full px-4 flex justify-center pb-6 sm:pb-8">
           <h2 className="mx-auto text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
-            <span className="block mt-[0.25em] text-[var(--MainTitle)]">
+            <span className="block mt-[0.25em] text-white">
               <span className="whitespace-normal">Les Bénéfices</span>
             </span>
           </h2>

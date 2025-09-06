@@ -33,7 +33,7 @@ const New_Pricing: React.FC = () => {
   // Si tu as un système i18n, remplace l’identity function par ton "t"
   const plans = useMemo(() => getPlans((k) => k), []);
 
-  // Timer (inchangé)
+  // Timer (inchangé)   
   useEffect(() => {
     const initializeTimer = () => {
       const savedStartTime = localStorage.getItem("timer_start_time");
@@ -80,7 +80,6 @@ const New_Pricing: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center py-12 md:py-10 lg:py-10 w-full relative">
-
       <div className="mt-8 w-full relative flex flex-col items-center justify-center">
         <Container>
           <Tabs
@@ -202,7 +201,6 @@ const PlanCard = ({
   buttonText,
   features,
   link,
-  index,
   plan,
   currency,
   soustitle,
@@ -337,7 +335,7 @@ const PlanCard = ({
               <div className="w-full max-w-md rounded-xl overflow-hidden border border-[#7C5CFF]/40 shadow-sm bg-white/60">
                 <div className="relative aspect-video">
                   <video
-                    src="https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/OQ101%20Shot%20on/F72_OQ101_%E2%89%A410s_DJI_home_page_Shot_on_Video_CLEAN_2400x1440_N_N.mp4.mp4"
+                    src="/video/demo.mp4"
                     autoPlay
                     muted
                     playsInline
@@ -351,19 +349,26 @@ const PlanCard = ({
             ) : (
               displayedPrice > 0 && (
                 <div className="flex items-center">
-                  {/* ← On a retiré le bandeau "0€ /5 jours puis" */}
                   <div className="flex items-center">
+                    {/* Montant */}
                     <span
-                      className="text-2xl md:text-3xl font-bold leading-none dark:bg-black px-2 rounded"
-                      style={{ color: "hsl(var(--foreground))" }}
+                      className="text-2xl md:text-3xl font-bold leading-none px-2 rounded"
+                      style={{ color: "var(--Prixtextcolor)" }}
                     >
                       {displayedPrice.toLocaleString("fr-FR", {
                         minimumFractionDigits: 2,
                       })}
                     </span>
-                    <span className="text-2xl md:text-2xl font-bold leading-none">
+
+                    {/* Devise */}
+                    <span
+                      className="text-2xl md:text-2xl font-bold leading-none"
+                      style={{ color: "var(--Prixtextcolor)" }}
+                    >
                       {currencySymbols[currency]}
                     </span>
+
+                    {/* Période (inchangée) */}
                     <span className="text-sm md:text-base text-muted-foreground font-medium leading-none ml-1">
                       {id === "free" ? "/2 semaines" : "/mois"}
                     </span>
@@ -397,33 +402,42 @@ const PlanCard = ({
           </ul>
 
           {/* Extra features (grisées pour free, sauf conseiller WhatsApp en rond vert) */}
-         {/* Extra features (grisées pour free, sauf l’icône WhatsApp en vert) */}
-{id === "free" && extraFeatures?.length ? (
-  <ul className="mt-3 space-y-2">
-    {extraFeatures.map((extra, i) => {
-      const isWaAdvisor = /conseiller\s+dédié\s*7\s*\/\s*7\s+sur\s+whatsapp/i.test(extra);
-      return (
-        <li key={i} className="flex items-center gap-2">
-          {isWaAdvisor ? (
-            // pastille verte avec check
-            <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-400">
-              <Check aria-hidden="true" className="h-4 w-4 text-white" />
-              <span className="sr-only">Disponible dans le plan Pro</span>
-            </span>
-          ) : (
-            // pastille grise avec X (indisponible)
-            <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#D6DAE1]">
-              <X aria-hidden="true" className="h-4 w-4 text-white" />
-            </span>
-          )}
-          {/* le texte reste grisé dans tous les cas sur Découverte */}
-          <span className="text-[15px] leading-6 text-gray-500">{extra}</span>
-        </li>
-      );
-    })}
-  </ul>
-) : null}
-
+          {/* Extra features (grisées pour free, sauf l’icône WhatsApp en vert) */}
+          {id === "free" && extraFeatures?.length ? (
+            <ul className="mt-3 space-y-2">
+              {extraFeatures.map((extra, i) => {
+                const isWaAdvisor =
+                  /conseiller\s+dédié\s*7\s*\/\s*7\s+sur\s+whatsapp/i.test(
+                    extra
+                  );
+                return (
+                  <li key={i} className="flex items-center gap-2">
+                    {isWaAdvisor ? (
+                      // pastille verte avec check
+                      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-400">
+                        <Check
+                          aria-hidden="true"
+                          className="h-4 w-4 text-white"
+                        />
+                        <span className="sr-only">
+                          Disponible dans le plan Pro
+                        </span>
+                      </span>
+                    ) : (
+                      // pastille grise avec X (indisponible)
+                      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#D6DAE1]">
+                        <X aria-hidden="true" className="h-4 w-4 text-white" />
+                      </span>
+                    )}
+                    {/* le texte reste grisé dans tous les cas sur Découverte */}
+                    <span className="text-[15px] leading-6 text-gray-500">
+                      {extra}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          ) : null}
         </div>
 
         {/* Bouton */}

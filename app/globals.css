@@ -103,6 +103,8 @@
   --toggle-fg: #111827;          /* icône/text */
   --toggle-border: rgba(0 0 0 / .08);
   --toggle-ring: rgba(249 115 22 / .35); /* option focus ring */
+
+  --Prixtextcolor: #111827;
 }
 
 .dark {
@@ -164,6 +166,8 @@
   --toggle-fg: #000000;          /* icône noire */
   --toggle-border: rgba(0 0 0 / .12);
   --toggle-ring: rgba(249 115 22 / .35);
+
+  --Prixtextcolor: #111827;
   
 }
 
@@ -227,6 +231,8 @@
   --toggle-fg: #111827;
   --toggle-border: color-mix(in oklch, var(--toggle-fg) 14%, transparent);
   --toggle-ring: color-mix(in oklch, var(--toggle-fg) 30%, transparent);
+
+  --Prixtextcolor: oklch(0.45 0.12 55); /* orange foncé */
 }
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
