@@ -3,14 +3,43 @@ import { Marquee } from "@/components/ui/marquee";
 import Image from "next/image";
 
 const reviews = [
-  { username: "@clemencebertrand", body: "Great work, and a video project that was a success!", img: "https://app.lezard-agency.com/api/ig/pdp/clemencebertrand?cb=1757171327650" },
-  { username: "@theride.collective", body: "I love the artistic side of our collaboration! Really happy with the result!", img: "https://app.lezard-agency.com/api/ig/pdp/theride.collective?cb=1757171543792" },
-  { username: "@shopnatscafe", body: "Théo has been a great help, delivering high-quality results for all my open-air DJ set events organized last year. I am truly grateful—remarkable talent!", img: "https://app.lezard-agency.com/api/ig/pdp/shopnatscafe?cb=1757171674449" },
-  { username: "@becaybrand", body: "The mini-series exceeded our expectations. Filming in the open sea and mountains was absolutely insane!", img: "https://app.lezard-agency.com/api/ig/pdp/becaybrand?cb=1757171714841" },
-  { username: "@mccall.mitchell", body: "I admire your ability to work so much without ever compromising on quality.", img: "https://app.lezard-agency.com/api/ig/pdp/mccall.mitchell?cb=1757171769000" },
-  { username: "@tealer", body: "What I highlight is the dedication Théo put into our collaboration—truly impressive professionalism.", img: "https://app.lezard-agency.com/api/ig/pdp/tealer?cb=1757171829821" },
-  { username: "@utopiaevents_mtl", body: "The work has been outstanding, honestly, we are just thrilled with the results—truly remarkable work.", img: "https://app.lezard-agency.com/api/ig/pdp/utopiaevents_mtl?cb=1757171619739" },
+  {
+    username: "@clemencebertrand",
+    body: "Grâce à l’outil, j’ai enfin structuré mon image : +400 nouveaux abonnés/mois, plus de DM qualifiés et un feed qui fait pro. J’adore !",
+    img: "https://app.lezard-agency.com/api/ig/pdp/clemencebertrand?cb=1757171327650",
+  },
+  {
+    username: "@theride.collective",
+    body: "Nos Reels cartonnent et la communauté s’active. + d’engagement chaque semaine et de vrais fans qui reviennent sur chaque post.",
+    img: "https://app.lezard-agency.com/api/ig/pdp/theride.collective?cb=1757171543792",
+  },
+  {
+    username: "@shopnatscafe",
+    body: "Mon Instagram a enfin décollé : plus de clients en boutique, des stories vues et des messages tous les jours. Tellement simple à piloter !",
+    img: "https://app.lezard-agency.com/api/ig/pdp/shopnatscafe?cb=1757171674449",
+  },
+  {
+    username: "@becaybrand",
+    body: "Branding plus cohérent, UGC qui performe et communauté qui convertit. Les posts deviennent de vrais leviers de ventes.",
+    img: "https://app.lezard-agency.com/api/ig/pdp/becaybrand?cb=1757171714841",
+  },
+  {
+    username: "@mccall.mitchell",
+    body: "Calendrier contenu clair, zéro prise de tête et audience qui grandit chaque semaine. J’ai même décroché de nouvelles collabs.",
+    img: "https://app.lezard-agency.com/api/ig/pdp/mccall.mitchell?cb=1757171769000",
+  },
+  {
+    username: "@tealer",
+    body: "Visibilité en hausse, trafic qualifié et une communauté plus fidèle. On sent la différence sur chaque lancement de collection.",
+    img: "https://app.lezard-agency.com/api/ig/pdp/tealer?cb=1757171829821",
+  },
+  {
+    username: "@utopiaevents_mtl",
+    body: "Nos événements gagnent en portée : plus de vues, plus de partages et des billets qui partent plus vite grâce aux Reels.",
+    img: "https://app.lezard-agency.com/api/ig/pdp/utopiaevents_mtl?cb=1757171619739",
+  },
 ];
+
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
