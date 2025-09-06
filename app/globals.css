@@ -105,6 +105,8 @@
   --toggle-ring: rgba(249 115 22 / .35); /* option focus ring */
 
   --Prixtextcolor: #111827;
+
+  --Footertextcolor: hsl(0 0% 5%);
 }
 
 .dark {
@@ -168,6 +170,8 @@
   --toggle-ring: rgba(249 115 22 / .35);
 
   --Prixtextcolor: #111827;
+
+  --Footertextcolor: hsl(0, 0%, 100%);
   
 }
 
@@ -233,6 +237,8 @@
   --toggle-ring: color-mix(in oklch, var(--toggle-fg) 30%, transparent);
 
   --Prixtextcolor: oklch(0.45 0.12 55); /* orange foncé */
+
+  --Footertextcolor: oklch(0.45 0.12 55); /* orange foncé */
 }
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
