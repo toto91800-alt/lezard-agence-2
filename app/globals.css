@@ -107,6 +107,9 @@
   --Prixtextcolor: #111827;
 
   --Footertextcolor: hsl(0 0% 5%);
+
+  --backgroundcontactcolor: #fdf7f1; /* fond clair par défaut */
+  --contactextecolor: #111111;      /* texte par défaut */
 }
 
 .dark {
@@ -172,6 +175,9 @@
   --Prixtextcolor: #111827;
 
   --Footertextcolor: hsl(0, 0%, 100%);
+
+  --backgroundcontactcolor:  #ffffff;  
+  --contactextecolor:  #111111; /* exemple dark */
   
 }
 
@@ -239,6 +245,9 @@
   --Prixtextcolor: oklch(0.45 0.12 55); /* orange foncé */
 
   --Footertextcolor: oklch(0.45 0.12 55); /* orange foncé */
+
+  --backgroundcontactcolor: #ffffff;  
+  --contactextecolor: #f97316; /* orange moyen */
 }
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
