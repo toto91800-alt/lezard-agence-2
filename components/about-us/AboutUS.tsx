@@ -6,12 +6,12 @@ import Image from 'next/image';
 type TeamMember = { name: string; role: string; image: string; };
 
 const team: TeamMember[] = [
-  { name: 'Gabriel Frojal', role: 'Freelance | Full-Stack Developer', image: '/avif/gabriel.avif' },
-  { name: 'Romain Lambert', role: 'Social Media Manager | Vision & Experience', image: '/avif/romain.avif' },
-  { name: 'Hugo Lisoir', role: 'Freelance | Full-Stack Developer', image: '/avif/hugo.avif' },
+  { name: 'Gabriel Frojal', role: 'Freelance | Full-Stack Developer', image: '/images/about-us/gabriel.png' },
+  { name: 'Romain Lambert', role: 'Social Media Manager | Vision & Experience', image: '/images/about-us/romain.png' },
+  { name: 'Hugo Lisoir', role: 'Freelance | Full-Stack Developer', image: '/images/about-us/hugo.png' },
   { name: 'Mathis Giraud', role: 'Founder | Operations', image: '/images/about-us/mathis.png' },
-  { name: 'Théo Leraillez', role: 'Coaching & Development | Operations', image: '/images/about-us/TheoLeraillez.webp' },
-  { name: 'Lucien Maynard', role: 'Full-Stack Developer | Operations', image: '/images/about-us/lucien-maynard.webp' },
+  { name: 'Théo Leraillez', role: 'Coaching & Development | Operations', image: '/images/about-us/TheoLeraillez.png' },
+  { name: 'Lucien Maynard', role: 'Full-Stack Developer | Operations', image: '/images/about-us/lucien-maynard.png' },
 ];
 
 const AboutUs: React.FC = () => {
@@ -24,7 +24,7 @@ const AboutUs: React.FC = () => {
             <div
               key={index}
               className="
-                bg-[var(--card)]
+                bg-[var(--AboutBackground)]
                 rounded-3xl
                 shadow-xl
                 w-full

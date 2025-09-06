@@ -84,8 +84,9 @@
   --colorbackground-5: 255 255 255;
   --colorbackground-6: 255 255 255;
 
-  --AboutTitle: oklch(0.145 0 0); /* Noir */
+  --AboutTitle: #ffffff; 
   --AboutText: oklch(0.65 0.18 55); /* orange moyen */
+  --AboutBackground: #171717;  /* white */
 
   --MainTitle: oklch(0.145 0 0); 
   --MainTitleSecond: #000000;  /* white */
@@ -152,8 +153,9 @@
   --colorbackground-5: 10 10 10;
   --colorbackground-6: 10 10 10;
 
-  --AboutTitle: oklch(1 0 0); /* white */
+  --AboutTitle: #000000;  /* white */
   --AboutText: oklch(0.65 0.18 55); /* orange moyen */
+  --AboutBackground: #ffffff;  /* white */
 
   --MainTitle: oklch(1 0 0); 
   --MainTitleSecond: #ffffff;  /* white */
@@ -224,6 +226,7 @@
 
   --AboutTitle: oklch(0.145 0 0); /* Noir */
   --AboutText: oklch(0.65 0.18 55); /* orange moyen */
+  --AboutBackground: #ffffff;  /* white */
 
   --MainTitle: oklch(0.45 0.12 55); /* orange foncé */
   --MainTitleSecond: #ffffff;  /* white */

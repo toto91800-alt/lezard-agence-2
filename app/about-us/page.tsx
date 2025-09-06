@@ -2,24 +2,19 @@
 import React from "react";
 import AboutUS from "@/components/about-us/AboutUS";
 import HeroLabSection from "@/components/background/TriangleTopBackground";
-import { SectionBadge } from "@/components/ui/section-bade";
 import ButtonStrike from "@/components/background/extra/ButtonStrike";
+import SocialProof from "@/components/background/extra/SocialProof";
+import About from "@/components/about-us/About";
+import ContactAbout from "@/components/about-us/ContactAbout";
 
 export default function AboutUs() {
   return (
     <section className="">
-      <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
-        <SectionBadge title="Production audiovisuelle" />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
-          Je documente votre histoire avec passion
-        </h2>
-        <p className="text-base md:text-lg text-center text-black dark:text-accent-foreground/80 mt-6">
-          En chacun et chacune se cache une histoire à raconter. Je capture la
-          votre et lui donne vie sous un nouveau format, la vidéo.
-        </p>
-      </div>
+        <About />
 
       <AboutUS />
+      <ContactAbout className="pb-12 sm:pb-16" />
+
       <HeroLabSection>
         {/* Zone contenu (centrée verticalement) */}
         <div className="mx-auto max-w-3xl text-center">
@@ -29,11 +24,25 @@ export default function AboutUs() {
             </span>
           </h2>
         </div>
+
+        <SocialProof
+          images={[
+            { src: "https://app.lezard-agency.com/api/ig/pdp/theo.leraillez", alt: "Alice" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/julia_nadal_?cb=1756323670092", alt: "Bob" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/ericflag?cb=1756323886796", alt: "Carla" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/alextournier_?cb=1756323986311", alt: "David" },
+            { src: "https://app.lezard-agency.com/api/ig/pdp/mavii.off?cb=1756323775730", alt: "Eva" },
+          ]}
+          rating={5}
+          usersCount={1200}
+          sizePx={56}
+        />
         <ButtonStrike
           href="https://app.lezard-agency.com/dashboard/plan"
           className="mt-2"
         />
       </HeroLabSection>
+      
     </section>
   );
 }
