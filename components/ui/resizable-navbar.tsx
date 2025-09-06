@@ -7,8 +7,9 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-import Image from "next/image";
+
 import React, { useRef, useState } from "react";
+
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -57,12 +58,17 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   const [visible, setVisible] = useState<boolean>(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setVisible(latest > 100);
+    if (latest > 100) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
   });
 
   return (
     <motion.div
       ref={ref}
+      // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
       className={cn("sticky inset-x-0 top-20 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
@@ -83,18 +89,19 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
         boxShadow: visible
-          ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
+          ? "0 0 24px rgba(34,42,53,.06), 0 1px 1px rgba(0,0,0,.05), 0 0 0 1px rgba(34,42,53,.04), 0 0 4px rgba(34,42,53,.08), 0 16px 68px rgba(47,48,55,.05), 0 1px 0 rgba(255,255,255,.1) inset"
           : "none",
         width: visible ? "40%" : "100%",
         y: visible ? 20 : 0,
       }}
       transition={{ type: "spring", stiffness: 200, damping: 50 }}
-      style={{ minWidth: "1000px" }}
+      style={{
+        minWidth: "1000px",
+        backgroundColor: visible ? "var(--navbar-bg-visible)" : "var(--navbar-bg)",
+        color: visible ? "var(--navbar-fg-visible)" : "var(--navbar-fg)",
+      }}
       className={cn(
-        // texte blanc par défaut
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent text-white",
-        // fond et couleur auto quand visible pour la lisibilité
-        visible && "bg-white/80 dark:bg-neutral-950/80 text-neutral-900 dark:text-white",
+        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full px-4 py-2 lg:flex",
         className,
       )}
     >
@@ -103,6 +110,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   );
 };
 
+
 export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
@@ -110,8 +118,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        // texte blanc par défaut
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2 text-white hover:text-white/80",
+        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2",
+        "text-inherit hover:opacity-80", // ← hérite de NavBody (blanc au début, noir après)
         className,
       )}
     >
@@ -119,15 +127,15 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-inherit"
+          className="relative px-4 py-2 text-current"
           key={`link-${idx}`}
           href={item.link}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              // pastille légère compatible sur texte clair
-              className="absolute inset-0 h-full w-full rounded-full bg-white/15"
+              className="absolute inset-0 h-full w-full rounded-full"
+              style={{ background: "var(--navbar-hover)" }} // ← pastille via var
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -137,13 +145,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   );
 };
 
+
 export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   return (
     <motion.div
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
         boxShadow: visible
-          ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
+          ? "0 0 24px rgba(34,42,53,.06), 0 1px 1px rgba(0,0,0,.05), 0 0 0 1px rgba(34,42,53,.04), 0 0 4px rgba(34,42,53,.08), 0 16px 68px rgba(47,48,55,.05), 0 1px 0 rgba(255,255,255,.1) inset"
           : "none",
         width: visible ? "90%" : "100%",
         paddingRight: visible ? "12px" : "0px",
@@ -152,11 +161,12 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         y: visible ? 20 : 0,
       }}
       transition={{ type: "spring", stiffness: 200, damping: 50 }}
+      style={{
+        backgroundColor: visible ? "var(--navbar-bg-visible)" : "var(--navbar-bg)",
+        color: visible ? "var(--navbar-fg-visible)" : "var(--navbar-fg)",
+      }}
       className={cn(
-        // texte blanc par défaut
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden text-white",
-        // lisibilité quand fond devient clair
-        visible && "bg-white/80 dark:bg-neutral-950/80 text-neutral-900 dark:text-white",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between px-0 py-2 lg:hidden",
         className,
       )}
     >
@@ -165,22 +175,24 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   );
 };
 
+
 export const MobileNavHeader = ({
   children,
   className,
 }: MobileNavHeaderProps) => {
   return (
-    <div className={cn("flex w-full flex-row items-center justify-between", className)}>
+    <div
+      className={cn(
+        "flex w-full flex-row items-center justify-between",
+        className,
+      )}
+    >
       {children}
     </div>
   );
 };
 
-export const MobileNavMenu = ({
-  children,
-  className,
-  isOpen,
-}: MobileNavMenuProps) => {
+export const MobileNavMenu = ({ children, className, isOpen }: MobileNavMenuProps) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -188,9 +200,12 @@ export const MobileNavMenu = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          // menu mobile: fond clair → texte hérite (noir par défaut)
+          style={{
+            backgroundColor: "var(--mobile-menu-bg)",
+            color: "var(--mobile-menu-fg)",
+          }}
           className={cn(
-            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-white px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-neutral-950 dark:text-white",
+            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
             className,
           )}
         >
@@ -201,17 +216,11 @@ export const MobileNavMenu = ({
   );
 };
 
-export const MobileNavToggle = ({
-  isOpen,
-  onClick,
-}: {
-  isOpen: boolean;
-  onClick: () => void;
-}) => {
+export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => void; }) => {
   return isOpen ? (
-    <IconX className="text-white" onClick={onClick} />
+    <IconX className="text-current" onClick={onClick} />
   ) : (
-    <IconMenu2 className="text-white" onClick={onClick} />
+    <IconMenu2 className="text-current" onClick={onClick} />
   );
 };
 
@@ -219,19 +228,34 @@ export const NavbarLogo = () => {
   return (
     <a
       href="https://portfolio-novais-six.vercel.app/"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-white"
+      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-inherit"
+      // Option: si tu préfères forcer la var ici, dé-commente :
+      // style={{ color: "var(--navbar-fg)" }}
     >
-      <Image
-        src="/svg/lezard_blanc.svg"
-        alt="Lezard Agence"
-        width={30}
-        height={30}
-        priority
+      {/* Logo recoloré via mask, prend la couleur courante (currentColor) */}
+      <span
+        aria-hidden
+        className="inline-block"
+        style={{
+          width: 30,
+          height: 30,
+          backgroundColor: "currentColor",           // ← couleur = texte
+          WebkitMaskImage: "url(/svg/lezard_noir.svg)",
+          maskImage: "url(/svg/lezard_noir.svg)",
+          WebkitMaskRepeat: "no-repeat",
+          maskRepeat: "no-repeat",
+          WebkitMaskSize: "contain",
+          maskSize: "contain",
+          WebkitMaskPosition: "center",
+          maskPosition: "center",
+        }}
       />
-      <span className="font-medium text-white">Lezard Agence</span>
+      <span className="font-medium text-current">Lezard Agence</span>
     </a>
   );
 };
+
+
 
 export const NavbarButton = ({
   href,

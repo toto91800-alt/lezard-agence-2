@@ -88,6 +88,20 @@
   --AboutText: oklch(0.65 0.18 55); /* orange moyen */
 
   --MainTitle: oklch(0.145 0 0); 
+
+  --navbar-bg: transparent;                  /* fond avant scroll */
+  --navbar-bg-visible: rgba(255 255 255 / .85); /* fond après scroll */
+  --navbar-fg: #ffffff;                      /* texte avant scroll (blanc) */
+  --navbar-fg-visible: #111827;              /* texte après scroll (neutral-900) */
+  --navbar-hover: rgba(255 255 255 / .15);   /* pastille hover quand texte est blanc */
+
+  --mobile-menu-bg: #ffffff;                 /* panneau menu mobile */
+  --mobile-menu-fg: #111827;
+
+  --toggle-bg: #ffffff;          /* carré blanc (par défaut) */
+  --toggle-fg: #111827;          /* icône/text */
+  --toggle-border: rgba(0 0 0 / .08);
+  --toggle-ring: rgba(249 115 22 / .35); /* option focus ring */
 }
 
 .dark {
@@ -134,6 +148,21 @@
   --AboutText: oklch(0.65 0.18 55); /* orange moyen */
 
   --MainTitle: oklch(1 0 0);
+
+    --navbar-bg: transparent;
+    --navbar-bg-visible: rgba(255 255 255 / .85); /* barre blanche aussi en dark */
+    --navbar-fg: #ffffff;                         /* texte blanc avant scroll */
+    --navbar-fg-visible: #000000;                 /* texte noir après scroll */
+    --navbar-hover: rgba(0 0 0 / .08);            /* pastille hover sur fond clair */
+  
+    --mobile-menu-bg: #ffffff;                    /* panneau blanc en dark aussi */
+    --mobile-menu-fg: #000000;
+
+    --toggle-bg: #ffffff;          /* tu veux garder le carré blanc en dark */
+  --toggle-fg: #000000;          /* icône noire */
+  --toggle-border: rgba(0 0 0 / .12);
+  --toggle-ring: rgba(249 115 22 / .35);
+  
 }
 
 .custom {
@@ -181,6 +210,20 @@
   --AboutText: oklch(0.65 0.18 55); /* orange moyen */
 
   --MainTitle: oklch(0.45 0.12 55); /* orange foncé */
+
+  --navbar-bg: transparent;
+  --navbar-bg-visible: #FFF2E6; /* orangé doux */
+  --navbar-fg: #ffffff;
+  --navbar-fg-visible: oklch(0.45 0.12 55); /* orange foncé */
+  --navbar-hover: color-mix(in oklch, var(--navbar-fg-visible) 12%, transparent);
+
+  --mobile-menu-bg: var(--navbar-bg-visible);
+  --mobile-menu-fg: var(--navbar-fg-visible);
+
+  --toggle-bg: #FFF2E6;          /* plus clair orangé */
+  --toggle-fg: #111827;
+  --toggle-border: color-mix(in oklch, var(--toggle-fg) 14%, transparent);
+  --toggle-ring: color-mix(in oklch, var(--toggle-fg) 30%, transparent);
 }
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
