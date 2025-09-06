@@ -3,13 +3,13 @@ import { Marquee } from "@/components/ui/marquee";
 import Image from "next/image";
 
 const reviews = [
-  { username: "@Sandra.Ferreira", body: "Great work, and a video project that was a success!", img: "/images/reviews1/sandra.jpg" },
-  { username: "@Catherine.Gleduc", body: "I love the artistic side of our collaboration! Really happy with the result!", img: "/images/reviews1/cat.png" },
-  { username: "@Utopia.Events", body: "The work has been outstanding, honestly, we are just thrilled with the results—truly remarkable work.", img: "/images/reviews1/Untitled-8.png" },
-  { username: "@Juliette.Leon", body: "Théo has been a great help, delivering high-quality results for all my open-air DJ set events organized last year. I am truly grateful—remarkable talent!", img: "/images/reviews1/ll.png" },
-  { username: "@The Ride Collective", body: "The mini-series exceeded our expectations. Filming in the open sea and mountains was absolutely insane!", img: "/images/reviews1/TheRide.png" },
-  { username: "@Lucien.Maynard", body: "I admire your ability to work so much without ever compromising on quality.", img: "/images/reviews1/lucienmaynard.jpg" },
-  { username: "@Philippe.Olivier.Crepin", body: "What I highlight is the dedication Théo put into our collaboration—truly impressive professionalism.", img: "/images/reviews1/popcr.jpg" },
+  { username: "@clemencebertrand", body: "Great work, and a video project that was a success!", img: "https://app.lezard-agency.com/api/ig/pdp/clemencebertrand?cb=1757171327650" },
+  { username: "@theride.collective", body: "I love the artistic side of our collaboration! Really happy with the result!", img: "https://app.lezard-agency.com/api/ig/pdp/theride.collective?cb=1757171543792" },
+  { username: "@shopnatscafe", body: "Théo has been a great help, delivering high-quality results for all my open-air DJ set events organized last year. I am truly grateful—remarkable talent!", img: "https://app.lezard-agency.com/api/ig/pdp/shopnatscafe?cb=1757171674449" },
+  { username: "@becaybrand", body: "The mini-series exceeded our expectations. Filming in the open sea and mountains was absolutely insane!", img: "https://app.lezard-agency.com/api/ig/pdp/becaybrand?cb=1757171714841" },
+  { username: "@mccall.mitchell", body: "I admire your ability to work so much without ever compromising on quality.", img: "https://app.lezard-agency.com/api/ig/pdp/mccall.mitchell?cb=1757171769000" },
+  { username: "@tealer", body: "What I highlight is the dedication Théo put into our collaboration—truly impressive professionalism.", img: "https://app.lezard-agency.com/api/ig/pdp/tealer?cb=1757171829821" },
+  { username: "@utopiaevents_mtl", body: "The work has been outstanding, honestly, we are just thrilled with the results—truly remarkable work.", img: "https://app.lezard-agency.com/api/ig/pdp/utopiaevents_mtl?cb=1757171619739" },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
