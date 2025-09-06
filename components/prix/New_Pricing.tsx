@@ -33,7 +33,7 @@ const New_Pricing: React.FC = () => {
   // Si tu as un système i18n, remplace l’identity function par ton "t"
   const plans = useMemo(() => getPlans((k) => k), []);
 
-  // Timer (inchangé)   
+  // Timer (inchangé)
   useEffect(() => {
     const initializeTimer = () => {
       const savedStartTime = localStorage.getItem("timer_start_time");
@@ -333,19 +333,20 @@ const PlanCard = ({
             {isDemo ? (
               // Démo : pas de prix, on montre la vidéo
               <div className="w-full max-w-md rounded-xl overflow-hidden border border-[#7C5CFF]/40 shadow-sm bg-white/60">
-                <div className="relative aspect-video">
-                  <video
-                    src="/video/demo.mp4"
-                    autoPlay
-                    muted
-                    playsInline
-                    loop
-                    controls
-                    preload="auto"
-                    className="absolute inset-0 h-full w-full object-cover bg-black/5"
-                  />
-                </div>
+              <div className="relative aspect-video">
+                <video
+                  src="https://linktree.lezard-agency.com/video/demo_1.mp4"
+                  className="absolute inset-0 h-full w-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                  preload="metadata"
+                />
               </div>
+            </div>
+            
             ) : (
               displayedPrice > 0 && (
                 <div className="flex items-center">
