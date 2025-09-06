@@ -15,23 +15,48 @@ import Cards4 from "@/components/main/cards/cards4";
 import Cards5 from "@/components/main/cards/cards5";
 import Cards6 from "@/components/main/cards/cards6";
 
-type BenefitItem = { title: string; text: string; };
-type Props = { className?: string; items?: BenefitItem[]; };
+type BenefitItem = { title: string; text: string };
+type Props = { className?: string; items?: BenefitItem[] };
 
 const DEFAULT_ITEMS: BenefitItem[] = [
-  { title: "Nouveux Abonnées", text: "Développez votre audience organiquement." },
-  { title: "Plus de likes / commentaires", text: "Augmentez l'engagement sur vos publications." },
-  { title: "Plus de clients", text: "Transformez vos abonnés en clients fidèles et payants." },
-  { title: "Mesures actionnables", text: "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics." },
-  { title: "Intégration simple", text: "Se connecte à vos outils existants sans friction, via API et connecteurs natifs." },
-  { title: "Sécurité & conformité", text: "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout." },
+  {
+    title: "Nouveux Abonnées",
+    text: "Développez votre audience organiquement.",
+  },
+  {
+    title: "Plus de likes / commentaires",
+    text: "Augmentez l'engagement sur vos publications.",
+  },
+  {
+    title: "Plus de clients",
+    text: "Transformez vos abonnés en clients fidèles et payants.",
+  },
+  {
+    title: "Mesures actionnables",
+    text: "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics.",
+  },
+  {
+    title: "Intégration simple",
+    text: "Se connecte à vos outils existants sans friction, via API et connecteurs natifs.",
+  },
+  {
+    title: "Sécurité & conformité",
+    text: "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout.",
+  },
 ];
 
 export default function Benefit({ className, items }: Props) {
   const data = (items && items.length ? items : DEFAULT_ITEMS).slice(0, 6);
 
   // Tableau des composants de cartes par index
-  const CardComponents = [Cards1, Cards2, Cards3, Cards4, Cards5, Cards6] as const;
+  const CardComponents = [
+    Cards1,
+    Cards2,
+    Cards3,
+    Cards4,
+    Cards5,
+    Cards6,
+  ] as const;
 
   return (
     <section className={cn("relative overflow-hidden w-full", className)}>
@@ -64,13 +89,11 @@ export default function Benefit({ className, items }: Props) {
       </div>
 
       {/* Header + CTA */}
-      <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6 py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
-            <span className="block mt-[0.25em] text-white">
-              <span className="whitespace-nowrap">Les Bénéfices</span>
-              <br className="hidden lg:block" />
-              <span> Explosif</span>
+      <div className="relative z-[2] w-full flex flex-col items-center pt-10 pb-16 sm:pt-8 sm:pb-12">
+        <div className="w-full px-4 flex justify-center pb-6 sm:pb-8">
+          <h2 className="mx-auto text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
+            <span className="block mt-[0.25em] text-[var(--MainTitle)]">
+              <span className="whitespace-normal">Les Bénéfices</span>
             </span>
           </h2>
         </div>

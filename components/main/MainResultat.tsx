@@ -59,7 +59,7 @@ const MainResultat: React.FC<Props> = ({
       <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6 py-14 sm:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
-            <span className="block mt-[0.25em] text-white">
+            <span className="block mt-[0.25em] text-[var(--MainTitleSecond)]">
               <span className="whitespace-nowrap">Leurs Instagram</span>
               <br className="hidden lg:block" />
               <span> explose</span>

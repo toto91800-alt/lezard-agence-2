@@ -16,9 +16,10 @@ import Link from "next/link";
 
 export function NavbarDemo() {
   const navItems = [
+    { name: "How is work", link: "how-is-work" },
+    { name: "Pricing", link: "pricing" },
     { name: "About us", link: "about-us" },
     { name: "Contact", link: "contact" },
-    { name: "How is work", link: "how-is-work" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,13 +31,25 @@ export function NavbarDemo() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4 relative z-50">
+
+          <div className="relative z-50 flex items-center gap-4">
             <ModeToggle />
+
+            {/* CTA avec thunder + shine + tilt */}
             <Link
               href="https://app.lezard-agency.com/registerv2"
-              className="inline-flex items-center rounded-xl bg-orange-500 px-4 py-2 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50"
+              className="cta-strike group relative inline-flex items-center rounded-full bg-orange-500 px-4 py-2 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
             >
-              Essai gratuit de 5 jours →
+              <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" className="icon-thunder">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
+                </svg>
+              </span>
+
+              <span>5 jours d’essai gratuits</span>
+
+              {/* fine ring overlay */}
+              <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
             </Link>
           </div>
         </NavBody>
@@ -66,8 +79,7 @@ export function NavbarDemo() {
               </a>
             ))}
 
-            <div className="flex w-full flex-col gap-4 mt-4">
-              {/* Optional: place ModeToggle for mobile here if needed */}
+            <div className="mt-4 flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -79,6 +91,58 @@ export function NavbarDemo() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
+
+      {/* Styles (shine + tilt) */}
+      <style jsx>{`
+        /* Reflet (shine) clipé à l'intérieur du bouton grâce à overflow-hidden */
+        .cta-strike::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 9999px; /* match rounded-full */
+          background: linear-gradient(
+            120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.35) 20%,
+            rgba(255, 255, 255, 0.35) 22%,
+            transparent 35%
+          );
+          transform: translateX(-200%);
+          pointer-events: none;
+          will-change: transform;
+        }
+        .cta-strike:hover::after {
+          animation: btnShine 900ms ease-out forwards;
+        }
+        @keyframes btnShine {
+          to {
+            transform: translateX(200%);
+          }
+        }
+
+        /* Icône: tilt + petit glow au hover */
+        .icon-wrap {
+          transition: transform 0.2s ease, filter 0.2s ease;
+          color: #fff;
+        }
+        .cta-strike:hover .icon-wrap {
+          transform: rotate(-12deg) scale(1.1);
+          filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.45));
+        }
+        .icon-thunder {
+          transition: transform 0.2s ease;
+          display: block;
+        }
+        .cta-strike:hover .icon-thunder {
+          transform: translateX(1px);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .cta-strike:hover::after { animation: none; }
+          .cta-strike:hover .icon-wrap { transform: none; filter: none; }
+          .cta-strike:hover .icon-thunder { transform: none; }
+        }
+      `}</style>
     </div>
   );
 }

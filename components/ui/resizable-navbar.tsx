@@ -227,7 +227,7 @@ export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick:
 export const NavbarLogo = () => {
   return (
     <a
-      href="https://portfolio-novais-six.vercel.app/"
+      href="https://app.lezard-agency.com"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-inherit"
       // Option: si tu préfères forcer la var ici, dé-commente :
       // style={{ color: "var(--navbar-fg)" }}

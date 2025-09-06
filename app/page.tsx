@@ -1,7 +1,6 @@
 "use client";
 
 import { NavbarDemo } from "@/components/menu/NavbarDemo";
-import { SectionBadge } from "@/components/ui/section-bade";
 import { MarqueeDemo1 } from "@/components/ui/reviews1";
 import MainSection from "@/components/main/MainSection";
 import Presentation from "@/components/main/Presentation";
@@ -36,12 +35,18 @@ export default function HomePage() {
         </div>
 
         <New_Pricing />
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-12">
-          <SectionBadge title="Avis" />
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 text-black dark:text-white">
-            Ce que disent mes clients
-          </h2>
+        <div className="relative z-[2] w-full flex flex-col items-center pt-10 pb-16 sm:pt-8 sm:pb-12">
+          <div className="w-full px-4 flex justify-center">
+            <h2 className="mx-auto text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
+              <span className="block mt-[0.25em] text-[var(--MainTitle)]">
+                <span className="whitespace-normal">
+               Les avis 
+                </span>
+              </span>
+            </h2>
+          </div>
         </div>
+
         <MarqueeDemo1 />
       </main>
     </div>

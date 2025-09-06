@@ -13,17 +13,17 @@ type Props = {
 export default function ButtonDemo({ className, href, onClick }: Props) {
   const base =
     "btn-demo group relative inline-flex items-center justify-center rounded-full overflow-hidden " +
-    "px-6 py-3 font-semibold text-white " +                         // texte blanc
-    "bg-black shadow-[0_10px_20px_rgba(0,0,0,.35)] " +              // fond noir + ombre noire
+    "px-6 py-3 font-semibold text-black " +                         // texte blanc
+    "bg-white shadow-[0_10px_20px_rgba(0,0,0,.35)] " +              // fond noir + ombre noire
     "transition-transform duration-200 ease-out hover:scale-[1.03] active:scale-95 " +
-    "focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 " +
-    "focus-visible:ring-offset-2 focus-visible:ring-offset-black " + // offset noir
+    "focus:outline-none focus-visible:ring-2 focus-visible:ring-black/70 " +
+    "focus-visible:ring-offset-2 focus-visible:ring-offset-white " + // offset noir
     "btn-demo-shine";
 
   const content = (
     <>
       {/* Icône éclair (optionnelle) */}
-      <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
+      <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-black">
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" className="icon-thunder">
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
         </svg>
