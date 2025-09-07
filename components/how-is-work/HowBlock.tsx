@@ -83,7 +83,8 @@ export default function HowCardTwo({
                 )}
               >
                 <div className="bg-white">
-                  <div className="relative h-64 sm:h-72 w-full flex items-center justify-center p-8">
+                  {/* hauteur de l'image augmentée directement ici */}
+                  <div className="relative h-[22rem] sm:h-[22rem] w-full flex items-center justify-center p-8">
                     <Image
                       src={card.image}
                       alt={card.alt ?? card.title}
