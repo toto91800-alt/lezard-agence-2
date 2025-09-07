@@ -5,7 +5,7 @@ import ButtonStrike from "@/components/background/extra/ButtonStrike";
 import HowIsWorkTop from "@/components/how-is-work/HowIsWorkTop";
 import HowCard from "@/components/how-is-work/HowCard";
 import HowBlock from "@/components/how-is-work/HowBlock";
-
+import HowCardSix from "@/components/how-is-work/HowCardSix";
 
 export default function AboutUs() {
   return (
@@ -16,7 +16,7 @@ export default function AboutUs() {
       <HowCard className="sm:-mt-10 md:-mt-12 lg:-mt-16" />
 
       <HowBlock />
-
+      <HowCardSix />
       <HeroLabSection>
         {/* Zone contenu (centrée verticalement) */}
         <div className="mx-auto max-w-3xl text-center">

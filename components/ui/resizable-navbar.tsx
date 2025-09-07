@@ -1,4 +1,8 @@
+// components/ui/resizable-navbar.tsx
 "use client";
+
+import React, { useRef, useState } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
@@ -7,9 +11,6 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-
-import React, { useRef, useState } from "react";
-
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -49,6 +50,18 @@ interface MobileNavMenuProps {
   onClose: () => void;
 }
 
+/** Normalise les href pour éviter les mismatches SSR/CSR (casse, slash initial). */
+const normalizeHref = (link: string) => {
+  if (!link) return "#";
+  const trimmed = link.trim();
+
+  // Laisse les URLs absolues inchangées
+  if (/^https?:\/\//i.test(trimmed)) return trimmed;
+
+  const lower = trimmed.toLowerCase();
+  return lower.startsWith("/") ? lower : `/${lower}`;
+};
+
 export const Navbar = ({ children, className }: NavbarProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll({
@@ -58,17 +71,14 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   const [visible, setVisible] = useState<boolean>(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 100) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
+    // L'état initial côté SSR est 'false' => pas de mismatch
+    setVisible(latest > 100);
   });
 
   return (
     <motion.div
       ref={ref}
-      // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
+      // IMPORTANT: mets "fixed" si tu veux la navbar fixe
       className={cn("sticky inset-x-0 top-20 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
@@ -110,7 +120,6 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   );
 };
 
-
 export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
@@ -119,32 +128,36 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       onMouseLeave={() => setHovered(null)}
       className={cn(
         "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2",
-        "text-inherit hover:opacity-80", // ← hérite de NavBody (blanc au début, noir après)
+        "text-inherit hover:opacity-80", // hérite de NavBody (blanc au début, noir après)
+        // Desktop uniquement : on décale le bloc central pour resserrer l’espace après le logo
+        "lg:inset-y-0 lg:left-48 lg:right-0",
         className,
       )}
     >
-      {items.map((item, idx) => (
-        <a
-          onMouseEnter={() => setHovered(idx)}
-          onClick={onItemClick}
-          className="relative px-4 py-2 text-current"
-          key={`link-${idx}`}
-          href={item.link}
-        >
-          {hovered === idx && (
-            <motion.div
-              layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full"
-              style={{ background: "var(--navbar-hover)" }} // ← pastille via var
-            />
-          )}
-          <span className="relative z-20">{item.name}</span>
-        </a>
-      ))}
+      {items.map((item, idx) => {
+        const href = normalizeHref(item.link);
+        return (
+          <Link
+            key={`link-${idx}`}
+            href={href}
+            onMouseEnter={() => setHovered(idx)}
+            onClick={onItemClick}
+            className="relative px-3 py-2 text-current"
+          >
+            {hovered === idx && (
+              <motion.div
+                layoutId="hovered"
+                className="absolute inset-0 h-full w-full rounded-full"
+                style={{ background: "var(--navbar-hover)" }} // pastille via var
+              />
+            )}
+            <span className="relative z-20">{item.name}</span>
+          </Link>
+        );
+      })}
     </motion.div>
   );
 };
-
 
 export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   return (
@@ -175,24 +188,24 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   );
 };
 
-
 export const MobileNavHeader = ({
   children,
   className,
 }: MobileNavHeaderProps) => {
   return (
     <div
-      className={cn(
-        "flex w-full flex-row items-center justify-between",
-        className,
-      )}
+      className={cn("flex w-full flex-row items-center justify-between", className)}
     >
       {children}
     </div>
   );
 };
 
-export const MobileNavMenu = ({ children, className, isOpen }: MobileNavMenuProps) => {
+export const MobileNavMenu = ({
+  children,
+  className,
+  isOpen,
+}: MobileNavMenuProps) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -216,7 +229,13 @@ export const MobileNavMenu = ({ children, className, isOpen }: MobileNavMenuProp
   );
 };
 
-export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => void; }) => {
+export const MobileNavToggle = ({
+  isOpen,
+  onClick,
+}: {
+  isOpen: boolean;
+  onClick: () => void;
+}) => {
   return isOpen ? (
     <IconX className="text-current" onClick={onClick} />
   ) : (
@@ -228,18 +247,16 @@ export const NavbarLogo = () => {
   return (
     <a
       href="https://app.lezard-agency.com"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-inherit"
-      // Option: si tu préfères forcer la var ici, dé-commente :
-      // style={{ color: "var(--navbar-fg)" }}
+      className="relative z-20 mr-2 lg:mr-3 flex items-center space-x-1 lg:space-x-1.5 px-1 lg:px-1.5 py-1 text-sm font-normal text-inherit"
     >
-      {/* Logo recoloré via mask, prend la couleur courante (currentColor) */}
+      {/* Logo recoloré via mask (utilise currentColor) */}
       <span
         aria-hidden
         className="inline-block"
         style={{
           width: 30,
           height: 30,
-          backgroundColor: "currentColor",           // ← couleur = texte
+          backgroundColor: "currentColor",
           WebkitMaskImage: "url(/svg/lezard_noir.svg)",
           maskImage: "url(/svg/lezard_noir.svg)",
           WebkitMaskRepeat: "no-repeat",
@@ -254,8 +271,6 @@ export const NavbarLogo = () => {
     </a>
   );
 };
-
-
 
 export const NavbarButton = ({
   href,

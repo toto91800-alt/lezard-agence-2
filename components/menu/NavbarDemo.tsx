@@ -16,7 +16,7 @@ import Link from "next/link";
 export function NavbarDemo() {
   const navItems = [
     { name: "How is work", link: "how-is-work" },
-    { name: "Resultats", link: "resultats" },
+    { name: "Resultats", link: "Resultats" },
     { name: "Pricing", link: "pricing" },
     { name: "About us", link: "about-us" },
   ];

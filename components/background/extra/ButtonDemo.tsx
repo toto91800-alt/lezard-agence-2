@@ -6,18 +6,20 @@ import { cn } from "@/lib/utils";
 
 type Props = {
   className?: string;
-  href?: string;          // si présent -> <a>
-  onClick?: () => void;   // sinon -> <button>
+  href?: string;          // si présent -> <a> (sinon on utilise l'URL par défaut)
+  onClick?: () => void;   // si présent -> <button>
 };
+
+const DEFAULT_HREF = "https://statshybrid.vercel.app/lezard-agence/trial";
 
 export default function ButtonDemo({ className, href, onClick }: Props) {
   const base =
     "btn-demo group relative inline-flex items-center justify-center rounded-full overflow-hidden " +
-    "px-6 py-3 font-semibold text-black " +                         // texte blanc
-    "bg-white shadow-[0_10px_20px_rgba(0,0,0,.35)] " +              // fond noir + ombre noire
+    "px-6 py-3 font-semibold text-black " +                         // texte noir
+    "bg-white shadow-[0_10px_20px_rgba(0,0,0,.35)] " +              // fond blanc + ombre
     "transition-transform duration-200 ease-out hover:scale-[1.03] active:scale-95 " +
     "focus:outline-none focus-visible:ring-2 focus-visible:ring-black/70 " +
-    "focus-visible:ring-offset-2 focus-visible:ring-offset-white " + // offset noir
+    "focus-visible:ring-offset-2 focus-visible:ring-offset-white " + // offset blanc
     "btn-demo-shine";
 
   const content = (
@@ -36,13 +38,10 @@ export default function ButtonDemo({ className, href, onClick }: Props) {
     </>
   );
 
+  // Priorité au onClick => <button>, sinon <a> qui s'ouvre dans un NOUVEL onglet
   return (
     <>
-      {href ? (
-        <a href={href} className={cn(base, className)} aria-label="Demo">
-          {content}
-        </a>
-      ) : (
+      {onClick ? (
         <button
           type="button"
           onClick={onClick}
@@ -51,6 +50,16 @@ export default function ButtonDemo({ className, href, onClick }: Props) {
         >
           {content}
         </button>
+      ) : (
+        <a
+          href={href ?? DEFAULT_HREF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={cn(base, className)}
+          aria-label="Demo (ouvre dans un nouvel onglet)"
+        >
+          {content}
+        </a>
       )}
 
       <style>{`
@@ -82,6 +91,12 @@ export default function ButtonDemo({ className, href, onClick }: Props) {
         .btn-demo:hover .icon-wrap { transform: rotate(-12deg) scale(1.1); filter: drop-shadow(0 0 10px rgba(255,255,255,.45)); }
         .btn-demo .icon-thunder { transition: transform .2s ease; display:block; }
         .btn-demo:hover .icon-thunder { transform: translateX(1px); }
+
+        @media (prefers-reduced-motion: reduce) {
+          .btn-demo:hover::after { animation: none; }
+          .btn-demo:hover .icon-wrap { transform: none; filter: none; }
+          .btn-demo:hover .icon-thunder { transform: none; }
+        }
       `}</style>
     </>
   );

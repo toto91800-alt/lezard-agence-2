@@ -71,7 +71,8 @@ const MainSection: React.FC = () => {
               href="https://app.lezard-agency.com/dashboard/plan"
               className="w-full sm:w-auto"
             />
-            <ButtonDemo href="/demo" className="w-full sm:w-auto" />
+       <ButtonDemo href="https://statshybrid.vercel.app/lezard-agence/trial" className="w-full sm:w-auto" />
+
           </div>
         </div>
 

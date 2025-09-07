@@ -24,7 +24,7 @@ export default function Technologie({ className = "" }: Props) {
           </h2>
         </div>
 
-        <ButtonTechnologie href="/technologie" />
+        <ButtonTechnologie href="/how-is-work" />
       </div>
       <ResponsiveRenderer />
     </section>
