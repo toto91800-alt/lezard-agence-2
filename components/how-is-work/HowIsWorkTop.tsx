@@ -20,7 +20,7 @@ type VarStyle = React.CSSProperties & {
 
 export default function HowIsWorkTop({
   className,
-  heightMobile = 320,
+  heightMobile = 420, // ↑ plus haut sur mobile
   heightDesktop = 580,
 }: Props) {
   const hMobile = typeof heightMobile === "number" ? `${heightMobile}px` : heightMobile;
@@ -71,11 +71,17 @@ export default function HowIsWorkTop({
         style={{ transform: "translate(-50%, calc(-50% - 4vh))" }}
       >
         <div className="mx-auto max-w-[min(92vw,1200px)] text-center flex flex-col items-center">
-          <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.2rem,8vw,7rem)] text-white pb-4 sm:pb-6">
+          <h2
+            className="
+              font-bold leading-[0.98] tracking-tight text-white
+              pb-4 sm:pb-6
+              text-[clamp(3rem,12vw,3.75rem)]        /* ↑ taille mobile plus grande */
+              sm:text-[clamp(2.2rem,8vw,7rem)]       /* tailles ≥ sm (inchangées) */
+            "
+          >
             Comment ça marche étape par étape
           </h2>
 
-          {/* Espace via padding-bottom sur le h2 */}
           <ButtonDemoOrange />
         </div>
       </div>

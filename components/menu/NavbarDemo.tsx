@@ -16,9 +16,9 @@ import Link from "next/link";
 export function NavbarDemo() {
   const navItems = [
     { name: "How is work", link: "how-is-work" },
+    { name: "Resultats", link: "resultats" },
     { name: "Pricing", link: "pricing" },
     { name: "About us", link: "about-us" },
-    { name: "Contact", link: "contact" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

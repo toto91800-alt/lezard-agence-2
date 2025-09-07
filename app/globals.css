@@ -111,6 +111,10 @@
 
   --backgroundcontactcolor: #fdf7f1; /* fond clair par défaut */
   --contactextecolor: #111111;      /* texte par défaut */
+
+  --HowBackground: #fff9f3;
+  --HowTitle: #f97316; /* orange moyen */
+  --HowTexte: #6b7280;   /* gris moyen */
 }
 
 .dark {
@@ -180,6 +184,10 @@
 
   --backgroundcontactcolor:  #ffffff;  
   --contactextecolor:  #111111; /* exemple dark */
+
+  --HowBackground: #fff9f3;
+  --HowTitle: #f97316; /* orange moyen */
+  --HowTexte: #000000;   /* gris moyen */
   
 }
 
@@ -251,6 +259,10 @@
 
   --backgroundcontactcolor: #ffffff;  
   --contactextecolor: #f97316; /* orange moyen */
+
+  --HowBackground: #fff9f3;
+  --HowTitle: #f97316; /* orange moyen */
+  --HowTexte: #000000; /* exemple dark */
 }
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
