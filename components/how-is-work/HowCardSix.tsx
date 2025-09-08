@@ -4,7 +4,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { Lock, Target, BarChart3, RefreshCw } from "lucide-react";
+import { Eye, Heart, UserPlus, ThumbsUp, MessageSquare, ListChecks } from "lucide-react";
 
 type HowItem = {
   title: string;
@@ -39,12 +39,11 @@ const DEFAULT_ITEMS: HowItem[] = [
     alt: "Pilotage des résultats",
   },
   {
-    title: "Vous pouvez voir vos résultats",
+    title: "Like de publications",
     text: "Vues de stories, likes de stories, nouveaux followers, etc. Vous pouvez voir toutes vos actions, jour par jour.",
-    image: "/svg/how/setup-7.svg",
+    image: "/svg/how/publication.svg",
     alt: "Optimisation continue",
   },
-  // 2 cartes supplémentaires (images réutilisées pour l’exemple)
   {
     title: "Analyse détaillée",
     text: "Des indicateurs clairs pour comprendre l’impact de chaque action et affiner vos décisions.",
@@ -65,11 +64,12 @@ export default function HowCardSix({
   title = "Une technologie unique",
 }: Props) {
   const data = (items && items.length ? items : DEFAULT_ITEMS).slice(0, 6);
-  const icons = [Lock, Target, BarChart3, RefreshCw];
+
+  // Icônes dans l’ordre: œil, likes, follows, j’aime, message, sondage
+  const icons = [Eye, Heart, UserPlus, ThumbsUp, MessageSquare, ListChecks];
 
   return (
     <section className={cn("px-4 pb-16", className)}>
-      {/* Titre en haut — wrap activé */}
       <div className="relative z-10 w-full flex flex-col items-center pt-10 pb-10 sm:pt-8 sm:pb-12">
         <div className="mx-auto w-full max-w-5xl px-4 text-center">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.2rem,8vw,6.5rem)]">
@@ -81,7 +81,6 @@ export default function HowCardSix({
       </div>
 
       <div className="mx-auto max-w-7xl">
-        {/* 3 colonnes dès md pour obtenir 3 + 3 cartes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6">
           {data.map((card, idx) => {
             const Icon = icons[idx % icons.length];
@@ -94,10 +93,10 @@ export default function HowCardSix({
                   "bg-[var(--HowBackground)]"
                 )}
               >
-                <div className="bg-[#242424]">
+                <div className="bg-[#ffffff]">
                   <div className="relative h-[22rem] sm:h-[22rem] w-full flex items-center justify-center">
-                    {/* zone d'affichage plus grande */}
-                    <div className="relative w-[88%] h-[88%] sm:w-[84%] sm:h-[84%] lg:w-[80%] lg:h-[80%]">
+                    {/* zone d'affichage un peu plus grande */}
+                    <div className="relative w-[92%] h-[92%] sm:w-[90%] sm:h-[90%] lg:w-[86%] lg:h-[86%]">
                       <Image
                         src={card.image}
                         alt={card.alt ?? card.title}
