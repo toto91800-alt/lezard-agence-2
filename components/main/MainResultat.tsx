@@ -57,12 +57,15 @@ const MainResultat: React.FC<Props> = ({
 
       {/* Contenu */}
       <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6 py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl text-center">
+        {/* élargir le conteneur pour éviter l'overflow vers la droite */}
+        <div className="mx-auto max-w-6xl text-center px-4">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
             <span className="block mt-[0.25em] text-[var(--MainTitleSecond)]">
-              <span className="whitespace-nowrap">Leurs Instagram</span>
-              <br className="hidden lg:block" />
-              <span> explose</span>
+              <span className="block">Leur compte</span>
+              {/* garder Instagram + explose sur la même ligne */}
+              <span className="block whitespace-nowrap">
+                Instagram&nbsp;explose
+              </span>
             </span>
           </h2>
         </div>

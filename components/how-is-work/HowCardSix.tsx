@@ -45,11 +45,11 @@ const DEFAULT_ITEMS: HowItem[] = [
     alt: "Optimisation continue",
   },
   {
-    title: "Analyse détaillée",
-    text: "Des indicateurs clairs pour comprendre l’impact de chaque action et affiner vos décisions.",
-    image: "/svg/how/setup-6.svg",
+    title: "Message automatique",
+    text: "Créez des messages personnalisés pour vos nouveaux followers ou pour démarcher.",
+    image: "/svg/how/Dm.svg",
     alt: "Analyse détaillée",
-  },
+  },  
   {
     title: "Répondez aux sondages",
     text: "Répondez aux sondages de vos cibles afin de les attirer sur votre compte.",

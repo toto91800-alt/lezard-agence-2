@@ -9,15 +9,17 @@ export default function HeroTitleWithMarker({ className }: HeroTitleWithMarkerPr
   const markerStrokeWidth = 10;
 
   return (
-    <div className={`mx-auto max-w-3xl text-center text-white pb-8 sm:pb-10 ${className ?? ""}`}>
-      <h1 className="font-bold leading-[0.98] tracking-tight overflow-visible text-[clamp(2.5rem,10vw,7rem)]">
-        {/* ⬇️ Reste sur UNE seule ligne */}
-        <span className="block relative z-20 title-rise whitespace-nowrap break-keep">
-          Explorer, Toucher,
+    // conteneur: centré via grid et largeur plus large
+    <div className={`grid place-items-center text-white pb-8 sm:pb-10 ${className ?? ""}`}>
+      <h1 className="mx-auto w-full max-w-[min(92vw,1200px)] text-center font-bold leading-[0.98] tracking-tight overflow-visible text-[clamp(2.5rem,10vw,7rem)]">
+        {/* ligne 1 — centrée par la largeur de son contenu */}
+        <span className="title-rise inline-block w-fit mx-auto sm:whitespace-nowrap">
+          Des followers, ciblés,
         </span>
 
-        <span className="relative inline-block align-baseline mt-[0.25em] sm:mt-[0.35em] title-rise title-rise-2">
-          <span className="relative z-20 inline-block">Visualiser</span>
+        {/* ligne 2 — idem + marqueur centré sur le mot */}
+        <span className="relative inline-block w-fit mx-auto align-baseline mt-[0.25em] sm:mt-[0.35em] title-rise title-rise-2">
+          <span className="relative z-20 inline-block">engagés</span>
 
           <span
             aria-hidden
