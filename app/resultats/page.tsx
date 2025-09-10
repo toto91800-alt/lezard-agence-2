@@ -14,7 +14,7 @@ export default function ResultatsPage() {
         title="Bientôt disponible"
         subtitle="La page Résultats arrive très bientôt : études de cas, chiffres et ROI."
         backHref="/"
-        notifyHref="mailto:hello@example.com?subject=Prévenez-moi%20pour%20les%20résultats"
+      
         className="w-full"
       />
     </main>

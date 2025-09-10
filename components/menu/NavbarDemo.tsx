@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Navbar,
   NavBody,
@@ -11,6 +12,7 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { ModeToggle } from "@/components/menu/ModeToggle";
+import  {LanguageSwitcher}  from "@/components/menu/LanguageSwitcher";
 import Link from "next/link";
 
 export function NavbarDemo() {
@@ -32,6 +34,7 @@ export function NavbarDemo() {
           <NavItems items={navItems} />
 
           <div className="relative z-50 flex items-center gap-4">
+            <LanguageSwitcher />
             <ModeToggle />
 
             {/* CTA desktop */}
@@ -75,8 +78,12 @@ export function NavbarDemo() {
               </a>
             ))}
 
-            {/* CTA mobile (remplace Login) */}
+            {/* Lang switcher + CTA mobile */}
             <div className="mt-4 flex w-full flex-col gap-4">
+              <div className="flex justify-center">
+                <LanguageSwitcher />
+              </div>
+
               <Link
                 href="https://app.lezard-agency.com/registerv2"
                 className="cta-strike group relative inline-flex items-center justify-center w-full rounded-full bg-orange-500 px-4 py-3 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
@@ -97,12 +104,11 @@ export function NavbarDemo() {
 
       {/* Styles (shine + tilt) */}
       <style jsx>{`
-        /* Reflet (shine) clipé à l'intérieur du bouton grâce à overflow-hidden */
         .cta-strike::after {
           content: "";
           position: absolute;
           inset: 0;
-          border-radius: 9999px; /* match rounded-full */
+          border-radius: 9999px;
           background: linear-gradient(
             120deg,
             transparent 0%,
@@ -123,7 +129,6 @@ export function NavbarDemo() {
           }
         }
 
-        /* Icône: tilt + petit glow au hover */
         .icon-wrap {
           transition: transform 0.2s ease, filter 0.2s ease;
           color: #fff;
@@ -141,9 +146,16 @@ export function NavbarDemo() {
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .cta-strike:hover::after { animation: none; }
-          .cta-strike:hover .icon-wrap { transform: none; filter: none; }
-          .cta-strike:hover .icon-thunder { transform: none; }
+          .cta-strike:hover::after {
+            animation: none;
+          }
+          .cta-strike:hover .icon-wrap {
+            transform: none;
+            filter: none;
+          }
+          .cta-strike:hover .icon-thunder {
+            transform: none;
+          }
         }
       `}</style>
     </div>
