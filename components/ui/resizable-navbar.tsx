@@ -7,9 +7,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-
 import React, { useRef, useState } from "react";
-
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -58,17 +56,13 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   const [visible, setVisible] = useState<boolean>(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 100) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
+    setVisible(latest > 100);
   });
 
   return (
     <motion.div
       ref={ref}
-      // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
+      // IMPORTANT: passe à "fixed" si tu veux une navbar totalement fixe
       className={cn("sticky inset-x-0 top-20 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
@@ -83,6 +77,9 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   );
 };
 
+// ------------------
+// NavBody
+// ------------------
 export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   return (
     <motion.div
@@ -91,18 +88,17 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         boxShadow: visible
           ? "0 0 24px rgba(34,42,53,.06), 0 1px 1px rgba(0,0,0,.05), 0 0 0 1px rgba(34,42,53,.04), 0 0 4px rgba(34,42,53,.08), 0 16px 68px rgba(47,48,55,.05), 0 1px 0 rgba(255,255,255,.1) inset"
           : "none",
-        width: visible ? "40%" : "100%",
-        y: visible ? 20 : 0,
+        y: visible ? 12 : 0,
+        maxWidth: visible ? "85%" : "100%", // rétrécit en douceur au scroll
       }}
       transition={{ type: "spring", stiffness: 200, damping: 50 }}
       style={{
-        minWidth: "1000px",
         backgroundColor: visible ? "var(--navbar-bg-visible)" : "var(--navbar-bg)",
         color: visible ? "var(--navbar-fg-visible)" : "var(--navbar-fg)",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full px-4 py-2 lg:flex",
-        className,
+        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between rounded-full px-6 py-3 lg:flex",
+        className
       )}
     >
       {children}
@@ -110,7 +106,9 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   );
 };
 
-
+// ------------------
+// NavItems (unique)
+// ------------------
 export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
@@ -118,24 +116,27 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2",
-        "text-inherit hover:opacity-80", // ← hérite de NavBody (blanc au début, noir après)
-        className,
+        "hidden lg:flex flex-1 flex-row items-center justify-center space-x-4 text-sm font-medium transition duration-200",
+        "text-inherit hover:opacity-80",
+        className
       )}
     >
       {items.map((item, idx) => (
         <a
-          onMouseEnter={() => setHovered(idx)}
-          onClick={onItemClick}
-          className="relative px-4 py-2 text-current"
           key={`link-${idx}`}
           href={item.link}
+          onMouseEnter={() => setHovered(idx)}
+          onClick={(e) => {
+            e.preventDefault(); // ← évite refresh si nécessaire
+            onItemClick?.();   // ← appel propre de ta callback
+          }}
+          className="relative px-4 py-2 text-current"
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
               className="absolute inset-0 h-full w-full rounded-full"
-              style={{ background: "var(--navbar-hover)" }} // ← pastille via var
+              style={{ background: "var(--navbar-hover)" }}
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -174,7 +175,6 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
     </motion.div>
   );
 };
-
 
 export const MobileNavHeader = ({
   children,
@@ -216,7 +216,13 @@ export const MobileNavMenu = ({ children, className, isOpen }: MobileNavMenuProp
   );
 };
 
-export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => void; }) => {
+export const MobileNavToggle = ({
+  isOpen,
+  onClick,
+}: {
+  isOpen: boolean;
+  onClick: () => void;
+}) => {
   return isOpen ? (
     <IconX className="text-current" onClick={onClick} />
   ) : (
@@ -229,8 +235,6 @@ export const NavbarLogo = () => {
     <a
       href="https://app.lezard-agency.com"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-inherit"
-      // Option: si tu préfères forcer la var ici, dé-commente :
-      // style={{ color: "var(--navbar-fg)" }}
     >
       {/* Logo recoloré via mask, prend la couleur courante (currentColor) */}
       <span
@@ -239,7 +243,7 @@ export const NavbarLogo = () => {
         style={{
           width: 30,
           height: 30,
-          backgroundColor: "currentColor",           // ← couleur = texte
+          backgroundColor: "currentColor",
           WebkitMaskImage: "url(/svg/lezard_noir.svg)",
           maskImage: "url(/svg/lezard_noir.svg)",
           WebkitMaskRepeat: "no-repeat",
@@ -254,8 +258,6 @@ export const NavbarLogo = () => {
     </a>
   );
 };
-
-
 
 export const NavbarButton = ({
   href,
