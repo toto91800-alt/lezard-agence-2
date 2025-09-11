@@ -46,7 +46,7 @@ export default function HomePage() {
             <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
               <span className="block mt-[0.25em] text-[var(--MainTitle)]">
                 <span className="whitespace-nowrap">
-                  {t("pricing.title", "Nos Tarifs")}
+                  {t("mainpage.pricing.title", "Nos Tarifs")}
                 </span>
               </span>
             </h2>
@@ -61,7 +61,7 @@ export default function HomePage() {
             <h2 className="mx-auto text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
               <span className="block mt-[0.25em] text-[var(--MainTitle)]">
                 <span className="whitespace-normal">
-                  {t("reviews.title", "Les avis")}
+                  {t("mainpage.reviews.title", "Les avis")}
                 </span>
               </span>
             </h2>

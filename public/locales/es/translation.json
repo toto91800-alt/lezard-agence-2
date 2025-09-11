@@ -1,13 +1,48 @@
 {
+  "mainpage": {
     "pricing": {
       "title": "Nuestros Precios"
     },
     "reviews": {
-      "title": "Opiniones de clientes"
+      "title": "Opiniones de Clientes"
     },
+    "hero": {
+      "line1": "Multiplica tus seguidores",
+      "line2": "Instagram"
+    },
+    "socialproof": {
+      "text": "por {{formatted}} usuario",
+      "text_plural": "por {{formatted}} usuarios"
+    },
+    "technologie": {
+      "title": {
+        "line1": "Nuestra tecnología",
+        "line2": "de 360°"
+      }
+    }
+  },
+  "components": {
+    "buttonstrike": {
+      "label": "5 días de prueba gratis",
+      "aria": "Empieza ahora"
+    },
+    "buttonresultats": {
+      "label": "Descubre los resultados",
+      "aria": "Descubre los resultados"
+    },
+    "buttoncontact": {
+      "label": "Reservar una cita",
+      "aria": "Reservar una cita"
+    },
+    "buttontechnologie": {
+      "label": "Descubrir",
+      "aria": "Descubrir la tecnología"
+    }
+  },
+  "menu": {
     "EN": "Inglés",
     "FR": "Francés",
     "ES": "Español",
     "DE": "Alemán"
   }
-  
+}

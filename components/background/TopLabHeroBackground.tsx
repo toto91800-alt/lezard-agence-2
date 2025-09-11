@@ -63,7 +63,7 @@ export default function TopLabHeroBackground({
   src = "/avif/bg_solutions_top-min.avif",
   height = HERO_SECTION_DEFAULT_HEIGHT,
 
-  bgTone = 5,           // ← fond de la section
+  bgTone = 5,          
   tintTone = 2,
   glowTone = 3,
   topFeatherTone,

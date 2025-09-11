@@ -1,13 +1,48 @@
 {
+  "mainpage": {
     "pricing": {
       "title": "Our Pricing"
     },
     "reviews": {
-      "title": "What our clients say"
+      "title": "Customer Reviews"
     },
+    "hero": {
+      "line1": "Multiply your followers",
+      "line2": "Instagram"
+    },
+    "socialproof": {
+      "text": "by {{formatted}} user",
+      "text_plural": "by {{formatted}} users"
+    },
+    "technologie": {
+      "title": {
+        "line1": "Our technology",
+        "line2": "360°"
+      }
+    }
+  },
+  "components": {
+    "buttonstrike": {
+      "label": "5 days free trial",
+      "aria": "Start now"
+    },
+    "buttonresultats": {
+      "label": "See the results",
+      "aria": "See the results"
+    },
+    "buttoncontact": {
+      "label": "Book a meeting",
+      "aria": "Book a meeting"
+    },
+    "buttontechnologie": {
+      "label": "Discover",
+      "aria": "Discover the technology"
+    }
+  },
+  "menu": {
     "EN": "English",
     "FR": "French",
     "ES": "Spanish",
     "DE": "German"
   }
-  
+}

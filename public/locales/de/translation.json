@@ -1,13 +1,48 @@
 {
+  "mainpage": {
     "pricing": {
       "title": "Unsere Preise"
     },
     "reviews": {
       "title": "Kundenbewertungen"
     },
+   "hero": {
+      "line1": "Vervielfachen Sie Ihre Follower",
+      "line2": "Instagram"
+    },
+    "socialproof": {
+      "text": "von {{formatted}} Nutzer",
+      "text_plural": "von {{formatted}} Nutzern"
+    },
+    "technologie": {
+      "title": {
+        "line1": "Unsere Technologie",
+        "line2": "in 360°"
+      }
+    }
+  },
+  "components": {
+    "buttonstrike": {
+      "label": "5 Tage kostenlos testen",
+      "aria": "Jetzt starten"
+    },
+    "buttonresultats": {
+      "label": "Ergebnisse entdecken",
+      "aria": "Ergebnisse entdecken"
+    },
+    "buttoncontact": {
+      "label": "Termin vereinbaren",
+      "aria": "Termin vereinbaren"
+    },
+    "buttontechnologie": {
+      "label": "Entdecken",
+      "aria": "Die Technologie entdecken"
+    }
+  },
+  "menu": {
     "EN": "Englisch",
     "FR": "Französisch",
     "ES": "Spanisch",
     "DE": "Deutsch"
   }
-  
+}

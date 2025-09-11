@@ -1,10 +1,10 @@
-// components/trial/SocialProof.tsx
 "use client";
 
 import * as React from "react";
 import Image from "next/image";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 type Avatar = { src: string; alt?: string };
 
@@ -23,8 +23,8 @@ export default function SocialProof({
   className,
   sizePx = 52,
 }: Props) {
+  const { t } = useTranslation();
   const formattedUsers = new Intl.NumberFormat("fr-FR").format(usersCount);
-
   const overlap = Math.max(8, Math.round(sizePx * 0.28));
 
   const full = Math.floor(rating);
@@ -34,8 +34,6 @@ export default function SocialProof({
   return (
     <div
       className={cn(
-        // mobile: colonne (avatars en haut, étoiles en dessous)
-        // desktop: ligne (avatars à gauche, étoiles à droite)
         "flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:gap-4",
         className
       )}
@@ -68,13 +66,12 @@ export default function SocialProof({
         ))}
       </div>
 
-      {/* Bloc étoiles + libellé (en dessous sur mobile) */}
+      {/* Étoiles + texte */}
       <div className="flex items-center justify-center gap-2 sm:gap-3 mt-1 sm:mt-0 text-center sm:text-left">
         <div className="flex items-center">
           {Array.from({ length: full }).map((_, i) => (
             <Star key={`f-${i}`} className="h-5 w-5 text-orange-500" fill="currentColor" stroke="none" />
           ))}
-
           {hasHalf && (
             <span className="relative inline-block h-5 w-5">
               <Star
@@ -86,14 +83,13 @@ export default function SocialProof({
               <Star className="absolute inset-0 text-orange-500" stroke="currentColor" />
             </span>
           )}
-
           {Array.from({ length: empty }).map((_, i) => (
             <Star key={`e-${i}`} className="h-5 w-5 text-orange-500" />
           ))}
         </div>
 
         <span className="text-sm sm:text-base text-[oklch(var(--secondary))]">
-          by {formattedUsers} users
+          {t("mainpage.socialproof.text", { count: usersCount, formatted: formattedUsers })}
         </span>
       </div>
     </div>

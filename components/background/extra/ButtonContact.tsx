@@ -3,6 +3,7 @@
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   className?: string;
@@ -11,6 +12,8 @@ type Props = {
 };
 
 export default function ButtonContact({ className, href, onClick }: Props) {
+  const { t } = useTranslation();
+
   const base =
     "btn-strike group relative inline-flex items-center justify-center rounded-full overflow-hidden " +
     "px-6 py-3 font-semibold text-white " +
@@ -28,9 +31,8 @@ export default function ButtonContact({ className, href, onClick }: Props) {
         </svg>
       </span>
 
-      <span>Prendre rendez vous</span>
+      <span>{t("components.buttoncontact.label")}</span>
 
-      {/* fine ring overlay */}
       <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
     </>
   );
@@ -38,7 +40,11 @@ export default function ButtonContact({ className, href, onClick }: Props) {
   return (
     <>
       {href ? (
-        <a href={href} className={cn(base, className)} aria-label="Prendre rendez vous">
+        <a
+          href={href}
+          className={cn(base, className)}
+          aria-label={t("components.buttoncontact.aria")}
+        >
           {content}
         </a>
       ) : (
@@ -46,7 +52,7 @@ export default function ButtonContact({ className, href, onClick }: Props) {
           type="button"
           onClick={onClick}
           className={cn(base, className)}
-          aria-label="Prendre rendez vous"
+          aria-label={t("components.buttoncontact.aria")}
         >
           {content}
         </button>

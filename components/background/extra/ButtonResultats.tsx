@@ -1,16 +1,18 @@
-// components/trial/ButtonResultat.tsx
 "use client";
 
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 type Props = {
   className?: string;
-  href?: string;          // si présent -> <a>
-  onClick?: () => void;   // sinon -> <button>
+  href?: string;
+  onClick?: () => void;
 };
 
 export default function ButtonResultats({ className, href, onClick }: Props) {
+  const { t } = useTranslation();
+
   const base =
     "btn-resultat group relative inline-flex items-center justify-center rounded-full overflow-hidden " +
     "px-6 py-3 font-semibold text-white " +
@@ -22,7 +24,6 @@ export default function ButtonResultats({ className, href, onClick }: Props) {
 
   const content = (
     <>
-      {/* Icône cœur */}
       <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,18 +33,15 @@ export default function ButtonResultats({ className, href, onClick }: Props) {
           aria-hidden="true"
           className="icon-heart"
         >
-          {/* Option A: suit la couleur du texte (reco) */}
           <path
             d="M8.59,6.09c.99-.07,1.9.35,2.61.99.14.21.35.42.49.56.21.28.35.21.56-.07.64-.78,1.55-1.34,2.54-1.55,1.2-.14,2.4.35,3.17,1.34,1.48,1.76,1.41,3.67.28,5.64-.85,1.34-1.98,2.47-3.32,3.32-.85.56-1.76,1.06-2.75,1.62-.14.07-.35.07-.49,0-1.41-.71-2.68-1.55-3.88-2.47-1.48-1.06-2.54-2.75-2.89-4.73-.21-2.05,1.06-3.95,3.03-4.59.21,0,.42-.07.63-.07Z"
             fill="currentColor"
           />
-          {/* Option B: si tu veux le forcer en blanc, remplace par fill="#fff" */}
         </svg>
       </span>
 
-      <span>Découvez les resultats</span>
+      <span>{t("components.buttonresultats.label")}</span>
 
-      {/* fine ring overlay */}
       <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
     </>
   );
@@ -51,7 +49,11 @@ export default function ButtonResultats({ className, href, onClick }: Props) {
   return (
     <>
       {href ? (
-        <a href={href} className={cn(base, className)} aria-label="Découvez les resultats">
+        <a
+          href={href}
+          className={cn(base, className)}
+          aria-label={t("components.buttonresultats.aria")}
+        >
           {content}
         </a>
       ) : (
@@ -59,7 +61,7 @@ export default function ButtonResultats({ className, href, onClick }: Props) {
           type="button"
           onClick={onClick}
           className={cn(base, className)}
-          aria-label="Découvez les resultats"
+          aria-label={t("components.buttonresultats.aria")}
         >
           {content}
         </button>

@@ -1,13 +1,49 @@
 {
+  "mainpage": {
     "pricing": {
       "title": "Nos Tarifs"
     },
     "reviews": {
       "title": "Les avis"
     },
+    
+    "hero": {
+      "line1": "Multipliez vos abonnés",
+      "line2": "Instagram"
+    },
+    "socialproof": {
+      "text": "par {{formatted}} utilisateur",
+      "text_plural": "par {{formatted}} utilisateurs"
+    },
+    "technologie": {
+      "title": {
+        "line1": "Notre technologie",
+        "line2": "à 360°"
+      }
+    }
+  },
+  "components": {
+    "buttonstrike": {
+      "label": "5 jours d’essai gratuits",
+      "aria": "Commencer maintenant"
+    },
+    "buttonresultats": {
+      "label": "Découvrez les résultats",
+      "aria": "Découvrez les résultats"
+    },
+    "buttoncontact": {
+      "label": "Prendre rendez-vous",
+      "aria": "Prendre rendez-vous"
+    },
+    "buttontechnologie": {
+      "label": "Découvrir",
+      "aria": "Découvrir la technologie"
+    }
+  },
+  "menu": {
     "EN": "Anglais",
     "FR": "Français",
     "ES": "Espagnol",
     "DE": "Allemand"
   }
-  
+}

@@ -1,7 +1,8 @@
-// components/trial/ButtonStrike.tsx
+// components/trial/ButtonTechnologie.tsx
 "use client";
 
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -11,6 +12,8 @@ type Props = {
 };
 
 export default function ButtonTechnologie({ className, href, onClick }: Props) {
+  const { t } = useTranslation();
+
   const base =
     "btn-strike group relative inline-flex items-center justify-center rounded-full overflow-hidden " + // ⬅️ overflow-hidden
     "px-6 py-3 font-semibold text-white " +
@@ -29,7 +32,7 @@ export default function ButtonTechnologie({ className, href, onClick }: Props) {
         </svg>
       </span>
 
-      <span>Découvrir</span>
+      <span>{t("components.buttontechnologie.label")}</span>
 
       {/* fine ring overlay */}
       <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
@@ -39,7 +42,11 @@ export default function ButtonTechnologie({ className, href, onClick }: Props) {
   return (
     <>
       {href ? (
-        <a href={href} className={cn(base, className)} aria-label="Commencer maintenant">
+        <a
+          href={href}
+          className={cn(base, className)}
+          aria-label={t("components.buttontechnologie.aria")}
+        >
           {content}
         </a>
       ) : (
@@ -47,7 +54,7 @@ export default function ButtonTechnologie({ className, href, onClick }: Props) {
           type="button"
           onClick={onClick}
           className={cn(base, className)}
-          aria-label="Commencer maintenant"
+          aria-label={t("components.buttontechnologie.aria")}
         >
           {content}
         </button>

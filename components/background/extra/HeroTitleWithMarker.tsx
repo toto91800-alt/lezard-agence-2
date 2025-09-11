@@ -1,32 +1,32 @@
 "use client";
 
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 
 type HeroTitleWithMarkerProps = { className?: string };
 
 export default function HeroTitleWithMarker({ className }: HeroTitleWithMarkerProps) {
+  const { t } = useTranslation();
   const markerColor = "#FF9800";
   const markerStrokeWidth = 10;
 
   return (
-    // conteneur: centré via grid et largeur plus large
-    <div className={`grid place-items-center text-white pb-8 sm:pb-10 ${className ?? ""}`}>
-      <h1 className="mx-auto w-full max-w-[min(92vw,1200px)] text-center font-bold leading-[0.98] tracking-tight overflow-visible text-[clamp(2.5rem,10vw,7rem)]">
-        {/* ligne 1 — centrée par la largeur de son contenu */}
-        <span className="title-rise inline-block w-fit mx-auto sm:whitespace-nowrap">
-          Des followers, ciblés,
-        </span>
+    <div className={`w-full px-4 text-white pb-8 sm:pb-10 ${className ?? ""}`}>
+      <h1 className="flex flex-col items-center text-center font-bold leading-[0.98] tracking-tight overflow-visible text-[clamp(2.5rem,10vw,7rem)]">
+        {/* Ligne 1 */}
+        <span className="title-rise inline-block text-center whitespace-nowrap overflow-x-auto">
+  {t("mainpage.hero.line1")}
+</span>
 
-        {/* ligne 2 — idem + marqueur centré sur le mot */}
-        <span className="relative inline-block w-fit mx-auto align-baseline mt-[0.25em] sm:mt-[0.35em] title-rise title-rise-2">
-          <span className="relative z-20 inline-block">engagés</span>
 
+        {/* Ligne 2 + SVG aligné */}
+        <span className="relative flex justify-center items-center mt-[0.25em] sm:mt-[0.35em] title-rise title-rise-2">
+          <span className="relative z-20">{t("mainpage.hero.line2")}</span>
+
+          {/* Soulignement SVG */}
           <span
             aria-hidden
-            className="pointer-events-none absolute left-1/2 -translate-x-1/2 -z-10
-                       block bottom-[-0.5em] w-[190%] h-[2.3em]
-                       sm:bottom-[-0.4em] sm:w-[170%] sm:h-[2.0em]
-                       md:bottom-[-0.3em] md:w-[145%] md:h-[1.7em]"
+            className="absolute -z-10 bottom-[-0.4em] sm:bottom-[-0.3em] w-[150%] h-[2em]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,27 +50,48 @@ export default function HeroTitleWithMarker({ className }: HeroTitleWithMarkerPr
       </h1>
 
       <style>{`
-        .title-rise{
-          opacity:0; transform:translate3d(0,40px,0) scale(.985); filter:blur(6px);
-          animation:title-in 600ms cubic-bezier(.22,1,.36,1) var(--delay,0ms) forwards;
-          will-change:transform,opacity,filter;
+        .title-rise {
+          opacity: 0;
+          transform: translate3d(0, 40px, 0) scale(0.985);
+          filter: blur(6px);
+          animation: title-in 600ms cubic-bezier(.22, 1, .36, 1) var(--delay, 0ms) forwards;
         }
-        .title-rise-2{ --delay:120ms; }
-        @keyframes title-in{
-          60%{opacity:1; transform:translate3d(0,-3px,0) scale(1.01); filter:blur(0)}
-          100%{opacity:1; transform:translate3d(0,0,0) scale(1); filter:blur(0)}
+        .title-rise-2 { --delay: 120ms; }
+
+        @keyframes title-in {
+          60% {
+            opacity: 1;
+            transform: translate3d(0, -3px, 0) scale(1.01);
+            filter: blur(0);
+          }
+          100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) scale(1);
+            filter: blur(0);
+          }
         }
-        .animated-marker-svg .marker-path{
-          stroke-dasharray:1200;
-          stroke-dashoffset:1200;
-          animation:draw-marker 900ms ease-out 700ms forwards;
-          will-change:stroke-dashoffset;
-          filter:none;
+
+        .animated-marker-svg .marker-path {
+          stroke-dasharray: 1200;
+          stroke-dashoffset: 1200;
+          animation: draw-marker 900ms ease-out 700ms forwards;
         }
-        @keyframes draw-marker{ to{ stroke-dashoffset:0; } }
-        @media (prefers-reduced-motion: reduce){
-          .title-rise{ animation:none; opacity:1; transform:none; filter:none }
-          .animated-marker-svg .marker-path{ animation:none; stroke-dashoffset:0 }
+
+        @keyframes draw-marker {
+          to { stroke-dashoffset: 0; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .title-rise {
+            animation: none;
+            opacity: 1;
+            transform: none;
+            filter: none;
+          }
+          .animated-marker-svg .marker-path {
+            animation: none;
+            stroke-dashoffset: 0;
+          }
         }
       `}</style>
     </div>
