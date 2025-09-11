@@ -219,6 +219,11 @@
     "EN": "English",
     "FR": "French",
     "ES": "Spanish",
-    "DE": "German"
+    "DE": "German",
+    "howiswork": "How it works",
+    "results": "Results",
+    "pricing": "Pricing",
+    "about": "About us",
+    "cta": "5 days free trial"
   }
 }

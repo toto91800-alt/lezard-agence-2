@@ -10,20 +10,29 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ModeToggle } from "@/components/menu/ModeToggle";
-import  {LanguageSwitcher}  from "@/components/menu/LanguageSwitcher";
+import { LanguageSwitcher } from "@/components/menu/LanguageSwitcher";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export function NavbarDemo() {
-  const navItems = [
-    { name: "How is work", link: "how-is-work" },
-    { name: "Resultats", link: "resultats" },
-    { name: "Pricing", link: "pricing" },
-    { name: "About us", link: "about-us" },
-  ];
-
+  const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  const navItems = mounted
+    ? [
+        { name: t("menu.howiswork", "How it works"), link: "/how-is-work" },
+        { name: t("menu.results", "Results"), link: "/resultats" },
+        { name: t("menu.pricing", "Pricing"), link: "/pricing" },
+        { name: t("menu.about", "About us"), link: "/about-us" },
+      ]
+    : [];
+
+  const ctaLabel = mounted ? t("menu.cta", "5 jours d’essai gratuits") : "";
 
   return (
     <div className="fixed top-0 left-0 z-50 w-full ">
@@ -31,25 +40,36 @@ export function NavbarDemo() {
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
-          <NavItems items={navItems} />
+          {mounted && <NavItems items={navItems} />}
 
           <div className="relative z-50 flex items-center gap-4">
             <LanguageSwitcher />
             <ModeToggle />
 
             {/* CTA desktop */}
-            <Link
-              href="https://app.lezard-agency.com/registerv2"
-              className="cta-strike group relative inline-flex items-center rounded-full bg-orange-500 px-4 py-2 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
-            >
-              <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" className="icon-thunder">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
-                </svg>
-              </span>
-              <span>5 jours d’essai gratuits</span>
-              <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
-            </Link>
+            {mounted && (
+              <Link
+                href="https://app.lezard-agency.com/registerv2"
+                className="cta-strike group relative inline-flex items-center rounded-full bg-orange-500 px-4 py-2 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
+              >
+                <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                    className="icon-thunder"
+                  >
+                    <path
+                      d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+                <span>{ctaLabel}</span>
+                <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
+              </Link>
+            )}
           </div>
         </NavBody>
 
@@ -67,16 +87,17 @@ export function NavbarDemo() {
             isOpen={isMobileMenuOpen}
             onClose={() => setIsMobileMenuOpen(false)}
           >
-            {navItems.map((item, idx) => (
-              <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
-              >
-                <span className="block">{item.name}</span>
-              </a>
-            ))}
+            {mounted &&
+              navItems.map((item, idx) => (
+                <a
+                  key={`mobile-link-${idx}`}
+                  href={item.link}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="relative text-neutral-600 dark:text-neutral-300"
+                >
+                  <span className="block">{item.name}</span>
+                </a>
+              ))}
 
             {/* Lang switcher + CTA mobile */}
             <div className="mt-4 flex w-full flex-col gap-4">
@@ -84,19 +105,30 @@ export function NavbarDemo() {
                 <LanguageSwitcher />
               </div>
 
-              <Link
-                href="https://app.lezard-agency.com/registerv2"
-                className="cta-strike group relative inline-flex items-center justify-center w-full rounded-full bg-orange-500 px-4 py-3 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
-                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" className="icon-thunder">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
-                  </svg>
-                </span>
-                <span>5 jours d’essai gratuits</span>
-                <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
-              </Link>
+              {mounted && (
+                <Link
+                  href="https://app.lezard-agency.com/registerv2"
+                  className="cta-strike group relative inline-flex items-center justify-center w-full rounded-full bg-orange-500 px-4 py-3 text-white font-medium shadow-sm transition hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50 overflow-hidden"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                      className="icon-thunder"
+                    >
+                      <path
+                        d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span>{ctaLabel}</span>
+                  <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
+                </Link>
+              )}
             </div>
           </MobileNavMenu>
         </MobileNav>

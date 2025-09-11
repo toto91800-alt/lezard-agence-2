@@ -202,23 +202,28 @@
     "bigtitle": "Nuestros Precios"
   },
   "footer": {
-  "brandName": "Lezard Agencia",
-  "links": {
-    "tutorial": "Tutorial",
-    "contact": "Contacto",
-    "terms": "Términos y Condiciones",
-    "privacy": "Política de Privacidad",
-    "sales": "Condiciones de Venta"
+    "brandName": "Lezard Agencia",
+    "links": {
+      "tutorial": "Tutorial",
+      "contact": "Contacto",
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad",
+      "sales": "Condiciones de Venta"
+    },
+    "banner": {
+      "brand": "Lezard Agencia",
+      "rights": "© 2025 Todos los derechos reservados."
+    }
   },
-  "banner": {
-    "brand": "Lezard Agencia",
-    "rights": "© 2025 Todos los derechos reservados."
-  }
-},
   "menu": {
     "EN": "Inglés",
     "FR": "Francés",
     "ES": "Español",
-    "DE": "Alemán"
+    "DE": "Alemán",
+    "howiswork": "Cómo funciona",
+    "results": "Resultados",
+    "pricing": "Precios",
+    "about": "Sobre nosotros",
+    "cta": "5 días de prueba gratis"
   }
 }

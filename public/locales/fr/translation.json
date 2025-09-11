@@ -200,26 +200,31 @@
       "title": "Vous avez des questions ?",
       "subtitle": "Réservez votre consultation de 20 min avec notre expert !"
     },
-     "bigtitle": "Nos Tarifs"
+    "bigtitle": "Nos Tarifs"
   },
   "footer": {
-  "brandName": "Lezard Agence",
-  "links": {
-    "tutorial": "Tutoriel",
-    "contact": "Contact",
-    "terms": "Conditions Générales",
-    "privacy": "Politique de Confidentialité",
-    "sales": "Conditions de Vente"
+    "brandName": "Lezard Agence",
+    "links": {
+      "tutorial": "Tutoriel",
+      "contact": "Contact",
+      "terms": "Conditions Générales",
+      "privacy": "Politique de Confidentialité",
+      "sales": "Conditions de Vente"
+    },
+    "banner": {
+      "brand": "Lezard Agence",
+      "rights": "© 2025 Tous droits réservés."
+    }
   },
-  "banner": {
-    "brand": "Lezard Agence",
-    "rights": "© 2025 Tous droits réservés."
-  }
-},
   "menu": {
     "EN": "Anglais",
     "FR": "Français",
     "ES": "Espagnol",
-    "DE": "Allemand"
+    "DE": "Allemand",
+    "howiswork": "Comment ça marche",
+    "results": "Résultats",
+    "pricing": "Tarifs",
+    "about": "À propos",
+    "cta": "5 jours d’essai gratuits"
   }
 }
