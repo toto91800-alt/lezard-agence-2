@@ -30,7 +30,19 @@
     "n5": { "title": "Einfache Integration", "text": "Verbindet sich nahtlos mit deinen bestehenden Tools über API und native Connectoren." },
     "n6": { "title": "Sicherheit & Compliance", "text": "Geschützte Daten, DSGVO-Konformität und Ende-zu-Ende-Verschlüsselung." }
   }
-}
+},
+"reviewsfooter": {
+    "title": "Bewertungen",
+    "footer": {
+      "clemence": "Dank des Tools habe ich endlich mein Image strukturiert: +400 neue Follower/Monat, mehr qualifizierte DMs und ein professionell wirkender Feed. Ich liebe es!",
+      "ride": "Unsere Reels gehen durch die Decke und die Community wird aktiv. Mehr Engagement jede Woche und echte Fans, die zu jedem Beitrag zurückkehren.",
+      "shopnat": "Mein Instagram ist endlich durchgestartet: mehr Kunden im Laden, Stories mit mehr Aufrufen und täglich neue Nachrichten. So einfach zu steuern!",
+      "becay": "Kohärenteres Branding, funktionierendes UGC und eine Community, die konvertiert. Die Posts werden zu echten Verkaufstreibern.",
+      "mccall": "Klarer Content-Kalender, null Stress und eine wachsende Zielgruppe jede Woche. Ich habe sogar neue Kooperationen abgeschlossen.",
+      "tealer": "Mehr Sichtbarkeit, qualifizierter Traffic und eine treuere Community. Man spürt den Unterschied bei jedem Kollektionslaunch.",
+      "utopia": "Unsere Events gewinnen an Reichweite: mehr Aufrufe, mehr Shares und Tickets, die dank Reels schneller ausverkauft sind."
+    }
+  }
 
   },
   "components": {

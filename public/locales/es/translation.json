@@ -49,6 +49,18 @@
     "buttontechnologie": {
       "label": "Descubrir",
       "aria": "Descubrir la tecnología"
+    },
+    "reviewsfooter": {
+      "title": "Opiniones",
+      "footer": {
+        "clemence": "Gracias a la herramienta, por fin estructuré mi imagen: +400 nuevos seguidores/mes, más mensajes calificados y un feed con aspecto profesional. ¡Me encanta!",
+        "ride": "Nuestros Reels están triunfando y la comunidad se activa. Más engagement cada semana y verdaderos fans que vuelven en cada publicación.",
+        "shopnat": "Mi Instagram por fin despegó: más clientes en la tienda, stories vistas y mensajes todos los días. ¡Tan fácil de gestionar!",
+        "becay": "Branding más coherente, UGC que funciona y una comunidad que convierte. Las publicaciones se vuelven verdaderas palancas de ventas.",
+        "mccall": "Calendario de contenido claro, cero complicaciones y una audiencia que crece cada semana. Incluso conseguí nuevas colaboraciones.",
+        "tealer": "Más visibilidad, tráfico calificado y una comunidad más fiel. Se nota la diferencia en cada lanzamiento de colección.",
+        "utopia": "Nuestros eventos ganan alcance: más vistas, más compartidos y entradas que se venden más rápido gracias a los Reels."
+      }
     }
   },
   "menu": {

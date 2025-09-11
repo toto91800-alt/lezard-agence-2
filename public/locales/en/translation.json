@@ -21,17 +21,46 @@
       }
     },
     "benefit": {
-  "title": "Benefits",
-  "items": {
-    "n1": { "title": "New Followers", "text": "Grow your audience organically." },
-    "n2": { "title": "More likes / comments", "text": "Increase engagement on your posts." },
-    "n3": { "title": "More customers", "text": "Turn your followers into loyal, paying customers." },
-    "n4": { "title": "Actionable insights", "text": "Clear KPIs tied to your business goals — not just vanity metrics." },
-    "n5": { "title": "Simple integration", "text": "Connects to your existing tools seamlessly via API and native connectors." },
-    "n6": { "title": "Security & compliance", "text": "Protected data, GDPR compliance, and end-to-end encryption practices." }
+      "title": "Benefits",
+      "items": {
+        "n1": {
+          "title": "New Followers",
+          "text": "Grow your audience organically."
+        },
+        "n2": {
+          "title": "More likes / comments",
+          "text": "Increase engagement on your posts."
+        },
+        "n3": {
+          "title": "More customers",
+          "text": "Turn your followers into loyal, paying customers."
+        },
+        "n4": {
+          "title": "Actionable insights",
+          "text": "Clear KPIs tied to your business goals — not just vanity metrics."
+        },
+        "n5": {
+          "title": "Simple integration",
+          "text": "Connects to your existing tools seamlessly via API and native connectors."
+        },
+        "n6": {
+          "title": "Security & compliance",
+          "text": "Protected data, GDPR compliance, and end-to-end encryption practices."
+        }
+      }
+    },
+    "reviewsfooter": {
+    "title": "Reviews",
+    "footer": {
+      "clemence": "Thanks to the tool, I finally structured my image: +400 new followers/month, more qualified DMs, and a feed that looks professional. I love it!",
+      "ride": "Our Reels are booming and the community is getting active. More engagement every week and real fans coming back to every post.",
+      "shopnat": "My Instagram finally took off: more customers in-store, stories being viewed, and messages every day. So easy to manage!",
+      "becay": "More consistent branding, UGC that performs, and a community that converts. Posts are becoming real sales drivers.",
+      "mccall": "Clear content calendar, zero hassle, and an audience that grows every week. I even landed new collaborations.",
+      "tealer": "Increased visibility, qualified traffic, and a more loyal community. You can feel the difference with every collection launch.",
+      "utopia": "Our events are reaching further: more views, more shares, and tickets selling faster thanks to Reels."
+    }
   }
-}
-
   },
   "components": {
     "buttonstrike": {

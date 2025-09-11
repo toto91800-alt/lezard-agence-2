@@ -31,6 +31,18 @@
         "n5": { "title": "Intégration simple", "text": "Se connecte à vos outils existants sans friction, via API et connecteurs natifs." },
         "n6": { "title": "Sécurité & conformité", "text": "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout." }
       }
+    },
+    "reviewsfooter": {
+      "title": "Les avis",
+      "footer": {
+        "clemence": "Grâce à l’outil, j’ai enfin structuré mon image : +400 nouveaux abonnés/mois, plus de DM qualifiés et un feed qui fait pro. J’adore !",
+        "ride": "Nos Reels cartonnent et la communauté s’active. + d’engagement chaque semaine et de vrais fans qui reviennent sur chaque post.",
+        "shopnat": "Mon Instagram a enfin décollé : plus de clients en boutique, des stories vues et des messages tous les jours. Tellement simple à piloter !",
+        "becay": "Branding plus cohérent, UGC qui performe et communauté qui convertit. Les posts deviennent de vrais leviers de ventes.",
+        "mccall": "Calendrier contenu clair, zéro prise de tête et audience qui grandit chaque semaine. J’ai même décroché de nouvelles collabs.",
+        "tealer": "Visibilité en hausse, trafic qualifié et une communauté plus fidèle. On sent la différence sur chaque lancement de collection.",
+        "utopia": "Nos événements gagnent en portée : plus de vues, plus de partages et des billets qui partent plus vite grâce aux Reels."
+      }
     }
   },
   "components": {
