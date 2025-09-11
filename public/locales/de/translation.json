@@ -126,7 +126,49 @@
             "alt": "Kontinuierliche Optimierung"
           }
         }
-      }
+      },
+      "howcardsix": {
+  "title": "Eine einzigartige Technologie",
+  "items": [
+    {
+      "title": "Stories massenhaft ansehen",
+      "text": "Schau dir viele Stories an, um Aufmerksamkeit auf dein Konto zu lenken.",
+      "image": "/svg/how/story_view.svg",
+      "alt": "Sichere Verbindung"
+    },
+    {
+      "title": "Story-Likes",
+      "text": "Like bis zu 1000 Stories pro Tag, um ganz oben in der Viewer-Liste zu erscheinen.",
+      "image": "/svg/how/img-2.svg",
+      "alt": "Zielkonfiguration"
+    },
+    {
+      "title": "Follow / Unfollow",
+      "text": "Folge Personen und entfolge ihnen später wieder. Optional.",
+      "image": "/svg/how/follow_unfollow.svg",
+      "alt": "Ergebnissteuerung"
+    },
+    {
+      "title": "Post-Likes",
+      "text": "Story-Views, Likes, neue Follower – du kannst alle Aktionen Tag für Tag verfolgen.",
+      "image": "/svg/how/publication.svg",
+      "alt": "Kontinuierliche Optimierung"
+    },
+    {
+      "title": "Automatische Nachrichten",
+      "text": "Erstelle personalisierte Nachrichten für neue Follower oder für die Akquise.",
+      "image": "/svg/how/Dm.svg",
+      "alt": "Detaillierte Analyse"
+    },
+    {
+      "title": "An Umfragen teilnehmen",
+      "text": "Nimm an den Umfragen deiner Zielgruppe teil, um sie auf dein Profil aufmerksam zu machen.",
+      "image": "/svg/how/going_next.svg",
+      "alt": "Automatisierung"
+    }
+  ]
+}
+
  },
   "menu": {
     "EN": "Englisch",

@@ -1,10 +1,18 @@
-// components/how/HowCardSix.tsx
 "use client";
 
 import * as React from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { Eye, Heart, UserPlus, ThumbsUp, MessageSquare, ListChecks } from "lucide-react";
+import {
+  Eye,
+  Heart,
+  UserPlus,
+  ThumbsUp,
+  MessageSquare,
+  ListChecks,
+} from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 type HowItem = {
   title: string;
@@ -19,53 +27,30 @@ type Props = {
   title?: string;
 };
 
-const DEFAULT_ITEMS: HowItem[] = [
-  {
-    title: "Voir les stories en masse",
-    text: "Jetez un coup d'oeil a des stories de façon a attirer l'attention sur votre compte.",
-    image: "/svg/how/story_view.svg",
-    alt: "Connexion sécurisée",
-  },
-  {
-    title: "Like de stories",
-    text: "Likez jusqu'à 1000 stories par jour afin d'être en haut de la liste des visionnements.",
-    image: "/svg/how/img-2.svg",
-    alt: "Configuration des cibles",
-  },
-  {
-    title: "Follow / Unfollow",
-    text: "Suivez des personnes et par la suite, désabonnez-vous de leur compte. Facultatif.",
-    image: "/svg/how/follow_unfollow.svg",
-    alt: "Pilotage des résultats",
-  },
-  {
-    title: "Like de publications",
-    text: "Vues de stories, likes de stories, nouveaux followers, etc. Vous pouvez voir toutes vos actions, jour par jour.",
-    image: "/svg/how/publication.svg",
-    alt: "Optimisation continue",
-  },
-  {
-    title: "Message automatique",
-    text: "Créez des messages personnalisés pour vos nouveaux followers ou pour démarcher.",
-    image: "/svg/how/Dm.svg",
-    alt: "Analyse détaillée",
-  },  
-  {
-    title: "Répondez aux sondages",
-    text: "Répondez aux sondages de vos cibles afin de les attirer sur votre compte.",
-    image: "/svg/how/going_next.svg",
-    alt: "Automatisation",
-  },
-];
+export default function HowCardSix({ className, items, title }: Props) {
+  const { t } = useTranslation();
+  const [hasMounted, setHasMounted] = useState(false);
 
-export default function HowCardSix({
-  className,
-  items,
-  title = "Une technologie unique",
-}: Props) {
-  const data = (items && items.length ? items : DEFAULT_ITEMS).slice(0, 6);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
-  // Icônes dans l’ordre: œil, likes, follows, j’aime, message, sondage
+  if (!hasMounted) {
+    return null; // Ou loader si tu veux
+  }
+
+  const translated = t("howwork.howcardsix.items", {
+    returnObjects: true,
+  }) as unknown;
+
+  const translatedItems: HowItem[] = Array.isArray(translated)
+    ? (translated as HowItem[])
+    : [];
+
+  const data = (items && items.length ? items : translatedItems).slice(0, 6);
+  const finalTitle =
+    title ?? t("howwork.howcardsix.title", "Une technologie unique");
+
   const icons = [Eye, Heart, UserPlus, ThumbsUp, MessageSquare, ListChecks];
 
   return (
@@ -74,7 +59,7 @@ export default function HowCardSix({
         <div className="mx-auto w-full max-w-5xl px-4 text-center">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.2rem,8vw,6.5rem)]">
             <span className="block mt-[0.25em] text-[var(--MainTitle)] whitespace-normal">
-              {title}
+              {finalTitle}
             </span>
           </h2>
         </div>
@@ -95,7 +80,6 @@ export default function HowCardSix({
               >
                 <div className="bg-[#ffffff]">
                   <div className="relative h-[22rem] sm:h-[22rem] w-full flex items-center justify-center">
-                    {/* zone d'affichage un peu plus grande */}
                     <div className="relative w-[92%] h-[92%] sm:w-[90%] sm:h-[90%] lg:w-[86%] lg:h-[86%]">
                       <Image
                         src={card.image}

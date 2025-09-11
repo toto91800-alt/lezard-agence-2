@@ -109,7 +109,49 @@
         "alt": "Optimización continua"
       }
     }
-  }
+  },
+  "howcardsix": {
+  "title": "Una tecnología única",
+  "items": [
+    {
+      "title": "Ver historias en masa",
+      "text": "Echa un vistazo a las historias para atraer la atención hacia tu cuenta.",
+      "image": "/svg/how/story_view.svg",
+      "alt": "Conexión segura"
+    },
+    {
+      "title": "Likes de historias",
+      "text": "Dale like hasta a 1000 historias por día para aparecer arriba en la lista de visualizaciones.",
+      "image": "/svg/how/img-2.svg",
+      "alt": "Configuración de objetivos"
+    },
+    {
+      "title": "Seguir / Dejar de seguir",
+      "text": "Sigue a personas y luego deja de seguirlas. Opcional.",
+      "image": "/svg/how/follow_unfollow.svg",
+      "alt": "Gestión de resultados"
+    },
+    {
+      "title": "Likes de publicaciones",
+      "text": "Vistas de historias, likes, nuevos seguidores, etc. Puedes ver todas tus acciones día a día.",
+      "image": "/svg/how/publication.svg",
+      "alt": "Optimización continua"
+    },
+    {
+      "title": "Mensajes automáticos",
+      "text": "Crea mensajes personalizados para tus nuevos seguidores o para prospección.",
+      "image": "/svg/how/Dm.svg",
+      "alt": "Análisis detallado"
+    },
+    {
+      "title": "Responder encuestas",
+      "text": "Responde a las encuestas de tus objetivos para atraerlos a tu cuenta.",
+      "image": "/svg/how/going_next.svg",
+      "alt": "Automatización"
+    }
+  ]
+}
+
   },
   "menu": {
     "EN": "Inglés",
