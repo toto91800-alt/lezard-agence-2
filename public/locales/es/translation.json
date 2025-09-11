@@ -61,7 +61,55 @@
         "tealer": "Más visibilidad, tráfico calificado y una comunidad más fiel. Se nota la diferencia en cada lanzamiento de colección.",
         "utopia": "Nuestros eventos ganan alcance: más vistas, más compartidos y entradas que se venden más rápido gracias a los Reels."
       }
+    },
+    "resultat": {
+    "line1": "300 a 700 Nuevos",
+    "line2": "Seguidores al mes"
+  }
+  },
+  "howwork": {
+    "ctaTitle": "Empieza ahora",
+    "topTitle": "Cómo funciona paso a paso",
+    "card1": {
+    "title": "Conecta tu cuenta",
+    "text": "Vincula tu Instagram de forma segura: conexión cifrada, sin almacenamiento de contraseña.",
+    "alt": "Conexión segura"
+  },
+  "card2": {
+    "title": "Configura tus objetivos",
+    "text": "Elige cuentas competidoras, hashtags y zonas para una prospección ultraprécisa.",
+    "alt": "Configuración de objetivos"
+  },
+  "card3": {
+    "title": "Controla los resultados",
+    "text": "Inicia el crecimiento y sigue seguidores, engagement y alcance. Ajusta con un clic.",
+    "alt": "Seguimiento de resultados"
+  },
+  "cardTwo": {
+    "title": "Una interfaz pensada para los mejores",
+    "items": {
+      "1": {
+        "title": "Encuentra tus objetivos",
+        "text": "Los objetivos son cuentas competidoras y cuentas en tu nicho.",
+        "alt": "Conexión segura"
+      },
+      "2": {
+        "title": "Sigue tu progreso en tiempo real",
+        "text": "Puedes ver todas tus acciones en tiempo real.",
+        "alt": "Configuración de objetivos"
+      },
+      "3": {
+        "title": "Gestiona tus acciones",
+        "text": "Puedes gestionar todas tus acciones en tiempo real. Actívalas o desactívalas en cualquier momento. Sigue tus estadísticas.",
+        "alt": "Gestión de resultados"
+      },
+      "4": {
+        "title": "Puedes ver tus resultados",
+        "text": "Vistas de historias, likes en historias, nuevos seguidores, etc. Puedes ver todas tus acciones día a día.",
+        "alt": "Optimización continua"
+      }
     }
+  }
   },
   "menu": {
     "EN": "Inglés",

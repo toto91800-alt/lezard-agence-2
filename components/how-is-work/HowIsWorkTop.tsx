@@ -1,4 +1,3 @@
-// components/prix/About.tsx
 "use client";
 
 import * as React from "react";
@@ -6,6 +5,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import TopLabHeroBackground from "@/components/background/TopLabHeroBackground";
 import ButtonDemoOrange from "@/components/background/extra/ButtonDemoOrange";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   className?: string;
@@ -20,11 +20,20 @@ type VarStyle = React.CSSProperties & {
 
 export default function HowIsWorkTop({
   className,
-  heightMobile = 420, // ↑ plus haut sur mobile
+  heightMobile = 420,
   heightDesktop = 580,
 }: Props) {
-  const hMobile = typeof heightMobile === "number" ? `${heightMobile}px` : heightMobile;
-  const hDesktop = typeof heightDesktop === "number" ? `${heightDesktop}px` : heightDesktop;
+  const { t } = useTranslation();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const hMobile =
+    typeof heightMobile === "number" ? `${heightMobile}px` : heightMobile;
+  const hDesktop =
+    typeof heightDesktop === "number" ? `${heightDesktop}px` : heightDesktop;
 
   const styleVars: VarStyle = {
     ["--h-mobile"]: hMobile,
@@ -46,7 +55,10 @@ export default function HowIsWorkTop({
       </div>
 
       {/* Décors */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 z-[1] hidden sm:block">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[1] hidden sm:block"
+      >
         <Image
           src="/svg/coeur.svg"
           alt=""
@@ -65,7 +77,7 @@ export default function HowIsWorkTop({
         />
       </div>
 
-      {/* Titre + bouton, centrés */}
+      {/* Titre + bouton */}
       <div
         className="absolute z-[2] left-1/2 top-1/2 w-full px-4"
         style={{ transform: "translate(-50%, calc(-50% - 4vh))" }}
@@ -75,11 +87,11 @@ export default function HowIsWorkTop({
             className="
               font-bold leading-[0.98] tracking-tight text-white
               pb-4 sm:pb-6
-              text-[clamp(3rem,12vw,3.75rem)]        /* ↑ taille mobile plus grande */
-              sm:text-[clamp(2.2rem,8vw,7rem)]       /* tailles ≥ sm (inchangées) */
+              text-[clamp(3rem,12vw,3.75rem)]
+              sm:text-[clamp(2.2rem,8vw,7rem)]
             "
           >
-            Comment ça marche étape par étape
+            {mounted && t("howwork.topTitle", "Comment ça marche étape par étape")}
           </h2>
 
           <ButtonDemoOrange />

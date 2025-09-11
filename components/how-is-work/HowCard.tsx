@@ -1,10 +1,10 @@
-// components/how/HowCard.tsx
 "use client";
 
 import * as React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Lock, Target, BarChart3 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 type HowItem = {
   title: string;
@@ -15,36 +15,43 @@ type HowItem = {
 
 type Props = {
   className?: string;
-  items?: HowItem[];
 };
 
-const DEFAULT_ITEMS: HowItem[] = [
-  {
-    title: "Connectez votre compte",
-    text:
-      "Reliez votre Instagram en toute sécurité : connexion chiffrée, sans stockage du mot de passe.",
-    image: "/svg/how/setup-1.svg",
-    alt: "Connexion sécurisée",
-  },
-  {
-    title: "Configurez vos cibles",
-    text:
-      "Choisissez des comptes concurrents, hashtags et zones pour une prospection ultra précise.",
-    image: "/svg/how/setup-2.svg",
-    alt: "Configuration des cibles",
-  },
-  {
-    title: "Pilotez les résultats",
-    text:
-      "Lancez la croissance et suivez abonnés, engagement et portée. Ajustez en un clic.",
-    image: "/svg/how/setup-3.svg",
-    alt: "Pilotage des résultats",
-  },
-];
+export default function HowCard({ className }: Props) {
+  const { t } = useTranslation();
+  const [mounted, setMounted] = React.useState(false);
 
-export default function HowCard({ className, items }: Props) {
-  const data = items && items.length ? items.slice(0, 3) : DEFAULT_ITEMS;
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const icons = [Lock, Target, BarChart3];
+
+  // ⚡️ Ne pas afficher tant que pas monté
+  if (!mounted) {
+    return <section className={cn("px-4 pb-16", className)} />;
+  }
+
+  const data: HowItem[] = [
+    {
+      title: t("howwork.card1.title"),
+      text: t("howwork.card1.text"),
+      image: "/svg/how/setup-1.svg",
+      alt: t("howwork.card1.alt"),
+    },
+    {
+      title: t("howwork.card2.title"),
+      text: t("howwork.card2.text"),
+      image: "/svg/how/setup-2.svg",
+      alt: t("howwork.card2.alt"),
+    },
+    {
+      title: t("howwork.card3.title"),
+      text: t("howwork.card3.text"),
+      image: "/svg/how/setup-3.svg",
+      alt: t("howwork.card3.alt"),
+    },
+  ];
 
   return (
     <section className={cn("px-4 pb-16", className)}>
@@ -62,7 +69,6 @@ export default function HowCard({ className, items }: Props) {
                   "bg-[var(--HowBackground)]"
                 )}
               >
-                {/* Media sur fond blanc (hauteur augmentée) */}
                 <div className="bg-white">
                   <div className="relative h-56 sm:h-64 w-full flex items-center justify-center p-8">
                     <Image
@@ -76,7 +82,6 @@ export default function HowCard({ className, items }: Props) {
                   </div>
                 </div>
 
-                {/* Texte */}
                 <div className="px-6 py-5">
                   <h3 className="text-xl font-semibold text-[var(--HowTitle)]">
                     <span className="inline-flex items-center gap-2">

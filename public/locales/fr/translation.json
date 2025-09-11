@@ -6,7 +6,7 @@
     "reviews": {
       "title": "Les avis"
     },
-    
+
     "hero": {
       "line1": "Multipliez vos abonnés",
       "line2": "Instagram"
@@ -24,12 +24,30 @@
     "benefit": {
       "title": "Les Bénéfices",
       "items": {
-        "n1": { "title": "Nouveaux abonnés", "text": "Développez votre audience organiquement." },
-        "n2": { "title": "Plus de likes / commentaires", "text": "Augmentez l'engagement sur vos publications." },
-        "n3": { "title": "Plus de clients", "text": "Transformez vos abonnés en clients fidèles et payants." },
-        "n4": { "title": "Mesures actionnables", "text": "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics." },
-        "n5": { "title": "Intégration simple", "text": "Se connecte à vos outils existants sans friction, via API et connecteurs natifs." },
-        "n6": { "title": "Sécurité & conformité", "text": "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout." }
+        "n1": {
+          "title": "Nouveaux abonnés",
+          "text": "Développez votre audience organiquement."
+        },
+        "n2": {
+          "title": "Plus de likes / commentaires",
+          "text": "Augmentez l'engagement sur vos publications."
+        },
+        "n3": {
+          "title": "Plus de clients",
+          "text": "Transformez vos abonnés en clients fidèles et payants."
+        },
+        "n4": {
+          "title": "Mesures actionnables",
+          "text": "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics."
+        },
+        "n5": {
+          "title": "Intégration simple",
+          "text": "Se connecte à vos outils existants sans friction, via API et connecteurs natifs."
+        },
+        "n6": {
+          "title": "Sécurité & conformité",
+          "text": "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout."
+        }
       }
     },
     "reviewsfooter": {
@@ -43,6 +61,10 @@
         "tealer": "Visibilité en hausse, trafic qualifié et une communauté plus fidèle. On sent la différence sur chaque lancement de collection.",
         "utopia": "Nos événements gagnent en portée : plus de vues, plus de partages et des billets qui partent plus vite grâce aux Reels."
       }
+    },
+    "resultat": {
+      "line1": "300 à 700 Nouveaux",
+      "line2": "Followers par mois"
     }
   },
   "components": {
@@ -61,6 +83,50 @@
     "buttontechnologie": {
       "label": "Découvrir",
       "aria": "Découvrir la technologie"
+    }
+  },
+  "howwork": {
+    "ctaTitle": "Commencez maintenant",
+    "topTitle": "Comment ça marche étape par étape",
+    "card1": {
+      "title": "Connectez votre compte",
+      "text": "Reliez votre Instagram en toute sécurité : connexion chiffrée, sans stockage du mot de passe.",
+      "alt": "Connexion sécurisée"
+    },
+    "card2": {
+      "title": "Configurez vos cibles",
+      "text": "Choisissez des comptes concurrents, hashtags et zones pour une prospection ultra précise.",
+      "alt": "Configuration des cibles"
+    },
+    "card3": {
+      "title": "Pilotez les résultats",
+      "text": "Lancez la croissance et suivez abonnés, engagement et portée. Ajustez en un clic.",
+      "alt": "Pilotage des résultats"
+    },
+    "cardTwo": {
+      "title": "Une interface pensée pour les meilleurs",
+      "items": {
+        "1": {
+          "title": "Trouvez vos cibles",
+          "text": "Les cibles sont des comptes concurrents et des comptes dans votre niche.",
+          "alt": "Connexion sécurisée"
+        },
+        "2": {
+          "title": "Suivez votre progression en temps réel",
+          "text": "Vous pouvez voir toutes vos actions en temps réel.",
+          "alt": "Configuration des cibles"
+        },
+        "3": {
+          "title": "Gérez vos actions",
+          "text": "Vous pouvez gérer toutes vos actions en temps réel. Activez et désactivez-les à tout moment. Suivez vos statistiques.",
+          "alt": "Pilotage des résultats"
+        },
+        "4": {
+          "title": "Vous pouvez voir vos résultats",
+          "text": "Vues de stories, likes de stories, nouveaux followers, etc. Vous pouvez voir toutes vos actions, jour par jour.",
+          "alt": "Optimisation continue"
+        }
+      }
     }
   },
   "menu": {

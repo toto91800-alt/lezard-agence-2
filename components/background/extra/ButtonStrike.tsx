@@ -12,6 +12,23 @@ type Props = {
 
 export default function ButtonStrike({ className, href, onClick }: Props) {
   const { t } = useTranslation();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // ⚡️ pour éviter mismatch, retourne un squelette neutre
+    return (
+      <div
+        className={cn(
+          "px-6 py-3 rounded-full bg-orange-500 opacity-50",
+          className
+        )}
+      />
+    );
+  }
 
   const base =
     "btn-strike group relative inline-flex items-center justify-center rounded-full overflow-hidden " +
@@ -25,7 +42,13 @@ export default function ButtonStrike({ className, href, onClick }: Props) {
   const content = (
     <>
       <span className="icon-wrap mr-2 inline-grid size-6 place-items-center rounded-full bg-white/15">
-        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" className="icon-thunder">
+        <svg
+          viewBox="0 0 24 24"
+          width="16"
+          height="16"
+          aria-hidden="true"
+          className="icon-thunder"
+        >
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
         </svg>
       </span>
@@ -36,53 +59,22 @@ export default function ButtonStrike({ className, href, onClick }: Props) {
     </>
   );
 
-  return (
-    <>
-      {href ? (
-        <a href={href} className={cn(base, className)} aria-label={t("components.buttonstrike.aria")}>
-          {content}
-        </a>
-      ) : (
-        <button
-          type="button"
-          onClick={onClick}
-          className={cn(base, className)}
-          aria-label={t("components.buttonstrike.aria")}
-        >
-          {content}
-        </button>
-      )}
-
-      <style>{`
-        /* Reflet (shine) CLIPÉ à l'intérieur du bouton grâce à overflow-hidden */
-        .btn-strike.btn-strike-shine::after{
-          content:"";
-          position:absolute;
-          inset:0;
-          border-radius:inherit;
-          background: linear-gradient(120deg,
-            transparent 0%,
-            rgba(255,255,255,.35) 20%,
-            rgba(255,255,255,.35) 22%,
-            transparent 35%
-          );
-          transform: translateX(-200%);
-          pointer-events:none;
-          will-change: transform;
-        }
-        .btn-strike:hover::after{
-          animation: btnShine 900ms ease-out forwards;
-        }
-        @keyframes btnShine{
-          to { transform: translateX(200%); }
-        }
-
-        /* Éclair: tilt + léger glow au hover */
-        .btn-strike .icon-wrap { transition: transform .2s ease, filter .2s ease; color:#fff; }
-        .btn-strike:hover .icon-wrap { transform: rotate(-12deg) scale(1.1); filter: drop-shadow(0 0 10px rgba(255,255,255,.45)); }
-        .btn-strike .icon-thunder { transition: transform .2s ease; display:block; }
-        .btn-strike:hover .icon-thunder { transform: translateX(1px); }
-      `}</style>
-    </>
+  return href ? (
+    <a
+      href={href}
+      className={cn(base, className)}
+      aria-label={t("components.buttonstrike.aria")}
+    >
+      {content}
+    </a>
+  ) : (
+    <button
+      type="button"
+      onClick={onClick}
+      className={cn(base, className)}
+      aria-label={t("components.buttonstrike.aria")}
+    >
+      {content}
+    </button>
   );
 }

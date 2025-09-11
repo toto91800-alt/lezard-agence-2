@@ -6,7 +6,7 @@
     "reviews": {
       "title": "Kundenbewertungen"
     },
-   "hero": {
+    "hero": {
       "line1": "Vervielfachen Sie Ihre Follower",
       "line2": "Instagram"
     },
@@ -21,29 +21,50 @@
       }
     },
     "benefit": {
-  "title": "Vorteile",
-  "items": {
-    "n1": { "title": "Neue Follower", "text": "Wachse organisch mit deiner Community." },
-    "n2": { "title": "Mehr Likes / Kommentare", "text": "Steigere das Engagement bei deinen Beiträgen." },
-    "n3": { "title": "Mehr Kunden", "text": "Verwandle deine Follower in treue, zahlende Kunden." },
-    "n4": { "title": "Handlungsrelevante Kennzahlen", "text": "Klare KPIs, die an deine Geschäftsziele gebunden sind — nicht nur Eitelkeitsmetriken." },
-    "n5": { "title": "Einfache Integration", "text": "Verbindet sich nahtlos mit deinen bestehenden Tools über API und native Connectoren." },
-    "n6": { "title": "Sicherheit & Compliance", "text": "Geschützte Daten, DSGVO-Konformität und Ende-zu-Ende-Verschlüsselung." }
-  }
-},
-"reviewsfooter": {
-    "title": "Bewertungen",
-    "footer": {
-      "clemence": "Dank des Tools habe ich endlich mein Image strukturiert: +400 neue Follower/Monat, mehr qualifizierte DMs und ein professionell wirkender Feed. Ich liebe es!",
-      "ride": "Unsere Reels gehen durch die Decke und die Community wird aktiv. Mehr Engagement jede Woche und echte Fans, die zu jedem Beitrag zurückkehren.",
-      "shopnat": "Mein Instagram ist endlich durchgestartet: mehr Kunden im Laden, Stories mit mehr Aufrufen und täglich neue Nachrichten. So einfach zu steuern!",
-      "becay": "Kohärenteres Branding, funktionierendes UGC und eine Community, die konvertiert. Die Posts werden zu echten Verkaufstreibern.",
-      "mccall": "Klarer Content-Kalender, null Stress und eine wachsende Zielgruppe jede Woche. Ich habe sogar neue Kooperationen abgeschlossen.",
-      "tealer": "Mehr Sichtbarkeit, qualifizierter Traffic und eine treuere Community. Man spürt den Unterschied bei jedem Kollektionslaunch.",
-      "utopia": "Unsere Events gewinnen an Reichweite: mehr Aufrufe, mehr Shares und Tickets, die dank Reels schneller ausverkauft sind."
+      "title": "Vorteile",
+      "items": {
+        "n1": {
+          "title": "Neue Follower",
+          "text": "Wachse organisch mit deiner Community."
+        },
+        "n2": {
+          "title": "Mehr Likes / Kommentare",
+          "text": "Steigere das Engagement bei deinen Beiträgen."
+        },
+        "n3": {
+          "title": "Mehr Kunden",
+          "text": "Verwandle deine Follower in treue, zahlende Kunden."
+        },
+        "n4": {
+          "title": "Handlungsrelevante Kennzahlen",
+          "text": "Klare KPIs, die an deine Geschäftsziele gebunden sind — nicht nur Eitelkeitsmetriken."
+        },
+        "n5": {
+          "title": "Einfache Integration",
+          "text": "Verbindet sich nahtlos mit deinen bestehenden Tools über API und native Connectoren."
+        },
+        "n6": {
+          "title": "Sicherheit & Compliance",
+          "text": "Geschützte Daten, DSGVO-Konformität und Ende-zu-Ende-Verschlüsselung."
+        }
+      }
+    },
+    "reviewsfooter": {
+      "title": "Bewertungen",
+      "footer": {
+        "clemence": "Dank des Tools habe ich endlich mein Image strukturiert: +400 neue Follower/Monat, mehr qualifizierte DMs und ein professionell wirkender Feed. Ich liebe es!",
+        "ride": "Unsere Reels gehen durch die Decke und die Community wird aktiv. Mehr Engagement jede Woche und echte Fans, die zu jedem Beitrag zurückkehren.",
+        "shopnat": "Mein Instagram ist endlich durchgestartet: mehr Kunden im Laden, Stories mit mehr Aufrufen und täglich neue Nachrichten. So einfach zu steuern!",
+        "becay": "Kohärenteres Branding, funktionierendes UGC und eine Community, die konvertiert. Die Posts werden zu echten Verkaufstreibern.",
+        "mccall": "Klarer Content-Kalender, null Stress und eine wachsende Zielgruppe jede Woche. Ich habe sogar neue Kooperationen abgeschlossen.",
+        "tealer": "Mehr Sichtbarkeit, qualifizierter Traffic und eine treuere Community. Man spürt den Unterschied bei jedem Kollektionslaunch.",
+        "utopia": "Unsere Events gewinnen an Reichweite: mehr Aufrufe, mehr Shares und Tickets, die dank Reels schneller ausverkauft sind."
+      }
+    },
+    "resultat": {
+      "line1": "300 bis 700 Neue",
+      "line2": "Follower pro Monat"
     }
-  }
-
   },
   "components": {
     "buttonstrike": {
@@ -63,6 +84,50 @@
       "aria": "Die Technologie entdecken"
     }
   },
+  "howwork": {
+     "ctaTitle": "Jetzt starten",
+       "topTitle": "So funktioniert es Schritt für Schritt",
+       "card1": {
+        "title": "Verbinde dein Konto",
+        "text": "Verbinde dein Instagram sicher: verschlüsselte Verbindung, kein Passwortspeicher.",
+        "alt": "Sichere Verbindung"
+      },
+      "card2": {
+        "title": "Richte deine Ziele ein",
+        "text": "Wähle Konkurrenzkonten, Hashtags und Regionen für eine ultrapräzise Ansprache.",
+        "alt": "Zielkonfiguration"
+      },
+      "card3": {
+        "title": "Steuere die Ergebnisse",
+        "text": "Starte das Wachstum und verfolge Follower, Engagement und Reichweite. Passe mit einem Klick an.",
+        "alt": "Ergebnissteuerung"
+      },
+      "cardTwo": {
+        "title": "Eine Oberfläche für die Besten",
+        "items": {
+          "1": {
+            "title": "Finde deine Ziele",
+            "text": "Die Ziele sind Konkurrenzkonten und Konten in deiner Nische.",
+            "alt": "Sichere Verbindung"
+          },
+          "2": {
+            "title": "Verfolge deinen Fortschritt in Echtzeit",
+            "text": "Du kannst alle deine Aktionen in Echtzeit sehen.",
+            "alt": "Zielkonfiguration"
+          },
+          "3": {
+            "title": "Verwalte deine Aktionen",
+            "text": "Du kannst alle deine Aktionen in Echtzeit verwalten. Aktiviere oder deaktiviere sie jederzeit. Verfolge deine Statistiken.",
+            "alt": "Ergebnisverwaltung"
+          },
+          "4": {
+            "title": "Sieh dir deine Ergebnisse an",
+            "text": "Story-Views, Story-Likes, neue Follower usw. Du kannst alle deine Aktionen Tag für Tag sehen.",
+            "alt": "Kontinuierliche Optimierung"
+          }
+        }
+      }
+ },
   "menu": {
     "EN": "Englisch",
     "FR": "Französisch",

@@ -1,4 +1,3 @@
-// components/main/MainResultat.tsx
 "use client";
 
 import * as React from "react";
@@ -6,6 +5,7 @@ import Image from "next/image";
 import ButtonResultats from "@/components/background/extra/ButtonResultats";
 import BottomLabHeroBackground from "@/components/background/BottomLabHeroBackground";
 import CarouselResultats from "@/components/main/CarouselResultats";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   className?: string;
@@ -16,9 +16,11 @@ const MainResultat: React.FC<Props> = ({
   className = "",
   href = "https://app.lezard-agency.com/dashboard/plan",
 }) => {
+  const { t } = useTranslation();
+
   return (
     <section className={`relative overflow-hidden w-full ${className}`}>
-      {/* ✅ Background plein écran, légèrement agrandi */}
+      {/* ✅ Background plein écran */}
       <BottomLabHeroBackground
         className="absolute inset-0 -z-10 transform-gpu scale-[1.03]"
         height="auto"
@@ -32,7 +34,7 @@ const MainResultat: React.FC<Props> = ({
         leftTintCenter="0% 100%"
       />
 
-      {/* Décorations SVG (gauche / droite) — cachées sur mobile */}
+      {/* Décorations SVG */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 z-[1] hidden sm:block"
@@ -57,14 +59,14 @@ const MainResultat: React.FC<Props> = ({
 
       {/* Contenu */}
       <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6 py-14 sm:py-20">
-        {/* élargir le conteneur pour éviter l'overflow vers la droite */}
         <div className="mx-auto max-w-6xl text-center px-4">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
             <span className="block mt-[0.25em] text-[var(--MainTitleSecond)]">
-              <span className="block">Leur compte</span>
-              {/* garder Instagram + explose sur la même ligne */}
+              <span className="block">
+                {t("mainpage.resultat.line1", "300 à 700 Nouveaux")}
+              </span>
               <span className="block whitespace-nowrap">
-                Instagram&nbsp;explose
+                {t("mainpage.resultat.line2", "Followers par mois")}
               </span>
             </span>
           </h2>
@@ -73,7 +75,7 @@ const MainResultat: React.FC<Props> = ({
         <ButtonResultats href={href} className="mt-2" />
       </div>
 
-      {/* Carrousel + padding bottom en dessous */}
+      {/* Carrousel */}
       <div className="w-full pb-14 sm:pb-20">
         <CarouselResultats />
       </div>
