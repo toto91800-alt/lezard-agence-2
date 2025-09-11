@@ -11,7 +11,6 @@ type Props = {
   backHref?: string;
 };
 
-// Type utilitaire pour autoriser la custom property CSS
 type CSSVars = React.CSSProperties & Record<"--Prixtextcolor", string>;
 
 export default function ComingSoon({
@@ -21,6 +20,11 @@ export default function ComingSoon({
   backHref = "/",
 }: Props) {
   const { t } = useTranslation();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const styleVars: CSSVars = { "--Prixtextcolor": "#f97316" };
 
@@ -34,25 +38,28 @@ export default function ComingSoon({
       style={styleVars}
     >
       <div className="text-center px-6">
-        <h1 className="font-extrabold leading-none tracking-tight text-[clamp(2.5rem,8vw,6rem)]">
-          <span className="text-[var(--Prixtextcolor)]">{finalTitle}</span>
-        </h1>
+        {mounted && (
+          <>
+            <h1 className="font-extrabold leading-none tracking-tight text-[clamp(2.5rem,8vw,6rem)]">
+              <span className="text-[var(--Prixtextcolor)]">{finalTitle}</span>
+            </h1>
 
-        <p className="mt-4 text-base sm:text-lg text-[var(--Prixtextcolor)]">
-          {finalSubtitle}
-        </p>
+            <p className="mt-4 text-base sm:text-lg text-[var(--Prixtextcolor)]">
+              {finalSubtitle}
+            </p>
 
-        <div className="mt-8 inline-flex items-center gap-3">
-          <a
-            href={backHref}
-            className="rounded-full bg-white text-black px-5 py-2.5 font-semibold shadow-md hover:shadow-lg transition"
-          >
-            {backLabel}
-          </a>
-        </div>
+            <div className="mt-8 inline-flex items-center gap-3">
+              <a
+                href={backHref}
+                className="rounded-full bg-white text-black px-5 py-2.5 font-semibold shadow-md hover:shadow-lg transition"
+              >
+                {backLabel}
+              </a>
+            </div>
+          </>
+        )}
       </div>
 
-      {/* léger glow de fond */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 blur-3xl opacity-30"
