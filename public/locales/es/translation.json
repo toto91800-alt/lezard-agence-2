@@ -19,7 +19,19 @@
         "line1": "Nuestra tecnología",
         "line2": "de 360°"
       }
-    }
+    },
+    "benefit": {
+  "title": "Beneficios",
+  "items": {
+    "n1": { "title": "Nuevos seguidores", "text": "Haz crecer tu audiencia de forma orgánica." },
+    "n2": { "title": "Más likes / comentarios", "text": "Aumenta la interacción en tus publicaciones." },
+    "n3": { "title": "Más clientes", "text": "Convierte a tus seguidores en clientes fieles y de pago." },
+    "n4": { "title": "Métricas accionables", "text": "KPIs claros vinculados a tus objetivos de negocio — no solo métricas de vanidad." },
+    "n5": { "title": "Integración sencilla", "text": "Se conecta sin fricciones a tus herramientas existentes mediante API y conectores nativos." },
+    "n6": { "title": "Seguridad y cumplimiento", "text": "Datos protegidos, cumplimiento con RGPD y cifrado de extremo a extremo." }
+  }
+}
+
   },
   "components": {
     "buttonstrike": {

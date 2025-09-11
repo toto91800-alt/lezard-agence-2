@@ -2,6 +2,7 @@
 "use client";
 
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 // 🧠 Tablet SVGs per language
 import SVGTabletFr from "@/components/responsive/SVG-Tablet/SVGTabletFr";
@@ -15,7 +16,7 @@ import SVGBarTablet from "@/components/responsive/common/SVGBarTablet";
 type SupportedLang = "fr" | "en" | "es" | "de";
 
 type Props = {
-  /** Langue forcée (recommandé depuis un Server Component) */
+  /** Optionnel : forcer une langue depuis un Server Component */
   lang?: SupportedLang;
 };
 
@@ -28,18 +29,13 @@ const LANG_MAP: Record<SupportedLang, React.FC> = {
 };
 
 export default function TabletView({ lang }: Props) {
-  // auto-détection client si aucune prop n’est fournie
-  const [autoLang, setAutoLang] = React.useState<SupportedLang>("en");
+  const { i18n } = useTranslation();
 
-  React.useEffect(() => {
-    if (lang) return;
-    const raw = document.documentElement.lang || "en";
-    const code = (raw.split("-")[0] as SupportedLang) || "en";
-    if (code in LANG_MAP) setAutoLang(code);
-  }, [lang]);
+  // langue effective : prop > i18n > fallback
+  const detected = (i18n.language || "fr").split("-")[0] as SupportedLang;
+  const effectiveLang: SupportedLang = (lang ?? detected) as SupportedLang;
 
-  const effectiveLang: SupportedLang = lang ?? autoLang;
-  const SVGComponent = LANG_MAP[effectiveLang] ?? SVGTabletEn;
+  const SVGComponent = LANG_MAP[effectiveLang] ?? SVGTabletFr;
 
   return (
     <div
@@ -48,7 +44,7 @@ export default function TabletView({ lang }: Props) {
         alignItems: "center",
         justifyContent: "center",
         width: "100%",
-        height: "100vh",
+        height: "100%", // ← laisse ResponsiveRenderer gérer la hauteur (120vh en tablet)
         position: "relative",
         overflow: "hidden",
       }}

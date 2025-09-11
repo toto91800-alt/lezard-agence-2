@@ -20,6 +20,17 @@
         "line1": "Notre technologie",
         "line2": "à 360°"
       }
+    },
+    "benefit": {
+      "title": "Les Bénéfices",
+      "items": {
+        "n1": { "title": "Nouveaux abonnés", "text": "Développez votre audience organiquement." },
+        "n2": { "title": "Plus de likes / commentaires", "text": "Augmentez l'engagement sur vos publications." },
+        "n3": { "title": "Plus de clients", "text": "Transformez vos abonnés en clients fidèles et payants." },
+        "n4": { "title": "Mesures actionnables", "text": "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics." },
+        "n5": { "title": "Intégration simple", "text": "Se connecte à vos outils existants sans friction, via API et connecteurs natifs." },
+        "n6": { "title": "Sécurité & conformité", "text": "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout." }
+      }
     }
   },
   "components": {

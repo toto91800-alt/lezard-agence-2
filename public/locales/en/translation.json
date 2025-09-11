@@ -19,7 +19,19 @@
         "line1": "Our technology",
         "line2": "360°"
       }
-    }
+    },
+    "benefit": {
+  "title": "Benefits",
+  "items": {
+    "n1": { "title": "New Followers", "text": "Grow your audience organically." },
+    "n2": { "title": "More likes / comments", "text": "Increase engagement on your posts." },
+    "n3": { "title": "More customers", "text": "Turn your followers into loyal, paying customers." },
+    "n4": { "title": "Actionable insights", "text": "Clear KPIs tied to your business goals — not just vanity metrics." },
+    "n5": { "title": "Simple integration", "text": "Connects to your existing tools seamlessly via API and native connectors." },
+    "n6": { "title": "Security & compliance", "text": "Protected data, GDPR compliance, and end-to-end encryption practices." }
+  }
+}
+
   },
   "components": {
     "buttonstrike": {

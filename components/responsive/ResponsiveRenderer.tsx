@@ -5,7 +5,6 @@ import DesktopView from "@/components/responsive/DesktopView";
 import MobileView from "@/components/responsive/MobileView";
 import TabletView from "@/components/responsive/TabletView";
 
-
 const ResponsiveRenderer = () => {
   const [screenType, setScreenType] = useState<"mobile" | "tablet" | "desktop">("desktop");
 
@@ -34,7 +33,6 @@ const ResponsiveRenderer = () => {
 
   return (
     <>
-   
       <div
         style={{
           display: "flex",

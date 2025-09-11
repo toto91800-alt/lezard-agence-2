@@ -65,19 +65,21 @@ const MainSection: React.FC = () => {
         </div>
 
         {/* Buttons */}
-        <div className="pointer-events-auto w-full px-4 sm:px-0 pb-0 md:pb-3 lg:pb-4">
+        <div className="pointer-events-auto w-full px-4 sm:px-0">
           <div className="mx-auto flex w-full max-w-[20rem] flex-col gap-5 sm:max-w-none sm:w-auto sm:flex-row sm:items-center sm:justify-center sm:gap-4">
             <ButtonStrike
               href="https://app.lezard-agency.com/dashboard/plan"
               className="w-full sm:w-auto"
             />
-       <ButtonDemo href="https://statshybrid.vercel.app/lezard-agence/trial" className="w-full sm:w-auto" />
-
+            <ButtonDemo
+              href="https://statshybrid.vercel.app/lezard-agence/trial"
+              className="w-full sm:w-auto"
+            />
           </div>
         </div>
 
         {/* Social proof */}
-        <div className="pointer-events-auto">
+        <div className="pointer-events-auto mt-10 sm:mt-6"> {/* ⬅️ marge plus grande sur mobile */}
           <SocialProof
             images={[
               { src: "https://app.lezard-agency.com/api/ig/pdp/theo.leraillez", alt: "Alice" },

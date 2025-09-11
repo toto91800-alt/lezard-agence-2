@@ -6,6 +6,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import ButtonStrike from "@/components/background/extra/ButtonStrike";
 import TriangleTopBackground from "@/components/background/TriangleTopBackground";
+import { useTranslation } from "react-i18next";
 
 // ⬇️ Import des 6 composants de card
 import Cards1 from "@/components/main/cards/cards1";
@@ -18,45 +19,57 @@ import Cards6 from "@/components/main/cards/cards6";
 type BenefitItem = { title: string; text: string };
 type Props = { className?: string; items?: BenefitItem[] };
 
-const DEFAULT_ITEMS: BenefitItem[] = [
-  {
-    title: "Nouveux Abonnées",
-    text: "Développez votre audience organiquement.",
-  },
-  {
-    title: "Plus de likes / commentaires",
-    text: "Augmentez l'engagement sur vos publications.",
-  },
-  {
-    title: "Plus de clients",
-    text: "Transformez vos abonnés en clients fidèles et payants.",
-  },
-  {
-    title: "Mesures actionnables",
-    text: "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics.",
-  },
-  {
-    title: "Intégration simple",
-    text: "Se connecte à vos outils existants sans friction, via API et connecteurs natifs.",
-  },
-  {
-    title: "Sécurité & conformité",
-    text: "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout.",
-  },
-];
+/**
+ * ⚙️ Construit la liste par défaut depuis i18n (avec fallbacks).
+ * Cela évite les mismatches SSR/CSR si la traduction n'est pas chargée côté serveur.
+ */
+function useDefaultItems(): BenefitItem[] {
+  const { t } = useTranslation();
+
+  return [
+    {
+      title: t("mainpage.benefit.items.n1.title", "Nouveaux abonnés"),
+      text: t("mainpage.benefit.items.n1.text", "Développez votre audience organiquement."),
+    },
+    {
+      title: t("mainpage.benefit.items.n2.title", "Plus de likes / commentaires"),
+      text: t("mainpage.benefit.items.n2.text", "Augmentez l'engagement sur vos publications."),
+    },
+    {
+      title: t("mainpage.benefit.items.n3.title", "Plus de clients"),
+      text: t("mainpage.benefit.items.n3.text", "Transformez vos abonnés en clients fidèles et payants."),
+    },
+    {
+      title: t("mainpage.benefit.items.n4.title", "Mesures actionnables"),
+      text: t(
+        "mainpage.benefit.items.n4.text",
+        "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics."
+      ),
+    },
+    {
+      title: t("mainpage.benefit.items.n5.title", "Intégration simple"),
+      text: t(
+        "mainpage.benefit.items.n5.text",
+        "Se connecte à vos outils existants sans friction, via API et connecteurs natifs."
+      ),
+    },
+    {
+      title: t("mainpage.benefit.items.n6.title", "Sécurité & conformité"),
+      text: t(
+        "mainpage.benefit.items.n6.text",
+        "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout."
+      ),
+    },
+  ];
+}
 
 export default function Benefit({ className, items }: Props) {
-  const data = (items && items.length ? items : DEFAULT_ITEMS).slice(0, 6);
+  const { t } = useTranslation();
+  const defaultItems = useDefaultItems();
+  const data = (items && items.length ? items : defaultItems).slice(0, 6);
 
   // Tableau des composants de cartes par index
-  const CardComponents = [
-    Cards1,
-    Cards2,
-    Cards3,
-    Cards4,
-    Cards5,
-    Cards6,
-  ] as const;
+  const CardComponents = [Cards1, Cards2, Cards3, Cards4, Cards5, Cards6] as const;
 
   return (
     <section className={cn("relative overflow-hidden w-full", className)}>
@@ -66,10 +79,7 @@ export default function Benefit({ className, items }: Props) {
       </div>
 
       {/* ⚡ Calque d'éclairs (desktop & au-dessus) */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 z-[1] hidden sm:block"
-      >
+      <div aria-hidden className="pointer-events-none absolute inset-0 z-[1] hidden sm:block">
         <Image
           src="/svg/eclair.svg"
           alt=""
@@ -93,7 +103,9 @@ export default function Benefit({ className, items }: Props) {
         <div className="w-full px-4 flex justify-center pb-6 sm:pb-8">
           <h2 className="mx-auto text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
             <span className="block mt-[0.25em] text-white">
-              <span className="whitespace-normal">Les Bénéfices</span>
+              <span className="whitespace-normal">
+                {t("mainpage.benefit.title", "Les Bénéfices")}
+              </span>
             </span>
           </h2>
         </div>
@@ -103,21 +115,10 @@ export default function Benefit({ className, items }: Props) {
 
       {/* Grille des bénéfices */}
       <div className="relative z-[2] mx-auto max-w-7xl px-4 sm:px-6 pb-20 sm:pb-24">
-        <div
-          className={cn(
-            "grid gap-5 sm:gap-6",
-            "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
-          )}
-        >
+        <div className={cn("grid gap-5 sm:gap-6", "grid-cols-1 sm:grid-cols-2 md:grid-cols-3")}>
           {data.map((item, i) => {
             const Card = CardComponents[i] ?? Cards1;
-            return (
-              <Card
-                key={`${item.title}-${i}`}
-                title={item.title}
-                text={item.text}
-              />
-            );
+            return <Card key={`${item.title}-${i}`} title={item.title} text={item.text} />;
           })}
         </div>
 

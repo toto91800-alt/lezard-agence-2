@@ -19,7 +19,19 @@
         "line1": "Unsere Technologie",
         "line2": "in 360°"
       }
-    }
+    },
+    "benefit": {
+  "title": "Vorteile",
+  "items": {
+    "n1": { "title": "Neue Follower", "text": "Wachse organisch mit deiner Community." },
+    "n2": { "title": "Mehr Likes / Kommentare", "text": "Steigere das Engagement bei deinen Beiträgen." },
+    "n3": { "title": "Mehr Kunden", "text": "Verwandle deine Follower in treue, zahlende Kunden." },
+    "n4": { "title": "Handlungsrelevante Kennzahlen", "text": "Klare KPIs, die an deine Geschäftsziele gebunden sind — nicht nur Eitelkeitsmetriken." },
+    "n5": { "title": "Einfache Integration", "text": "Verbindet sich nahtlos mit deinen bestehenden Tools über API und native Connectoren." },
+    "n6": { "title": "Sicherheit & Compliance", "text": "Geschützte Daten, DSGVO-Konformität und Ende-zu-Ende-Verschlüsselung." }
+  }
+}
+
   },
   "components": {
     "buttonstrike": {
