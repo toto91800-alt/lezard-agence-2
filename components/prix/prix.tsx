@@ -1,4 +1,3 @@
-// components/prix/PrixSection.tsx
 "use client";
 
 import * as React from "react";
@@ -6,6 +5,8 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import TopLabHeroBackground from "@/components/background/TopLabHeroBackground";
 import SocialProof from "@/components/background/extra/SocialProof";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 type Props = {
   className?: string;
@@ -23,6 +24,13 @@ export default function PrixSection({
   heightMobile = 320,
   heightDesktop = 580,
 }: Props) {
+  const { t } = useTranslation();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const hMobile =
     typeof heightMobile === "number" ? `${heightMobile}px` : heightMobile;
   const hDesktop =
@@ -32,6 +40,8 @@ export default function PrixSection({
     ["--h-mobile"]: hMobile,
     ["--h-desktop"]: hDesktop,
   };
+
+  if (!mounted) return null;
 
   return (
     <section
@@ -47,7 +57,7 @@ export default function PrixSection({
         <TopLabHeroBackground />
       </div>
 
-      {/* Décorations SVG (gauche / droite) — cachées sur mobile */}
+      {/* Décorations SVG */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 z-[1] hidden sm:block"
@@ -70,12 +80,12 @@ export default function PrixSection({
         />
       </div>
 
-      {/* Contenu centré (titre AU-DESSUS de la SocialProof) */}
+      {/* Titre + SocialProof */}
       <div className="absolute inset-0 z-[2] flex flex-col items-center justify-center px-4 gap-4 sm:gap-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.2rem,10vw,7rem)]">
-            <span className="block mt-[0.25em] text-white">
-              <span className="whitespace-nowrap">Nos Tarifs</span>
+            <span className="block mt-[0.25em] text-white whitespace-nowrap">
+              {t("prix.bigtitle", "Nos Tarifs")}
             </span>
           </h2>
         </div>

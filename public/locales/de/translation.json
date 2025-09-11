@@ -175,25 +175,32 @@
     }
   },
   "aboutus": {
-  "title": "Jetzt starten",
-  "team": {
-    "title": "Lerne unser Team kennen"
-  },
-  "teamlarge": {
-    "roles": {
-      "gabriel": "Freelancer | Full-Stack-Entwickler",
-      "romain": "Social Media Manager | Vision & Erfahrung",
-      "hugo": "Freelancer | Full-Stack-Entwickler",
-      "mathis": "Gründer | Betrieb",
-      "theo": "Coaching & Entwicklung | Betrieb",
-      "lucien": "Full-Stack-Entwickler | Betrieb"
+    "title": "Jetzt starten",
+    "team": {
+      "title": "Lerne unser Team kennen"
+    },
+    "teamlarge": {
+      "roles": {
+        "gabriel": "Freelancer | Full-Stack-Entwickler",
+        "romain": "Social Media Manager | Vision & Erfahrung",
+        "hugo": "Freelancer | Full-Stack-Entwickler",
+        "mathis": "Gründer | Betrieb",
+        "theo": "Coaching & Entwicklung | Betrieb",
+        "lucien": "Full-Stack-Entwickler | Betrieb"
+      }
+    },
+    "contact": {
+      "title": "Hast du Fragen?",
+      "subtitle": "Buche deine 20-minütige Beratung mit unserem Experten!"
     }
   },
-  "contact": {
-    "title": "Hast du Fragen?",
-    "subtitle": "Buche deine 20-minütige Beratung mit unserem Experten!"
-  }
-},
+  "prix": {
+    "contact": {
+      "title": "Hast du Fragen?",
+      "subtitle": "Buche deine 20-minütige Beratung mit unserem Experten!"
+    },
+    "bigtitle": "Unsere Preise"
+  },
   "menu": {
     "EN": "Englisch",
     "FR": "Französisch",

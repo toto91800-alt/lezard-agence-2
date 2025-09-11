@@ -194,6 +194,13 @@
     "subtitle": "Book your 20-min consultation with our expert!"
   }
 },
+"prix": {
+  "contact": {
+    "title": "Any questions?",
+    "subtitle": "Book your 20-min consultation with our expert!"
+  },
+   "bigtitle": "Our Pricing"
+},
   "menu": {
     "EN": "English",
     "FR": "French",
