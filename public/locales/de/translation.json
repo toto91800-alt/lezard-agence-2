@@ -82,94 +82,98 @@
     "buttontechnologie": {
       "label": "Entdecken",
       "aria": "Die Technologie entdecken"
+    },
+    "comingsoon": {
+      "title": "Demnächst verfügbar",
+      "subtitle": "Diese Seite wird bald verfügbar sein.",
+      "back": "Zurück"
     }
   },
   "howwork": {
-     "ctaTitle": "Jetzt starten",
-       "topTitle": "So funktioniert es Schritt für Schritt",
-       "card1": {
-        "title": "Verbinde dein Konto",
-        "text": "Verbinde dein Instagram sicher: verschlüsselte Verbindung, kein Passwortspeicher.",
-        "alt": "Sichere Verbindung"
-      },
-      "card2": {
-        "title": "Richte deine Ziele ein",
-        "text": "Wähle Konkurrenzkonten, Hashtags und Regionen für eine ultrapräzise Ansprache.",
-        "alt": "Zielkonfiguration"
-      },
-      "card3": {
-        "title": "Steuere die Ergebnisse",
-        "text": "Starte das Wachstum und verfolge Follower, Engagement und Reichweite. Passe mit einem Klick an.",
-        "alt": "Ergebnissteuerung"
-      },
-      "cardTwo": {
-        "title": "Eine Oberfläche für die Besten",
-        "items": {
-          "1": {
-            "title": "Finde deine Ziele",
-            "text": "Die Ziele sind Konkurrenzkonten und Konten in deiner Nische.",
-            "alt": "Sichere Verbindung"
-          },
-          "2": {
-            "title": "Verfolge deinen Fortschritt in Echtzeit",
-            "text": "Du kannst alle deine Aktionen in Echtzeit sehen.",
-            "alt": "Zielkonfiguration"
-          },
-          "3": {
-            "title": "Verwalte deine Aktionen",
-            "text": "Du kannst alle deine Aktionen in Echtzeit verwalten. Aktiviere oder deaktiviere sie jederzeit. Verfolge deine Statistiken.",
-            "alt": "Ergebnisverwaltung"
-          },
-          "4": {
-            "title": "Sieh dir deine Ergebnisse an",
-            "text": "Story-Views, Story-Likes, neue Follower usw. Du kannst alle deine Aktionen Tag für Tag sehen.",
-            "alt": "Kontinuierliche Optimierung"
-          }
-        }
-      },
-      "howcardsix": {
-  "title": "Eine einzigartige Technologie",
-  "items": [
-    {
-      "title": "Stories massenhaft ansehen",
-      "text": "Schau dir viele Stories an, um Aufmerksamkeit auf dein Konto zu lenken.",
-      "image": "/svg/how/story_view.svg",
+    "ctaTitle": "Jetzt starten",
+    "topTitle": "So funktioniert es Schritt für Schritt",
+    "card1": {
+      "title": "Verbinde dein Konto",
+      "text": "Verbinde dein Instagram sicher: verschlüsselte Verbindung, kein Passwortspeicher.",
       "alt": "Sichere Verbindung"
     },
-    {
-      "title": "Story-Likes",
-      "text": "Like bis zu 1000 Stories pro Tag, um ganz oben in der Viewer-Liste zu erscheinen.",
-      "image": "/svg/how/img-2.svg",
+    "card2": {
+      "title": "Richte deine Ziele ein",
+      "text": "Wähle Konkurrenzkonten, Hashtags und Regionen für eine ultrapräzise Ansprache.",
       "alt": "Zielkonfiguration"
     },
-    {
-      "title": "Follow / Unfollow",
-      "text": "Folge Personen und entfolge ihnen später wieder. Optional.",
-      "image": "/svg/how/follow_unfollow.svg",
+    "card3": {
+      "title": "Steuere die Ergebnisse",
+      "text": "Starte das Wachstum und verfolge Follower, Engagement und Reichweite. Passe mit einem Klick an.",
       "alt": "Ergebnissteuerung"
     },
-    {
-      "title": "Post-Likes",
-      "text": "Story-Views, Likes, neue Follower – du kannst alle Aktionen Tag für Tag verfolgen.",
-      "image": "/svg/how/publication.svg",
-      "alt": "Kontinuierliche Optimierung"
+    "cardTwo": {
+      "title": "Eine Oberfläche für die Besten",
+      "items": {
+        "1": {
+          "title": "Finde deine Ziele",
+          "text": "Die Ziele sind Konkurrenzkonten und Konten in deiner Nische.",
+          "alt": "Sichere Verbindung"
+        },
+        "2": {
+          "title": "Verfolge deinen Fortschritt in Echtzeit",
+          "text": "Du kannst alle deine Aktionen in Echtzeit sehen.",
+          "alt": "Zielkonfiguration"
+        },
+        "3": {
+          "title": "Verwalte deine Aktionen",
+          "text": "Du kannst alle deine Aktionen in Echtzeit verwalten. Aktiviere oder deaktiviere sie jederzeit. Verfolge deine Statistiken.",
+          "alt": "Ergebnisverwaltung"
+        },
+        "4": {
+          "title": "Sieh dir deine Ergebnisse an",
+          "text": "Story-Views, Story-Likes, neue Follower usw. Du kannst alle deine Aktionen Tag für Tag sehen.",
+          "alt": "Kontinuierliche Optimierung"
+        }
+      }
     },
-    {
-      "title": "Automatische Nachrichten",
-      "text": "Erstelle personalisierte Nachrichten für neue Follower oder für die Akquise.",
-      "image": "/svg/how/Dm.svg",
-      "alt": "Detaillierte Analyse"
-    },
-    {
-      "title": "An Umfragen teilnehmen",
-      "text": "Nimm an den Umfragen deiner Zielgruppe teil, um sie auf dein Profil aufmerksam zu machen.",
-      "image": "/svg/how/going_next.svg",
-      "alt": "Automatisierung"
+    "howcardsix": {
+      "title": "Eine einzigartige Technologie",
+      "items": [
+        {
+          "title": "Stories massenhaft ansehen",
+          "text": "Schau dir viele Stories an, um Aufmerksamkeit auf dein Konto zu lenken.",
+          "image": "/svg/how/story_view.svg",
+          "alt": "Sichere Verbindung"
+        },
+        {
+          "title": "Story-Likes",
+          "text": "Like bis zu 1000 Stories pro Tag, um ganz oben in der Viewer-Liste zu erscheinen.",
+          "image": "/svg/how/img-2.svg",
+          "alt": "Zielkonfiguration"
+        },
+        {
+          "title": "Follow / Unfollow",
+          "text": "Folge Personen und entfolge ihnen später wieder. Optional.",
+          "image": "/svg/how/follow_unfollow.svg",
+          "alt": "Ergebnissteuerung"
+        },
+        {
+          "title": "Post-Likes",
+          "text": "Story-Views, Likes, neue Follower – du kannst alle Aktionen Tag für Tag verfolgen.",
+          "image": "/svg/how/publication.svg",
+          "alt": "Kontinuierliche Optimierung"
+        },
+        {
+          "title": "Automatische Nachrichten",
+          "text": "Erstelle personalisierte Nachrichten für neue Follower oder für die Akquise.",
+          "image": "/svg/how/Dm.svg",
+          "alt": "Detaillierte Analyse"
+        },
+        {
+          "title": "An Umfragen teilnehmen",
+          "text": "Nimm an den Umfragen deiner Zielgruppe teil, um sie auf dein Profil aufmerksam zu machen.",
+          "image": "/svg/how/going_next.svg",
+          "alt": "Automatisierung"
+        }
+      ]
     }
-  ]
-}
-
- },
+  },
   "menu": {
     "EN": "Englisch",
     "FR": "Französisch",

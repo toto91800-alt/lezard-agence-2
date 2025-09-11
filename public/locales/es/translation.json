@@ -21,17 +21,34 @@
       }
     },
     "benefit": {
-  "title": "Beneficios",
-  "items": {
-    "n1": { "title": "Nuevos seguidores", "text": "Haz crecer tu audiencia de forma orgánica." },
-    "n2": { "title": "Más likes / comentarios", "text": "Aumenta la interacción en tus publicaciones." },
-    "n3": { "title": "Más clientes", "text": "Convierte a tus seguidores en clientes fieles y de pago." },
-    "n4": { "title": "Métricas accionables", "text": "KPIs claros vinculados a tus objetivos de negocio — no solo métricas de vanidad." },
-    "n5": { "title": "Integración sencilla", "text": "Se conecta sin fricciones a tus herramientas existentes mediante API y conectores nativos." },
-    "n6": { "title": "Seguridad y cumplimiento", "text": "Datos protegidos, cumplimiento con RGPD y cifrado de extremo a extremo." }
-  }
-}
-
+      "title": "Beneficios",
+      "items": {
+        "n1": {
+          "title": "Nuevos seguidores",
+          "text": "Haz crecer tu audiencia de forma orgánica."
+        },
+        "n2": {
+          "title": "Más likes / comentarios",
+          "text": "Aumenta la interacción en tus publicaciones."
+        },
+        "n3": {
+          "title": "Más clientes",
+          "text": "Convierte a tus seguidores en clientes fieles y de pago."
+        },
+        "n4": {
+          "title": "Métricas accionables",
+          "text": "KPIs claros vinculados a tus objetivos de negocio — no solo métricas de vanidad."
+        },
+        "n5": {
+          "title": "Integración sencilla",
+          "text": "Se conecta sin fricciones a tus herramientas existentes mediante API y conectores nativos."
+        },
+        "n6": {
+          "title": "Seguridad y cumplimiento",
+          "text": "Datos protegidos, cumplimiento con RGPD y cifrado de extremo a extremo."
+        }
+      }
+    }
   },
   "components": {
     "buttonstrike": {
@@ -63,95 +80,99 @@
       }
     },
     "resultat": {
-    "line1": "300 a 700 Nuevos",
-    "line2": "Seguidores al mes"
-  }
+      "line1": "300 a 700 Nuevos",
+      "line2": "Seguidores al mes"
+    },
+    "comingsoon": {
+      "title": "Próximamente",
+      "subtitle": "Esta página estará disponible pronto.",
+      "back": "Volver"
+    }
   },
   "howwork": {
     "ctaTitle": "Empieza ahora",
     "topTitle": "Cómo funciona paso a paso",
     "card1": {
-    "title": "Conecta tu cuenta",
-    "text": "Vincula tu Instagram de forma segura: conexión cifrada, sin almacenamiento de contraseña.",
-    "alt": "Conexión segura"
-  },
-  "card2": {
-    "title": "Configura tus objetivos",
-    "text": "Elige cuentas competidoras, hashtags y zonas para una prospección ultraprécisa.",
-    "alt": "Configuración de objetivos"
-  },
-  "card3": {
-    "title": "Controla los resultados",
-    "text": "Inicia el crecimiento y sigue seguidores, engagement y alcance. Ajusta con un clic.",
-    "alt": "Seguimiento de resultados"
-  },
-  "cardTwo": {
-    "title": "Una interfaz pensada para los mejores",
-    "items": {
-      "1": {
-        "title": "Encuentra tus objetivos",
-        "text": "Los objetivos son cuentas competidoras y cuentas en tu nicho.",
-        "alt": "Conexión segura"
-      },
-      "2": {
-        "title": "Sigue tu progreso en tiempo real",
-        "text": "Puedes ver todas tus acciones en tiempo real.",
-        "alt": "Configuración de objetivos"
-      },
-      "3": {
-        "title": "Gestiona tus acciones",
-        "text": "Puedes gestionar todas tus acciones en tiempo real. Actívalas o desactívalas en cualquier momento. Sigue tus estadísticas.",
-        "alt": "Gestión de resultados"
-      },
-      "4": {
-        "title": "Puedes ver tus resultados",
-        "text": "Vistas de historias, likes en historias, nuevos seguidores, etc. Puedes ver todas tus acciones día a día.",
-        "alt": "Optimización continua"
-      }
-    }
-  },
-  "howcardsix": {
-  "title": "Una tecnología única",
-  "items": [
-    {
-      "title": "Ver historias en masa",
-      "text": "Echa un vistazo a las historias para atraer la atención hacia tu cuenta.",
-      "image": "/svg/how/story_view.svg",
+      "title": "Conecta tu cuenta",
+      "text": "Vincula tu Instagram de forma segura: conexión cifrada, sin almacenamiento de contraseña.",
       "alt": "Conexión segura"
     },
-    {
-      "title": "Likes de historias",
-      "text": "Dale like hasta a 1000 historias por día para aparecer arriba en la lista de visualizaciones.",
-      "image": "/svg/how/img-2.svg",
+    "card2": {
+      "title": "Configura tus objetivos",
+      "text": "Elige cuentas competidoras, hashtags y zonas para una prospección ultraprécisa.",
       "alt": "Configuración de objetivos"
     },
-    {
-      "title": "Seguir / Dejar de seguir",
-      "text": "Sigue a personas y luego deja de seguirlas. Opcional.",
-      "image": "/svg/how/follow_unfollow.svg",
-      "alt": "Gestión de resultados"
+    "card3": {
+      "title": "Controla los resultados",
+      "text": "Inicia el crecimiento y sigue seguidores, engagement y alcance. Ajusta con un clic.",
+      "alt": "Seguimiento de resultados"
     },
-    {
-      "title": "Likes de publicaciones",
-      "text": "Vistas de historias, likes, nuevos seguidores, etc. Puedes ver todas tus acciones día a día.",
-      "image": "/svg/how/publication.svg",
-      "alt": "Optimización continua"
+    "cardTwo": {
+      "title": "Una interfaz pensada para los mejores",
+      "items": {
+        "1": {
+          "title": "Encuentra tus objetivos",
+          "text": "Los objetivos son cuentas competidoras y cuentas en tu nicho.",
+          "alt": "Conexión segura"
+        },
+        "2": {
+          "title": "Sigue tu progreso en tiempo real",
+          "text": "Puedes ver todas tus acciones en tiempo real.",
+          "alt": "Configuración de objetivos"
+        },
+        "3": {
+          "title": "Gestiona tus acciones",
+          "text": "Puedes gestionar todas tus acciones en tiempo real. Actívalas o desactívalas en cualquier momento. Sigue tus estadísticas.",
+          "alt": "Gestión de resultados"
+        },
+        "4": {
+          "title": "Puedes ver tus resultados",
+          "text": "Vistas de historias, likes en historias, nuevos seguidores, etc. Puedes ver todas tus acciones día a día.",
+          "alt": "Optimización continua"
+        }
+      }
     },
-    {
-      "title": "Mensajes automáticos",
-      "text": "Crea mensajes personalizados para tus nuevos seguidores o para prospección.",
-      "image": "/svg/how/Dm.svg",
-      "alt": "Análisis detallado"
-    },
-    {
-      "title": "Responder encuestas",
-      "text": "Responde a las encuestas de tus objetivos para atraerlos a tu cuenta.",
-      "image": "/svg/how/going_next.svg",
-      "alt": "Automatización"
+    "howcardsix": {
+      "title": "Una tecnología única",
+      "items": [
+        {
+          "title": "Ver historias en masa",
+          "text": "Echa un vistazo a las historias para atraer la atención hacia tu cuenta.",
+          "image": "/svg/how/story_view.svg",
+          "alt": "Conexión segura"
+        },
+        {
+          "title": "Likes de historias",
+          "text": "Dale like hasta a 1000 historias por día para aparecer arriba en la lista de visualizaciones.",
+          "image": "/svg/how/img-2.svg",
+          "alt": "Configuración de objetivos"
+        },
+        {
+          "title": "Seguir / Dejar de seguir",
+          "text": "Sigue a personas y luego deja de seguirlas. Opcional.",
+          "image": "/svg/how/follow_unfollow.svg",
+          "alt": "Gestión de resultados"
+        },
+        {
+          "title": "Likes de publicaciones",
+          "text": "Vistas de historias, likes, nuevos seguidores, etc. Puedes ver todas tus acciones día a día.",
+          "image": "/svg/how/publication.svg",
+          "alt": "Optimización continua"
+        },
+        {
+          "title": "Mensajes automáticos",
+          "text": "Crea mensajes personalizados para tus nuevos seguidores o para prospección.",
+          "image": "/svg/how/Dm.svg",
+          "alt": "Análisis detallado"
+        },
+        {
+          "title": "Responder encuestas",
+          "text": "Responde a las encuestas de tus objetivos para atraerlos a tu cuenta.",
+          "image": "/svg/how/going_next.svg",
+          "alt": "Automatización"
+        }
+      ]
     }
-  ]
-}
-
   },
   "menu": {
     "EN": "Inglés",

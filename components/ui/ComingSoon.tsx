@@ -1,6 +1,8 @@
-// components/ui/ComingSoon.tsx
+"use client";
+
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   className?: string;
@@ -14,11 +16,17 @@ type CSSVars = React.CSSProperties & Record<"--Prixtextcolor", string>;
 
 export default function ComingSoon({
   className,
-  title = "Coming soon",
-  subtitle = "Cette page arrive bientôt.",
+  title,
+  subtitle,
   backHref = "/",
 }: Props) {
+  const { t } = useTranslation();
+
   const styleVars: CSSVars = { "--Prixtextcolor": "#f97316" };
+
+  const finalTitle = title ?? t("components.comingsoon.title", "Coming soon");
+  const finalSubtitle = subtitle ?? t("components.comingsoon.subtitle", "Cette page arrive bientôt.");
+  const backLabel = t("components.comingsoon.back", "Retour");
 
   return (
     <section
@@ -27,11 +35,11 @@ export default function ComingSoon({
     >
       <div className="text-center px-6">
         <h1 className="font-extrabold leading-none tracking-tight text-[clamp(2.5rem,8vw,6rem)]">
-          <span className="text-[var(--Prixtextcolor)]">{title}</span>
+          <span className="text-[var(--Prixtextcolor)]">{finalTitle}</span>
         </h1>
 
         <p className="mt-4 text-base sm:text-lg text-[var(--Prixtextcolor)]">
-          {subtitle}
+          {finalSubtitle}
         </p>
 
         <div className="mt-8 inline-flex items-center gap-3">
@@ -39,7 +47,7 @@ export default function ComingSoon({
             href={backHref}
             className="rounded-full bg-white text-black px-5 py-2.5 font-semibold shadow-md hover:shadow-lg transition"
           >
-            Retour
+            {backLabel}
           </a>
         </div>
       </div>
