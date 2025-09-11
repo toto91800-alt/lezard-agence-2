@@ -1,11 +1,15 @@
-// components/footer/MainFooter.tsx
 "use client";
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import BackgroundFooter from "@/components/background/BackgroundFooter";
-import Portfolio from "@/components/footer/footerExpert";
 import Footerprincipal from "@/components/footer/footer-principal";
+import dynamic from "next/dynamic";
+
+// Chargement dynamique uniquement côté client
+const Portfolio = dynamic(() => import("@/components/footer/footerExpert"), {
+  ssr: false,
+});
 
 type Props = {
   className?: string;

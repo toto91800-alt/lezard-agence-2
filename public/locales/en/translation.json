@@ -201,6 +201,20 @@
   },
    "bigtitle": "Our Pricing"
 },
+"footer": {
+  "brandName": "Lezard Agency",
+  "links": {
+    "tutorial": "Tutorial",
+    "contact": "Contact",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "sales": "Conditions of Sale"
+  },
+  "banner": {
+    "brand": "Lezard Agency",
+    "rights": "© 2025 All rights reserved."
+  }
+},
   "menu": {
     "EN": "English",
     "FR": "French",

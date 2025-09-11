@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Portfolio: React.FC = () => {
+  const { t } = useTranslation();
   const [fontSize, setFontSize] = useState("14rem");
   const [lineHeight, setLineHeight] = useState("1.1");
   const [wordSpacing, setWordSpacing] = useState("0.2rem");
@@ -40,13 +42,13 @@ const Portfolio: React.FC = () => {
       className="flex flex-col justify-center items-center"
       style={{
         height,
-        // ✅ toute la zone hérite de la couleur du footer
-        color: "var(--Footertextcolor)", // ajoute la var dans ton CSS (root/dark/custom)
+        color: "var(--Footertextcolor)", // Assure-toi que cette variable CSS est bien définie
       }}
     >
       {/* Titre principal */}
       <h1
         className="text-center font-semibold text-current"
+        suppressHydrationWarning={true}
         style={{
           fontSize,
           lineHeight,
@@ -56,12 +58,14 @@ const Portfolio: React.FC = () => {
           margin: 0,
         }}
       >
-        Lezard Agence
+        {t("footer.banner.brand", "Lezard Agence")}
       </h1>
 
-      {/* Texte de footer */}
-      <span className="text-center font-semibold text-current mt-2">
-        © 2025 All rights reserved.
+      <span
+        className="text-center font-semibold text-current mt-2"
+        suppressHydrationWarning={true}
+      >
+        {t("footer.banner.rights", "© 2025 All rights reserved.")}
       </span>
     </div>
   );
