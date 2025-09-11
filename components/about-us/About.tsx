@@ -1,10 +1,10 @@
-// components/prix/About.tsx
 "use client";
 
 import * as React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import TopLabHeroBackground from "@/components/background/TopLabHeroBackground";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   className?: string;
@@ -22,6 +22,8 @@ export default function About({
   heightMobile = 320,
   heightDesktop = 580,
 }: Props) {
+  const { t } = useTranslation();
+
   const hMobile = typeof heightMobile === "number" ? `${heightMobile}px` : heightMobile;
   const hDesktop = typeof heightDesktop === "number" ? `${heightDesktop}px` : heightDesktop;
 
@@ -64,16 +66,15 @@ export default function About({
         />
       </div>
 
-      {/* Titre centré + léger lift visuel */}
+      {/* Titre centré */}
       <div
         className="absolute z-[2] left-1/2 top-1/2 w-full px-4"
         style={{
-          // Centre parfait puis on remonte de 4vh pour compenser la perception visuelle du BG
           transform: "translate(-50%, calc(-50% - 4vh))",
         }}
       >
         <h2 className="mx-auto max-w-[min(92vw,1200px)] text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.2rem,8vw,7rem)] text-white">
-          Découvrez notre équipe
+          {t("aboutus.team.title", "Découvrez notre équipe")}
         </h2>
       </div>
     </section>

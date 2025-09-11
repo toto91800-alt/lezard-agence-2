@@ -2,23 +2,25 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
-type TeamMember = { name: string; role: string; image: string; };
+type TeamMember = { name: string; roleKey: string; image: string };
 
 const team: TeamMember[] = [
-  { name: 'Gabriel Frojal', role: 'Freelance | Full-Stack Developer', image: '/images/about-us/gabriel.png' },
-  { name: 'Romain Lambert', role: 'Social Media Manager | Vision & Experience', image: '/images/about-us/romain.png' },
-  { name: 'Hugo Lisoir', role: 'Freelance | Full-Stack Developer', image: '/images/about-us/hugo.png' },
-  { name: 'Mathis Giraud', role: 'Founder | Operations', image: '/images/about-us/mathis.png' },
-  { name: 'Théo Leraillez', role: 'Coaching & Development | Operations', image: '/images/about-us/TheoLeraillez.png' },
-  { name: 'Lucien Maynard', role: 'Full-Stack Developer | Operations', image: '/images/about-us/lucien-maynard.png' },
+  { name: 'Gabriel Frojal', roleKey: 'gabriel', image: '/images/about-us/gabriel.png' },
+  { name: 'Romain Lambert', roleKey: 'romain', image: '/images/about-us/romain.png' },
+  { name: 'Hugo Lisoir', roleKey: 'hugo', image: '/images/about-us/hugo.png' },
+  { name: 'Mathis Giraud', roleKey: 'mathis', image: '/images/about-us/mathis.png' },
+  { name: 'Théo Leraillez', roleKey: 'theo', image: '/images/about-us/TheoLeraillez.png' },
+  { name: 'Lucien Maynard', roleKey: 'lucien', image: '/images/about-us/lucien-maynard.png' },
 ];
 
 const AboutUs: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="px-4 pb-16">
       <div className="mx-auto max-w-7xl">
-        {/* 3 colonnes qui s'étirent, espaces plus serrés */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
           {team.map((member, index) => (
             <div
@@ -34,7 +36,6 @@ const AboutUs: React.FC = () => {
                 flex flex-col
               "
             >
-              {/* IMAGE */}
               <div className="relative w-full h-96 overflow-hidden rounded-b-3xl">
                 <Image
                   src={member.image}
@@ -46,13 +47,12 @@ const AboutUs: React.FC = () => {
                 />
               </div>
 
-              {/* TEXT */}
               <div className="px-6 py-4 text-center">
                 <h3 className="text-xl font-semibold text-[var(--AboutTitle)]">
                   {member.name}
                 </h3>
                 <p className="text-base mt-2 text-[var(--AboutText)]">
-                  {member.role}
+                  {t(`aboutus.teamlarge.roles.${member.roleKey}`)}
                 </p>
               </div>
             </div>

@@ -174,6 +174,26 @@
       ]
     }
   },
+  "aboutus": {
+  "title": "Jetzt starten",
+  "team": {
+    "title": "Lerne unser Team kennen"
+  },
+  "teamlarge": {
+    "roles": {
+      "gabriel": "Freelancer | Full-Stack-Entwickler",
+      "romain": "Social Media Manager | Vision & Erfahrung",
+      "hugo": "Freelancer | Full-Stack-Entwickler",
+      "mathis": "Gründer | Betrieb",
+      "theo": "Coaching & Entwicklung | Betrieb",
+      "lucien": "Full-Stack-Entwickler | Betrieb"
+    }
+  },
+  "contact": {
+    "title": "Hast du Fragen?",
+    "subtitle": "Buche deine 20-minütige Beratung mit unserem Experten!"
+  }
+},
   "menu": {
     "EN": "Englisch",
     "FR": "Französisch",

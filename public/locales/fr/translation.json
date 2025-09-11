@@ -175,6 +175,26 @@
       ]
     }
   },
+  "aboutus": {
+  "title": "Commencez maintenant",
+  "team": {
+    "title": "Découvrez notre équipe"
+  },
+  "teamlarge": {
+    "roles": {
+      "gabriel": "Freelance | Développeur Full-Stack",
+      "romain": "Social Media Manager | Vision & Expérience",
+      "hugo": "Freelance | Développeur Full-Stack",
+      "mathis": "Fondateur | Opérations",
+      "theo": "Coaching & Développement | Opérations",
+      "lucien": "Développeur Full-Stack | Opérations"
+    }
+  },
+  "contact": {
+    "title": "Vous avez des questions ?",
+    "subtitle": "Réservez votre consultation de 20 min avec notre expert !"
+  }
+},
   "menu": {
     "EN": "Anglais",
     "FR": "Français",

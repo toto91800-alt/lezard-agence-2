@@ -1,24 +1,42 @@
-// components/prix/contactprix.tsx
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import ButtonContact from "@/components/background/extra/ButtonContact";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   className?: string;
   title?: string;
   subtitle?: string;
-  ctaText?: string; // gardé si vous souhaitez faire évoluer ButtonStrike plus tard
+  ctaText?: string; // à voir si nécessaire
   href?: string;
   avatarSrc?: string;
 };
 
 export default function ContactAbout({
   className,
-  title = "Vous avez des questions ?",
-  subtitle = "Réservez votre consultation de 20 min avec notre expert !",
+  title,
+  subtitle,
   href = "https://calendly.com/lezard-agence/mmm?back=1&month=2025-02",
   avatarSrc = "/images/theo-leraillez.webp",
 }: Props) {
+  const { t } = useTranslation();
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) return null;
+
+  const finalTitle = title ?? t("aboutus.contact.title", "Vous avez des questions ?");
+  const finalSubtitle = subtitle ?? t(
+    "aboutus.contact.subtitle",
+    "Réservez votre consultation de 20 min avec notre expert !"
+  );
+
   return (
     <section
       className={cn("w-full px-4 sm:px-6 lg:px-8", className)}
@@ -56,20 +74,17 @@ export default function ContactAbout({
 
             <div>
               <h3 id="contact-pricing-title" className="text-2xl font-semibold sm:text-3xl">
-                {title}
+                {finalTitle}
               </h3>
               <p className="mt-2 text-base sm:text-lg opacity-80">
-                {subtitle}
+                {finalSubtitle}
               </p>
             </div>
           </div>
 
-          {/* Right: CTA (ButtonStrike) */}
+          {/* Right: CTA (ButtonContact) */}
           <div className="w-full lg:w-auto lg:pl-6">
             <ButtonContact href={href} className="w-full lg:w-auto" />
-            {/* Note : ButtonStrike contient un libellé interne.
-                Si vous souhaitez utiliser `ctaText`, faites évoluer ButtonStrike
-                pour accepter `children` ou un prop `label`. */}
           </div>
         </div>
       </div>

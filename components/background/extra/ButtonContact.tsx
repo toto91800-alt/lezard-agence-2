@@ -1,18 +1,25 @@
-// components/trial/ButtonContact.tsx
 "use client";
 
 import * as React from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
 type Props = {
   className?: string;
-  href?: string;          // si présent -> <a>
-  onClick?: () => void;   // sinon -> <button>
+  href?: string;
+  onClick?: () => void;
 };
 
 export default function ButtonContact({ className, href, onClick }: Props) {
   const { t } = useTranslation();
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) return null;
 
   const base =
     "btn-strike group relative inline-flex items-center justify-center rounded-full overflow-hidden " +
@@ -31,69 +38,28 @@ export default function ButtonContact({ className, href, onClick }: Props) {
         </svg>
       </span>
 
-      <span>{t("components.buttoncontact.label")}</span>
+      <span>{t("components.buttoncontact.label", "Prendre rendez-vous")}</span>
 
       <span className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-white/15" />
     </>
   );
 
-  return (
-    <>
-      {href ? (
-        <a
-          href={href}
-          className={cn(base, className)}
-          aria-label={t("components.buttoncontact.aria")}
-        >
-          {content}
-        </a>
-      ) : (
-        <button
-          type="button"
-          onClick={onClick}
-          className={cn(base, className)}
-          aria-label={t("components.buttoncontact.aria")}
-        >
-          {content}
-        </button>
-      )}
-
-      <style>{`
-        /* Reflet (shine) CLIPÉ à l'intérieur du bouton */
-        .btn-strike.btn-strike-shine::after{
-          content:"";
-          position:absolute;
-          inset:0;
-          border-radius:inherit;
-          background: linear-gradient(120deg,
-            transparent 0%,
-            rgba(255,255,255,.35) 20%,
-            rgba(255,255,255,.35) 22%,
-            transparent 35%
-          );
-          transform: translateX(-200%);
-          pointer-events:none;
-          will-change: transform;
-        }
-        .btn-strike:hover::after{
-          animation: btnShine 900ms ease-out forwards;
-        }
-        @keyframes btnShine{
-          to { transform: translateX(200%); }
-        }
-
-        /* Icône: tilt + léger glow au hover */
-        .btn-strike .icon-wrap { transition: transform .2s ease, filter .2s ease; color:#fff; }
-        .btn-strike:hover .icon-wrap { transform: rotate(-12deg) scale(1.1); filter: drop-shadow(0 0 10px rgba(255,255,255,.45)); }
-        .btn-strike .icon-thunder { transition: transform .2s ease; display:block; }
-        .btn-strike:hover .icon-thunder { transform: translateX(1px); }
-
-        @media (prefers-reduced-motion: reduce) {
-          .btn-strike:hover::after { animation: none; }
-          .btn-strike:hover .icon-wrap { transform: none; filter: none; }
-          .btn-strike:hover .icon-thunder { transform: none; }
-        }
-      `}</style>
-    </>
+  return href ? (
+    <a
+      href={href}
+      className={cn(base, className)}
+      aria-label={t("components.buttoncontact.aria", "Prendre rendez-vous")}
+    >
+      {content}
+    </a>
+  ) : (
+    <button
+      type="button"
+      onClick={onClick}
+      className={cn(base, className)}
+      aria-label={t("components.buttoncontact.aria", "Prendre rendez-vous")}
+    >
+      {content}
+    </button>
   );
 }

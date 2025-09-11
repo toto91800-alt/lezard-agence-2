@@ -10,10 +10,10 @@ type Avatar = { src: string; alt?: string };
 
 type Props = {
   images: Avatar[];
-  rating?: number;      // 0..5
+  rating?: number;
   usersCount?: number;
   className?: string;
-  sizePx?: number;      // diamètre
+  sizePx?: number;
 };
 
 export default function SocialProof({
@@ -24,7 +24,15 @@ export default function SocialProof({
   sizePx = 52,
 }: Props) {
   const { t } = useTranslation();
-  const formattedUsers = new Intl.NumberFormat("fr-FR").format(usersCount);
+  const [hasMounted, setHasMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) return null;
+
+  const formattedUsers = new Intl.NumberFormat().format(usersCount);
   const overlap = Math.max(8, Math.round(sizePx * 0.28));
 
   const full = Math.floor(rating);
@@ -38,7 +46,7 @@ export default function SocialProof({
         className
       )}
     >
-      {/* Avatars en cascade */}
+      {/* Avatars */}
       <div className="flex justify-center sm:justify-start">
         {images.slice(0, 5).map((img, i) => (
           <span
