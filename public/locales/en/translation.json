@@ -126,7 +126,49 @@
           "alt": "Continuous optimization"
         }
       }
+    },
+    "howcardsix": {
+  "title": "A Unique Technology",
+  "items": [
+    {
+      "title": "View Stories in Bulk",
+      "text": "Take a look at stories at scale to grab attention for your account.",
+      "image": "/svg/how/story_view.svg",
+      "alt": "Secure connection"
+    },
+    {
+      "title": "Like Stories",
+      "text": "Like up to 1,000 stories per day to stay at the top of viewers’ lists.",
+      "image": "/svg/how/img-2.svg",
+      "alt": "Target configuration"
+    },
+    {
+      "title": "Follow / Unfollow",
+      "text": "Follow people and later unfollow them. Optional.",
+      "image": "/svg/how/follow_unfollow.svg",
+      "alt": "Results management"
+    },
+    {
+      "title": "Like Posts",
+      "text": "Story views, story likes, new followers, etc. You can track all your actions, day by day.",
+      "image": "/svg/how/publication.svg",
+      "alt": "Continuous optimization"
+    },
+    {
+      "title": "Automatic Messaging",
+      "text": "Create personalized messages for your new followers or for outreach.",
+      "image": "/svg/how/Dm.svg",
+      "alt": "Detailed analytics"
+    },
+    {
+      "title": "Answer Polls",
+      "text": "Reply to your targets’ polls to attract them to your account.",
+      "image": "/svg/how/going_next.svg",
+      "alt": "Automation"
     }
+  ]
+}
+
   },
   "menu": {
     "EN": "English",

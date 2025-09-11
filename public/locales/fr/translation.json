@@ -127,6 +127,47 @@
           "alt": "Optimisation continue"
         }
       }
+    },
+    "howcardsix": {
+      "title": "Une technologie unique",
+      "items": [
+        {
+          "title": "Voir les stories en masse",
+          "text": "Jetez un coup d'oeil à des stories de façon à attirer l'attention sur votre compte.",
+          "image": "/svg/how/story_view.svg",
+          "alt": "Connexion sécurisée"
+        },
+        {
+          "title": "Like de stories",
+          "text": "Likez jusqu'à 1000 stories par jour afin d'être en haut de la liste des visionnements.",
+          "image": "/svg/how/img-2.svg",
+          "alt": "Configuration des cibles"
+        },
+        {
+          "title": "Follow / Unfollow",
+          "text": "Suivez des personnes et par la suite, désabonnez-vous de leur compte. Facultatif.",
+          "image": "/svg/how/follow_unfollow.svg",
+          "alt": "Pilotage des résultats"
+        },
+        {
+          "title": "Like de publications",
+          "text": "Vues de stories, likes de stories, nouveaux followers, etc. Vous pouvez voir toutes vos actions, jour par jour.",
+          "image": "/svg/how/publication.svg",
+          "alt": "Optimisation continue"
+        },
+        {
+          "title": "Message automatique",
+          "text": "Créez des messages personnalisés pour vos nouveaux followers ou pour démarcher.",
+          "image": "/svg/how/Dm.svg",
+          "alt": "Analyse détaillée"
+        },
+        {
+          "title": "Répondez aux sondages",
+          "text": "Répondez aux sondages de vos cibles afin de les attirer sur votre compte.",
+          "image": "/svg/how/going_next.svg",
+          "alt": "Automatisation"
+        }
+      ]
     }
   },
   "menu": {
