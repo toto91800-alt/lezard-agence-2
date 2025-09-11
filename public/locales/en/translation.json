@@ -87,6 +87,265 @@
       "title": "Coming soon",
       "subtitle": "This page is coming soon.",
       "back": "Back"
+    },
+    "ConditionsOfSale": {
+      "title": "General Terms of Sale Software",
+      "block": {
+        "section1": {
+          "title": "General Subscription Terms",
+          "p1": "These General Subscription Terms bind the Provider and the Client upon subscription to the contract.",
+          "p2": "When the Client subscribes, they are invited to accept these General Subscription Terms.",
+          "p3": "It is recommended that the Client print or save them on their computer for future reference.",
+          "p4": "If the Client does not wish to be bound by these Terms, they must not accept them. Otherwise, they cannot subscribe.",
+          "p5": "If the Client does not accept the general sales terms and website usage terms at",
+          "p6": "Unless otherwise stated, these General Subscription Terms apply to subscription offers via the website."
+        },
+        "section2": {
+          "title": "ARTICLE 2 – Informations légales",
+          "p1": "Le Client est tenu de prendre connaissance des présentes Conditions Générales d'Abonnement...",
+          "p2": "Le site internet présente les principales caractéristiques des services...",
+          "p3": "Le Client reconnaît qu'il est responsable de son abonnement...",
+          "p4": "Les coordonnées du Prestataire sont les suivantes :",
+          "p5": "Ces Conditions Générales d'Abonnement sont accessibles à tout moment...",
+          "p6": "Les Conditions Générales d'Abonnement ne concernent que le service LEZARD AGENCE...",
+          "p7": "Sauf preuve contraire, les données enregistrées dans le système...",
+          "p8": "Conformément à la Loi Informatique et Libertés...",
+          "p9": "Le Client dispose d'un droit d'accès, de rectification...",
+          "p10": "Le Client déclare avoir pris connaissance et accepté...",
+          "line1": "Société Lezard Agence",
+          "line2": "AUTO ENTREPRENEUR",
+          "line3": "",
+          "line4": ""
+        },
+        "section3": {
+          "title": "ARTICLE 2 – Description of Services",
+          "p1": "The LEZARD AGENCE service is subscribed to primarily by the Client.",
+          "p2": "Additional or optional services may be added, requiring the subscription of specific options.",
+          "p3": "The Client has a 14-day withdrawal period from the date of contract conclusion, which they can exercise by sending the withdrawal form or any other unambiguous letter by registered mail with acknowledgment of receipt.",
+          "p4": "The Service will be accessible once this 14-day period has expired.",
+          "p5": "The Client may expressly request to benefit from the Service within 2 business days after payment."
+        },
+        "section4": {
+          "title": "ARTICLE 4 – Payment Terms",
+          "p1": "Payment for services is made online using the secure payment methods available on the website.",
+          "p2": "Subscriptions are billed on a recurring basis according to the period chosen by the Client (monthly or yearly).",
+          "p3": "The Client agrees to maintain valid and up-to-date payment information throughout the subscription period.",
+          "p4": "In the event of payment failure or billing issues, access to services may be suspended until the issue is resolved.",
+          "address": {
+            "line1": "Lezard Agence",
+            "line2": "",
+            "email": "contact@lezard-agency.com"
+          },
+          "p5": "Any price modifications will be communicated to the Client before application, with the possibility to cancel the subscription.",
+          "p6": "No refunds can be claimed outside of the legal withdrawal period."
+        },
+        "section5": {
+          "title": "ARTICLE 5 – Subscription Activation",
+          "p1": "The day of the month when the Client subscribes online will automatically be defined as the contract's anniversary date.",
+          "p2": "Contractual information is presented in French and is confirmed at the latest at the time of subscription validation by the Client.",
+          "p3": "The Client has the ability to check the details of their subscription, its total price, and correct any errors before confirming acceptance (Article 1127-2 of the Civil Code).",
+          "p4": "This validation implies acceptance of the entirety of the General Subscription Terms as well as the General Terms of Sale and General Terms of Use of the website.",
+          "p5": "It is the Client's responsibility to verify the accuracy of the contract and immediately report any errors.",
+          "p6": "The Client's subscription will only be considered final after the confirmation of acceptance by the Provider via email and after full payment has been received.",
+          "p7": "Any subscription made on the website constitutes the formation of a remote contract between the Client and the Provider.",
+          "p8": "The Provider reserves the right to cancel or refuse any subscription from a Client with whom there is an ongoing dispute related to the payment of a previous contract.",
+          "p9": "The Client is solely responsible for the number of subscriptions they take out on the website. Subscribing to multiple subscriptions by the same Client does not constitute a valid reason for contract termination."
+        },
+        "section6": {
+          "title": "ARTICLE 6 – Contract Renewal",
+          "p1": "The subscription contract is entered into for a fixed period of 1 month with automatic renewal for the same period.",
+          "p2": "According to Article L 215-1 of the Consumer Code, literally reproduced:",
+          "p3": "« For service contracts concluded for a fixed period with an automatic renewal clause, the service provider informs the consumer in writing...",
+          "p4": "If this information is not provided as required in the first paragraph, the consumer may terminate the contract free of charge...",
+          "p5": "Advance payments made after the last renewal date or, in the case of contracts of indefinite duration...",
+          "p6": "Under Article L 215-3 of the Consumer Code, the provisions of this chapter also apply to contracts concluded between professionals and non-professionals."
+        },
+        "section7": {
+          "title": "ARTICLE 6.1 – Financial Terms",
+          "subtitle1": "6-1. Pricing",
+          "tarif1": "Premium Subscription: €269.99 incl. VAT/month (€224.99 excl. VAT)",
+          "tarif2": "Expert Subscription: €339.99 incl. VAT/month (€283.33 excl. VAT)",
+          "tarif3": "Premium Subscription (-20%): €214.99 incl. VAT/month (€179.99 excl. VAT)",
+          "tarif4": "Expert Subscription (-20%): €269.99 incl. VAT/month (€226.66 excl. VAT)",
+          "tarif5": "Premium Subscription (-30%): €189.99 incl. VAT/month (€158.33 excl. VAT)",
+          "tarif6": "Expert Subscription (-30%): €239.99 incl. VAT/month (€199.99 excl. VAT)",
+          "p1": "The Client may cancel their subscription at any time by contacting:",
+          "p2": "The Service Provider reserves the right to change its pricing. In such a case, the Client will be informed one month before the new prices take effect.",
+          "p3": "If the Client refuses a price increase applied to the LEZARD AGENCE service, they may cancel their subscription before the new prices take effect.",
+          "subtitle2": "6-2. Invoicing and Payment",
+          "p4": "Invoices are issued monthly in advance and are payable on the date indicated on the invoice.",
+          "p5": "Payment may be made via:",
+          "payment1": "SEPA direct debit",
+          "payment2": "Credit card via the approved payment provider Stripe",
+          "p6": "The 'Online Invoice' option is enabled by default upon subscription, unless explicitly requested otherwise by the Client.",
+          "p7": "The Client can request to view their invoices by sending an email to:",
+          "p8": "The Client agrees to notify the Service Provider of any change to their email address.",
+          "subtitle3": "6-3. Non-payment",
+          "p9": "In the event of non-payment, the amounts due to the Service Provider will be subject to late payment interest, calculated from the date a formal notice is received.",
+          "p10": "If a Client's payment is declined, additional fees may be applied in accordance with Article 32 of the Law of July 9, 1991.",
+          "p11": "In the case of unpaid amounts, the Service Provider may:",
+          "penalty1": "Restrict access to the LEZARD AGENCE service",
+          "penalty2": "Suspend services linked to the Client's other accounts",
+          "penalty3": "Exercise its rights to recover unpaid amounts"
+        },
+        "section8": {
+          "title": "ARTICLE 6.2 – Provider's Obligations",
+          "p1": "The Provider undertakes to fulfill any subscription request within the limits of the IT system's capacity and service quality constraints.",
+          "p2": "It undertakes to make every effort to ensure the permanence, continuity, and quality of the service for which the subscription is taken out.",
+          "p3": "However, the Provider is only bound by an obligation of means and cannot be held responsible for technical issues such as:",
+          "list1": "Occasional updates of INSTAGRAM",
+          "list2": "Server migrations",
+          "list3": "Temporary suspension of service due to an action by the Client beyond the Provider's control (password change, failure to verify identity with the INSTAGRAM application…)",
+          "p4": "The Provider cannot be held responsible for discrepancies between the number of followers indicated in the offers and those actually received. The indicated follower counts are for informational purposes only and may vary due to external factors.",
+          "p5": "This list is not exhaustive. These services will be provided within a maximum of 48 hours from the final validation of the Client's subscription, in accordance with the provisions of these General Subscription Conditions.",
+          "p6": "If the ordered services have not been provided within 48 hours after the indicative delivery date, for any reason other than force majeure or the Client's fault, the contract may be terminated at the Client's written request.",
+          "p7": "The amounts paid by the Client will then be refunded within 14 days after the termination of the contract, without compensation or deduction.",
+          "p8": "Unless express reservations or claims are made by the Client upon receipt of the Services, they will be deemed to conform to the order in quantity and quality.",
+          "p9": "The Client has a period of 7 days from the provision of the Services to submit, in writing, any complaint with supporting documents to the Provider.",
+          "p10": "No claim will be validly accepted if the Client fails to comply with the deadlines and procedures.",
+          "p11": "The Provider will reimburse or correct the service as soon as possible and at its own expense, in accordance with the appropriate methods agreed upon by the Client, for any duly proven non-compliance."
+        },
+        "section9": {
+          "title": "ARTICLE 7 – Client Obligations",
+          "p1": "Upon validation of the Client's subscription to the LEZARD AGENCE service, they will receive a username and password allowing them to access the service on the website.",
+          "p2": "It is important to note that, from the moment the contract is signed, the Client must provide their Instagram account login credentials. This information is essential to ensure the proper execution of the agreed services.",
+          "p3": "The Client agrees to use the subscribed offer in accordance with its intended purpose and the defined commercial terms.",
+          "p4": "The Client is prohibited from any commercial use of the website access provided to them.",
+          "p5": "Information and documents provided by the Provider may not be transferred or made available to any third party in any form.",
+          "p6": "Any fraudulent use of the website or any use contrary to these terms engages the Client’s personal liability.",
+          "p7": "In case of any modification to their banking details, addresses (postal or email), or any other essential information for the proper functioning of the service, the Client agrees to inform the Provider without delay and to update these details.",
+          "p8": "The Client agrees to comply with the laws and regulations in force.",
+          "p9": "The Provider expressly informs the Client that the Internet is not a secure network. Therefore, it is the Client’s responsibility to take all necessary measures to protect their data and software, both before and after the implementation of the services.",
+          "p10": "The Client agrees to comply with the terms and conditions of any software license used within the scope of the Service.",
+          "p11": "The Client also agrees to respect third-party intellectual property rights and obtain, if necessary, prior authorization for any protected content (texts, images, videos, sounds, etc.).",
+          "p12": "Furthermore, the Client acknowledges that the violation of copyright or related rights (e.g., reproduction, representation, or public communication of protected works) constitutes an act of counterfeiting, punishable by civil and/or criminal penalties."
+        },
+        "section10": {
+          "title": "ARTICLE 8 – Suspension – Termination of the Contract",
+          "subtitle1": "8-1. Suspension",
+          "p1": "The Service Provider reserves the right to restrict access to all or part of the Services subscribed to by the Client, after notifying them, without the Client being entitled to any compensation, in the following cases:",
+          "reason1": "Failure to comply with any of the Client’s obligations",
+          "reason2": "Non-payment of due amounts by the deadline",
+          "reason3": "Violation of legal provisions, particularly those concerning public order and morality",
+          "reason4": "Actions that disrupt the website",
+          "p2": "In the event of a suspension, regardless of the cause, the Client remains bound by their obligations. The suspension of Services does not result in the suspension of billing.",
+          "p3": "Services may be interrupted in the event of force majeure.",
+          "subtitle2": "8-2. Termination at the initiative of the Service Provider",
+          "p4": "The Service Provider may terminate the Client’s contract without compensation in the following cases:",
+          "reason5": "False statements by the Client regarding the contract",
+          "reason6": "Failure by the Client to fulfill their obligations",
+          "reason7": "Non-payment of due amounts following a formal notice that remains unaddressed",
+          "reason8": "Force majeure affecting the Service Provider for more than 15 days",
+          "reason9": "Judicial reorganization proceedings: If the court-appointed administrator explicitly or implicitly decides not to continue the contract, or in the event of a court-ordered liquidation.",
+          "reason10": "Fraudulent creation of a new account: if the Client creates a new account using another email address and links an Instagram account already used to benefit again from the 5-day free trial, they will be automatically charged. The free trial is valid for only one unique Instagram account. The Service Provider reserves the right to charge any attempt to bypass this rule.",
+          "reason11": "Early termination of a contractual commitment: in the case of a subscription with a 3 or 6-month commitment, if the Client voluntarily terminates the contract before the end of the term, they will be required to pay 70% of the remaining amount due. In case of non-payment, the Service Provider reserves the right to take legal action.",
+          "p5": "Termination of the contract for any of the above-mentioned reasons may only occur 30 days after receipt of a formal notice stating the intention to invoke this clause. This notification shall be sent by registered letter with acknowledgment of receipt or by any extrajudicial means."
+        },
+        "section11": {
+          "title": "ARTICLE 9 – Personal Data (DCP)",
+          "subtitle1": "9-1. Applicable Laws",
+          "p1": "Pursuant to Law 78-17 of January 6, 1978, as amended by Law No. 2018-493 of June 20, 2018, it is reminded that the personal data requested from the Client is necessary for processing their subscription contract and issuing invoices.",
+          "p2": "The Provider takes appropriate measures to ensure the protection and confidentiality of the DCP in its possession concerning Clients and processes it in accordance with the provisions of Law No. 78-17 of January 6, 1978, as amended, relating to computing, files, and freedoms, as well as the applicable European regulations on personal data protection.",
+          "p3": "The processing of information communicated via the website meets legal requirements regarding personal data protection. The information system used ensures optimal protection of this data.",
+
+          "subtitle2": "9-2. Contact",
+          "p4": "The data controller for the DCP is LEZARD AGENCE, whose registered office is:",
+          "address": {
+            "line1": "LEZARD AGENCE Company",
+            "line2": "",
+            "line3": ""
+          },
+
+          "subtitle3": "9-3. Nature of Data",
+          "p5": "DCP is collected by the Provider in connection with the Client's subscription and use of services.",
+
+          "subtitle4": "9-4. Purposes",
+          "p6": "The processing of DCP is intended for:",
+          "purpose1": "Managing the Client's account (preventing unpaid amounts, combating fraud)",
+          "purpose2": "Billing for third-party services",
+          "purpose3": "Identifying and authenticating the Client",
+          "purpose4": "Managing pre-litigation, litigation, and unpaid amounts",
+          "purpose5": "Managing the rights of individuals and their requests",
+          "purpose6": "Providing and ensuring the proper functioning of the Service",
+          "purpose7": "Hosting Client data",
+          "purpose8": "Developing LEZARD AGENCE's services",
+          "purpose9": "Conducting statistical studies, analysis, and audience measurement",
+          "purpose10": "Enriching and enhancing the customer database",
+          "purpose11": "Communicating with the Client about the Services",
+
+          "subtitle5": "9-5. Retention Periods",
+          "p7": "DCP is retained for:",
+          "retention1": "The duration of service provision",
+          "retention2": "The specific duration for the processing to which the Client has consented",
+          "retention3": "The legally required retention periods",
+
+          "subtitle6": "9-6. Recipients",
+          "p8": "DCP may be processed by:",
+          "recipient1": "Authorized personnel of the Provider",
+          "recipient2": "Subcontractors, partners, or service providers of LEZARD AGENCE",
+          "p9": "If these entities are located outside the European Union, they must:",
+          "transfer1": "Be subject to an adequacy decision by the European Commission",
+          "transfer2": "Sign standard contractual clauses",
+          "p10": "A copy of these documents can be obtained from the Provider.",
+
+          "subtitle7": "9-7. Rights of Individuals",
+          "p11": "The Client may exercise their rights at any time:",
+          "rights1": "Access, modification, rectification, and deletion of their DCP",
+          "rights2": "Objection to processing",
+          "rights3": "Data portability",
+
+          "contact": {
+            "postal": "By mail:",
+            "email": "Electronically:"
+          },
+
+          "p12": "The Client may submit a request by mail, providing their full name, phone number, and a copy of their ID.",
+          "p13": "The Client may file a complaint with the CNIL in case of a violation of their rights."
+        },
+        "section12": {
+          "title": "ARTICLE 10 – Intellectual Property",
+          "subtitle": "Intellectual Property",
+          "p1": "The content of the website",
+          "p2": "is the exclusive property of the Provider and its partners. It is protected by French and international laws on intellectual property.",
+          "p3": "Any total or partial reproduction of this content is strictly prohibited and may constitute an act of counterfeiting.",
+          "p4": "Furthermore, the Provider retains all intellectual property rights over the following elements, whether created on its own initiative or at the Client's request:",
+          "list1": "Photographs",
+          "list2": "Presentations",
+          "list3": "Studies",
+          "list4": "Drawings",
+          "list5": "Models",
+          "list6": "Prototypes",
+          "p5": "The Client is therefore prohibited from reproducing or exploiting these elements without the express written authorization of the Provider. This authorization may be subject to financial compensation."
+        },
+        "section13": {
+          "title": "ARTICLE 11 – Complaints",
+          "subtitle": "Complaints",
+          "p1": "Any complaint must be submitted exclusively via the live chat, available in the 'Support' section of the client area on the website:",
+          "p2": "No complaints will be accepted if submitted by any other means, including:",
+          "method1": "📞 Phone",
+          "method2": "📱 Social media",
+          "method3": "📧 Emails"
+        },
+        "section14": {
+          "title": "ARTICLE 12 – Applicable Law – Language",
+          "subtitle1": "Applicable Law",
+          "p1": "These General Subscription Terms and the resulting operations are governed by and subject to French law.",
+          "p2": "These conditions are written in French. In case of translation into one or more foreign languages, only the French text shall be legally binding in case of a dispute."
+        },
+        "section15": {
+          "title": "ARTICLE 13 – Disputes",
+          "subtitle1": "Disputes and Mediation",
+          "p1": "All disputes arising from the application of these General Subscription Terms, concerning their validity, interpretation, execution, termination, and their consequences, which could not be resolved amicably between the Provider and the Client, will be submitted to the competent courts under French law.",
+          "p2": "The Client is informed that they may resort to conventional mediation, particularly with:",
+          "reason1": "The Consumer Mediation Commission (Article L 612-1 of the Consumer Code)",
+          "reason2": "Existing sectoral mediation bodies, whose references are available on the website",
+          "reason3": "Any other alternative dispute resolution method in case of disagreement",
+          "p3": "In case of a violation of the General Data Protection Regulation (GDPR), the Client may:",
+          "gdpr1": "Mandate an association or a specialized organization mentioned in IV of Article 43 ter of the Data Protection and Freedom Law of 1978",
+          "gdpr2": "Initiate proceedings against the data controller or the processor before a civil or administrative court",
+          "gdpr3": "Directly file a complaint with the National Commission on Informatics and Liberties (CNIL)"
+        }
+      }
     }
   },
   "howwork": {
@@ -175,46 +434,46 @@
     }
   },
   "aboutus": {
-  "title": "Get started now",
-  "team": {
-    "title": "Meet our team"
-  },
-  "teamlarge": {
-    "roles": {
-      "gabriel": "Freelance | Full-Stack Developer",
-      "romain": "Social Media Manager | Vision & Experience",
-      "hugo": "Freelance | Full-Stack Developer",
-      "mathis": "Founder | Operations",
-      "theo": "Coaching & Development | Operations",
-      "lucien": "Full-Stack Developer | Operations"
+    "title": "Get started now",
+    "team": {
+      "title": "Meet our team"
+    },
+    "teamlarge": {
+      "roles": {
+        "gabriel": "Freelance | Full-Stack Developer",
+        "romain": "Social Media Manager | Vision & Experience",
+        "hugo": "Freelance | Full-Stack Developer",
+        "mathis": "Founder | Operations",
+        "theo": "Coaching & Development | Operations",
+        "lucien": "Full-Stack Developer | Operations"
+      }
+    },
+    "contact": {
+      "title": "Any questions?",
+      "subtitle": "Book your 20-min consultation with our expert!"
     }
   },
-  "contact": {
-    "title": "Any questions?",
-    "subtitle": "Book your 20-min consultation with our expert!"
-  }
-},
-"prix": {
-  "contact": {
-    "title": "Any questions?",
-    "subtitle": "Book your 20-min consultation with our expert!"
+  "prix": {
+    "contact": {
+      "title": "Any questions?",
+      "subtitle": "Book your 20-min consultation with our expert!"
+    },
+    "bigtitle": "Our Pricing"
   },
-   "bigtitle": "Our Pricing"
-},
-"footer": {
-  "brandName": "Lezard Agency",
-  "links": {
-    "tutorial": "Tutorial",
-    "contact": "Contact",
-    "terms": "Terms & Conditions",
-    "privacy": "Privacy Policy",
-    "sales": "Conditions of Sale"
+  "footer": {
+    "brandName": "Lezard Agency",
+    "links": {
+      "tutorial": "Tutorial",
+      "contact": "Contact",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "sales": "Conditions of Sale"
+    },
+    "banner": {
+      "brand": "Lezard Agency",
+      "rights": "© 2025 All rights reserved."
+    }
   },
-  "banner": {
-    "brand": "Lezard Agency",
-    "rights": "© 2025 All rights reserved."
-  }
-},
   "menu": {
     "EN": "English",
     "FR": "French",
