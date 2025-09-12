@@ -25,7 +25,7 @@
       "items": {
         "n1": {
           "title": "Neue Follower",
-          "text": "Wachse organisch mit deiner Community."
+         "text": "300 bis 700 Neue Follower pro Monat. Steigere dein organisches Wachstum."
         },
         "n2": {
           "title": "Mehr Likes / Kommentare",
@@ -36,16 +36,16 @@
           "text": "Verwandle deine Follower in treue, zahlende Kunden."
         },
         "n4": {
-          "title": "Handlungsrelevante Kennzahlen",
-          "text": "Klare KPIs, die an deine Geschäftsziele gebunden sind — nicht nur Eitelkeitsmetriken."
+          "title": "Verfolge deine Ergebnisse",
+          "text": "Zwischen 2% und 5% Steigerung der Engagement-Rate. Überwache in Echtzeit die Aktionen und Statistiken deines Kontos."
         },
         "n5": {
           "title": "Einfache Integration",
-          "text": "Verbindet sich nahtlos mit deinen bestehenden Tools über API und native Connectoren."
+         "text": "Einfache Verbindung mit einer Benutzeroberfläche, die für Automatisierung und Anpassung an deine Präferenzen entwickelt wurde."
         },
         "n6": {
           "title": "Sicherheit & Compliance",
-          "text": "Geschützte Daten, DSGVO-Konformität und Ende-zu-Ende-Verschlüsselung."
+          "text": "Sicheres Instagram-Konto und geschützte Daten, DSGVO-konform."
         }
       }
     },
@@ -345,6 +345,304 @@
           "gdpr2": "Ein Verfahren gegen den Verantwortlichen für die Datenverarbeitung oder den Auftragsverarbeiter vor einem Zivil- oder Verwaltungsgericht einleiten",
           "gdpr3": "Direkt eine Beschwerde bei der Nationalen Kommission für Informatik und Freiheiten (CNIL) einreichen"
         }
+      }
+    },
+    "PrivacyPolicy": {
+      "title": "Política de privacidad y cookies",
+      "section1": {
+        "title": "Datenschutz",
+        "p1": "Lezard Agency legt großen Wert auf den Schutz personenbezogener Daten und den Respekt der Privatsphäre aller Personen, die auf unser digitales Ökosystem zugreifen.",
+        "p2": "Diese Seite beschreibt die Arten von personenbezogenen Daten, die Lezard Agency über Besucher unserer Website erfassen kann, sowie wie wir und unsere Unterauftragnehmer diese Daten verwenden und zu welchen Zwecken.",
+        "p3": "Diese Datenschutzrichtlinie (im Folgenden 'Richtlinie') enthält auch wichtige Informationen über Ihre Rechte und darüber, wie Ihre personenbezogenen Daten geschützt werden.",
+        "p4": "Alle Vorgänge mit Ihren personenbezogenen Daten erfolgen in Übereinstimmung mit den geltenden Vorschriften, einschließlich:",
+        "list": {
+          "item1": "Die Europäische Verordnung Nr. 2016/679 vom 27. April 2016 (DSGVO)",
+          "item2": "Das Gesetz Nr. 78-17 'Informatik und Freiheiten' vom 6. Januar 1978, geändert"
+        },
+        "p5": "Durch die weitere Nutzung unserer Website (im Folgenden 'Website') bestätigen Sie, dass Sie diese Richtlinie sowie die allgemeinen Nutzungsbedingungen unserer Website gelesen und akzeptiert haben."
+      },
+      "section2": {
+        "title": "Wer sammelt personenbezogene Daten (Identität des Datenverantwortlichen)?",
+        "p1": "Diese Website wird von Lezard Agency verwaltet",
+        "address": "",
+        "p2": "Lezard Agency ist unter der SIREN-Nummer im Handels- und Gesellschaftsregister [Stadt oder Region] eingetragen.",
+        "p3": "Lezard Agency hat einen Datenschutzbeauftragten (DPO) ernannt, den Sie per E-Mail unter folgender Adresse kontaktieren können:",
+        "email": "contact@lezard-agency.com"
+      },
+      "section3": {
+        "title": "Welche personenbezogenen Daten werden erfasst?",
+        "p1": "Der Begriff 'personenbezogene Daten' bezeichnet alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen, direkt oder indirekt.",
+        "p2": "Die von Lezard Agency erfassten personenbezogenen Daten beinhalten Informationen über Sie, die uns ermöglichen, Sie zu identifizieren, wie zum Beispiel:",
+        "data1": {
+          "title": "Identifikationsdaten:",
+          "item1": "Vor- und Nachname",
+          "item2": "E-Mail-Adresse",
+          "item3": "Telefonnummer"
+        },
+        "data2": {
+          "title": "Verbindungsdaten:",
+          "item1": "IP-Adresse",
+          "item2": "Browserverlauf",
+          "item3": "Navigationspfad",
+          "item4": "Betriebssystem",
+          "item5": "Informationen über die Geräte, die für den Zugriff auf die Website verwendet werden"
+        },
+        "p3": "Für alle weiteren erfassten Daten stellt das Datenerfassungsformular Informationen zu den geltenden Regeln für die spezifisch erfassten Daten bereit, soweit sie von den in dieser Datenschutzrichtlinie festgelegten Regeln abweichen."
+      },
+      "section4": {
+        "title": "Wann erfassen wir personenbezogene Daten?",
+        "p1": "erfasst Ihre personenbezogenen Daten ausdrücklich und transparent durch Informationshinweise oder Verweise auf diese Datenschutzrichtlinie.",
+        "p2": "Ihre personenbezogenen Daten können in folgenden Situationen erfasst werden:",
+        "list": {
+          "item1": "Wenn Sie auf unserer Website surfen",
+          "item2": "Wenn Sie ein Formular ausfüllen oder einen Kommentar auf unserer Website hinterlassen",
+          "item3": "Wenn Sie Dokumentationen oder Informationen über unsere Dienstleistungen anfordern",
+          "item4": "Wenn Sie mit uns per E-Mail, Telefon, soziale Netzwerke oder auf andere Weise kommunizieren",
+          "item5": "Wenn Sie sich auf eine Stellenausschreibung bewerben",
+          "item6": "Wenn Sie ein Problem melden oder Unterstützung anfordern"
+        },
+        "p3": "Einige angeforderte personenbezogene Daten sind obligatorisch. Die Pflichtangabe von Daten wird durch ein Sternchen (*) gekennzeichnet.",
+        "p4": "Wenn Sie die erforderlichen Daten nicht bereitstellen, kann dies dazu führen, dass Sie auf bestimmte Dienste der Website nicht zugreifen können."
+      },
+      "section5": {
+        "title": "Zu welchen Zwecken werden personenbezogene Daten erhoben?",
+        "subtitle": "📜 Rechtsgrundlage für die Verarbeitung",
+        "p1": "Die Erhebung und Verarbeitung Ihrer personenbezogenen Daten erfolgt zu bestimmten Zwecken, die Ihnen zum Zeitpunkt der Erhebung mitgeteilt werden.",
+        "p2": "Lezard Agency verpflichtet sich:",
+        "list": {
+          "item1": "Personenbezogene Daten nur für bestimmte, eindeutige und legitime Zwecke zu erheben.",
+          "item2": "Diese Daten nicht in einer Weise zu verarbeiten, die mit diesen Zwecken unvereinbar ist.",
+          "item3": "Nur Daten zu verarbeiten, die angemessen, relevant und auf das Notwendige beschränkt sind."
+        },
+        "p3": "Die wichtigsten Rechtsgrundlagen für die Datenverarbeitung durch Lezard Agency sind:",
+        "legalBasis": {
+          "contract": {
+            "title": "Vertragserfüllung",
+            "description": "Wenn die Verarbeitung zur Erfüllung des Vertrags zwischen Ihnen und Lezard Agency erforderlich ist, zum Beispiel für die Bearbeitung Ihrer Angebotsanfrage, die Bereitstellung von Dienstleistungen oder die Nachverfolgung Ihrer Bestellung."
+          },
+          "legalObligations": {
+            "title": "Gesetzliche Verpflichtungen",
+            "description": "Wenn die Verarbeitung erforderlich ist, um gesetzlichen oder regulatorischen Verpflichtungen nachzukommen, wie Steuererklärungen oder Maßnahmen zur Bekämpfung der Geldwäsche."
+          },
+          "legitimateInterest": {
+            "title": "Berechtigte Interessen",
+            "description": "Wenn die Verarbeitung für die berechtigten Interessen von Lezard Agency erforderlich ist, wie zum Beispiel:",
+            "item1": "Entwicklung unserer Geschäftstätigkeiten.",
+            "item2": "Verbesserung unserer Dienstleistungen.",
+            "item3": "Wartung und Verwaltung der Website.",
+            "item4": "Betrugsbekämpfung."
+          },
+          "consent": {
+            "title": "Einwilligung",
+            "description": "Wenn die Verarbeitung auf Ihrer Einwilligung beruht, beispielsweise für den Versand von Marketingmitteilungen. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie Ihre Präferenzen in E-Mails oder auf unserer Website ändern."
+          }
+        }
+      },
+      "section6": {
+        "title": "Empfänger personenbezogener Daten",
+        "subtitle": "🔒 Vertraulichkeitsverpflichtung",
+        "p1": "Lezard Agency verpflichtet sich, Ihre personenbezogenen Daten nicht ohne Ihre vorherige ausdrückliche Zustimmung an Dritte zu verkaufen, zu vermieten oder weiterzugeben.",
+        "p2": "Dennoch können wir Ihre personenbezogenen Daten in den folgenden Fällen mit anderen Einrichtungen teilen:",
+        "recipients": {
+          "staff": {
+            "title": "👥 Autorisiertes Personal von Lezard Agency",
+            "description": "Mitarbeiter unseres Teams, die mit der Umsetzung der zuvor beschriebenen Zwecke betraut sind."
+          },
+          "providers": {
+            "title": "🛠️ Unsere Dienstleister und Subunternehmer",
+            "description": "Lezard Agency kann Drittanbieter mit der Verarbeitung Ihrer Daten beauftragen, insbesondere für:",
+            "list": {
+              "item1": "Hosting der Website",
+              "item2": "Wartung und Optimierung der Website",
+              "item3": "Versand kommerzieller Mitteilungen",
+              "item4": "Betrieb der auf der Website angebotenen Dienstleistungen"
+            }
+          },
+          "partners": {
+            "title": "🤝 Geschäftspartner von Lezard Agency",
+            "description": "Vorbehaltlich Ihrer ausdrücklichen vorherigen Zustimmung können wir Ihre Daten mit ausgewählten Geschäftspartnern teilen, damit diese Ihnen spezielle Angebote oder Werbeanzeigen unterbreiten können."
+          },
+          "legal": {
+            "title": "⚖️ Rechtsbeistände und Justizbeamte",
+            "description": "Im Falle eines Rechtsstreits können wir Ihre Daten mit Anwälten, Gerichtsvollziehern oder anderen Rechtsdienstleistern zur Streitbeilegung und Schuldeneintreibung teilen."
+          },
+          "government": {
+            "title": "🏛️ Öffentliche Behörden",
+            "description": "Wir können Ihre Daten an Verwaltungsbehörden (Steuer-, Sozialbehörden usw.) übermitteln, um gesetzlichen Verpflichtungen nachzukommen oder im Falle einer behördlichen Überprüfung."
+          },
+          "ads": {
+            "title": "📢 Werbenetzwerke und soziale Netzwerke",
+            "description": "Einige Ihrer Daten können mit Werbenetzwerken oder sozialen Plattformen geteilt werden, um Ihnen gezielte Werbung bereitzustellen."
+          },
+          "seo": {
+            "title": "🔎 Suchmaschinenanbieter",
+            "description": "Zur Optimierung unserer Website können wir Ihre Daten mit spezialisierten Dienstleistern für Suchmaschinenoptimierung und Sichtbarkeitsverbesserung teilen."
+          },
+          "consent": {
+            "title": "✅ Ausdrückliche Zustimmung",
+            "description": "Ihre Daten werden nur dann mit Dritten geteilt, wenn Sie Ihre Zustimmung gegeben haben, z. B. für gemeinsame Marketingkampagnen."
+          },
+          "sale": {
+            "title": "💰 Übertragung von Vermögenswerten",
+            "description": "Falls Lezard Agency oder ein Teil seiner Vermögenswerte verkauft oder übertragen wird, können Ihre Daten im Rahmen dieser Transaktion mit dem potenziellen Käufer geteilt werden."
+          }
+        }
+      },
+      "section7": {
+        "title": "Aufbewahrungsfrist für personenbezogene Daten",
+        "subtitle": "📁 Datenaufbewahrung",
+        "p1": "wird Ihre personenbezogenen Daten in einer sicheren Umgebung für die notwendige Dauer speichern, um die Zwecke zu erfüllen, für die sie erhoben wurden, gemäß:",
+        "list": {
+          "item1": "Empfehlungen der CNIL",
+          "item2": "Anwendbare gesetzliche Bestimmungen"
+        },
+        "p2": "Aufbewahrungsfristen für Daten:",
+        "dataRetention1": {
+          "title": "Daten für Marketing- und Werbezwecke",
+          "description": "Werden 3 Jahre nach dem letzten vom Kunden initiierten Kontakt oder dem Ende der Vertragsbeziehung gespeichert."
+        },
+        "dataRetention2": {
+          "title": "Daten im Zusammenhang mit der Vertragsverwaltung und zugehörigen Dienstleistungen",
+          "description": "Werden für die gesamte Vertragslaufzeit und bis zum Ablauf der gesetzlichen Verjährungsfristen gespeichert."
+        }
+      },
+      "section8": {
+        "title": "Sicherheit und Vertraulichkeit",
+        "subtitle": "🔐 Datensicherheit und Vertraulichkeit",
+        "p1": "ergreift geeignete Maßnahmen, um die Vertraulichkeit und Sicherheit Ihrer personenbezogenen Daten zu gewährleisten und unbefugten Zugriff, Schäden oder Löschung von Daten zu verhindern.",
+        "subtitle2": "Umgesetzte Schutzmaßnahmen",
+        "protection1": "Schutz durch Benutzername und Passwort zur Sicherung des Zugangs",
+        "protection2": "Eingeschränkter Zugang nur für autorisiertes Personal (Mitarbeiter, Auftragnehmer), die einer Vertraulichkeitspflicht unterliegen",
+        "subtitle3": "Im Falle einer Datenschutzverletzung",
+        "p2": "verpflichtet sich:",
+        "alert1": "Die zuständige Aufsichtsbehörde (wie die CNIL) zu benachrichtigen",
+        "alert2": "Sie so schnell wie möglich zu informieren, wenn die Verletzung ein hohes Risiko für Ihre Rechte und Freiheiten darstellt",
+        "alert3": "Ihnen zu ermöglichen, geeignete Maßnahmen zum Schutz Ihrer Daten zu ergreifen"
+      },
+      "section9": {
+        "title": "Ihre Rechte",
+        "subtitle": "📜 Ihre Rechte in Bezug auf Ihre personenbezogenen Daten",
+        "p1": "Gemäß der geltenden Gesetzgebung haben Sie die folgenden Rechte in Bezug auf Ihre personenbezogenen Daten:",
+        "rights": {
+          "access": {
+            "title": "Zugang",
+            "description": "Sie können beantragen, die Daten einzusehen, die wir über Sie gespeichert haben."
+          },
+          "modification": {
+            "title": "Berichtigung",
+            "description": "Sie haben das Recht, die Korrektur unrichtiger Informationen zu verlangen."
+          },
+          "deletion": {
+            "title": "Löschung",
+            "description": "Sie können die Löschung Ihrer personenbezogenen Daten beantragen ('Recht auf Vergessenwerden')."
+          },
+          "restriction": {
+            "title": "Einschränkung",
+            "description": "Sie können unter bestimmten Bedingungen die Einschränkung der Verarbeitung Ihrer Daten verlangen."
+          },
+          "portability": {
+            "title": "Datenübertragbarkeit",
+            "description": "Sie haben das Recht, Ihre Daten in einem strukturierten und maschinenlesbaren Format zu erhalten"
+          },
+          "opposition": {
+            "title": "Widerspruch",
+            "description": "Aus berechtigten Gründen können Sie der Verarbeitung Ihrer personenbezogenen Daten widersprechen."
+          },
+          "consent": {
+            "title": "Widerruf der Einwilligung",
+            "description": "Wenn die Verarbeitung auf Ihrer Einwilligung beruht, haben Sie das Recht, diese jederzeit zu widerrufen."
+          }
+        },
+        "p2": "📩 Sie können außerdem eine Beschwerde bei der ",
+        "p3": " oder einer anderen zuständigen Datenschutzbehörde in der Europäischen Union einreichen.",
+        "p4": "📝 Schließlich haben Sie die Möglichkeit, Anweisungen zur Verarbeitung Ihrer Daten nach Ihrem Tod festzulegen."
+      },
+      "section10": {
+        "title": "Kommerzielle Werbung",
+        "p1": "Bezüglich kommerzieller Werbung können Sie jederzeit dem Erhalt von Mitteilungen widersprechen, indem Sie auf den Abmeldelink in den E-Mails klicken oder auf Ihr Kundenkonto zugreifen."
+      },
+      "section11": {
+        "title": "Schutz der Daten von Minderjährigen",
+        "p1": "Die Website von Lezard Agency ist in der Regel nicht für Minderjährige unter 15 Jahren bestimmt. Wenn ein Minderjähriger personenbezogene Daten übermittelt hat, muss er sicherstellen, dass er vorher die Erlaubnis eines Elternteils oder gesetzlichen Vormunds eingeholt hat. Lezard Agency lehnt jede Verantwortung für die Übermittlung von Daten ohne diese Genehmigung ab. Wir ermutigen Eltern und Erziehungsberechtigte, die Internetnutzung ihrer Kinder zu überwachen und sie zu verantwortungsbewusstem Verhalten anzuleiten."
+      },
+      "section12": {
+        "title": "Cookies",
+        "p1": "Während Ihres Besuchs auf der Website von Lezard Agency können Cookies auf Ihrem Computer, Tablet oder Smartphone gespeichert werden, vorbehaltlich Ihrer vorherigen, ausdrücklichen und spezifischen Zustimmung."
+      },
+      "section13": {
+        "title": "Zustimmung",
+        "subtitle": "🍪 Verwaltung von Cookies",
+        "p1": "Bei Ihrem ersten Besuch auf unserer Website informiert Sie ein Banner über die Verwendung von Cookies und lädt Sie ein, Ihre Wahl zu treffen. Ihre Zustimmung wird über dieses Banner eingeholt.",
+        "subtitle2": "Mögliche Entscheidungen bezüglich Cookies",
+        "option1": "Akzeptieren: Cookies werden gespeichert, wenn Sie weiter surfen.",
+        "option2": "Ablehnen: Sie können sie über den Abschnitt",
+        "link": "„Cookies deaktivieren“",
+        "p2": "Jederzeit können Sie:",
+        "info1": "Klare Informationen über die Zwecke der verwendeten Cookies abrufen.",
+        "info2": "Ihre Zustimmung verwalten, indem Sie auf den Link im Menü der Website klicken.",
+        "info3": "Cookies über Ihre Browsereinstellungen ändern oder löschen.",
+        "warning": "Achtung: Die Ablehnung bestimmter Cookies kann den Zugriff auf einige Funktionen der Website einschränken.",
+        "p3": "Lezard Agency kann nicht für Fehlfunktionen verantwortlich gemacht werden, die durch die Deaktivierung von Cookies verursacht werden, und dies führt zu keiner Entschädigung."
+      },
+      "section14": {
+        "title": "Links zu Drittanbieter-Websites",
+        "p1": "Die Website von Lezard Agency kann Links zu Drittanbieter-Websites enthalten. Wir haben keine Kontrolle über diese Seiten und lehnen jegliche Verantwortung für deren Inhalt und die Verwendung Ihrer persönlichen Daten ab. Wir empfehlen Ihnen, die Datenschutzrichtlinien jeder Drittanbieter-Website zu lesen."
+      },
+      "section15": {
+        "title": "Änderungen der Richtlinie",
+        "p1": "Lezard Agency behält sich das Recht vor, diese Cookie-Richtlinie jederzeit zu ändern. Alle Änderungen werden auf der Website veröffentlicht und treten sofort in Kraft. Wir empfehlen Ihnen, diese Seite regelmäßig zu besuchen, um über Aktualisierungen informiert zu bleiben."
+      },
+      "section16": {
+        "title": "Kontakt",
+        "p1": "Für Fragen oder Anmerkungen zu dieser Richtlinie können Sie uns kontaktieren unter:"
+      }
+    },
+    "TermsConditions": {
+      "title": "Nutzungsbedingungen der Software",
+      "section1": {
+        "title": "Allgemeine Nutzungsbedingungen",
+        "subtitle": "Einführung",
+        "p1": "Willkommen auf der Website von Lezard Agency (",
+        "p2": "). Durch den Zugriff auf und die Nutzung unserer Website erklären Sie sich mit diesen Allgemeinen Nutzungsbedingungen (die \"Bedingungen\") einverstanden. Bitte lesen Sie sie sorgfältig durch, bevor Sie unsere Website nutzen."
+      },
+      "section2": {
+        "subtitle": "Zugang zur Website",
+        "p1": "Der Zugang zur Website ist kostenlos. Einige Dienste oder Funktionen können jedoch gebührenpflichtig sein. Wir behalten uns das Recht vor, den Zugriff auf die gesamte Website oder Teile davon mit oder ohne Vorankündigung vorübergehend oder dauerhaft zu ändern oder einzustellen."
+      },
+      "section3": {
+        "subtitle": "Nutzung der Website",
+        "p1": "Sie verpflichten sich, die Website rechtmäßig zu nutzen und die geltenden Gesetze und Vorschriften einzuhalten. Sie erklären sich damit einverstanden, Folgendes zu unterlassen:",
+        "list": {
+          "item1": "Die Website für betrügerische oder illegale Zwecke zu nutzen.",
+          "item2": "Hochladen, Posten, per E-Mail senden oder auf andere Weise Inhalte zu übermitteln, die illegal, schädlich, bedrohlich, missbräuchlich, belästigend, verleumderisch, vulgär, obszön oder anderweitig anstößig sind.",
+          "item3": "Inhalte zu übermitteln, die möglicherweise die geistigen Eigentumsrechte Dritter verletzen."
+        }
+      },
+      "section4": {
+        "subtitle": "Geistiges Eigentum",
+        "p1": "Alle Inhalte auf der Website, einschließlich, aber nicht beschränkt auf Texte, Bilder, Grafiken, Logos, Symbole und Software, sind das ausschließliche Eigentum von Lezard Agency oder deren Partnern und sind durch Gesetze zum Schutz des geistigen Eigentums geschützt. Sie sind nicht berechtigt, diese Inhalte ohne unsere vorherige schriftliche Genehmigung zu reproduzieren, zu verbreiten, zu ändern oder zu verwerten."
+      },
+      "section5": {
+        "subtitle": "Links zu Websites Dritter",
+        "p1": "Die Website kann Links zu Websites Dritter enthalten. Diese Links werden ausschließlich zu Ihrer Bequemlichkeit bereitgestellt. Wir haben keine Kontrolle über diese Websites und übernehmen keine Verantwortung für deren Inhalt oder Datenschutzrichtlinien. Der Zugriff auf diese Websites erfolgt auf Ihr eigenes Risiko."
+      },
+      "section6": {
+        "subtitle": "Haftung",
+        "p1": "Lezard Agency haftet nicht für direkte oder indirekte Schäden, einschließlich, aber nicht beschränkt auf entgangene Gewinne, Kundenverluste, Datenverluste oder andere immaterielle Verluste, die aus der Nutzung oder der Unmöglichkeit der Nutzung der Website resultieren. Wir garantieren nicht, dass die Website fehlerfrei oder ohne Unterbrechungen funktioniert."
+      },
+      "section7": {
+        "subtitle": "Änderung der Bedingungen",
+        "p1": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Die Änderungen treten in Kraft, sobald sie auf der Website veröffentlicht werden. Es liegt in Ihrer Verantwortung, die Bedingungen regelmäßig zu überprüfen, um über Aktualisierungen informiert zu bleiben. Ihre fortgesetzte Nutzung der Website nach der Veröffentlichung von Änderungen stellt Ihre Zustimmung zu den neuen Bedingungen dar."
+      },
+      "section8": {
+        "subtitle": "Anwendbares Recht",
+        "p1": "Diese Bedingungen unterliegen dem französischen Recht und werden entsprechend ausgelegt. Alle Streitigkeiten im Zusammenhang mit der Ausführung oder Auslegung dieser Bedingungen unterliegen der ausschließlichen Zuständigkeit der zuständigen Gerichte in Frankreich."
+      },
+      "section9": {
+        "subtitle": "Kontakt",
+        "p1": "Für Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte:",
+        "email": "E-Mail",
+        "phone": "Telefon"
       }
     }
   },

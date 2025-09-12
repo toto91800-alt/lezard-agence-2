@@ -7,6 +7,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 interface NavbarProps {
@@ -122,14 +123,11 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           key={`link-${idx}`}
           href={item.link}
           onMouseEnter={() => setHovered(idx)}
-          onClick={(e) => {
-            e.preventDefault(); // ← évite refresh si nécessaire
-            onItemClick?.();   // ← appel propre de ta callback
-          }}
+          onClick={() => onItemClick?.()}
           className="relative px-4 py-2 text-current"
         >
           {hovered === idx && (
@@ -140,7 +138,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );

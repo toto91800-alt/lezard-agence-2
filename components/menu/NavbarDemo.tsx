@@ -35,11 +35,13 @@ export function NavbarDemo() {
   const ctaLabel = mounted ? t("menu.cta", "5 jours d’essai gratuits") : "";
 
   return (
-    <div className="fixed top-0 left-0 z-50 w-full ">
+    <div className="fixed top-0 left-0 z-50 w-full">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
+
+          {/* Liens desktop (via <Link /> dans NavItems) */}
           {mounted && <NavItems items={navItems} />}
 
           <div className="relative z-50 flex items-center gap-4">
@@ -60,10 +62,7 @@ export function NavbarDemo() {
                     aria-hidden="true"
                     className="icon-thunder"
                   >
-                    <path
-                      d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
-                      fill="currentColor"
-                    />
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
                   </svg>
                 </span>
                 <span>{ctaLabel}</span>
@@ -89,14 +88,14 @@ export function NavbarDemo() {
           >
             {mounted &&
               navItems.map((item, idx) => (
-                <a
+                <Link
                   key={`mobile-link-${idx}`}
                   href={item.link}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="relative text-neutral-600 dark:text-neutral-300"
+                  className="relative block text-neutral-600 dark:text-neutral-300"
                 >
-                  <span className="block">{item.name}</span>
-                </a>
+                  {item.name}
+                </Link>
               ))}
 
             {/* Lang switcher + CTA mobile */}
@@ -119,10 +118,7 @@ export function NavbarDemo() {
                       aria-hidden="true"
                       className="icon-thunder"
                     >
-                      <path
-                        d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
-                        fill="currentColor"
-                      />
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" />
                     </svg>
                   </span>
                   <span>{ctaLabel}</span>
@@ -160,7 +156,6 @@ export function NavbarDemo() {
             transform: translateX(200%);
           }
         }
-
         .icon-wrap {
           transition: transform 0.2s ease, filter 0.2s ease;
           color: #fff;
@@ -176,7 +171,6 @@ export function NavbarDemo() {
         .cta-strike:hover .icon-thunder {
           transform: translateX(1px);
         }
-
         @media (prefers-reduced-motion: reduce) {
           .cta-strike:hover::after {
             animation: none;

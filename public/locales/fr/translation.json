@@ -26,7 +26,7 @@
       "items": {
         "n1": {
           "title": "Nouveaux abonnés",
-          "text": "Développez votre audience organiquement."
+          "text": "300 à 700 Nouveaux Followers par mois. Boostez votre croissance en organique."
         },
         "n2": {
           "title": "Plus de likes / commentaires",
@@ -37,16 +37,16 @@
           "text": "Transformez vos abonnés en clients fidèles et payants."
         },
         "n4": {
-          "title": "Mesures actionnables",
-          "text": "Des KPIs clairs, reliés à vos objectifs business — pas juste des vanity metrics."
+          "title": "Suivez vos résultats",
+           "text": "Entre 2% à 5% d’augmentation du taux d’engagement. Suivez en temps réel les actions et les statistiques de votre compte."
         },
         "n5": {
           "title": "Intégration simple",
-          "text": "Se connecte à vos outils existants sans friction, via API et connecteurs natifs."
+         "text": "Connexion simple, avec une interface conçue pour être automatisée et personnalisée selon vos préférences."
         },
         "n6": {
           "title": "Sécurité & conformité",
-          "text": "Données protégées, conformité RGPD et pratiques de chiffrement de bout en bout."
+          "text": "Compte Instagram sécurisé et données protégées, conformes au RGPD."
         }
       }
     },
@@ -346,6 +346,304 @@
           "gdpr2": "Engager une procédure contre le responsable de traitement ou le sous-traitant devant une juridiction civile ou administrative",
           "gdpr3": "Saisir directement la Commission Nationale de l'Informatique et des Libertés (CNIL)"
         }
+      }
+    },
+    "PrivacyPolicy": {
+      "title": "Politique de confidentialité et cookies",
+      "section1": {
+        "title": "Protection des données",
+        "p1": "Lezard Agency accorde une grande importance à la protection des données personnelles et au respect de la vie privée de toute personne accédant à notre écosystème digital.",
+        "p2": "Cette page décrit les types de données personnelles que Lezard Agency peut collecter concernant les visiteurs de notre site internet, ainsi que la manière dont nous et nos sous-traitants pouvons les utiliser et à quelles fins.",
+        "p3": "Cette Politique de confidentialité (ci-après « Politique ») fournit également des informations importantes sur vos droits et la manière dont vos données personnelles sont protégées.",
+        "p4": "Toutes les opérations sur vos données personnelles sont réalisées dans le respect de la réglementation en vigueur, notamment :",
+        "list": {
+          "item1": "Le Règlement européen n°2016/679 du 27 avril 2016 (RGPD)",
+          "item2": "La Loi n°78-17 « Informatique et Libertés » du 6 janvier 1978 modifiée"
+        },
+        "p5": "En poursuivant votre navigation sur notre site internet (ci-après « site »), vous reconnaissez avoir pris connaissance et accepté la présente Politique, ainsi que les conditions générales d'utilisation de notre site."
+      },
+      "section2": {
+        "title": "Qui collecte les données à caractère personnel (identité du responsable du traitement) ?",
+        "p1": "Le présent site est géré par Lezard Agency",
+        "address": "",
+        "p2": "Lezard Agency est enregistrée sous le numéro SIREN au registre du commerce et des sociétés [ville ou région].",
+        "p3": "Lezard Agency a nommé un Délégué à la Protection des Données (DPO) que vous pouvez contacter par e-mail à l'adresse suivante :",
+        "email": "contact@lezard-agency.com"
+      },
+      "section3": {
+        "title": "Quelles sont les données à caractère personnel collectées ?",
+        "p1": "La notion de « données à caractère personnel » désigne toute information relative à une personne physique identifiée ou pouvant être identifiée, directement ou indirectement.",
+        "p2": "Les données à caractère personnel collectées par Lezard Agency incluent les informations qui vous concernent et permettent de vous identifier, telles que :",
+        "data1": {
+          "title": "Données d'identification :",
+          "item1": "Nom et prénom",
+          "item2": "Adresse e-mail",
+          "item3": "Numéro de téléphone"
+        },
+        "data2": {
+          "title": "Données de connexion :",
+          "item1": "Adresse IP",
+          "item2": "Historique de navigation",
+          "item3": "Parcours de visite",
+          "item4": "Système d'exploitation",
+          "item5": "Informations sur les appareils utilisés pour accéder au site internet"
+        },
+        "p3": "Pour toutes autres données collectées par ailleurs, le formulaire de recueil de données fournira des informations sur les règles applicables aux données spécifiques collectées, dans la mesure où elles diffèrent des règles énoncées dans la présente Politique de Confidentialité."
+      },
+      "section4": {
+        "title": "Quand collectons-nous des données personnelles ?",
+        "p1": "collecte vos données à caractère personnel de manière explicite et transparente, grâce à des mentions d'information ou des renvois à la présente Politique de Confidentialité.",
+        "p2": "Vos données personnelles peuvent être collectées dans les situations suivantes :",
+        "list": {
+          "item1": "Lorsque vous naviguez sur notre site internet",
+          "item2": "Lorsque vous remplissez un formulaire ou laissez un commentaire sur notre site",
+          "item3": "Lorsque vous demandez à recevoir de la documentation ou des informations sur nos services",
+          "item4": "Lors de correspondances avec nous par e-mail, téléphone, réseaux sociaux ou tout autre moyen",
+          "item5": "Lorsque vous postulez à une offre d'emploi",
+          "item6": "Lorsque vous signalez un problème ou demandez de l'assistance"
+        },
+        "p3": "Certaines données personnelles demandées sont obligatoires. Le caractère obligatoire des données est signalé par un astérisque (*).",
+        "p4": "Si vous ne fournissez pas les données obligatoires, cela peut entraîner l'impossibilité d'accéder à certains services du site."
+      },
+      "section5": {
+        "title": "Pour quelles finalités les données personnelles sont-elles collectées ?",
+        "subtitle": "📜 Base juridique du traitement",
+        "p1": "La collecte et le traitement de vos données à caractère personnel sont effectués pour des finalités précises, qui vous sont spécifiées lors de la collecte.",
+        "p2": "Lezard Agency s'engage à :",
+        "list": {
+          "item1": "Ne collecter des données personnelles que pour des finalités déterminées, explicites et légitimes.",
+          "item2": "Ne pas traiter ces données de manière incompatible avec ces finalités.",
+          "item3": "Ne traiter que des données adéquates, pertinentes et limitées à ce qui est nécessaire."
+        },
+        "p3": "Les principales bases juridiques du traitement des données par Lezard Agency sont :",
+        "legalBasis": {
+          "contract": {
+            "title": "Exécution du contrat",
+            "description": "Lorsque le traitement est nécessaire à l'exécution du contrat entre vous et Lezard Agency, par exemple pour la gestion de votre demande de devis, la fourniture des services ou le suivi de votre commande."
+          },
+          "legalObligations": {
+            "title": "Obligations légales",
+            "description": "Lorsque le traitement est nécessaire pour répondre à des obligations légales ou réglementaires, comme les déclarations fiscales ou la lutte contre le blanchiment d'argent."
+          },
+          "legitimateInterest": {
+            "title": "Intérêts légitimes",
+            "description": "Lorsque le traitement est nécessaire pour les intérêts légitimes de Lezard Agency, tels que :",
+            "item1": "Le développement de nos activités.",
+            "item2": "L'amélioration de nos services.",
+            "item3": "La maintenance et l'administration du site.",
+            "item4": "La lutte contre la fraude."
+          },
+          "consent": {
+            "title": "Consentement",
+            "description": "Lorsque le traitement est fondé sur votre consentement, par exemple pour l'envoi de communications marketing. Vous pouvez retirer votre consentement à tout moment en modifiant vos préférences dans les e-mails ou sur notre site internet."
+          }
+        }
+      },
+      "section6": {
+        "title": "Destinataires des données à caractère personnel",
+        "subtitle": "🔒 Engagement de confidentialité",
+        "p1": "Lezard Agency s'engage à ne pas vendre, louer ou céder vos données à caractère personnel à des tiers sans votre consentement préalable et explicite.",
+        "p2": "Cependant, nous pouvons être amenés à partager vos données à caractère personnel avec d'autres entités, dans les cas suivants :",
+        "recipients": {
+          "staff": {
+            "title": "👥 Personnel habilité de Lezard Agency",
+            "description": "Les membres de notre équipe, dans le cadre de l'exécution des missions liées aux finalités décrites précédemment."
+          },
+          "providers": {
+            "title": "🛠️ Nos fournisseurs de services et sous-traitants",
+            "description": "Lezard Agency peut faire appel à des prestataires tiers pour le traitement de vos données, notamment pour :",
+            "list": {
+              "item1": "L'hébergement du site internet",
+              "item2": "La maintenance et l'optimisation du site",
+              "item3": "L'envoi de communications commerciales",
+              "item4": "L'exploitation des services proposés sur le site"
+            }
+          },
+          "partners": {
+            "title": "🤝 Partenaires commerciaux de Lezard Agency",
+            "description": "Sous réserve de votre accord exprès et préalable, nous pouvons partager vos données avec des partenaires commerciaux sélectionnés afin qu'ils puissent vous proposer des offres spéciales ou des publicités."
+          },
+          "legal": {
+            "title": "⚖️ Auxiliaires de justice et officiers ministériels",
+            "description": "En cas de litige, nous pouvons partager vos données avec des avocats, huissiers ou autres professionnels du droit pour la gestion des contentieux et le recouvrement des créances."
+          },
+          "government": {
+            "title": "🏛️ Administrations publiques",
+            "description": "Nous pouvons transmettre vos données aux autorités administratives (fiscales, sociales, etc.) pour répondre aux obligations légales et en cas de contrôle étatique."
+          },
+          "ads": {
+            "title": "📢 Réseaux de publicité et réseaux sociaux",
+            "description": "Certaines de vos données peuvent être partagées avec des réseaux publicitaires ou plateformes sociales afin de vous proposer des publicités ciblées."
+          },
+          "seo": {
+            "title": "🔎 Fournisseurs de moteurs de recherche",
+            "description": "Dans le cadre de l'optimisation de notre site internet, nous pouvons partager vos données avec des prestataires spécialisés dans le référencement et l'amélioration de visibilité."
+          },
+          "consent": {
+            "title": "✅ Consentement exprès",
+            "description": "Vos données ne seront partagées avec des tiers que si vous avez donné votre consentement, par exemple pour des campagnes marketing conjointes."
+          },
+          "sale": {
+            "title": "💰 Cession d'actifs",
+            "description": "Si Lezard Agency ou une partie de ses actifs venait à être vendue ou transférée, vos données pourraient être partagées avec l'acquéreur potentiel dans le cadre de cette transaction."
+          }
+        }
+      },
+      "section7": {
+        "title": "Durée de conservation des données à caractère personnel",
+        "subtitle": "📁 Conservation des données",
+        "p1": "conservera vos données à caractère personnel dans un environnement sécurisé pendant la durée nécessaire à la réalisation des finalités pour lesquelles elles ont été collectées, en accord avec :",
+        "list": {
+          "item1": "Les recommandations de la CNIL",
+          "item2": "Les dispositions légales applicables"
+        },
+        "p2": "Durées de conservation des données :",
+        "dataRetention1": {
+          "title": "Données à des fins de prospection et d'information commerciale",
+          "description": "Conservées pendant 3 ans après le dernier contact initié par le client ou la fin de la relation contractuelle."
+        },
+        "dataRetention2": {
+          "title": "Données liées à la gestion des contrats et services associés",
+          "description": "Conservées pendant toute la durée du contrat et jusqu'à l'expiration des délais de prescription légale applicables."
+        }
+      },
+      "section8": {
+        "title": "Sécurité et confidentialité",
+        "subtitle": "🔐 Sécurité et confidentialité des données",
+        "p1": "prend des mesures appropriées pour assurer la confidentialité et la sécurité de vos données à caractère personnel, afin d'éviter tout accès non autorisé, endommagement ou effacement des données.",
+        "subtitle2": "Mesures de protection mises en place",
+        "protection1": "Protection par identifiant et mot de passe pour sécuriser les accès",
+        "protection2": "Accès limité aux seules personnes autorisées (employés, prestataires), qui sont tenues à une obligation de confidentialité",
+        "subtitle3": "En cas de violation de vos données personnelles",
+        "p2": "s'engage à :",
+        "alert1": "Notifier l'autorité de contrôle compétente (comme la CNIL)",
+        "alert2": "Vous informer dès que possible si la violation présente un risque élevé pour vos droits et libertés",
+        "alert3": "Vous permettre de prendre les mesures adéquates pour protéger vos données"
+      },
+      "section9": {
+        "title": "Vos droits",
+        "subtitle": "📜 Vos droits sur vos données personnelles",
+        "p1": "Conformément à la législation en vigueur, vous disposez des droits suivants sur vos données personnelles :",
+        "rights": {
+          "access": {
+            "title": "Accès",
+            "description": "Vous pouvez demander à consulter les données que nous détenons sur vous."
+          },
+          "modification": {
+            "title": "Modification",
+            "description": "Vous avez le droit de demander la rectification des informations inexactes."
+          },
+          "deletion": {
+            "title": "Effacement",
+            "description": "Vous pouvez demander la suppression de vos données personnelles (« droit à l'oubli »)."
+          },
+          "restriction": {
+            "title": "Limitation",
+            "description": "Vous pouvez restreindre le traitement de vos données sous certaines conditions."
+          },
+          "portability": {
+            "title": "Portabilité",
+            "description": "Vous avez le droit de recevoir vos données dans un format structuré et lisible par machine"
+          },
+          "opposition": {
+            "title": "Opposition",
+            "description": "Pour des raisons légitimes, vous pouvez vous opposer au traitement de vos données personnelles."
+          },
+          "consent": {
+            "title": "Retrait du consentement",
+            "description": "Si le traitement est fondé sur votre consentement, vous avez le droit de le retirer à tout moment."
+          }
+        },
+        "p2": "📩 Vous pouvez également déposer une réclamation auprès de la ",
+        "p3": " ou de toute autre autorité de protection des données compétente dans l'Union européenne.",
+        "p4": "📝 Enfin, vous avez la possibilité de définir des directives concernant le traitement de vos données après votre décès."
+      },
+      "section10": {
+        "title": "Prospection commerciale",
+        "p1": "Concernant la prospection commerciale, vous pouvez à tout moment vous opposer à la réception de communications en cliquant sur le lien de désabonnement inclus dans les e-mails ou en accédant à votre espace client."
+      },
+      "section11": {
+        "title": "Protection des données des mineurs",
+        "p1": "Le site de Lezard Agency n'est généralement pas destiné aux mineurs de moins de 15 ans. Si un mineur a fourni des données personnelles, il doit garantir avoir obtenu l'autorisation préalable d'un parent ou tuteur légal. Lezard Agency décline toute responsabilité en cas de transmission de données sans cette autorisation. Nous encourageons les parents et tuteurs à surveiller l'utilisation d'Internet par leurs enfants et à les guider vers des comportements responsables."
+      },
+      "section12": {
+        "title": "Cookies",
+        "p1": "Lors de vos visites sur le site de Lezard Agency, des cookies peuvent être déposés sur votre ordinateur, tablette ou smartphone, sous réserve de votre consentement préalable, exprès et spécifique."
+      },
+      "section13": {
+        "title": "Consentement",
+        "subtitle": "🍪 Gestion des cookies",
+        "p1": "Dès votre première visite sur notre site, une bannière vous informe de la présence de cookies et vous invite à exprimer votre choix. Votre consentement est recueilli par cette bannière.",
+        "subtitle2": "Choix possibles concernant les cookies",
+        "option1": "Accepter : Les cookies seront déposés si vous poursuivez votre navigation.",
+        "option2": "Refuser : Vous pouvez les refuser via la rubrique",
+        "link": "« Désactiver les cookies »",
+        "p2": "À tout moment, vous pouvez :",
+        "info1": "Accéder aux informations claires sur les finalités des cookies utilisés.",
+        "info2": "Gérer votre consentement en cliquant sur le lien dans le menu du site.",
+        "info3": "Modifier ou supprimer les cookies via les paramètres de votre navigateur.",
+        "warning": "Attention : Le refus de certains cookies peut limiter l'accès à certaines fonctionnalités du site.",
+        "p3": "Lezard Agency ne saurait être tenue responsable des dysfonctionnements liés à la désactivation des cookies, et cela ne donnera lieu à aucune indemnité."
+      },
+      "section14": {
+        "title": "Liens vers des sites tiers",
+        "p1": "Le site de Lezard Agency peut contenir des liens vers des sites tiers. Nous n'avons aucun contrôle sur ces sites et déclinons toute responsabilité quant à leur contenu et à l'utilisation de vos données personnelles. Nous vous recommandons de consulter les politiques de confidentialité de chaque site tiers."
+      },
+      "section15": {
+        "title": "Modifications de la Politique",
+        "p1": "Lezard Agency se réserve le droit de modifier cette Politique relative aux cookies à tout moment. Toute modification sera publiée sur le site et prendra effet immédiatement. Nous vous encourageons à consulter régulièrement cette page pour rester informé des mises à jour."
+      },
+      "section16": {
+        "title": "Contact",
+        "p1": "Pour toute question ou remarque relative à cette Politique, vous pouvez nous contacter à :"
+      }
+    },
+    "TermsConditions": {
+      "title": "Conditions d'utilisation du logiciel",
+      "section1": {
+        "title": "Conditions Générales d'Utilisation",
+        "subtitle": "Introduction",
+        "p1": "Bienvenue sur le site de Lezard Agency (",
+        "p2": "). En accédant et en utilisant notre Site, vous acceptez d'être lié par les présentes Conditions Générales d'Utilisation (les \"Conditions\"). Veuillez les lire attentivement avant d'utiliser notre Site."
+      },
+      "section2": {
+        "subtitle": "Accès au Site",
+        "p1": "L'accès au Site est gratuit. Toutefois, certains services ou fonctionnalités peuvent être soumis à des frais spécifiques. Nous nous réservons le droit de modifier ou d'interrompre, temporairement ou définitivement, l'accès à tout ou partie du Site, avec ou sans préavis."
+      },
+      "section3": {
+        "subtitle": "Utilisation du Site",
+        "p1": "Vous vous engagez à utiliser le Site de manière légale et à respecter les lois et règlements en vigueur. Vous acceptez de ne pas :",
+        "list": {
+          "item1": "Utiliser le Site à des fins frauduleuses ou illégales.",
+          "item2": "Télécharger, poster, envoyer par e-mail ou transmettre de toute autre manière tout contenu illégal, nuisible, menaçant, abusif, harcelant, diffamatoire, vulgaire, obscène ou autrement répréhensible.",
+          "item3": "Transmettre tout contenu qui pourrait enfreindre les droits de propriété intellectuelle de tiers."
+        }
+      },
+      "section4": {
+        "subtitle": "Propriété Intellectuelle",
+        "p1": "Tout le contenu présent sur le Site, y compris mais sans s'y limiter, les textes, images, graphiques, logos, icônes, et logiciels, est la propriété exclusive de Lezard Agency ou de ses partenaires et est protégé par les lois sur la propriété intellectuelle. Vous n'êtes pas autorisé à reproduire, distribuer, modifier ou exploiter ce contenu sans notre autorisation écrite préalable."
+      },
+      "section5": {
+        "subtitle": "Liens vers des Sites Tiers",
+        "p1": "Le Site peut contenir des liens vers des sites web de tiers. Ces liens sont fournis uniquement pour votre commodité. Nous n'avons aucun contrôle sur ces sites et ne sommes pas responsables de leur contenu ou de leur politique de confidentialité. L'accès à ces sites se fait à vos propres risques."
+      },
+      "section6": {
+        "subtitle": "Responsabilité",
+        "p1": "Lezard Agency ne saurait être tenue responsable des dommages directs ou indirects, y compris mais sans s'y limiter, les pertes de profits, de clientèle, de données ou autres pertes intangibles résultant de l'utilisation ou de l'incapacité à utiliser le Site. Nous ne garantissons pas que le Site sera exempt d'erreurs ou d'interruptions."
+      },
+      "section7": {
+        "subtitle": "Modification des Conditions",
+        "p1": "Nous nous réservons le droit de modifier les présentes Conditions à tout moment. Les modifications entreront en vigueur dès leur publication sur le Site. Il vous appartient de consulter régulièrement les Conditions pour vous tenir informé de toute mise à jour. Votre utilisation continue du Site après la publication des modifications constitue votre acceptation des nouvelles Conditions."
+      },
+      "section8": {
+        "subtitle": "Droit Applicable",
+        "p1": "Les présentes Conditions sont régies et interprétées conformément aux lois françaises. Tout litige relatif à l'exécution ou à l'interprétation des présentes Conditions sera soumis à la juridiction exclusive des tribunaux compétents en France."
+      },
+      "section9": {
+        "subtitle": "Contact",
+        "p1": "Pour toute question concernant ces Conditions Générales d'Utilisation, veuillez nous contacter :",
+        "email": "Email : contact@lezard-agency.com",
+        "phone": "Téléphone : +33 07 81 22 59 13"
       }
     }
   },
