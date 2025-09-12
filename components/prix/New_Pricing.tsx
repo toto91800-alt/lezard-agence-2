@@ -7,7 +7,7 @@ import { X } from "lucide-react";
 import Link from "next/link";
 import Container from "@/components/ui/container";
 import { Button } from "../ui/button";
-import { fixedPrices, getPlans } from "@/lib/plans"; // ⬅️ on tire les plans du TS
+import { fixedPrices, getPlans } from "@/lib/plans";
 import { useState, useEffect, useMemo } from "react";
 import CurrencySelector from "@/components/prix/CurrencySelector";
 import { PlayCircle, Sparkles, Rocket, Medal } from "lucide-react";
@@ -24,16 +24,23 @@ const currencySymbols: Record<Currency, string> = {
   GBP: "£",
 };
 
+// helper pour formatter hh:mm:ss
+const formatTime = (seconds: number) => {
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = seconds % 60;
+  return `${h}h ${m}m ${s}s`;
+};
+
 const New_Pricing: React.FC = () => {
   const [currency, setCurrency] = useState<Currency>("EUR");
   const [selectedPlan, setSelectedPlan] = useState<PlanType>("monthly");
   const [timeLeft, setTimeLeft] = useState(0);
 
   // ⬇️ on récupère les plans depuis lib/plans.ts
-  // Si tu as un système i18n, remplace l’identity function par ton "t"
   const plans = useMemo(() => getPlans((k) => k), []);
 
-  // Timer (inchangé)
+  // Timer 6h qui boucle
   useEffect(() => {
     const initializeTimer = () => {
       const savedStartTime = localStorage.getItem("timer_start_time");
@@ -138,6 +145,11 @@ const New_Pricing: React.FC = () => {
               </div>
             </TabsList>
 
+            {/* Compteur */}
+            <div className="mt-6 text-center text-sm font-semibold text-orange-600">
+              ⏳ Offre se termine dans {formatTime(timeLeft)}
+            </div>
+
             {/* Devises */}
             <CurrencySelector currency={currency} setCurrency={setCurrency} />
 
@@ -149,7 +161,7 @@ const New_Pricing: React.FC = () => {
                     key={index}
                     index={index}
                     {...plan}
-                    plan="monthly" // adapte à threeMonths / sixMonths dans les autres onglets
+                    plan="monthly"
                     currency={currency}
                   />
                 ))}
@@ -163,7 +175,7 @@ const New_Pricing: React.FC = () => {
                     key={index}
                     index={index}
                     {...plan}
-                    plan="threeMonths" // adapte à threeMonths / sixMonths dans les autres onglets
+                    plan="threeMonths"
                     currency={currency}
                   />
                 ))}
@@ -177,7 +189,7 @@ const New_Pricing: React.FC = () => {
                     key={index}
                     index={index}
                     {...plan}
-                    plan="sixMonths" // adapte à threeMonths / sixMonths dans les autres onglets
+                    plan="sixMonths"
                     currency={currency}
                   />
                 ))}
@@ -250,6 +262,7 @@ const PlanCard = ({
     }
     return basePrice;
   };
+
   const displayedPrice = getPriceByPlan();
   const isPro = id === "pro";
   const isDemo = id === "demo";
@@ -258,6 +271,7 @@ const PlanCard = ({
     : isPro
     ? Rocket
     : Sparkles;
+
   return (
     <div className="w-full relative flex flex-col saturate-150 rounded-2xl">
       <div
@@ -306,7 +320,7 @@ const PlanCard = ({
           </h2>
         </div>
 
-        {/* Bandeau description (ce qui manquait) */}
+        {/* Bandeau description */}
         {desc && (
           <div
             className={cn(
@@ -319,7 +333,8 @@ const PlanCard = ({
             {desc}
           </div>
         )}
-        {/* Sous-titre (followers / month) */}
+
+        {/* Sous-titre */}
         {soustitle ? (
           <div className="mx-3 -mt-1 mb-2 text-center text-sm md:text-base text-muted-foreground">
             {soustitle}
@@ -328,52 +343,43 @@ const PlanCard = ({
 
         {/* Corps */}
         <div className="relative flex flex-col flex-1 align-top w-full p-3 h-full break-words text-left">
-          {/* Zone prix / remplaçante pour DEMO */}
+          {/* Zone prix ou démo */}
           <div className="flex flex-col items-center justify-center w-full mb-4 gap-3">
             {isDemo ? (
-              // Démo : pas de prix, on montre la vidéo
               <div className="w-full max-w-md rounded-xl overflow-hidden border border-[#7C5CFF]/40 shadow-sm bg-white/60">
-              <div className="relative aspect-video">
-                <video
-                  src="https://linktree.lezard-agency.com/video/demo_1.mp4"
-                  className="absolute inset-0 h-full w-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls
-                  preload="metadata"
-                />
+                <div className="relative aspect-video">
+                  <video
+                    src="https://linktree.lezard-agency.com/video/demo_1.mp4"
+                    className="absolute inset-0 h-full w-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls
+                    preload="metadata"
+                  />
+                </div>
               </div>
-            </div>
-            
             ) : (
               displayedPrice > 0 && (
                 <div className="flex items-center">
-                  <div className="flex items-center">
-                    {/* Montant */}
-                    <span
-                      className="text-2xl md:text-3xl font-bold leading-none px-2 rounded"
-                      style={{ color: "var(--Prixtextcolor)" }}
-                    >
-                      {displayedPrice.toLocaleString("fr-FR", {
-                        minimumFractionDigits: 2,
-                      })}
-                    </span>
-
-                    {/* Devise */}
-                    <span
-                      className="text-2xl md:text-2xl font-bold leading-none"
-                      style={{ color: "var(--Prixtextcolor)" }}
-                    >
-                      {currencySymbols[currency]}
-                    </span>
-
-                    {/* Période (inchangée) */}
-                    <span className="text-sm md:text-base text-muted-foreground font-medium leading-none ml-1">
-                      {id === "free" ? "/2 semaines" : "/mois"}
-                    </span>
-                  </div>
+                  <span
+                    className="text-2xl md:text-3xl font-bold leading-none px-2 rounded"
+                    style={{ color: "var(--Prixtextcolor)" }}
+                  >
+                    {displayedPrice.toLocaleString("fr-FR", {
+                      minimumFractionDigits: 2,
+                    })}
+                  </span>
+                  <span
+                    className="text-2xl md:text-2xl font-bold leading-none"
+                    style={{ color: "var(--Prixtextcolor)" }}
+                  >
+                    {currencySymbols[currency]}
+                  </span>
+                  <span className="text-sm md:text-base text-muted-foreground font-medium leading-none ml-1">
+                    {id === "free" ? "/2 semaines" : "/mois"}
+                  </span>
                 </div>
               )
             )}
@@ -402,8 +408,7 @@ const PlanCard = ({
             ))}
           </ul>
 
-          {/* Extra features (grisées pour free, sauf conseiller WhatsApp en rond vert) */}
-          {/* Extra features (grisées pour free, sauf l’icône WhatsApp en vert) */}
+          {/* Extra features */}
           {id === "free" && extraFeatures?.length ? (
             <ul className="mt-3 space-y-2">
               {extraFeatures.map((extra, i) => {
@@ -414,23 +419,18 @@ const PlanCard = ({
                 return (
                   <li key={i} className="flex items-center gap-2">
                     {isWaAdvisor ? (
-                      // pastille verte avec check
                       <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-400">
                         <Check
                           aria-hidden="true"
                           className="h-4 w-4 text-white"
                         />
-                        <span className="sr-only">
-                          Disponible dans le plan Pro
-                        </span>
+                        <span className="sr-only">Disponible dans le plan Pro</span>
                       </span>
                     ) : (
-                      // pastille grise avec X (indisponible)
                       <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#D6DAE1]">
                         <X aria-hidden="true" className="h-4 w-4 text-white" />
                       </span>
                     )}
-                    {/* le texte reste grisé dans tous les cas sur Découverte */}
                     <span className="text-[15px] leading-6 text-gray-500">
                       {extra}
                     </span>
@@ -447,11 +447,8 @@ const PlanCard = ({
             asChild
             variant={isPro || isDemo ? "default" : "secondary"}
             className={cn(
-              // texte blanc en permanence + au hover
               "w-full shadow-none bg-black text-white hover:text-white focus-visible:text-white active:text-white",
-              // couleur de fond au hover
               "hover:bg-orange-500",
-              // style spécial pour la démo
               isDemo && "hover:bg-[#7C5CFF] hover:text-white"
             )}
           >
