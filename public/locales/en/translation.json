@@ -782,5 +782,55 @@
     "pricing": "Pricing",
     "about": "About us",
     "cta": "5 days free trial"
+  },
+  "tarif": {
+    "card": {
+      "demo": {
+        "title": "Demo",
+        "desc": "Preview the software",
+        "button": "Discover",
+        "features": [
+          "Explore the interface",
+          "Preview main actions",
+          "See how it works",
+          "Imagine your future results"
+        ]
+      },
+      "free": {
+        "title": "Discovery",
+        "desc": "~ 100 - 300 followers / 2 weeks",
+        "button": "Start now →",
+        "features": [
+          "10,000 interactions/month",
+          "AI-powered follower targeting",
+          "100% automated growth",
+          "Automatic prospecting message",
+          "Growth dashboard"
+        ],
+        "extra": [
+          "Dedicated 24/7 WhatsApp advisor",
+          "Weekly ROI optimization",
+          "Viral strategies for your Instagram"
+        ],
+        "soustitle": "2 weeks free, then professional monthly plan"
+      },
+      "pro": {
+        "title": "Professional",
+        "desc": "~ 300 - 600 followers / month",
+        "badge": "Recommended",
+        "button": "5-day free trial →",
+        "features": [
+          "15,000 interactions/month",
+          "AI-powered follower targeting",
+          "100% automated growth",
+          "Automatic prospecting message",
+          "Growth dashboard",
+          "Dedicated 24/7 WhatsApp advisor",
+          "Weekly ROI optimization",
+          "Viral strategies for your Instagram"
+        ],
+        "soustitle": "With commitment"
+      }
+    }
   }
 }

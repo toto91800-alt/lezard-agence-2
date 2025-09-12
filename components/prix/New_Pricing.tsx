@@ -3,14 +3,14 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
 import { Check } from "@/components/ui/Check";
-import { X } from "lucide-react";
+import { X, PlayCircle, Sparkles, Rocket, Medal } from "lucide-react";
 import Link from "next/link";
 import Container from "@/components/ui/container";
 import { Button } from "../ui/button";
 import { fixedPrices, getPlans } from "@/lib/plans";
 import { useState, useMemo } from "react";
 import CurrencySelector from "@/components/prix/CurrencySelector";
-import { PlayCircle, Sparkles, Rocket, Medal } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 type Currency = "EUR" | "USD" | "CAD" | "CHF" | "AUD" | "GBP";
 type PlanType = "monthly" | "threeMonths" | "sixMonths";
@@ -25,11 +25,18 @@ const currencySymbols: Record<Currency, string> = {
 };
 
 const New_Pricing: React.FC = () => {
+  const { t, ready } = useTranslation(); // ⚡ utilise ready
   const [currency, setCurrency] = useState<Currency>("EUR");
   const [selectedPlan, setSelectedPlan] = useState<PlanType>("monthly");
 
-  // plans depuis lib/plans.ts
-  const plans = useMemo(() => getPlans((k) => k), []);
+  // ✅ Attendre que i18n soit prêt
+  const plans = useMemo(() => (ready ? getPlans(t) : []), [t, ready]);
+
+  if (!ready) {
+    return (
+      <div className="w-full text-center py-10">Chargement des tarifs...</div>
+    );
+  }
 
   return (
     <div className="flex flex-col items-center justify-center py-12 md:py-10 lg:py-10 w-full relative">
@@ -51,7 +58,7 @@ const New_Pricing: React.FC = () => {
                   "data-[state=inactive]:bg-transparent"
                 )}
               >
-                Mensuel
+                {t("tarif.tabs.monthly", "Mensuel")}
               </TabsTrigger>
 
               <div className="relative">
@@ -65,10 +72,10 @@ const New_Pricing: React.FC = () => {
                     "data-[state=inactive]:bg-transparent"
                   )}
                 >
-                  3 mois
+                  {t("tarif.tabs.3mois", "3 mois")}
                 </TabsTrigger>
                 <span className="absolute -top-4 -right-2 bg-orange-500 text-white text-[10px] font-medium px-2 py-1 rounded-full shadow-md whitespace-nowrap">
-                  Promo 3 mois
+                  {t("tarif.tabs.promo3", "Promo 3 mois")}
                 </span>
               </div>
 
@@ -83,10 +90,10 @@ const New_Pricing: React.FC = () => {
                     "data-[state=inactive]:bg-transparent"
                   )}
                 >
-                  6 mois
+                  {t("tarif.tabs.6mois", "6 mois")}
                 </TabsTrigger>
                 <span className="absolute -top-4 -right-5 bg-orange-500 text-white text-[10px] font-medium px-2 py-1 rounded-full shadow-md">
-                  Promo 6 mois
+                  {t("tarif.tabs.promo6", "Promo 6 mois")}
                 </span>
               </div>
             </TabsList>
@@ -95,47 +102,21 @@ const New_Pricing: React.FC = () => {
             <CurrencySelector currency={currency} setCurrency={setCurrency} />
 
             {/* Grilles */}
-            <TabsContent value="monthly">
-              <div className="grid grid-cols-1 md:[grid-template-columns:repeat(3,minmax(380px,1fr))] gap-6 w-full mt-14">
-                {plans.map((plan, index) => (
-                  <PlanCard
-                    key={index}
-                    index={index}
-                    {...plan}
-                    plan="monthly"
-                    currency={currency}
-                  />
-                ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="threeMonths">
-              <div className="grid grid-cols-1 md:[grid-template-columns:repeat(3,minmax(380px,1fr))] gap-6 w-full mt-14">
-                {plans.map((plan, index) => (
-                  <PlanCard
-                    key={index}
-                    index={index}
-                    {...plan}
-                    plan="threeMonths"
-                    currency={currency}
-                  />
-                ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="sixMonths">
-              <div className="grid grid-cols-1 md:[grid-template-columns:repeat(3,minmax(380px,1fr))] gap-6 w-full mt-14">
-                {plans.map((plan, index) => (
-                  <PlanCard
-                    key={index}
-                    index={index}
-                    {...plan}
-                    plan="sixMonths"
-                    currency={currency}
-                  />
-                ))}
-              </div>
-            </TabsContent>
+            {["monthly", "threeMonths", "sixMonths"].map((planType) => (
+              <TabsContent key={planType} value={planType}>
+                <div className="grid grid-cols-1 md:[grid-template-columns:repeat(3,minmax(380px,1fr))] gap-6 w-full mt-14">
+                  {plans.map((plan, index) => (
+                    <PlanCard
+                      key={index}
+                      index={index}
+                      {...plan}
+                      plan={planType as PlanType}
+                      currency={currency}
+                    />
+                  ))}
+                </div>
+              </TabsContent>
+            ))}
           </Tabs>
         </Container>
       </div>
@@ -351,7 +332,7 @@ const PlanCard = ({
             ))}
           </ul>
 
-          {/* Extra features (grisées pour free) */}
+          {/* Extra features */}
           {id === "free" && extraFeatures?.length ? (
             <ul className="mt-3 space-y-2">
               {extraFeatures.map((extra, i) => {

@@ -34,24 +34,24 @@ type PLAN = {
   soustitle?: string;
 };
 
-/** Fonction de traduction typée (évite `any`) */
+/** Fonction de traduction typée */
 export type TranslateFn = (key: string, options?: Record<string, unknown>) => string;
 
 export const getPlans = (t: TranslateFn): PLAN[] => [
   // DEMO
   {
     id: "demo",
-    title: t("Demo"),
-    desc: t("Prévisualiser le logiciel"),
+    title: t("tarif.card.demo.title"),
+    desc: t("tarif.card.demo.desc"),
     monthlyPrice: 0,
     threeMonths: 0,
     sixMonths: 0,
-    buttonText: t("Découvrir"),
+    buttonText: t("tarif.card.demo.button"),
     features: [
-      t("Découvrez l’interface"),
-      t("Aperçu des principales actions"),
-      t("Visualisez comment ça fonctionne"),
-      t("Imaginez vos futurs résultats"),
+      t("tarif.card.demo.features.0"),
+      t("tarif.card.demo.features.1"),
+      t("tarif.card.demo.features.2"),
+      t("tarif.card.demo.features.3"),
     ],
     link: "https://calendly.com/lezard-agence/mmm?month=2025-02",
   },
@@ -59,52 +59,52 @@ export const getPlans = (t: TranslateFn): PLAN[] => [
   // DISCOVERY
   {
     id: "free",
-    title: t("Découverte"),
-    desc: t(" ~ 100 - 300 followers / 2 semaines"),
+    title: t("tarif.card.free.title"),
+    desc: t("tarif.card.free.desc"),
     monthlyPrice: 79.99,
     threeMonths: 79.99,
     sixMonths: 79.99,
-    buttonText: t("Commencer maintenant →"),
+    buttonText: t("tarif.card.free.button"),
     features: [
-      t("10.000 interactions/mois."),
-      t("Ciblage des followers avancé par IA"),
-      t("Croissance 100% automatique"),
-      t("Message automatique de prospection"),
-      t("Tableau de bord de croissance"),
+      t("tarif.card.free.features.0"),
+      t("tarif.card.free.features.1"),
+      t("tarif.card.free.features.2"),
+      t("tarif.card.free.features.3"),
+      t("tarif.card.free.features.4"),
     ],
     extraFeatures: [
-      "Conseiller dédié 7/7 sur WhatsApp",      // ✅ pour le rond vert
-      "Optimisations hebdomadaires du ROI",
-      "Stratégies virales pour votre Instagram",
+      t("tarif.card.free.extra.0"),
+      t("tarif.card.free.extra.1"),
+      t("tarif.card.free.extra.2"),
     ],
-    soustitle: t("2 semaines sans engagement puis plan professionnel au mois"),
+    soustitle: t("tarif.card.free.soustitle"),
     link: "https://app.lezard-agency.com/registerv2",
   },
 
   // PROFESSIONAL
   {
     id: "pro",
-    title: t("Professionnel"),
-    desc: t("~ 300 - 600 followers / mois"),      
+    title: t("tarif.card.pro.title"),
+    desc: t("tarif.card.pro.desc"),
     monthlyPrice: 199.99,
     threeMonths: 179.99,
     sixMonths: 159.99,
-    badge: t("components.Pricing.Plans.pro.badge"),
-    buttonText: t("Essai gratuit de 5 jours →"),
+    badge: t("tarif.card.pro.badge"),
+    buttonText: t("tarif.card.pro.button"),
     features: [
-      t("15.000 interactions/mois."),
-      t("Ciblage des followers avancé par IA"),
-      t("Croissance 100% automatique"),
-      t("Message automatique de prospection"),
-      t("Tableau de bord de croissance"),
-      t("Conseiller dédié 7/7 sur WhatsApp"),
-      t("Optimisations hebdomadaires du ROI"),
-      t("Stratégies virales pour votre Instagram"),
+      t("tarif.card.pro.features.0"),
+      t("tarif.card.pro.features.1"),
+      t("tarif.card.pro.features.2"),
+      t("tarif.card.pro.features.3"),
+      t("tarif.card.pro.features.4"),
+      t("tarif.card.pro.features.5"),
+      t("tarif.card.pro.features.6"),
+      t("tarif.card.pro.features.7"),
     ],
-    soustitle: t("Avec engagement"),
+    soustitle: t("tarif.card.pro.soustitle"),
     link: "https://app.lezard-agency.com/registerv2",
   },
 ];
 
-// ✅ Permet l'import direct de `PLANS`
+// ✅ Export direct
 export const PLANS = getPlans;

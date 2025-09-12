@@ -783,5 +783,57 @@
     "pricing": "Tarifs",
     "about": "À propos",
     "cta": "5 jours d’essai gratuits"
-  }
+  },
+  
+    "tarif": {
+      "card": {
+        "demo": {
+          "title": "Démo",
+          "desc": "Prévisualiser le logiciel",
+          "button": "Découvrir",
+          "features": [
+            "Découvrez l’interface",
+            "Aperçu des principales actions",
+            "Visualisez comment ça fonctionne",
+            "Imaginez vos futurs résultats"
+          ]
+        },
+        "free": {
+          "title": "Découverte",
+          "desc": " ~ 100 - 300 followers / 2 semaines",
+          "button": "Commencer maintenant →",
+          "soustitle": "2 semaines sans engagement puis plan professionnel au mois",
+          "features": [
+            "10.000 interactions/mois.",
+            "Ciblage des followers avancé par IA",
+            "Croissance 100% automatique",
+            "Message automatique de prospection",
+            "Tableau de bord de croissance"
+          ],
+          "extra": [
+            "Conseiller dédié 7/7 sur WhatsApp",
+            "Optimisations hebdomadaires du ROI",
+            "Stratégies virales pour votre Instagram"
+          ]
+        },
+        "pro": {
+          "title": "Professionnel",
+          "desc": "~ 300 - 600 followers / mois",
+          "badge": "Plan recommandé",
+          "button": "Essai gratuit de 5 jours →",
+          "soustitle": "Avec engagement",
+          "features": [
+            "15.000 interactions/mois.",
+            "Ciblage des followers avancé par IA",
+            "Croissance 100% automatique",
+            "Message automatique de prospection",
+            "Tableau de bord de croissance",
+            "Conseiller dédié 7/7 sur WhatsApp",
+            "Optimisations hebdomadaires du ROI",
+            "Stratégies virales pour votre Instagram"
+          ]
+        }
+      }
+    }
+    
 }
