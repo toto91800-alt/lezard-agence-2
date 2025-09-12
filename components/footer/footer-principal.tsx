@@ -53,14 +53,14 @@ const FooterPrincipal: React.FC = () => {
           {/* Colonne 2 */}
           <div className="flex flex-col gap-3">
             <a
-              href="/menu/footer/terms-&-conditions"
+              href="/terms-&-conditions"
               className="hover:text-gray-400 dark:hover:text-gray-600 transition"
               aria-label={t("footer.links.terms", "Terms & Conditions")}
             >
               {t("footer.links.terms", "Terms & Conditions")}
             </a>
             <a
-              href="/menu/footer/privacy-policy"
+              href="/privacy-policy"
               className="hover:text-gray-400 dark:hover:text-gray-600 transition"
               aria-label={t("footer.links.privacy", "Privacy Policy")}
             >
@@ -71,7 +71,7 @@ const FooterPrincipal: React.FC = () => {
           {/* Colonne 3 */}
           <div className="flex flex-col gap-3">
             <a
-              href="/menu/footer/conditions-of-sale"
+              href="/conditions-of-sale"
               className="hover:text-gray-400 dark:hover:text-gray-600 transition"
               aria-label={t("footer.links.sales", "Conditions of Sale")}
             >
