@@ -8,7 +8,7 @@ import Link from "next/link";
 import Container from "@/components/ui/container";
 import { Button } from "../ui/button";
 import { fixedPrices, getPlans } from "@/lib/plans";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import CurrencySelector from "@/components/prix/CurrencySelector";
 import { PlayCircle, Sparkles, Rocket, Medal } from "lucide-react";
 
@@ -24,66 +24,12 @@ const currencySymbols: Record<Currency, string> = {
   GBP: "£",
 };
 
-// helper pour formatter hh:mm:ss
-const formatTime = (seconds: number) => {
-  const h = Math.floor(seconds / 3600);
-  const m = Math.floor((seconds % 3600) / 60);
-  const s = seconds % 60;
-  return `${h}h ${m}m ${s}s`;
-};
-
 const New_Pricing: React.FC = () => {
   const [currency, setCurrency] = useState<Currency>("EUR");
   const [selectedPlan, setSelectedPlan] = useState<PlanType>("monthly");
-  const [timeLeft, setTimeLeft] = useState(0);
 
-  // ⬇️ on récupère les plans depuis lib/plans.ts
+  // plans depuis lib/plans.ts
   const plans = useMemo(() => getPlans((k) => k), []);
-
-  // Timer 6h qui boucle
-  useEffect(() => {
-    const initializeTimer = () => {
-      const savedStartTime = localStorage.getItem("timer_start_time");
-      const timerDuration = 6 * 60 * 60 * 1000; // 6h
-
-      let startTime: number;
-      if (savedStartTime) {
-        startTime = parseInt(savedStartTime);
-      } else {
-        startTime = Date.now();
-        localStorage.setItem("timer_start_time", startTime.toString());
-      }
-
-      const calculateTimeLeft = () => {
-        const now = Date.now();
-        const elapsed = now - startTime;
-        const cyclePosition = elapsed % timerDuration;
-        const remaining = timerDuration - cyclePosition;
-        return Math.ceil(remaining / 1000);
-      };
-
-      setTimeLeft(calculateTimeLeft());
-    };
-
-    initializeTimer();
-
-    const interval = setInterval(() => {
-      const savedStartTime = localStorage.getItem("timer_start_time");
-      if (savedStartTime) {
-        const startTime = parseInt(savedStartTime);
-        const timerDuration = 6 * 60 * 60 * 1000;
-        const now = Date.now();
-        const elapsed = now - startTime;
-        const cyclePosition = elapsed % timerDuration;
-        const remaining = timerDuration - cyclePosition;
-        const timeLeftSeconds = Math.ceil(remaining / 1000);
-
-        setTimeLeft(timeLeftSeconds);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center py-12 md:py-10 lg:py-10 w-full relative">
@@ -145,11 +91,6 @@ const New_Pricing: React.FC = () => {
               </div>
             </TabsList>
 
-            {/* Compteur */}
-            <div className="mt-6 text-center text-sm font-semibold text-orange-600">
-              ⏳ Offre se termine dans {formatTime(timeLeft)}
-            </div>
-
             {/* Devises */}
             <CurrencySelector currency={currency} setCurrency={setCurrency} />
 
@@ -202,6 +143,8 @@ const New_Pricing: React.FC = () => {
   );
 };
 
+type PlanTypeMapKey = "decouverte" | "Professionnel";
+
 const PlanCard = ({
   id,
   title,
@@ -232,7 +175,7 @@ const PlanCard = ({
   currency: Currency;
   soustitle?: string;
 }) => {
-  const planTypeMap: Record<string, "decouverte" | "Professionnel"> = {
+  const planTypeMap: Record<string, PlanTypeMapKey> = {
     free: "decouverte",
     pro: "Professionnel",
     demo: "decouverte",
@@ -285,7 +228,7 @@ const PlanCard = ({
             : "border-gray-300"
         )}
       >
-        {/* Badge médaille en haut à droite pour le plan Pro */}
+        {/* Badge médaille pour le plan Pro */}
         {isPro && (
           <div className="absolute -top-3 right-6">
             <div className="size-10 rounded-xl border-2 border-orange-500 bg-white/90 shadow-md backdrop-blur-sm flex items-center justify-center">
@@ -408,22 +351,17 @@ const PlanCard = ({
             ))}
           </ul>
 
-          {/* Extra features */}
+          {/* Extra features (grisées pour free) */}
           {id === "free" && extraFeatures?.length ? (
             <ul className="mt-3 space-y-2">
               {extraFeatures.map((extra, i) => {
                 const isWaAdvisor =
-                  /conseiller\s+dédié\s*7\s*\/\s*7\s+sur\s+whatsapp/i.test(
-                    extra
-                  );
+                  /conseiller\s+dédié\s*7\s*\/\s*7\s+sur\s+whatsapp/i.test(extra);
                 return (
                   <li key={i} className="flex items-center gap-2">
                     {isWaAdvisor ? (
                       <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-400">
-                        <Check
-                          aria-hidden="true"
-                          className="h-4 w-4 text-white"
-                        />
+                        <Check aria-hidden="true" className="h-4 w-4 text-white" />
                         <span className="sr-only">Disponible dans le plan Pro</span>
                       </span>
                     ) : (
