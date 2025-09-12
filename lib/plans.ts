@@ -11,12 +11,12 @@ export const fixedPrices: Record<
     sixMonths: { decouverte: number; Professionnel: number };
   }
 > = {
-  EUR: { monthly: { decouverte: 75, Professionnel: 199.99 }, threeMonths: { decouverte: 75, Professionnel: 179.99 }, sixMonths: { decouverte: 75, Professionnel: 159.99 } },
-  USD: { monthly: { decouverte: 85.0, Professionnel: 229.99 }, threeMonths: { decouverte: 85.0, Professionnel: 209.99 }, sixMonths: { decouverte: 85.0, Professionnel: 179.99 } },
-  CAD: { monthly: { decouverte: 125.0, Professionnel: 299.99 }, threeMonths: { decouverte: 125.0, Professionnel: 279.99 }, sixMonths: { decouverte: 225.0, Professionnel: 249.99 } },
-  CHF: { monthly: { decouverte: 75.0, Professionnel: 199.99 }, threeMonths: { decouverte: 75.0, Professionnel: 169.99 }, sixMonths: { decouverte: 75.0, Professionnel: 149.99 } },
-  AUD: { monthly: { decouverte: 135.0, Professionnel: 339.99 }, threeMonths: { decouverte: 135.0, Professionnel: 319.99 }, sixMonths: { decouverte: 135.0, Professionnel: 289.99 } },
-  GBP: { monthly: { decouverte: 65.0, Professionnel: 169.99 }, threeMonths: { decouverte: 65.0, Professionnel: 149.99 }, sixMonths: { decouverte: 65.0, Professionnel: 139.99 } },
+  EUR: { monthly: { decouverte: 39.0, Professionnel: 199.99 }, threeMonths: { decouverte: 39.0, Professionnel: 179.99 }, sixMonths: { decouverte: 39.0, Professionnel: 159.99 } },
+  USD: { monthly: { decouverte: 45.0, Professionnel: 229.99 }, threeMonths: { decouverte: 45.0, Professionnel: 209.99 }, sixMonths: { decouverte: 45.0, Professionnel: 179.99 } },
+  CAD: { monthly: { decouverte: 63.0, Professionnel: 299.99 }, threeMonths: { decouverte: 63.0, Professionnel: 279.99 }, sixMonths: { decouverte: 63.0, Professionnel: 249.99 } },
+  CHF: { monthly: { decouverte: 36.0, Professionnel: 199.99 }, threeMonths: { decouverte: 36.0, Professionnel: 169.99 }, sixMonths: { decouverte: 36.0, Professionnel: 149.99 } },
+  AUD: { monthly: { decouverte: 69.0, Professionnel: 339.99 }, threeMonths: { decouverte: 69.0, Professionnel: 319.99 }, sixMonths: { decouverte: 69.0, Professionnel: 289.99 } },
+  GBP: { monthly: { decouverte: 33.0, Professionnel: 169.99 }, threeMonths: { decouverte: 33.0, Professionnel: 149.99 }, sixMonths: { decouverte: 33.0, Professionnel: 139.99 } },
 };
 
 type PLAN = {

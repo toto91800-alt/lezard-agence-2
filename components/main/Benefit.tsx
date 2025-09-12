@@ -110,7 +110,7 @@ export default function Benefit({ className, items }: Props) {
           </h2>
         </div>
 
-        <ButtonStrike href="/technologie" />
+        <ButtonStrike href="https://app.lezard-agency.com/dashboard/plan" />
       </div>
 
       {/* Grille des bénéfices */}
