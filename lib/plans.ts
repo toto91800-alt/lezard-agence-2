@@ -74,9 +74,8 @@ export const getPlans = (t: TranslateFn): PLAN[] => [
     ],
     extraFeatures: [
       "Conseiller dédié 7/7 sur WhatsApp",      // ✅ pour le rond vert
-      "Développement de l’image de marque",
+      "Optimisations hebdomadaires du ROI",
       "Stratégies virales pour votre Instagram",
-      "Appel d’optimisation mensuel",
     ],
     soustitle: t("2 semaines sans engagement puis plan professionnel au mois"),
     link: "https://app.lezard-agency.com/registerv2",
@@ -86,7 +85,7 @@ export const getPlans = (t: TranslateFn): PLAN[] => [
   {
     id: "pro",
     title: t("Professionnel"),
-    desc: t("~ 300 - 600 followers / mois"),      // ✅ “mois”
+    desc: t("~ 300 - 600 followers / mois"),      
     monthlyPrice: 199.99,
     threeMonths: 179.99,
     sixMonths: 159.99,
@@ -98,10 +97,9 @@ export const getPlans = (t: TranslateFn): PLAN[] => [
       t("Croissance 100% automatique"),
       t("Message automatique de prospection"),
       t("Tableau de bord de croissance"),
-      "Conseiller dédié 7/7 sur WhatsApp",       // ✅ idem ici
-      t("Développement de l’image de marque"),
+      t("Conseiller dédié 7/7 sur WhatsApp"),
+      t("Optimisations hebdomadaires du ROI"),
       t("Stratégies virales pour votre Instagram"),
-      t("Appel d’optimisation mensuel"),
     ],
     soustitle: t("Avec engagement"),
     link: "https://app.lezard-agency.com/registerv2",

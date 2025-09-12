@@ -335,7 +335,7 @@ const PlanCard = ({
                 <div
                   className={cn(
                     "flex items-center justify-center w-6 h-6 rounded-full",
-                    isPro && i >= features.length - 4
+                    isPro && i >= features.length - 3
                       ? "bg-green-400"
                       : isDemo
                       ? "bg-[#7C5CFF]"
