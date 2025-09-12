@@ -782,5 +782,64 @@
     "pricing": "Preise",
     "about": "Über uns",
     "cta": "5 Tage kostenlos testen"
+  },
+  "tarif": {
+  "loading": "Preise werden geladen...",
+  "tabs": {
+    "monthly": "Monatlich",
+    "3mois": "3 Monate",
+    "promo3": "3-Monats-Aktion",
+    "6mois": "6 Monate",
+    "promo6": "6-Monats-Aktion"
+  },
+  "card": {
+    "demo": {
+      "title": "Demo",
+      "desc": "Software-Vorschau",
+      "button": "Entdecken",
+      "features": [
+        "Entdecken Sie die Benutzeroberfläche",
+        "Überblick über die wichtigsten Aktionen",
+        "Sehen Sie, wie es funktioniert",
+        "Stellen Sie sich Ihre zukünftigen Ergebnisse vor"
+      ]
+    },
+    "free": {
+      "title": "Entdeckung",
+      "desc": "~ 100 - 300 Follower / 2 Wochen",
+      "button": "Jetzt starten →",
+      "soustitle": "2 Wochen unverbindlich, danach professioneller Monatsplan",
+      "features": [
+        "10.000 Interaktionen/Monat",
+        "Erweitertes KI-Follower-Targeting",
+        "100% automatisches Wachstum",
+        "Automatische Akquise-Nachrichten",
+        "Wachstums-Dashboard"
+      ],
+      "extra": [
+        "Persönlicher Berater 7/7 über WhatsApp",
+        "Wöchentliche ROI-Optimierungen",
+        "Virale Strategien für Ihr Instagram"
+      ]
+    },
+    "pro": {
+      "title": "Professionell",
+      "desc": "~ 300 - 600 Follower / Monat",
+      "badge": "Empfohlener Plan",
+      "button": "5 Tage kostenlos testen →",
+      "soustitle": "Mit Verpflichtung",
+      "features": [
+        "15.000 Interaktionen/Monat",
+        "Erweitertes KI-Follower-Targeting",
+        "100% automatisches Wachstum",
+        "Automatische Akquise-Nachrichten",
+        "Wachstums-Dashboard",
+        "Persönlicher Berater 7/7 über WhatsApp",
+        "Wöchentliche ROI-Optimierungen",
+        "Virale Strategien für Ihr Instagram"
+      ]
+    }
   }
+}
+
 }

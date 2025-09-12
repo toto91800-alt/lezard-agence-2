@@ -786,6 +786,14 @@
   },
   
     "tarif": {
+      "loading": "Chargement des tarifs...",
+      "tabs": {
+        "monthly": "Mensuel",
+        "3mois": "3 mois",
+        "promo3": "Promo 3 mois",
+        "6mois": "6 mois",
+        "promo6": "Promo 6 mois"
+      },
       "card": {
         "demo": {
           "title": "Démo",

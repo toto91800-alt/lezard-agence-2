@@ -784,6 +784,14 @@
     "cta": "5 días de prueba gratis"
   },
   "tarif": {
+    "loading": "Cargando precios...",
+"tabs": {
+  "monthly": "Mensual",
+  "3mois": "3 meses",
+  "promo3": "Promoción 3 meses",
+  "6mois": "6 meses",
+  "promo6": "Promoción 6 meses"
+},
   "card": {
     "demo": {
       "title": "Demostración",

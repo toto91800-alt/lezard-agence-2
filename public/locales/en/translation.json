@@ -784,6 +784,14 @@
     "cta": "5 days free trial"
   },
   "tarif": {
+    "loading": "Loading pricing...",
+    "tabs": {
+      "monthly": "Monthly",
+      "3mois": "3 months",
+      "promo3": "3-month promo",
+      "6mois": "6 months",
+      "promo6": "6-month promo"
+    },
     "card": {
       "demo": {
         "title": "Demo",
