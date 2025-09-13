@@ -10,6 +10,7 @@ import MainResultat from "@/components/main/MainResultat";
 import Technologie from "@/components/main/Technologie";
 import Benefit from "@/components/main/Benefit";
 import New_Pricing from "@/components/prix/New_Pricing";
+import Faq from "@/components/ui/faq";
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -54,6 +55,7 @@ export default function HomePage() {
         </div>
 
         <New_Pricing />
+        <Faq />
 
         {/* Section Avis */}
         <div className="relative z-[2] w-full flex flex-col items-center pt-10 pb-16 sm:pt-8 sm:pb-12">

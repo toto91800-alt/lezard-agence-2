@@ -25,7 +25,7 @@
       "items": {
         "n1": {
           "title": "Nuevos seguidores",
-        "text": "300 a 700 Nuevos Seguidores por mes. Impulsa tu crecimiento orgánico."
+          "text": "300 a 700 Nuevos Seguidores por mes. Impulsa tu crecimiento orgánico."
         },
         "n2": {
           "title": "Más likes / comentarios",
@@ -41,11 +41,11 @@
         },
         "n5": {
           "title": "Integración sencilla",
-           "text": "Conexión sencilla, con una interfaz diseñada para automatizarse y personalizarse según tus preferencias."
+          "text": "Conexión sencilla, con una interfaz diseñada para automatizarse y personalizarse según tus preferencias."
         },
         "n6": {
           "title": "Seguridad y cumplimiento",
-         "text": "Cuenta de Instagram segura y datos protegidos, en conformidad con el RGPD."
+          "text": "Cuenta de Instagram segura y datos protegidos, en conformidad con el RGPD."
         }
       }
     }
@@ -785,61 +785,90 @@
   },
   "tarif": {
     "loading": "Cargando precios...",
-"tabs": {
-  "monthly": "Mensual",
-  "3mois": "3 meses",
-  "promo3": "Promoción 3 meses",
-  "6mois": "6 meses",
-  "promo6": "Promoción 6 meses"
-},
-  "card": {
-    "demo": {
-      "title": "Demostración",
-      "desc": "Previsualizar el software",
-      "button": "Descubrir",
-      "features": [
-        "Descubre la interfaz",
-        "Vista previa de las acciones principales",
-        "Visualiza cómo funciona",
-        "Imagina tus futuros resultados"
-      ]
+    "tabs": {
+      "monthly": "Mensual",
+      "3mois": "3 meses",
+      "promo3": "Promoción 3 meses",
+      "6mois": "6 meses",
+      "promo6": "Promoción 6 meses"
     },
-    "free": {
-      "title": "Descubrimiento",
-      "desc": "~ 100 - 300 seguidores / 2 semanas",
-      "button": "Comenzar ahora →",
-      "soustitle": "2 semanas sin compromiso y luego plan profesional mensual",
-      "features": [
-        "10.000 interacciones/mes.",
-        "Segmentación avanzada de seguidores con IA",
-        "Crecimiento 100% automático",
-        "Mensajes automáticos de prospección",
-        "Panel de control de crecimiento"
-      ],
-      "extra": [
-        "Asesor dedicado 24/7 en WhatsApp",
-        "Optimizaciones semanales del ROI",
-        "Estrategias virales para tu Instagram"
-      ]
-    },
-    "pro": {
-      "title": "Profesional",
-      "desc": "~ 300 - 600 seguidores / mes",
-      "badge": "Plan recomendado",
-      "button": "Comenzar ahora →",
-      "soustitle": "Con compromiso",
-      "features": [
-        "15.000 interacciones/mes.",
-        "Segmentación avanzada de seguidores con IA",
-        "Crecimiento 100% automático",
-        "Mensajes automáticos de prospección",
-        "Panel de control de crecimiento",
-        "Asesor dedicado 24/7 en WhatsApp",
-        "Optimizaciones semanales del ROI",
-        "Estrategias virales para tu Instagram"
-      ]
+    "card": {
+      "demo": {
+        "title": "Demostración",
+        "desc": "Previsualizar el software",
+        "button": "Descubrir",
+        "features": [
+          "Descubre la interfaz",
+          "Vista previa de las acciones principales",
+          "Visualiza cómo funciona",
+          "Imagina tus futuros resultados"
+        ]
+      },
+      "free": {
+        "title": "Descubrimiento",
+        "desc": "~ 100 - 300 seguidores / 2 semanas",
+        "button": "Comenzar ahora →",
+        "soustitle": "2 semanas sin compromiso y luego plan profesional mensual",
+        "features": [
+          "10.000 interacciones/mes.",
+          "Segmentación avanzada de seguidores con IA",
+          "Crecimiento 100% automático",
+          "Mensajes automáticos de prospección",
+          "Panel de control de crecimiento"
+        ],
+        "extra": [
+          "Asesor dedicado 24/7 en WhatsApp",
+          "Optimizaciones semanales del ROI",
+          "Estrategias virales para tu Instagram"
+        ]
+      },
+      "pro": {
+        "title": "Profesional",
+        "desc": "~ 300 - 600 seguidores / mes",
+        "badge": "Plan recomendado",
+        "button": "Comenzar ahora →",
+        "soustitle": "Con compromiso",
+        "features": [
+          "15.000 interacciones/mes.",
+          "Segmentación avanzada de seguidores con IA",
+          "Crecimiento 100% automático",
+          "Mensajes automáticos de prospección",
+          "Panel de control de crecimiento",
+          "Asesor dedicado 24/7 en WhatsApp",
+          "Optimizaciones semanales del ROI",
+          "Estrategias virales para tu Instagram"
+        ]
+      }
     }
-  }
+  },
+"faq": {
+  "title": "FAQ",
+  "items": [
+    {
+      "question": "¿Mi cuenta corre el riesgo de ser baneada o shadowbaneada?",
+      "answer": "Ninguno de nuestros clientes ha sido baneado debido a nuestro servicio. Desde 2017, hemos desarrollado un algoritmo avanzado que simula un comportamiento humano natural, con conexiones seguras desde un iPhone y una dirección IP, lo que impide cualquier detección por parte de Instagram. Además, nuestros procesos de seguridad están diseñados para proteger tu cuenta respetando los límites de Instagram. En lugar de provocar un shadowban, nuestra tecnología ayuda a mejorar tu engagement y a fortalecer tu visibilidad de manera orgánica."
+    },
+    {
+      "question": "¿Cuántos seguidores puedo esperar ganar?",
+      "answer": "La cantidad de seguidores que puedes obtener depende de varios factores, incluyendo la calidad y la frecuencia de tu contenido, así como la atracción de tu marca. Nuestros usuarios generalmente experimentan un crecimiento constante gracias a nuestro targeting preciso y al compromiso de los seguidores adquiridos. No prometemos cifras exactas, ya que el crecimiento varía de una cuenta a otra. Sin embargo, nuestros métodos garantizan que solo seguidores calificados e interesados en tu contenido te sigan, asegurando así una audiencia relevante y comprometida."
+    },
+    {
+      "question": "¿Los seguidores son reales y están comprometidos?",
+      "answer": "¡Sí, absolutamente! No vendemos seguidores falsos ni interacciones artificiales. Nuestra tecnología selecciona únicamente perfiles activos interesados en tu nicho, analizando los seguidores de tus competidores y los usuarios más comprometidos. A diferencia de los servicios que inflan artificialmente el número de seguidores, nos centramos en un crecimiento auténtico y natural. Esto no solo atrae a una audiencia de calidad, sino que también mejora tu tasa de engagement a largo plazo."
+    },
+    {
+      "question": "¿Puedo usar el servicio para varias cuentas?",
+      "answer": "Sí, nuestros planes son flexibles y pueden adaptarse a varias cuentas. Si deseas gestionar varias cuentas de Instagram con nuestra solución, ofrecemos tarifas preferenciales para suscripciones multi-cuenta. Cada cuenta se beneficia de una configuración optimizada según su nicho y público objetivo. Contáctanos para hablar sobre las mejores opciones según tus necesidades."
+    },
+    {
+      "question": "¿Enviaréis mensajes o comentaréis en mi nombre?",
+      "answer": "A menos que configures un mensaje de bienvenida para tus nuevos seguidores, no comentaremos ni enviaremos mensajes en tu nombre. Nuestras acciones se centran en interacciones naturales y efectivas, como follows dirigidos, likes en publicaciones/historias y visualizaciones de historias. Esto atrae a seguidores interesados sin perjudicar su experiencia en Instagram."
+    },
+    {
+      "question": "¿Puedo cancelar mi suscripción fácilmente?",
+      "answer": "Sí, puedes cancelar tu suscripción en cualquier momento. Nuestras suscripciones funcionan de forma mensual, y no se te cobrará el siguiente período una vez completada la cancelación. Creemos en la transparencia y la flexibilidad. Nuestro objetivo es ofrecerte un servicio de alta calidad, sin compromisos obligatorios, para que puedas usar nuestra solución con total tranquilidad. Lo mismo ocurre con nuestra prueba gratuita, que es realmente gratuita."
+    }
+  ]
 }
 
 }

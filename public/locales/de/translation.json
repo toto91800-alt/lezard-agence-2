@@ -25,7 +25,7 @@
       "items": {
         "n1": {
           "title": "Neue Follower",
-         "text": "300 bis 700 Neue Follower pro Monat. Steigere dein organisches Wachstum."
+          "text": "300 bis 700 Neue Follower pro Monat. Steigere dein organisches Wachstum."
         },
         "n2": {
           "title": "Mehr Likes / Kommentare",
@@ -41,7 +41,7 @@
         },
         "n5": {
           "title": "Einfache Integration",
-         "text": "Einfache Verbindung mit einer Benutzeroberfläche, die für Automatisierung und Anpassung an deine Präferenzen entwickelt wurde."
+          "text": "Einfache Verbindung mit einer Benutzeroberfläche, die für Automatisierung und Anpassung an deine Präferenzen entwickelt wurde."
         },
         "n6": {
           "title": "Sicherheit & Compliance",
@@ -759,19 +759,19 @@
     "bigtitle": "Unsere Preise"
   },
   "footer": {
-  "brandName": "Lezard Agentur",
-  "links": {
-    "tutorial": "Tutorial",
-    "contact": "Kontakt",
-    "terms": "Allgemeine Geschäftsbedingungen",
-    "privacy": "Datenschutzrichtlinie",
-    "sales": "Verkaufsbedingungen"
+    "brandName": "Lezard Agentur",
+    "links": {
+      "tutorial": "Tutorial",
+      "contact": "Kontakt",
+      "terms": "Allgemeine Geschäftsbedingungen",
+      "privacy": "Datenschutzrichtlinie",
+      "sales": "Verkaufsbedingungen"
+    },
+    "banner": {
+      "brand": "Lezard Agentur",
+      "rights": "© 2025 Alle Rechte vorbehalten."
+    }
   },
-  "banner": {
-    "brand": "Lezard Agentur",
-    "rights": "© 2025 Alle Rechte vorbehalten."
-  }
-},
   "menu": {
     "EN": "Englisch",
     "FR": "Französisch",
@@ -784,62 +784,90 @@
     "cta": "Jetzt starten"
   },
   "tarif": {
-  "loading": "Preise werden geladen...",
-  "tabs": {
-    "monthly": "Monatlich",
-    "3mois": "3 Monate",
-    "promo3": "3-Monats-Aktion",
-    "6mois": "6 Monate",
-    "promo6": "6-Monats-Aktion"
-  },
-  "card": {
-    "demo": {
-      "title": "Demo",
-      "desc": "Software-Vorschau",
-      "button": "Entdecken",
-      "features": [
-        "Entdecken Sie die Benutzeroberfläche",
-        "Überblick über die wichtigsten Aktionen",
-        "Sehen Sie, wie es funktioniert",
-        "Stellen Sie sich Ihre zukünftigen Ergebnisse vor"
-      ]
+    "loading": "Preise werden geladen...",
+    "tabs": {
+      "monthly": "Monatlich",
+      "3mois": "3 Monate",
+      "promo3": "3-Monats-Aktion",
+      "6mois": "6 Monate",
+      "promo6": "6-Monats-Aktion"
     },
-    "free": {
-      "title": "Entdeckung",
-      "desc": "~ 100 - 300 Follower / 2 Wochen",
-      "button": "Jetzt starten →",
-      "soustitle": "2 Wochen unverbindlich, danach professioneller Monatsplan",
-      "features": [
-        "10.000 Interaktionen/Monat",
-        "Erweitertes KI-Follower-Targeting",
-        "100% automatisches Wachstum",
-        "Automatische Akquise-Nachrichten",
-        "Wachstums-Dashboard"
-      ],
-      "extra": [
-        "Persönlicher Berater 7/7 über WhatsApp",
-        "Wöchentliche ROI-Optimierungen",
-        "Virale Strategien für Ihr Instagram"
-      ]
-    },
-    "pro": {
-      "title": "Professionell",
-      "desc": "~ 300 - 600 Follower / Monat",
-      "badge": "Empfohlener Plan",
-      "button": "Jetzt starten →",
-      "soustitle": "Mit Verpflichtung",
-      "features": [
-        "15.000 Interaktionen/Monat",
-        "Erweitertes KI-Follower-Targeting",
-        "100% automatisches Wachstum",
-        "Automatische Akquise-Nachrichten",
-        "Wachstums-Dashboard",
-        "Persönlicher Berater 7/7 über WhatsApp",
-        "Wöchentliche ROI-Optimierungen",
-        "Virale Strategien für Ihr Instagram"
-      ]
+    "card": {
+      "demo": {
+        "title": "Demo",
+        "desc": "Software-Vorschau",
+        "button": "Entdecken",
+        "features": [
+          "Entdecken Sie die Benutzeroberfläche",
+          "Überblick über die wichtigsten Aktionen",
+          "Sehen Sie, wie es funktioniert",
+          "Stellen Sie sich Ihre zukünftigen Ergebnisse vor"
+        ]
+      },
+      "free": {
+        "title": "Entdeckung",
+        "desc": "~ 100 - 300 Follower / 2 Wochen",
+        "button": "Jetzt starten →",
+        "soustitle": "2 Wochen unverbindlich, danach professioneller Monatsplan",
+        "features": [
+          "10.000 Interaktionen/Monat",
+          "Erweitertes KI-Follower-Targeting",
+          "100% automatisches Wachstum",
+          "Automatische Akquise-Nachrichten",
+          "Wachstums-Dashboard"
+        ],
+        "extra": [
+          "Persönlicher Berater 7/7 über WhatsApp",
+          "Wöchentliche ROI-Optimierungen",
+          "Virale Strategien für Ihr Instagram"
+        ]
+      },
+      "pro": {
+        "title": "Professionell",
+        "desc": "~ 300 - 600 Follower / Monat",
+        "badge": "Empfohlener Plan",
+        "button": "Jetzt starten →",
+        "soustitle": "Mit Verpflichtung",
+        "features": [
+          "15.000 Interaktionen/Monat",
+          "Erweitertes KI-Follower-Targeting",
+          "100% automatisches Wachstum",
+          "Automatische Akquise-Nachrichten",
+          "Wachstums-Dashboard",
+          "Persönlicher Berater 7/7 über WhatsApp",
+          "Wöchentliche ROI-Optimierungen",
+          "Virale Strategien für Ihr Instagram"
+        ]
+      }
     }
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Besteht das Risiko, dass mein Konto gesperrt oder shadowbanned wird?",
+        "answer": "Keiner unserer Kunden wurde jemals aufgrund unseres Dienstes gesperrt. Seit 2017 haben wir einen fortschrittlichen Algorithmus entwickelt, der ein natürliches menschliches Verhalten simuliert, mit sicheren Verbindungen von einem iPhone und einer europäischen IP-Adresse, wodurch eine Erkennung durch Instagram verhindert wird. Darüber hinaus sind unsere Sicherheitsprozesse so konzipiert, dass sie Ihr Konto schützen, indem sie die von Instagram festgelegten Grenzen einhalten. Anstatt einen Shadowban zu verursachen, trägt unsere Technologie dazu bei, Ihr Engagement zu verbessern und Ihre Sichtbarkeit auf organische Weise zu stärken."
+      },
+      {
+        "question": "Wie viele Follower kann ich erwarten zu gewinnen?",
+        "answer": "Die Anzahl der Follower, die Sie gewinnen können, hängt von mehreren Faktoren ab, einschließlich der Qualität und Häufigkeit Ihrer Inhalte sowie der Attraktivität Ihres Brandings. Unsere Nutzer sehen im Allgemeinen ein stetiges Wachstum dank unseres präzisen Targetings und des Engagements der gewonnenen Follower. Wir versprechen keine genauen Zahlen, da das Wachstum von Konto zu Konto unterschiedlich ist. Unsere Methoden stellen jedoch sicher, dass nur qualifizierte Follower, die an Ihren Inhalten interessiert sind, Ihnen folgen, was ein relevantes und engagiertes Publikum garantiert."
+      },
+      {
+        "question": "Sind die Follower echt und engagiert?",
+        "answer": "Ja, absolut! Wir verkaufen weder Fake-Follower noch künstliche Interaktionen. Unsere Technologie wählt nur aktive Profile aus, die an Ihrer Nische interessiert sind, indem sie die Follower Ihrer Wettbewerber und die engagiertesten Nutzer analysiert. Im Gegensatz zu Diensten, die die Followerzahl künstlich aufblähen, konzentrieren wir uns auf authentisches und natürliches Wachstum. Dies zieht nicht nur ein qualitativ hochwertiges Publikum an, sondern verbessert auch langfristig Ihre Engagement-Rate."
+      },
+      {
+        "question": "Kann ich den Service für mehrere Konten nutzen?",
+        "answer": "Ja, unsere Pläne sind flexibel und können an mehrere Konten angepasst werden. Wenn Sie mehrere Instagram-Konten mit unserer Lösung verwalten möchten, bieten wir Vorzugspreise für Multi-Account-Abonnements an. Jedes Konto profitiert von einer optimierten Einrichtung entsprechend seiner Nische und Zielgruppe. Kontaktieren Sie uns, um die besten Optionen für Ihre Bedürfnisse zu besprechen."
+      },
+      {
+        "question": "Werden Sie Nachrichten senden oder in meinem Namen kommentieren?",
+        "answer": "Sofern Sie keine Willkommensnachricht für Ihre neuen Follower einrichten, werden wir weder kommentieren noch Nachrichten in Ihrem Namen senden. Unsere Aktionen konzentrieren sich auf natürliche und effektive Interaktionen, wie gezielte Follows, Likes für Beiträge/Stories und Story-Ansichten. Dies hilft, interessierte Follower anzuziehen, ohne deren Nutzererfahrung auf Instagram zu beeinträchtigen."
+      },
+      {
+        "question": "Kann ich mein Abonnement leicht kündigen?",
+        "answer": "Ja, Sie können Ihr Abonnement jederzeit kündigen. Unsere Abonnements laufen monatlich, und Ihnen wird die folgende Periode nicht in Rechnung gestellt, sobald die Kündigung abgeschlossen ist. Wir glauben an Transparenz und Flexibilität. Unser Ziel ist es, Ihnen einen hochwertigen Service ohne verpflichtende Bindung zu bieten, damit Sie unsere Lösung sorgenfrei nutzen können. Gleiches gilt für unser kostenloses Probeangebot, das wirklich kostenlos ist."
+      }
+    ]
   }
-}
-
 }

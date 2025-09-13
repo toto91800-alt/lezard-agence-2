@@ -840,5 +840,35 @@
         "soustitle": "With commitment"
       }
     }
-  }
+  },
+  "faq": {
+  "title": "FAQ",
+  "items": [
+    {
+      "question": "Is my account at risk of being banned or shadowbanned?",
+      "answer": "None of our clients have ever been banned because of our service. Since 2017, we have developed an advanced algorithm that simulates natural human behavior, with secure connections from an iPhone and an IP address, which prevents any detection by Instagram. In addition, our security processes are designed to protect your account by respecting Instagram’s limits. Rather than causing a shadowban, our technology helps improve your engagement and strengthen your visibility organically."
+    },
+    {
+      "question": "How many followers can I expect to gain?",
+      "answer": "The number of followers you can gain depends on several factors, including the quality and frequency of your content as well as the attractiveness of your branding. Our users generally see steady growth thanks to our precise targeting and the engagement of acquired followers. We do not promise exact numbers, as growth varies from account to account. However, our methods ensure that only qualified followers interested in your content will follow you, guaranteeing a relevant and engaged audience."
+    },
+    {
+      "question": "Are the followers real and engaged?",
+      "answer": "Yes, absolutely! We do not sell fake followers or artificial interactions. Our technology only selects active profiles interested in your niche, by analyzing your competitors’ followers and the most engaged users. Unlike services that artificially inflate follower counts, we focus on authentic, natural growth. This not only helps you attract a quality audience but also improves your engagement rate in the long term."
+    },
+    {
+      "question": "Can I use the service for multiple accounts?",
+      "answer": "Yes, our plans are flexible and can be adapted for multiple accounts. If you want to manage several Instagram accounts with our solution, we offer preferential rates for multi-account subscriptions. Each account benefits from optimized settings based on its niche and target audience. Contact us to discuss the best options for your needs."
+    },
+    {
+      "question": "Will you send messages or comment on my behalf?",
+      "answer": "Unless you set up a welcome message for your new followers, we will not comment or send messages on your behalf. Our actions focus on natural and effective interactions, such as targeted follows, post/story likes, and story views. This attracts interested followers without hurting their user experience on Instagram."
+    },
+    {
+      "question": "Can I cancel my subscription easily?",
+      "answer": "Yes, you are free to cancel your subscription at any time. Our subscriptions work on a monthly basis, and you will not be charged for the following period once the cancellation is complete. We believe in transparency and flexibility. Our goal is to provide you with a high-quality service with no binding commitment, so you can use our solution with peace of mind. The same applies to our free trial offer, which is truly free."
+    }
+  ]
+}
+
 }

@@ -38,11 +38,11 @@
         },
         "n4": {
           "title": "Suivez vos résultats",
-           "text": "Entre 2% à 5% d’augmentation du taux d’engagement. Suivez en temps réel les actions et les statistiques de votre compte."
+          "text": "Entre 2% à 5% d’augmentation du taux d’engagement. Suivez en temps réel les actions et les statistiques de votre compte."
         },
         "n5": {
           "title": "Intégration simple",
-         "text": "Connexion simple, avec une interface conçue pour être automatisée et personnalisée selon vos préférences."
+          "text": "Connexion simple, avec une interface conçue pour être automatisée et personnalisée selon vos préférences."
         },
         "n6": {
           "title": "Sécurité & conformité",
@@ -784,64 +784,91 @@
     "about": "À propos",
     "cta": "Commencer maintenant"
   },
-  
-    "tarif": {
-      "loading": "Chargement des tarifs...",
-      "tabs": {
-        "monthly": "Mensuel",
-        "3mois": "3 mois",
-        "promo3": "Promo 3 mois",
-        "6mois": "6 mois",
-        "promo6": "Promo 6 mois"
+  "tarif": {
+    "loading": "Chargement des tarifs...",
+    "tabs": {
+      "monthly": "Mensuel",
+      "3mois": "3 mois",
+      "promo3": "Promo 3 mois",
+      "6mois": "6 mois",
+      "promo6": "Promo 6 mois"
+    },
+    "card": {
+      "demo": {
+        "title": "Démo",
+        "desc": "Prévisualiser le logiciel",
+        "button": "Découvrir",
+        "features": [
+          "Découvrez l’interface",
+          "Aperçu des principales actions",
+          "Visualisez comment ça fonctionne",
+          "Imaginez vos futurs résultats"
+        ]
       },
-      "card": {
-        "demo": {
-          "title": "Démo",
-          "desc": "Prévisualiser le logiciel",
-          "button": "Découvrir",
-          "features": [
-            "Découvrez l’interface",
-            "Aperçu des principales actions",
-            "Visualisez comment ça fonctionne",
-            "Imaginez vos futurs résultats"
-          ]
-        },
-        "free": {
-          "title": "Découverte",
-          "desc": " ~ 100 - 300 followers / 2 semaines",
-          "button": "Commencer maintenant →",
-          "soustitle": "2 semaines sans engagement puis plan professionnel au mois",
-          "features": [
-            "10.000 interactions/mois.",
-            "Ciblage des followers avancé par IA",
-            "Croissance 100% automatique",
-            "Message automatique de prospection",
-            "Tableau de bord de croissance"
-          ],
-          "extra": [
-            "Conseiller dédié 7/7 sur WhatsApp",
-            "Optimisations hebdomadaires du ROI",
-            "Stratégies virales pour votre Instagram"
-          ]
-        },
-        "pro": {
-          "title": "Professionnel",
-          "desc": "~ 300 - 600 followers / mois",
-          "badge": "Plan recommandé",
-          "button": "Commencer maintenant →",
-          "soustitle": "Avec engagement",
-          "features": [
-            "15.000 interactions/mois.",
-            "Ciblage des followers avancé par IA",
-            "Croissance 100% automatique",
-            "Message automatique de prospection",
-            "Tableau de bord de croissance",
-            "Conseiller dédié 7/7 sur WhatsApp",
-            "Optimisations hebdomadaires du ROI",
-            "Stratégies virales pour votre Instagram"
-          ]
-        }
+      "free": {
+        "title": "Découverte",
+        "desc": " ~ 100 - 300 followers / 2 semaines",
+        "button": "Commencer maintenant →",
+        "soustitle": "2 semaines sans engagement puis plan professionnel au mois",
+        "features": [
+          "10.000 interactions/mois.",
+          "Ciblage des followers avancé par IA",
+          "Croissance 100% automatique",
+          "Message automatique de prospection",
+          "Tableau de bord de croissance"
+        ],
+        "extra": [
+          "Conseiller dédié 7/7 sur WhatsApp",
+          "Optimisations hebdomadaires du ROI",
+          "Stratégies virales pour votre Instagram"
+        ]
+      },
+      "pro": {
+        "title": "Professionnel",
+        "desc": "~ 300 - 600 followers / mois",
+        "badge": "Plan recommandé",
+        "button": "Commencer maintenant →",
+        "soustitle": "Avec engagement",
+        "features": [
+          "15.000 interactions/mois.",
+          "Ciblage des followers avancé par IA",
+          "Croissance 100% automatique",
+          "Message automatique de prospection",
+          "Tableau de bord de croissance",
+          "Conseiller dédié 7/7 sur WhatsApp",
+          "Optimisations hebdomadaires du ROI",
+          "Stratégies virales pour votre Instagram"
+        ]
       }
     }
-    
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Mon compte risque-t-il d’être banni ou shadowbanni ?",
+        "answer": "Aucun de nos clients n'a jamais été banni à cause de notre service. Depuis 2017, nous avons développé un algorithme avancé qui simule un comportement humain naturel, avec des connexions sécurisées depuis un iPhone et une adresse IP, ce qui empêche toute détection par Instagram. De plus, nos processus de sécurité sont conçus pour protéger votre compte en respectant les limites imposées par Instagram. Plutôt que de provoquer un shadowban, notre technologie contribue à améliorer votre engagement et à renforcer votre visibilité de manière organique."
+      },
+      {
+        "question": "Combien de followers puis-je espérer gagner ?",
+        "answer": "Le nombre d'abonnés que vous pouvez obtenir dépend de plusieurs facteurs, notamment la qualité et la fréquence de votre contenu ainsi que l'attractivité de votre branding. Nos utilisateurs constatent généralement une croissance régulière grâce à notre ciblage précis et à l'engagement des abonnés acquis. Nous ne promettons pas de chiffres exacts, car la croissance varie selon chaque compte. Cependant, nos méthodes garantissent que seuls des abonnés qualifiés et intéressés par votre contenu vous suivent, assurant ainsi une audience pertinente et engagée."
+      },
+      {
+        "question": "Les followers sont-ils réels et engagés ?",
+        "answer": "Oui, absolument ! Nous ne vendons ni faux abonnés ni interactions artificielles. Notre technologie sélectionne uniquement des profils actifs et intéressés par votre niche, en analysant les abonnés de vos concurrents et les utilisateurs les plus engagés. Contrairement aux services qui gonflent artificiellement le nombre d'abonnés, nous nous concentrons sur une croissance authentique et naturelle. Cela vous permet non seulement d'attirer une audience de qualité, mais aussi d'améliorer votre taux d'engagement sur le long terme."
+      },
+      {
+        "question": "Puis-je utiliser le service pour plusieurs comptes ?",
+        "answer": "Oui, nos offres sont flexibles et peuvent s'adapter à plusieurs comptes. Si vous souhaitez gérer plusieurs comptes Instagram avec notre solution, nous proposons des tarifs préférentiels pour les abonnements multi-comptes. Chaque compte bénéficie d'un paramétrage optimisé en fonction de sa niche et de son public cible. Contactez-nous pour discuter des meilleures options en fonction de vos besoins."
+      },
+      {
+        "question": "Allez-vous envoyer des messages ou commenter à ma place ?",
+        "answer": "Sauf si vous configuez un message de bienvenue à vos nouveaux abonnés, nous ne commenterons pas et ne vous envoyerons pas de messages. Nos actions se concentrent sur des interactions naturelles et efficaces, telles que le follow ciblé, les likes de publication / stories et les vues de stories. Cela permet d'attirer des abonnés intéressés sans heurter leur expérience utilisateur sur Instagram."
+      },
+      {
+        "question": "Puis-je annuler mon abonnement facilement ?",
+        "answer": "Oui, vous êtes libre d'annuler votre abonnement à tout moment. Nos abonnements fonctionnent par période mensuelle, et vous ne serez pas facturé pour la période suivante une fois l'annulation effectuée. Nous croyons en la transparence et en la flexibilité. Notre objectif est de vous offrir un service de qualité, sans engagement contraignant, afin que vous puissiez utiliser notre solution en toute sérénité. Idem pour notre offre d'éssai gratuite qui est véritablement gratuite."
+      }
+    ]
+  }
 }
