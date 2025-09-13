@@ -231,7 +231,7 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     <a
-      href="https://app.lezard-agency.com"
+      href="https://lezard-agency.com"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-inherit"
     >
       {/* Logo recoloré via mask, prend la couleur courante (currentColor) */}

@@ -31,8 +31,14 @@ export default function ContactPrix({
 
   if (!mounted) return null;
 
-  const finalTitle = title ?? t("prix.contact.title", "Vous avez des questions ?");
-  const finalSubtitle = subtitle ?? t("prix.contact.subtitle", "Réservez votre consultation de 20 min avec notre expert !");
+  const finalTitle =
+    title ?? t("prix.contact.title", "Vous avez des questions ?");
+  const finalSubtitle =
+    subtitle ??
+    t(
+      "prix.contact.subtitle",
+      "Réservez votre consultation de 20 min avec notre expert !"
+    );
 
   return (
     <section
@@ -51,25 +57,30 @@ export default function ContactPrix({
       >
         <div
           className={cn(
-            "flex flex-col items-start gap-6 p-6",
+            // mobile : colonne centrée, desktop : row
+            "flex flex-col items-center text-center gap-6 p-6",
             "sm:p-8",
-            "lg:flex-row lg:items-center lg:justify-between lg:p-10"
+            "lg:flex-row lg:items-center lg:justify-between lg:text-left lg:p-10"
           )}
         >
-          <div className="flex items-start gap-4 sm:gap-6">
+          {/* Bloc avatar + texte */}
+          <div className="flex flex-col items-center gap-4 sm:gap-6 lg:flex-row lg:items-start lg:text-left">
             <div className="shrink-0 overflow-hidden rounded-full ring-1 ring-black/10">
               <Image
                 src={avatarSrc}
                 alt=""
                 width={112}
                 height={112}
-                className="h-16 w-16 sm:h-24 sm:w-24 object-cover"
+                className="h-24 w-24 sm:h-28 sm:w-28 object-cover"
                 priority
               />
             </div>
 
             <div>
-              <h3 id="contact-pricing-title" className="text-2xl font-semibold sm:text-3xl">
+              <h3
+                id="contact-pricing-title"
+                className="text-2xl font-semibold sm:text-3xl"
+              >
                 {finalTitle}
               </h3>
               <p className="mt-2 text-base sm:text-lg opacity-80">
@@ -78,7 +89,8 @@ export default function ContactPrix({
             </div>
           </div>
 
-          <div className="w-full lg:w-auto lg:pl-6">
+          {/* Bouton */}
+          <div className="w-full lg:w-auto lg:pl-6 mt-4 lg:mt-0">
             <ButtonContact href={href} className="w-full lg:w-auto" />
           </div>
         </div>

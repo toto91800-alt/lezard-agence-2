@@ -19,7 +19,7 @@ type VarStyle = React.CSSProperties & {
 
 export default function About({
   className,
-  heightMobile = 320,
+  heightMobile = 420,
   heightDesktop = 580,
 }: Props) {
   const { t } = useTranslation();
@@ -73,7 +73,8 @@ export default function About({
           transform: "translate(-50%, calc(-50% - 4vh))",
         }}
       >
-        <h2 className="mx-auto max-w-[min(92vw,1200px)] text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.2rem,8vw,7rem)] text-white">
+        <h2 className="mx-auto max-w-[min(92vw,1200px)] text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.8rem,10vw,7rem)] text-white">
+
           {t("aboutus.team.title", "Découvrez notre équipe")}
         </h2>
       </div>

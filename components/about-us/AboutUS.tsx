@@ -19,7 +19,7 @@ const AboutUs: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="px-4 pb-16">
+    <section className="px-4 pb-16 -mt-10">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
           {team.map((member, index) => (
