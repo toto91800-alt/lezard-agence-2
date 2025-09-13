@@ -25,12 +25,13 @@ type CarouselResultatsProps = {
 
 const defaultItems: CarouselItem[] = [
   {
-    profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/clemencebertrand?cb=1756895944230", name: "Clémence Bertrand", username: "@clemencebertrand", instagramHref: "https://www.instagram.com/clemencebertrand", mediaSrc: "https://app.lezard-agency.com/api/ig/pdp/clemencebertrand?cb=1756895944230", mediaAlt: "Post Instagram",
+    profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/clemencebertrand?cb=1756895944230", name: "Clémence Bertrand", username: "@clemencebertrand", instagramHref: "https://www.instagram.com/clemencebertrand", mediaSrc: "/images/carousel/clemence.jpg", mediaAlt: "Post Instagram",
   },
-  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/theride.collective?cb=1756986713812", name: "The Ride Collective", username: "@theride.collective", instagramHref: "https://www.instagram.com/theride.collective/", mediaSrc: "https://app.lezard-agency.com/api/ig/pdp/theride.collective?cb=1756986713812", mediaAlt: "Post Instagram" },
-  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/shopnatscafe?cb=1756987915892", name: "Nat’s Cafe", username: "@shopnatscafe", instagramHref: "https://www.instagram.com/shopnatscafe/", mediaSrc: "https://app.lezard-agency.com/api/ig/pdp/shopnatscafe?cb=1756987915892", mediaAlt: "Post Instagram" },
-  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/becaybrand?cb=1756986984070", name: "BECAY", username: "@becaybrand", instagramHref: "https://www.instagram.com/becaybrand/", mediaSrc: "https://app.lezard-agency.com/api/ig/pdp/becaybrand?cb=1756986984070", mediaAlt: "Post Instagram" },
-  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/tealer?cb=1756987561441", name: "Tealerlab", username: "@tealer", instagramHref: "https://www.instagram.com/tealer/", mediaSrc: "https://app.lezard-agency.com/api/ig/pdp/tealer?cb=1756987561441", mediaAlt: "Post Instagram" },
+  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/theride.collective?cb=1756986713812", name: "The Ride Collective", username: "@theride.collective", instagramHref: "https://www.instagram.com/theride.collective/", mediaSrc: "/images/carousel/theride.jpg", mediaAlt: "Post Instagram" },
+  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/shopnatscafe?cb=1756987915892", name: "Nat’s Cafe", username: "@shopnatscafe", instagramHref: "https://www.instagram.com/shopnatscafe/", mediaSrc: "/images/carousel/shopnatscafe.jpg", mediaAlt: "Post Instagram" },
+  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/becaybrand?cb=1756986984070", name: "BECAY", username: "@becaybrand", instagramHref: "https://www.instagram.com/becaybrand/", mediaSrc: "/images/carousel/beacay.jpg", mediaAlt: "Post Instagram" },
+  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/tealer?cb=1756987561441", name: "Tealerlab", username: "@tealer", instagramHref: "https://www.instagram.com/tealer/", mediaSrc: "/images/carousel/tealer.jpg", mediaAlt: "Post Instagram" },
+  { profileImageSrc: "https://app.lezard-agency.com/api/ig/pdp/meryyrodriguezz?cb=1757755531054", name: "maria rodri", username: "@meryyrodriguezz", instagramHref: "https://www.instagram.com/meryyrodriguezz/", mediaSrc: "/images/carousel/rodrigues.jpg", mediaAlt: "Post Instagram" },
 ];
 
 
