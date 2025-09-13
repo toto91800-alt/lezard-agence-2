@@ -8,11 +8,9 @@ export default function PricingPage() {
     <main className="min-h-screen w-full">
       <Prix />
       <div className="mt-0 lg:-mt-30 relative z-[2]">
-  <New_Pricing />
-  <ContactPrix />
-</div>
-
-
+        <New_Pricing />
+        <ContactPrix />
+      </div>
     </main>
   );
 }

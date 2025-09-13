@@ -23,7 +23,7 @@ export default function Cards6({ className, title, text }: Props) {
         <div className="relative mt-0.5 flex-none text-rose-500 h-14 w-14 sm:h-16 sm:w-16">
           <div className="relative h-full w-full like-anim" aria-hidden="true">
             <Image
-              src="/svg/benefits/shield.svg"
+              src="/svg/benefits/shield1.svg"
               alt="Likes"
               fill
               className="object-contain pointer-events-none"
