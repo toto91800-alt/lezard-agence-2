@@ -52,7 +52,7 @@
   },
   "components": {
     "buttonstrike": {
-      "label": "5 días de prueba gratis",
+      "label": "Empezar ahora",
       "aria": "Empieza ahora"
     },
     "buttonresultats": {
@@ -781,7 +781,7 @@
     "results": "Resultados",
     "pricing": "Precios",
     "about": "Sobre nosotros",
-    "cta": "5 días de prueba gratis"
+    "cta": "Empezar ahora"
   },
   "tarif": {
     "loading": "Cargando precios...",
@@ -826,7 +826,7 @@
       "title": "Profesional",
       "desc": "~ 300 - 600 seguidores / mes",
       "badge": "Plan recomendado",
-      "button": "Prueba gratuita de 5 días →",
+      "button": "Comenzar ahora →",
       "soustitle": "Con compromiso",
       "features": [
         "15.000 interacciones/mes.",

@@ -69,7 +69,7 @@
   },
   "components": {
     "buttonstrike": {
-      "label": "5 jours d’essai gratuits",
+      "label": "Commencer maintenant",
       "aria": "Commencer maintenant"
     },
     "buttonresultats": {
@@ -782,7 +782,7 @@
     "results": "Résultats",
     "pricing": "Tarifs",
     "about": "À propos",
-    "cta": "5 jours d’essai gratuits"
+    "cta": "Commencer maintenant"
   },
   
     "tarif": {
@@ -828,7 +828,7 @@
           "title": "Professionnel",
           "desc": "~ 300 - 600 followers / mois",
           "badge": "Plan recommandé",
-          "button": "Essai gratuit de 5 jours →",
+          "button": "Commencer maintenant →",
           "soustitle": "Avec engagement",
           "features": [
             "15.000 interactions/mois.",

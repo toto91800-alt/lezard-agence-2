@@ -68,7 +68,7 @@
   },
   "components": {
     "buttonstrike": {
-      "label": "5 days free trial",
+      "label": "Start now",
       "aria": "Start now"
     },
     "buttonresultats": {
@@ -781,7 +781,7 @@
     "results": "Results",
     "pricing": "Pricing",
     "about": "About us",
-    "cta": "5 days free trial"
+    "cta": "Start now"
   },
   "tarif": {
     "loading": "Loading pricing...",
@@ -826,7 +826,7 @@
         "title": "Professional",
         "desc": "~ 300 - 600 followers / month",
         "badge": "Recommended",
-        "button": "5-day free trial →",
+        "button": "Start now →",
         "features": [
           "15,000 interactions/month",
           "AI-powered follower targeting",
