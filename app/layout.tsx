@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "@/components/menu/providers";
 import { NavbarDemo } from "@/components/menu/NavbarDemo";
 import MainFooter from "@/components/footer/MainFooter";
+import WhatsAppBubble from "@/components/ui/WhatsAppBubble"; // ✅ import
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +28,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <Providers>
           <NavbarDemo />
           {children}
           <MainFooter />
+
+          {/* ✅ Bulle WhatsApp fixée en bas à droite */}
+          <WhatsAppBubble
+            phone="33781225913" // 👉 mets ton numéro WhatsApp
+            message="Hi, feel free to send me a message! I’ll be happy to take some time to help you out"
+          />
         </Providers>
       </body>
     </html>
