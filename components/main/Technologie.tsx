@@ -15,7 +15,7 @@ export default function Technologie({ className = "" }: Props) {
 
   return (
     <section className={`relative overflow-hidden w-full ${className}`}>
-      <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6 py-14 sm:py-20">
+     <div className="relative z-[2] w-full flex flex-col items-center gap-4 sm:gap-6 pt-14 sm:pt-0">
         <div className="mx-auto w-full max-w-5xl px-4">
           <h2 className="w-full text-center font-bold leading-[0.98] tracking-tight text-[clamp(2.5rem,10vw,7rem)]">
             {/* Wrapper centré et stable */}

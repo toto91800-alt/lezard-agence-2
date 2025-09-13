@@ -72,7 +72,9 @@ export default function Benefit({ className, items }: Props) {
   const CardComponents = [Cards1, Cards2, Cards3, Cards4, Cards5, Cards6] as const;
 
   return (
-    <section className={cn("relative overflow-hidden w-full", className)}>
+<section className={cn("relative overflow-hidden w-full -mt-100 sm:mt-0", className)}>
+
+
       {/* 🔺 Background triangulaire */}
       <div className="absolute inset-0 h-[140vh]">
         <TriangleTopBackground height="100%" />

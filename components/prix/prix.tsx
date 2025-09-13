@@ -81,27 +81,46 @@ export default function PrixSection({
       </div>
 
       {/* Titre + SocialProof */}
-      <div className="absolute inset-0 z-[2] flex flex-col items-center justify-center px-4 gap-4 sm:gap-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.2rem,10vw,7rem)]">
+      <div className="absolute inset-0 z-[2] flex flex-col items-center justify-center px-4 gap-8 sm:gap-6 pb-16 sm:pb-0">
+        <div className="mx-auto max-w-3xl text-center transform translate-y-16 sm:translate-y-0">
+          <h2 className="font-bold leading-[0.98] tracking-tight text-[clamp(2.8rem,12vw,3.75rem)] sm:text-[clamp(2.2rem,8vw,7rem)]">
             <span className="block mt-[0.25em] text-white whitespace-nowrap">
               {t("prix.bigtitle", "Nos Tarifs")}
             </span>
           </h2>
         </div>
 
-        <SocialProof
-          images={[
-            { src: "https://app.lezard-agency.com/api/ig/pdp/theo.leraillez", alt: "Alice" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/julia_nadal_?cb=1756323670092", alt: "Bob" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/ericflag?cb=1756323886796", alt: "Carla" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/alextournier_?cb=1756323986311", alt: "David" },
-            { src: "https://app.lezard-agency.com/api/ig/pdp/mavii.off?cb=1756323775730", alt: "Eva" },
-          ]}
-          rating={5}
-          usersCount={1200}
-          sizePx={56}
-        />
+        {/* espace sous le titre surtout sur mobile */}
+        {/* espace sous le titre surtout sur mobile */}
+        <div className="mt-16 sm:mt-6 translate-y-6 sm:translate-y-0">
+          <SocialProof
+            images={[
+              {
+                src: "https://app.lezard-agency.com/api/ig/pdp/theo.leraillez",
+                alt: "Alice",
+              },
+              {
+                src: "https://app.lezard-agency.com/api/ig/pdp/julia_nadal_?cb=1756323670092",
+                alt: "Bob",
+              },
+              {
+                src: "https://app.lezard-agency.com/api/ig/pdp/ericflag?cb=1756323886796",
+                alt: "Carla",
+              },
+              {
+                src: "https://app.lezard-agency.com/api/ig/pdp/alextournier_?cb=1756323986311",
+                alt: "David",
+              },
+              {
+                src: "https://app.lezard-agency.com/api/ig/pdp/mavii.off?cb=1756323775730",
+                alt: "Eva",
+              },
+            ]}
+            rating={5}
+            usersCount={1200}
+            sizePx={56}
+          />
+        </div>
       </div>
     </section>
   );

@@ -86,7 +86,7 @@ export default function HowIsWorkTop({
           <h2
             className="
               font-bold leading-[0.98] tracking-tight text-white
-              pb-4 sm:pb-6
+              pb-10 sm:pb-6
               text-[clamp(3rem,12vw,3.75rem)]
               sm:text-[clamp(2.2rem,8vw,7rem)]
             "
