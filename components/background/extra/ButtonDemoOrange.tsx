@@ -10,7 +10,7 @@ type Props = {
   onClick?: () => void;   // si présent -> <button>
 };
 
-const DEFAULT_HREF = "https://statshybrid.vercel.app/lezard-agence/trial";
+const DEFAULT_HREF = "https://demo.lezard-agency.com/lezard-agence/trial";
 
 export default function ButtonDemoOrange({ className, href, onClick }: Props) {
   const base =

@@ -53,7 +53,7 @@ export const getPlans = (t: TranslateFn): PLAN[] => [
       t("tarif.card.demo.features.2"),
       t("tarif.card.demo.features.3"),
     ],
-    link: "https://statshybrid.vercel.app/lezard-agence/trial",
+    link: "https://demo.lezard-agency.com/lezard-agence/trial",
   },
 
   // DISCOVERY
