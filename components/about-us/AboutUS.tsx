@@ -7,12 +7,12 @@ import { useTranslation } from 'react-i18next';
 type TeamMember = { name: string; roleKey: string; image: string };
 
 const team: TeamMember[] = [
-  { name: 'Gabriel Frojal', roleKey: 'gabriel', image: '/images/about-us/gabriel.png' },
-  { name: 'Romain Lambert', roleKey: 'romain', image: '/images/about-us/romain.png' },
-  { name: 'Hugo Lisoir', roleKey: 'hugo', image: '/images/about-us/hugo.png' },
-  { name: 'Mathis Giraud', roleKey: 'mathis', image: '/images/about-us/mathis.png' },
-  { name: 'Théo Leraillez', roleKey: 'theo', image: '/images/about-us/TheoLeraillez.png' },
-  { name: 'Lucien Maynard', roleKey: 'lucien', image: '/images/about-us/lucien-maynard.png' },
+  { name: 'Gabriel Frojal', roleKey: 'gabriel', image: '/images/about-us/gabriel.webp' },
+  { name: 'Romain Lambert', roleKey: 'romain', image: '/images/about-us/romain.webp' },
+  { name: 'Hugo Lisoir', roleKey: 'hugo', image: '/images/about-us/hugo.webp' },
+  { name: 'Mathis Giraud', roleKey: 'mathis', image: '/images/about-us/mathis.webp' },
+  { name: 'Théo Leraillez', roleKey: 'theo', image: '/images/about-us/TheoLeraillez.webp' },
+  { name: 'Lucien Maynard', roleKey: 'lucien', image: '/images/about-us/lucien-maynard.webp' },
 ];
 
 const AboutUs: React.FC = () => {
