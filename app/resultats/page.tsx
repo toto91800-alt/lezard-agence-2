@@ -5,22 +5,15 @@ import { cn } from "@/lib/utils";
 import TopLabHeroBackground from "@/components/background/TopLabHeroBackground";
 import ComingSoon from "@/components/ui/ComingSoon";
 
-type Props = {
-  className?: string;
-  heightMobile?: number | string;
-  heightDesktop?: number | string;
-};
-
 type VarStyle = React.CSSProperties & {
   ["--h-mobile"]?: string;
   ["--h-desktop"]?: string;
 };
 
-export default function ResultatsPage({
-  className,
-  heightMobile = 420,
-  heightDesktop = 580,
-}: Props) {
+export default function ResultatsPage() {
+  const heightMobile = 420;
+  const heightDesktop = 580;
+
   const hMobile =
     typeof heightMobile === "number" ? `${heightMobile}px` : heightMobile;
   const hDesktop =
@@ -35,8 +28,7 @@ export default function ResultatsPage({
     <section
       className={cn(
         "relative w-full overflow-hidden flex items-center justify-center",
-        "min-h-[var(--h-mobile)] sm:min-h-[var(--h-desktop)]",
-        className
+        "min-h-[var(--h-mobile)] sm:min-h-[var(--h-desktop)]"
       )}
       style={styleVars}
     >
