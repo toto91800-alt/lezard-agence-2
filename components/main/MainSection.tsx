@@ -9,20 +9,22 @@ import ButtonDemo from "@/components/background/extra/ButtonDemo";
 import Image from "next/image";
 
 // Mobile compact, desktop surchargé via classes
-const HERO_HEIGHT = "clamp(360px, 60svh, 820px)";
+const HERO_HEIGHT = "clamp(480px, 60svh, 820px)";
 
 const MainSection: React.FC = () => {
   return (
     <section className="relative">
-      <TopLabHeroBackground
-        height={HERO_HEIGHT}
-        className="
-          md:!h-[66svh]
-          lg:!h-[74svh]
-          xl:!h-[78svh]
-          2xl:!h-[840px]
-        "
-      />
+   <TopLabHeroBackground
+  height={HERO_HEIGHT}
+  className="
+    !h-[800px]           // ← hauteur forcée sur mobile
+    sm:!h-[60svh]        // sm = >=640px
+    md:!h-[66svh]
+    lg:!h-[74svh]
+    xl:!h-[78svh]
+    2xl:!h-[840px]
+  "
+/>
 
       {/* 🎨 Décorations SVG (étoiles) — cachées sur mobile */}
       <div aria-hidden className="pointer-events-none absolute inset-0 z-[5] hidden sm:block">
