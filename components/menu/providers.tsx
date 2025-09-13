@@ -13,9 +13,9 @@ export function Providers({ children }: ProvidersProps) {
   return (
     <ThemeProvider
       attribute="class"
-      themes={['dark', 'custom']}
-      defaultTheme="system"
-      enableSystem
+      themes={['dark', 'custom', 'light']} // j’ai ajouté "light" pour plus de flexibilité
+      defaultTheme="custom"               // ✅ custom par défaut
+      enableSystem={false}                // ✅ n’applique pas le mode système
     >
       <I18nextProvider i18n={i18n}>
         {children}
