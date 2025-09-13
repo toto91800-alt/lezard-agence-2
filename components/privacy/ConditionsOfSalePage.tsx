@@ -128,7 +128,6 @@ export function ConditionsOfSalePage() {
               <br />
               {t("components.ConditionsOfSale.block.section4.address.line2")}{" "}
               <br />
-              {t("components.ConditionsOfSale.block.section4.address.line3")}{" "}
               <br />
               <a
                 href="mailto:contact@lezard-agency.com"
@@ -489,7 +488,6 @@ export function ConditionsOfSalePage() {
                 "components.ConditionsOfSale.block.section11.address.line3"
               )}{" "}
               <br />
-              {t("components.ConditionsOfSale.block.section11.address.line4")}
             </p>
   
             <p className="text-xl font-bold mt-6 mb-2">
@@ -583,7 +581,6 @@ export function ConditionsOfSalePage() {
   
             <p className="text-center font-bold">
               <strong>
-                {t("components.ConditionsOfSale.block.section9.contact.postal")}
               </strong>
               {t("components.ConditionsOfSale.block.section11.address.line1")}{" "}
               <br />
@@ -595,7 +592,6 @@ export function ConditionsOfSalePage() {
                 "components.ConditionsOfSale.block.section11.address.line3"
               )}{" "}
               <br />
-              {t("components.ConditionsOfSale.block.section11.address.line4")}
             </p>
   
             <p className="space-y-4 leading-relaxed">
