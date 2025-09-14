@@ -719,13 +719,13 @@
         {
           "title": "Mensajes automáticos",
           "text": "Crea mensajes personalizados para tus nuevos seguidores o para prospección.",
-          "image": "/svg/how/Dm.svg",
+          "image": "/svg/how/welcomemessage.svg",
           "alt": "Análisis detallado"
         },
         {
           "title": "Responder encuestas",
           "text": "Responde a las encuestas de tus objetivos para atraerlos a tu cuenta.",
-          "image": "/svg/how/going_next.svg",
+          "image": "/svg/how/sondage.webp",
           "alt": "Automatización"
         }
       ]

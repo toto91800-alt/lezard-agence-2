@@ -720,13 +720,13 @@
         {
           "title": "Message automatique",
           "text": "Créez des messages personnalisés pour vos nouveaux followers ou pour démarcher.",
-          "image": "/svg/how/Dm.svg",
+          "image": "/svg/how/welcomemessage.svg",
           "alt": "Analyse détaillée"
         },
         {
           "title": "Répondez aux sondages",
           "text": "Répondez aux sondages de vos cibles afin de les attirer sur votre compte.",
-          "image": "/svg/how/going_next.svg",
+          "image": "/svg/how/sondage.webp",
           "alt": "Automatisation"
         }
       ]

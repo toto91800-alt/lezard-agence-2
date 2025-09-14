@@ -719,13 +719,13 @@
         {
           "title": "Automatic Messaging",
           "text": "Create personalized messages for your new followers or for outreach.",
-          "image": "/svg/how/Dm.svg",
+          "image": "/svg/how/welcomemessage.svg",
           "alt": "Detailed analytics"
         },
         {
           "title": "Answer Polls",
           "text": "Reply to your targets’ polls to attract them to your account.",
-          "image": "/svg/how/going_next.svg",
+          "image": "/svg/how/sondage.webp",
           "alt": "Automation"
         }
       ]

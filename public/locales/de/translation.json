@@ -719,13 +719,13 @@
         {
           "title": "Automatische Nachrichten",
           "text": "Erstelle personalisierte Nachrichten für neue Follower oder für die Akquise.",
-          "image": "/svg/how/Dm.svg",
+          "image": "/svg/how/welcomemessage.svg",
           "alt": "Detaillierte Analyse"
         },
         {
           "title": "An Umfragen teilnehmen",
           "text": "Nimm an den Umfragen deiner Zielgruppe teil, um sie auf dein Profil aufmerksam zu machen.",
-          "image": "/svg/how/going_next.svg",
+          "image": "/svg/how/sondage.webp",
           "alt": "Automatisierung"
         }
       ]
