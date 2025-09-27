@@ -85,7 +85,7 @@ const MainSection: React.FC = () => {
           <SocialProof
             images={[
               { src: "https://app.lezard-agency.com/api/ig/pdp/theo.leraillez", alt: "Alice" },
-              { src: "https://app.lezard-agency.com/api/ig/pdp/julia_nadal_?cb=1756323670092", alt: "Bob" },
+              { src: "https://app.lezard-agency.com/api/ig/pdp/meryyrodriguezz?cb=1758981685139", alt: "Bob" },
               { src: "https://app.lezard-agency.com/api/ig/pdp/ericflag?cb=1756323886796", alt: "Carla" },
               { src: "https://app.lezard-agency.com/api/ig/pdp/alextournier_?cb=1756323986311", alt: "David" },
               { src: "https://app.lezard-agency.com/api/ig/pdp/mavii.off?cb=1756323775730", alt: "Eva" },
