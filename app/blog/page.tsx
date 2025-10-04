@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Blog | Lézard Agency",
   description: "Découvrez nos articles et ressources pour booster votre croissance.",
 };
-
+ 
 export default function BlogPage() {
   return (
     <section className="w-full py-16">
