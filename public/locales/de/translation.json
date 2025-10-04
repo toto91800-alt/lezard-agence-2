@@ -1,0 +1,975 @@
+{
+  "tutorial_authentificator": {
+    "Titre_Main": "Zwei-Faktor-Authentifizierung über Google Authenticator aktivieren",
+    "sous_titre": "Alle unsere Tutorials finden Sie hier",
+    "Titre_1": "Öffne das Einstellungsmenü",
+    "Description_1": "Klicke auf Einstellungen",
+    "Description_APP_1": "Du kannst diese App herunterladen unter",
+    "Description_APP_2": "oder ",
+    "Titre_2": "Wähle „Blauer Konto-Bereich“.",
+    "Titre_3": "Passwort und Sicherheit",
+    "Titre_4": "Passwort und Sicherheit",
+    "Titre_5": "Klicke auf dein Konto",
+    "Titre_6": "Wähle eine Authentifizierungs-App",
+    "Titre_7": "Kopiere den Schlüssel",
+    "Titre_8": "Lade die App „Google Authenticator“ herunter",
+    "Titre_9": "Füge einen neuen Schlüssel hinzu",
+    "Titre_10": "Im ersten Feld dein Benutzername, im zweiten dein Schlüssel.",
+    "Titre_11": "Bestätige den Code auf Instagram",
+    "Titre_12": "Perfekt! Deine Authentifizierung ist jetzt aktiviert.",
+    "Titre_Recovery_Button": "Wiederherstellungscode-Tutorial"
+  },
+  "tutorial_Recovery_Code": {
+    "Titre_Main": "Einen Wiederherstellungscode erhalten",
+    "Titre_1": "Öffne das Einstellungsmenü und klicke auf \"Einstellungen\"",
+    "Titre_2": "Wähle \"Blauer Konto-Bereich\"",
+    "Titre_3": "Passwort und Sicherheit",
+    "Titre_4": "Klicke auf Zwei-Faktor-Authentifizierung",
+    "Titre_5": "Klicke auf dein Konto",
+    "Titre_6": "Zusätzliche Methode auswählen",
+    "Titre_7": "Klicke auf Backup-Code",
+    "Titre_8": "Gib einen dieser Backup-Codes ein",
+    "Titre_authenticator_Button": "Tutorial code 2FA"
+  },
+  "mainpage": {
+    "pricing": {
+      "title": "Unsere Preise"
+    },
+    "reviews": {
+      "title": "Kundenbewertungen"
+    },
+    "hero": {
+      "line1": "Wirkung zeigen auf",
+      "line2": "Instagram"
+    },
+    "socialproof": {
+      "text": "von {{formatted}} Nutzer",
+      "text_plural": "von {{formatted}} Nutzern"
+    },
+    "technologie": {
+      "title": {
+        "line1": "Unsere Technologie",
+        "line2": "in 360°"
+      }
+    },
+    "benefit": {
+      "title": "Vorteile",
+      "items": {
+        "n1": {
+          "title": "Neue Follower",
+          "text": "300 bis 700 Neue Follower pro Monat. Steigere dein organisches Wachstum."
+        },
+        "n2": {
+          "title": "Mehr Likes / Kommentare",
+          "text": "Steigere das Engagement bei deinen Beiträgen."
+        },
+        "n3": {
+          "title": "Mehr Kunden",
+          "text": "Verwandle deine Follower in treue, zahlende Kunden."
+        },
+        "n4": {
+          "title": "Verfolge deine Ergebnisse",
+          "text": "Zwischen 2% und 5% Steigerung der Engagement-Rate. Überwache in Echtzeit die Aktionen und Statistiken deines Kontos."
+        },
+        "n5": {
+          "title": "Einfache Integration",
+          "text": "Einfache Verbindung mit einer Benutzeroberfläche, die für Automatisierung und Anpassung an deine Präferenzen entwickelt wurde."
+        },
+        "n6": {
+          "title": "Sicherheit & Compliance",
+          "text": "Sicheres Instagram-Konto und geschützte Daten, DSGVO-konform."
+        }
+      }
+    },
+    "reviewsfooter": {
+      "title": "Bewertungen",
+      "footer": {
+        "clemence": "Dank des Tools habe ich endlich mein Image strukturiert: +400 neue Follower/Monat, mehr qualifizierte DMs und ein professionell wirkender Feed. Ich liebe es!",
+        "ride": "Unsere Reels gehen durch die Decke und die Community wird aktiv. Mehr Engagement jede Woche und echte Fans, die zu jedem Beitrag zurückkehren.",
+        "shopnat": "Mein Instagram ist endlich durchgestartet: mehr Kunden im Laden, Stories mit mehr Aufrufen und täglich neue Nachrichten. So einfach zu steuern!",
+        "becay": "Kohärenteres Branding, funktionierendes UGC und eine Community, die konvertiert. Die Posts werden zu echten Verkaufstreibern.",
+        "mccall": "Klarer Content-Kalender, null Stress und eine wachsende Zielgruppe jede Woche. Ich habe sogar neue Kooperationen abgeschlossen.",
+        "tealer": "Mehr Sichtbarkeit, qualifizierter Traffic und eine treuere Community. Man spürt den Unterschied bei jedem Kollektionslaunch.",
+        "utopia": "Unsere Events gewinnen an Reichweite: mehr Aufrufe, mehr Shares und Tickets, die dank Reels schneller ausverkauft sind."
+      }
+    },
+    "resultat": {
+      "line1": "300 bis 700 Neue",
+      "line2": "Follower pro Monat"
+    }
+  },
+  "components": {
+    "ButtonShow": {
+      "label": "Ergebnisse anzeigen",
+      "aria": "Ergebnisse anzeigen"
+    },
+    "buttonstrike": {
+      "label": "5 Tage kostenlos testen",
+      "aria": "Jetzt starten"
+    },
+    "buttonresultats": {
+      "label": "Ergebnisse entdecken",
+      "aria": "Ergebnisse entdecken"
+    },
+    "buttoncontact": {
+      "label": "Termin vereinbaren",
+      "aria": "Termin vereinbaren"
+    },
+    "buttontechnologie": {
+      "label": "Entdecken",
+      "aria": "Die Technologie entdecken"
+    },
+    "comingsoon": {
+      "title": "Demnächst verfügbar",
+      "subtitle": "Diese Seite wird bald verfügbar sein.",
+      "back": "Zurück"
+    },
+    "ConditionsOfSale": {
+      "title": "Allgemeine Verkaufsbedingungen für Software",
+      "block": {
+        "section1": {
+          "title": "Allgemeine Abonnementbedingungen",
+          "p1": "Diese Allgemeinen Abonnementbedingungen binden den Anbieter und den Kunden bei Vertragsabschluss.",
+          "p2": "Wenn der Kunde ein Abonnement abschließt, wird er eingeladen, diese Allgemeinen Abonnementbedingungen zu akzeptieren.",
+          "p3": "Es wird dem Kunden empfohlen, sie auszudrucken oder auf dem Computer zu speichern.",
+          "p4": "Falls der Kunde nicht an diese Bedingungen gebunden sein möchte, darf er sie nicht akzeptieren. Andernfalls kann er das Abonnement nicht abschließen.",
+          "p5": "Falls der Kunde die allgemeinen Verkaufsbedingungen und Nutzungsbedingungen der Website nicht akzeptiert unter",
+          "p6": "Sofern nicht anders angegeben, gelten diese Allgemeinen Abonnementbedingungen für die über die Website angebotenen Abonnementangebote."
+        },
+        "section2": {
+          "title": "ARTIKEL 2 – Rechtliche Informationen",
+          "p1": "Der Kunde ist verpflichtet, diese Allgemeinen Abonnementbedingungen zu lesen...",
+          "p2": "Die Website präsentiert die Hauptmerkmale der Dienstleistungen...",
+          "p3": "Der Kunde erkennt an, dass er für sein Abonnement verantwortlich ist...",
+          "p4": "Die Kontaktdaten des Anbieters sind wie folgt:",
+          "p5": "Diese Allgemeinen Abonnementbedingungen sind jederzeit zugänglich...",
+          "p6": "Die Allgemeinen Abonnementbedingungen gelten nur für den LEZARD AGENCE-Dienst...",
+          "p7": "Sofern nicht anders nachgewiesen, gelten die im System des Anbieters gespeicherten Daten...",
+          "p8": "Gemäß dem Datenschutzgesetz und der DSGVO...",
+          "p9": "Der Kunde hat das Recht auf Zugang, Berichtigung, Widerspruch und Löschung seiner personenbezogenen Daten...",
+          "p10": "Der Kunde erklärt, dass er diese gelesen und akzeptiert hat...",
+          "line1": "Lezard Agence Unternehmen",
+          "line2": "EINZELUNTERNEHMEN",
+          "line3": "",
+          "line4": ""
+        },
+        "section3": {
+          "title": "ARTIKEL 2 – Beschreibung der Dienstleistungen",
+          "p1": "Der LEZARD AGENCE-Dienst wird hauptsächlich vom Kunden abonniert.",
+          "p2": "Zusätzliche oder optionale Dienstleistungen können hinzugefügt werden, die ein Abonnement spezifischer Optionen erfordern.",
+          "p3": "Der Kunde hat eine 14-tägige Widerrufsfrist ab Vertragsabschluss, die er durch Übersendung des Widerrufsformulars oder eines anderen eindeutigen Schreibens per Einschreiben mit Rückschein ausüben kann.",
+          "p4": "Der Service ist erst nach Ablauf dieser 14-tägigen Frist zugänglich.",
+          "p5": "Der Kunde kann ausdrücklich verlangen, den Service innerhalb von 2 Werktagen nach Zahlung zu nutzen."
+        },
+        "section4": {
+          "title": "ARTIKEL 4 – Zahlungsbedingungen",
+          "p1": "Die Zahlung für die Dienstleistungen erfolgt online über die auf der Website angebotenen sicheren Zahlungsmethoden.",
+          "p2": "Abonnements werden je nach gewähltem Zeitraum des Kunden (monatlich oder jährlich) wiederkehrend abgerechnet.",
+          "p3": "Der Kunde verpflichtet sich, während der gesamten Laufzeit seines Abonnements gültige und aktuelle Zahlungsinformationen bereitzuhalten.",
+          "p4": "Bei Zahlungsausfall oder Abrechnungsproblemen kann der Zugang zu den Diensten bis zur Klärung gesperrt werden.",
+          "address": {
+            "line1": "Lezard Agence",
+            "line2": "",
+            "email": "contact@lezard-agency.com"
+          },
+          "p5": "Alle Preisänderungen werden dem Kunden vor der Anwendung mitgeteilt, mit der Möglichkeit, das Abonnement zu kündigen.",
+          "p6": "Eine Rückerstattung kann außerhalb des gesetzlichen Widerrufsrechts nicht verlangt werden."
+        },
+        "section5": {
+          "title": "ARTIKEL 5 – Aktivierung des Abonnements",
+          "p1": "Der Tag des Monats, an dem der Kunde online abonniert, wird automatisch als Jahrestag des Vertrags festgelegt.",
+          "p2": "Die Vertragsinformationen werden auf Französisch präsentiert und spätestens bei der Bestätigung des Abonnements durch den Kunden bestätigt.",
+          "p3": "Der Kunde hat die Möglichkeit, die Details seines Abonnements, seinen Gesamtpreis zu überprüfen und eventuelle Fehler zu korrigieren, bevor er seine Zustimmung bestätigt (Artikel 1127-2 des Bürgerlichen Gesetzbuches).",
+          "p4": "Diese Bestätigung impliziert die vollständige Annahme der Allgemeinen Abonnementbedingungen sowie der Allgemeinen Verkaufsbedingungen und der Allgemeinen Nutzungsbedingungen der Website.",
+          "p5": "Es liegt in der Verantwortung des Kunden, die Richtigkeit des Vertrags zu überprüfen und etwaige Fehler sofort zu melden.",
+          "p6": "Das Abonnement des Kunden gilt erst nach Bestätigung der Annahme durch den Anbieter per E-Mail und nach Eingang der vollständigen Zahlung als endgültig.",
+          "p7": "Jedes auf der Website abgeschlossene Abonnement stellt den Abschluss eines Fernvertrags zwischen dem Kunden und dem Anbieter dar.",
+          "p8": "Der Anbieter behält sich das Recht vor, ein Abonnement eines Kunden zu stornieren oder abzulehnen, mit dem es eine Streitigkeit über die Zahlung eines früheren Vertrags gibt.",
+          "p9": "Der Kunde ist allein für die Anzahl der Abonnements verantwortlich, die er auf der Website abschließt. Der Abschluss mehrerer Abonnements durch denselben Kunden stellt keinen legitimen Grund für die Kündigung des Abonnementvertrags dar."
+        },
+        "section6": {
+          "title": "ARTIKEL 6 – Vertragsverlängerung",
+          "p1": "Der Abonnementvertrag wird für eine feste Laufzeit von 1 Monat mit automatischer Verlängerung um den gleichen Zeitraum abgeschlossen.",
+          "p2": "Gemäß Artikel L 215-1 des Verbraucherschutzgesetzes, wörtlich wiedergegeben:",
+          "p3": "« Für Dienstleistungsverträge, die für einen bestimmten Zeitraum mit einer Klausel zur automatischen Verlängerung abgeschlossen werden, informiert der Dienstleister den Verbraucher schriftlich...",
+          "p4": "Wenn diese Information nicht gemäß den Bestimmungen des ersten Absatzes übermittelt wurde, kann der Verbraucher den Vertrag kostenlos kündigen...",
+          "p5": "Vorauszahlungen, die nach dem letzten Verlängerungsdatum oder im Falle von unbefristeten Verträgen nach dem Datum der Umwandlung des ursprünglichen befristeten Vertrags geleistet wurden...",
+          "p6": "Gemäß Artikel L 215-3 des Verbraucherschutzgesetzes gelten die Bestimmungen dieses Kapitels auch für Verträge zwischen Fachleuten und Nichtfachleuten."
+        },
+        "section7": {
+          "title": "ARTIKEL 6.1 – Finanzielle Bedingungen",
+          "subtitle1": "6-1. Tarife",
+          "tarif1": "Premium-Abonnement: 269,99 € inkl. MwSt./Monat (224,99 € exkl. MwSt.)",
+          "tarif2": "Expert-Abonnement: 339,99 € inkl. MwSt./Monat (283,33 € exkl. MwSt.)",
+          "tarif3": "Premium-Abonnement (-20 %): 214,99 € inkl. MwSt./Monat (179,99 € exkl. MwSt.)",
+          "tarif4": "Expert-Abonnement (-20 %): 269,99 € inkl. MwSt./Monat (226,66 € exkl. MwSt.)",
+          "tarif5": "Premium-Abonnement (-30 %): 189,99 € inkl. MwSt./Monat (158,33 € exkl. MwSt.)",
+          "tarif6": "Expert-Abonnement (-30 %): 239,99 € inkl. MwSt./Monat (199,99 € exkl. MwSt.)",
+          "p1": "Der Kunde kann sein Abonnement jederzeit kündigen, indem er den Anbieter kontaktiert:",
+          "p2": "Der Dienstanbieter behält sich das Recht vor, seine Preise zu ändern. In diesem Fall wird der Kunde einen Monat vor Inkrafttreten der neuen Preise informiert.",
+          "p3": "Wenn der Kunde einer Preiserhöhung für den Dienst LEZARD AGENCE nicht zustimmt, kann er das Abonnement vor Inkrafttreten der neuen Preise kündigen.",
+          "subtitle2": "6-2. Abrechnung und Zahlung",
+          "p4": "Die Rechnungen werden monatlich im Voraus erstellt und sind zum auf der Rechnung angegebenen Datum zahlbar.",
+          "p5": "Die Zahlung kann erfolgen über:",
+          "payment1": "SEPA-Lastschrift",
+          "payment2": "Kreditkarte über den zugelassenen Zahlungsdienstleister Stripe",
+          "p6": "Die Option „Rechnung per Internet“ ist standardmäßig bei der Anmeldung aktiviert, außer bei ausdrücklicher gegenteiliger Anfrage des Kunden.",
+          "p7": "Der Kunde kann seine Rechnungen einsehen, indem er eine E-Mail sendet an:",
+          "p8": "Der Kunde verpflichtet sich, den Dienstanbieter über jede Änderung seiner E-Mail-Adresse zu informieren.",
+          "subtitle3": "6-3. Zahlungsverzug",
+          "p9": "Bei Nichtzahlung werden die dem Anbieter geschuldeten Beträge mit Verzugszinsen belegt, die ab dem Datum des Eingangs einer Mahnung berechnet werden.",
+          "p10": "Wird eine Zahlung des Kunden abgelehnt, können zusätzliche Gebühren gemäß Artikel 32 des Gesetzes vom 9. Juli 1991 anfallen.",
+          "p11": "Bei Nichtzahlung der fälligen Beträge kann der Anbieter:",
+          "penalty1": "Den Zugang zum LEZARD AGENCE-Dienst einschränken",
+          "penalty2": "Dienste, die mit anderen Konten des Kunden verbunden sind, aussetzen",
+          "penalty3": "Seine Rechte zur Eintreibung der unbezahlten Beträge geltend machen"
+        },
+        "section8": {
+          "title": "ARTIKEL 6.2 – Pflichten des Anbieters",
+          "p1": "Der Anbieter verpflichtet sich, jede Abonnementanfrage im Rahmen der Kapazität der IT-Systeme und der Qualitätsanforderungen der Dienste zu erfüllen.",
+          "p2": "Er verpflichtet sich, alles zu tun, um die Dauerhaftigkeit, Kontinuität und Qualität des Dienstes, für den das Abonnement abgeschlossen wurde, sicherzustellen.",
+          "p3": "Der Anbieter ist jedoch nur zu einer Mittelverpflichtung verpflichtet und kann nicht für technische Probleme verantwortlich gemacht werden, wie zum Beispiel:",
+          "list1": "Gelegentliche Updates von INSTAGRAM",
+          "list2": "Servermigrationen",
+          "list3": "Vorübergehende Dienstunterbrechung aufgrund einer vom Kunden unabhängigen Aktion (Passwortänderung, fehlende Identitätsbestätigung in der INSTAGRAM-App…)",
+          "p4": "Der Anbieter kann nicht für Abweichungen zwischen der in den Angeboten angegebenen und der tatsächlich erhaltenen Anzahl von Followern verantwortlich gemacht werden. Die angegebenen Followerzahlen sind lediglich Richtwerte und können durch externe Faktoren variieren.",
+          "p5": "Diese Liste ist nicht abschließend. Diese Dienste werden innerhalb einer maximalen Frist von 48 Stunden nach endgültiger Bestätigung des Abonnements durch den Kunden gemäß den Bestimmungen dieser Allgemeinen Abonnementbedingungen bereitgestellt.",
+          "p6": "Wenn die bestellten Dienste nicht innerhalb von 48 Stunden nach dem angegebenen Bereitstellungsdatum bereitgestellt wurden, ausgenommen Fälle höherer Gewalt oder ein Verschulden des Kunden, kann der Vertrag auf schriftlichen Antrag des Kunden aufgelöst werden.",
+          "p7": "Die vom Kunden gezahlten Beträge werden dann innerhalb von 14 Tagen nach Vertragskündigung ohne Entschädigung oder Abzug zurückerstattet.",
+          "p8": "Falls der Kunde bei Erhalt der Dienste keine ausdrücklichen Vorbehalte oder Reklamationen äußert, gelten diese als in Menge und Qualität der Bestellung entsprechend.",
+          "p9": "Der Kunde hat eine Frist von 7 Tagen nach Bereitstellung der Dienste, um schriftlich eine Reklamation mit Nachweisen beim Anbieter einzureichen.",
+          "p10": "Keine Reklamation wird akzeptiert, wenn der Kunde die Fristen und Verfahren nicht einhält.",
+          "p11": "Der Anbieter wird den Dienst so schnell wie möglich und auf eigene Kosten erstatten oder korrigieren, je nach angemessenen und mit dem Kunden vereinbarten Modalitäten, für jeden nachgewiesenen Konformitätsmangel."
+        },
+        "section9": {
+          "title": "ARTIKEL 7 – Verpflichtungen des Kunden",
+          "p1": "Nach der Bestätigung des Abonnements des Kunden für den LEZARD AGENCE-Dienst erhält dieser einen Benutzernamen und ein Passwort, mit denen er auf den Dienst auf der Website zugreifen kann.",
+          "p2": "Es ist wichtig zu beachten, dass der Kunde ab dem Zeitpunkt der Vertragsunterzeichnung die Zugangsdaten zu seinem Instagram-Konto bereitstellen muss. Diese Informationen sind unerlässlich, um die ordnungsgemäße Durchführung der vereinbarten Dienstleistungen sicherzustellen.",
+          "p3": "Der Kunde verpflichtet sich, das abonnierte Angebot gemäß seinem vorgesehenen Zweck und den festgelegten Geschäftsbedingungen zu nutzen.",
+          "p4": "Dem Kunden ist jegliche kommerzielle Nutzung des ihm zur Verfügung gestellten Website-Zugangs untersagt.",
+          "p5": "Die vom Anbieter bereitgestellten Informationen und Dokumente dürfen nicht an Dritte weitergegeben oder in irgendeiner Form zugänglich gemacht werden.",
+          "p6": "Jede betrügerische Nutzung der Website oder Nutzung, die gegen diese Bedingungen verstößt, führt zur persönlichen Haftung des Kunden.",
+          "p7": "Im Falle einer Änderung seiner Bankdaten, Adressen (postalisch oder per E-Mail) oder anderer wesentlicher Informationen für die ordnungsgemäße Funktionsweise des Dienstes verpflichtet sich der Kunde, den Anbieter unverzüglich zu informieren und diese Informationen zu aktualisieren.",
+          "p8": "Der Kunde verpflichtet sich, die geltenden Gesetze und Vorschriften einzuhalten.",
+          "p9": "Der Anbieter weist den Kunden ausdrücklich darauf hin, dass das Internet kein sicheres Netzwerk ist. Daher liegt es in der Verantwortung des Kunden, alle notwendigen Maßnahmen zu ergreifen, um seine Daten und Software sowohl vor als auch nach der Implementierung der Dienste zu schützen.",
+          "p10": "Der Kunde verpflichtet sich, die Lizenzbedingungen aller im Rahmen des Dienstes verwendeten Softwareprodukte einzuhalten.",
+          "p11": "Der Kunde verpflichtet sich außerdem, die geistigen Eigentumsrechte Dritter zu respektieren und gegebenenfalls vorherige Genehmigungen für geschützte Inhalte (Texte, Bilder, Videos, Sounds usw.) einzuholen.",
+          "p12": "Darüber hinaus erkennt der Kunde an, dass die Verletzung von Urheberrechten oder verwandten Schutzrechten (z. B. Vervielfältigung, Darstellung oder öffentliche Kommunikation geschützter Werke) eine Urheberrechtsverletzung darstellt, die mit zivil- und/oder strafrechtlichen Sanktionen geahndet werden kann."
+        },
+        "section10": {
+          "title": "ARTIKEL 8 – Sperrung – Kündigung des Vertrags",
+          "subtitle1": "8-1. Sperrung",
+          "p1": "Der Dienstanbieter behält sich das Recht vor, den Zugang zu allen oder einem Teil der vom Kunden abonnierten Dienste einzuschränken, nachdem er den Kunden darüber informiert hat, ohne dass der Kunde Anspruch auf eine Entschädigung hat, in folgenden Fällen:",
+          "reason1": "Nichteinhaltung einer der Verpflichtungen des Kunden",
+          "reason2": "Nichtzahlung der fälligen Beträge zum Fälligkeitsdatum",
+          "reason3": "Verstoß gegen gesetzliche Bestimmungen, insbesondere in Bezug auf die öffentliche Ordnung und die guten Sitten",
+          "reason4": "Handlungen, die den Betrieb der Website stören",
+          "p2": "Im Falle einer Sperrung – unabhängig vom Grund – bleibt der Kunde an seine Verpflichtungen gebunden. Die Sperrung der Dienste führt nicht zur Unterbrechung der Rechnungsstellung.",
+          "p3": "Die Dienste können im Falle höherer Gewalt unterbrochen werden.",
+          "subtitle2": "8-2. Kündigung durch den Dienstanbieter",
+          "p4": "Der Dienstanbieter kann den Vertrag des Kunden ohne Entschädigung in folgenden Fällen kündigen:",
+          "reason5": "Falsche Angaben des Kunden im Zusammenhang mit dem Vertrag",
+          "reason6": "Verstoß des Kunden gegen seine vertraglichen Verpflichtungen",
+          "reason7": "Nichtzahlung der fälligen Beträge nach einer erfolglosen Mahnung",
+          "reason8": "Höhere Gewalt, die den Dienstanbieter länger als 15 Tage betrifft",
+          "reason9": "Insolvenzverfahren: Wenn der gerichtlich bestellte Verwalter ausdrücklich oder stillschweigend die Fortsetzung des Vertrags ablehnt oder im Falle einer gerichtlichen Liquidation.",
+          "reason10": "Betrügerische Erstellung eines neuen Kontos: Wenn der Kunde ein Konto mit einer anderen E-Mail-Adresse erstellt und ein bereits verwendetes Instagram-Konto verbindet, um erneut von der 5-tägigen kostenlosen Testphase zu profitieren, wird automatisch eine Gebühr erhoben. Die kostenlose Testphase gilt nur für ein einzelnes Instagram-Konto. Der Dienstanbieter behält sich das Recht vor, jeden Umgehungsversuch direkt in Rechnung zu stellen.",
+          "reason11": "Vorzeitige Beendigung einer vertraglichen Bindung: Im Falle eines Abonnements mit einer Laufzeit von 3 oder 6 Monaten verpflichtet sich der Kunde im Falle einer freiwilligen Kündigung vor Ablauf der Frist zur Zahlung von 70 % des noch ausstehenden Betrags. Bei Nichtzahlung behält sich der Dienstanbieter das Recht vor, rechtliche Schritte einzuleiten.",
+          "p5": "Die Kündigung des Vertrags aus einem der oben genannten Gründe kann erst 30 Tage nach Erhalt einer Mahnung erfolgen, in der die Absicht zur Anwendung dieser Klausel erklärt wird. Diese Mitteilung erfolgt per Einschreiben mit Rückschein oder auf anderem gerichtsfesten Weg."
+        },
+        "section11": {
+          "title": "ARTIKEL 9 – Personenbezogene Daten (DCP)",
+          "subtitle1": "9-1. Anwendbare Gesetze",
+          "p1": "Gemäß dem Gesetz 78-17 vom 6. Januar 1978, geändert durch das Gesetz Nr. 2018-493 vom 20. Juni 2018, wird darauf hingewiesen, dass die vom Kunden angeforderten personenbezogenen Daten für die Bearbeitung seines Abonnementvertrags und die Rechnungsstellung erforderlich sind.",
+          "p2": "Der Anbieter ergreift geeignete Maßnahmen, um den Schutz und die Vertraulichkeit der sich in seinem Besitz befindlichen DCP in Bezug auf Kunden zu gewährleisten und verarbeitet sie in Übereinstimmung mit den Bestimmungen des Gesetzes Nr. 78-17 vom 6. Januar 1978 in der geänderten Fassung über Informatik, Dateien und Freiheiten sowie mit den geltenden europäischen Vorschriften zum Schutz personenbezogener Daten.",
+          "p3": "Die Verarbeitung der über die Website übermittelten Informationen entspricht den gesetzlichen Anforderungen zum Schutz personenbezogener Daten. Das verwendete Informationssystem gewährleistet einen optimalen Schutz dieser Daten.",
+
+          "subtitle2": "9-2. Kontakt",
+          "p4": "Der Verantwortliche für die Verarbeitung der DCP ist LEZARD AGENCE, mit Sitz in:",
+          "address": {
+            "line1": "Unternehmen LEZARD AGENCE",
+            "line2": "",
+            "line3": ""
+          },
+
+          "subtitle3": "9-3. Art der Daten",
+          "p5": "Die DCP werden vom Anbieter im Rahmen der Abonnementanmeldung und Nutzung der Dienstleistungen durch den Kunden erhoben.",
+
+          "subtitle4": "9-4. Verwendungszwecke",
+          "p6": "Die Verarbeitung der DCP dient folgenden Zwecken:",
+          "purpose1": "Verwaltung des Kundenkontos (Prävention von Zahlungsausfällen, Betrugsbekämpfung)",
+          "purpose2": "Zahlung auf Rechnung für Drittanbieter-Dienste",
+          "purpose3": "Identifikation und Authentifizierung des Kunden",
+          "purpose4": "Verwaltung von vorgerichtlichen und gerichtlichen Streitigkeiten sowie Zahlungsausfällen",
+          "purpose5": "Verwaltung der Rechte der betroffenen Personen und ihrer Anfragen",
+          "purpose6": "Bereitstellung und ordnungsgemäße Funktion des Dienstes",
+          "purpose7": "Speicherung der Kundendaten",
+          "purpose8": "Weiterentwicklung der Dienste von LEZARD AGENCE",
+          "purpose9": "Durchführung statistischer Studien, Analysen und Reichweitenmessungen",
+          "purpose10": "Anreicherung und Wertsteigerung der Kundenbasis",
+          "purpose11": "Kommunikation mit dem Kunden über die Dienstleistungen",
+
+          "subtitle5": "9-5. Aufbewahrungsfristen",
+          "p7": "Die DCP werden gespeichert:",
+          "retention1": "Während der Bereitstellung der Dienste",
+          "retention2": "Für die spezifische Dauer der vom Kunden genehmigten Verarbeitungen",
+          "retention3": "Für die gesetzlich vorgeschriebenen Aufbewahrungsfristen",
+
+          "subtitle6": "9-6. Empfänger",
+          "p8": "Die DCP können verarbeitet werden von:",
+          "recipient1": "Dem autorisierten Personal des Anbieters",
+          "recipient2": "Unterauftragnehmern, Partnern oder Dienstleistern von LEZARD AGENCE",
+          "p9": "Falls sich diese Einrichtungen außerhalb der Europäischen Union befinden, müssen sie:",
+          "transfer1": "Einer Angemessenheitsentscheidung der Europäischen Kommission unterliegen",
+          "transfer2": "Standardvertragsklauseln unterzeichnen",
+          "p10": "Eine Kopie dieser Dokumente kann vom Anbieter angefordert werden.",
+
+          "subtitle7": "9-7. Rechte der betroffenen Personen",
+          "p11": "Der Kunde kann jederzeit seine Rechte ausüben:",
+          "rights1": "Zugang, Änderung, Berichtigung und Löschung seiner DCP",
+          "rights2": "Widerspruch gegen die Verarbeitung",
+          "rights3": "Datenübertragbarkeit",
+
+          "contact": {
+            "postal": "Per Post:",
+            "email": "Auf elektronischem Wege:"
+          },
+
+          "p12": "Der Kunde kann eine Anfrage per Post stellen und muss seinen vollständigen Namen, Telefonnummer sowie eine Kopie seines Ausweises beifügen.",
+          "p13": "Der Kunde kann eine Beschwerde bei der CNIL einreichen, wenn seine Rechte verletzt werden."
+        },
+        "section12": {
+          "title": "ARTIKEL 10 – Geistiges Eigentum",
+          "subtitle": "Geistiges Eigentum",
+          "p1": "Der Inhalt der Website",
+          "p2": "ist ausschließliches Eigentum des Anbieters und seiner Partner. Es ist durch französische und internationale Gesetze zum geistigen Eigentum geschützt.",
+          "p3": "Jegliche vollständige oder teilweise Reproduktion dieses Inhalts ist strengstens untersagt und kann eine Urheberrechtsverletzung darstellen.",
+          "p4": "Darüber hinaus behält der Anbieter alle Rechte am geistigen Eigentum über die folgenden Elemente, unabhängig davon, ob sie auf eigene Initiative oder auf Anfrage des Kunden erstellt wurden:",
+          "list1": "Fotografien",
+          "list2": "Präsentationen",
+          "list3": "Studien",
+          "list4": "Zeichnungen",
+          "list5": "Modelle",
+          "list6": "Prototypen",
+          "p5": "Der Kunde ist daher ausdrücklich untersagt, diese Elemente ohne die ausdrückliche schriftliche Genehmigung des Anbieters zu reproduzieren oder zu verwerten. Diese Genehmigung kann an eine finanzielle Gegenleistung gebunden sein."
+        },
+        "section13": {
+          "title": "ARTIKEL 11 – Beschwerden",
+          "subtitle": "Beschwerden",
+          "p1": "Jede Beschwerde muss zwingend über den Live-Chat eingereicht werden, der im Bereich 'Support' des Kundenbereichs auf der Website verfügbar ist:",
+          "p2": "Keine Beschwerden werden akzeptiert, wenn sie auf anderem Wege eingereicht werden, einschließlich:",
+          "method1": "📞 Telefon",
+          "method2": "📱 Soziale Netzwerke",
+          "method3": "📧 E-Mails"
+        },
+        "section14": {
+          "title": "ARTIKEL 12 – Anwendbares Recht – Sprache",
+          "subtitle1": "Anwendbares Recht",
+          "p1": "Diese Allgemeinen Abonnementbedingungen und die daraus resultierenden Vorgänge unterliegen dem französischen Recht.",
+          "p2": "Diese Bedingungen sind in französischer Sprache verfasst. Im Falle einer Übersetzung in eine oder mehrere Fremdsprachen gilt im Streitfall ausschließlich der französische Text als rechtsverbindlich."
+        },
+        "section15": {
+          "title": "ARTIKEL 13 – Streitigkeiten",
+          "subtitle1": "Streitigkeiten und Mediation",
+          "p1": "Alle Streitigkeiten, die sich aus der Anwendung dieser Allgemeinen Abonnementbedingungen ergeben, einschließlich ihrer Gültigkeit, Auslegung, Durchführung, Kündigung und ihrer Folgen, die nicht gütlich zwischen dem Anbieter und dem Kunden gelöst werden konnten, werden gemäß dem französischen Recht den zuständigen Gerichten vorgelegt.",
+          "p2": "Der Kunde wird darüber informiert, dass er auf eine konventionelle Mediation zurückgreifen kann, insbesondere bei:",
+          "reason1": "Die Verbrauchermediationskommission (Artikel L 612-1 des Verbraucherschutzgesetzes)",
+          "reason2": "Bestehende branchenspezifische Mediationsstellen, deren Referenzen auf der Website zu finden sind",
+          "reason3": "Jede andere alternative Methode zur Streitbeilegung im Falle eines Konflikts",
+          "p3": "Bei einem Verstoß gegen die Datenschutz-Grundverordnung (DSGVO) kann der Kunde:",
+          "gdpr1": "Eine im IV von Artikel 43 ter des Datenschutzgesetzes von 1978 erwähnte Vereinigung oder eine spezialisierte Organisation beauftragen",
+          "gdpr2": "Ein Verfahren gegen den Verantwortlichen für die Datenverarbeitung oder den Auftragsverarbeiter vor einem Zivil- oder Verwaltungsgericht einleiten",
+          "gdpr3": "Direkt eine Beschwerde bei der Nationalen Kommission für Informatik und Freiheiten (CNIL) einreichen"
+        }
+      }
+    },
+    "PrivacyPolicy": {
+      "title": "Política de privacidad y cookies",
+      "section1": {
+        "title": "Datenschutz",
+        "p1": "Lezard Agency legt großen Wert auf den Schutz personenbezogener Daten und den Respekt der Privatsphäre aller Personen, die auf unser digitales Ökosystem zugreifen.",
+        "p2": "Diese Seite beschreibt die Arten von personenbezogenen Daten, die Lezard Agency über Besucher unserer Website erfassen kann, sowie wie wir und unsere Unterauftragnehmer diese Daten verwenden und zu welchen Zwecken.",
+        "p3": "Diese Datenschutzrichtlinie (im Folgenden 'Richtlinie') enthält auch wichtige Informationen über Ihre Rechte und darüber, wie Ihre personenbezogenen Daten geschützt werden.",
+        "p4": "Alle Vorgänge mit Ihren personenbezogenen Daten erfolgen in Übereinstimmung mit den geltenden Vorschriften, einschließlich:",
+        "list": {
+          "item1": "Die Europäische Verordnung Nr. 2016/679 vom 27. April 2016 (DSGVO)",
+          "item2": "Das Gesetz Nr. 78-17 'Informatik und Freiheiten' vom 6. Januar 1978, geändert"
+        },
+        "p5": "Durch die weitere Nutzung unserer Website (im Folgenden 'Website') bestätigen Sie, dass Sie diese Richtlinie sowie die allgemeinen Nutzungsbedingungen unserer Website gelesen und akzeptiert haben."
+      },
+      "section2": {
+        "title": "Wer sammelt personenbezogene Daten (Identität des Datenverantwortlichen)?",
+        "p1": "Diese Website wird von Lezard Agency verwaltet",
+        "address": "",
+        "p2": "Lezard Agency ist unter der SIREN-Nummer im Handels- und Gesellschaftsregister [Stadt oder Region] eingetragen.",
+        "p3": "Lezard Agency hat einen Datenschutzbeauftragten (DPO) ernannt, den Sie per E-Mail unter folgender Adresse kontaktieren können:",
+        "email": "contact@lezard-agency.com"
+      },
+      "section3": {
+        "title": "Welche personenbezogenen Daten werden erfasst?",
+        "p1": "Der Begriff 'personenbezogene Daten' bezeichnet alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen, direkt oder indirekt.",
+        "p2": "Die von Lezard Agency erfassten personenbezogenen Daten beinhalten Informationen über Sie, die uns ermöglichen, Sie zu identifizieren, wie zum Beispiel:",
+        "data1": {
+          "title": "Identifikationsdaten:",
+          "item1": "Vor- und Nachname",
+          "item2": "E-Mail-Adresse",
+          "item3": "Telefonnummer"
+        },
+        "data2": {
+          "title": "Verbindungsdaten:",
+          "item1": "IP-Adresse",
+          "item2": "Browserverlauf",
+          "item3": "Navigationspfad",
+          "item4": "Betriebssystem",
+          "item5": "Informationen über die Geräte, die für den Zugriff auf die Website verwendet werden"
+        },
+        "p3": "Für alle weiteren erfassten Daten stellt das Datenerfassungsformular Informationen zu den geltenden Regeln für die spezifisch erfassten Daten bereit, soweit sie von den in dieser Datenschutzrichtlinie festgelegten Regeln abweichen."
+      },
+      "section4": {
+        "title": "Wann erfassen wir personenbezogene Daten?",
+        "p1": "erfasst Ihre personenbezogenen Daten ausdrücklich und transparent durch Informationshinweise oder Verweise auf diese Datenschutzrichtlinie.",
+        "p2": "Ihre personenbezogenen Daten können in folgenden Situationen erfasst werden:",
+        "list": {
+          "item1": "Wenn Sie auf unserer Website surfen",
+          "item2": "Wenn Sie ein Formular ausfüllen oder einen Kommentar auf unserer Website hinterlassen",
+          "item3": "Wenn Sie Dokumentationen oder Informationen über unsere Dienstleistungen anfordern",
+          "item4": "Wenn Sie mit uns per E-Mail, Telefon, soziale Netzwerke oder auf andere Weise kommunizieren",
+          "item5": "Wenn Sie sich auf eine Stellenausschreibung bewerben",
+          "item6": "Wenn Sie ein Problem melden oder Unterstützung anfordern"
+        },
+        "p3": "Einige angeforderte personenbezogene Daten sind obligatorisch. Die Pflichtangabe von Daten wird durch ein Sternchen (*) gekennzeichnet.",
+        "p4": "Wenn Sie die erforderlichen Daten nicht bereitstellen, kann dies dazu führen, dass Sie auf bestimmte Dienste der Website nicht zugreifen können."
+      },
+      "section5": {
+        "title": "Zu welchen Zwecken werden personenbezogene Daten erhoben?",
+        "subtitle": "📜 Rechtsgrundlage für die Verarbeitung",
+        "p1": "Die Erhebung und Verarbeitung Ihrer personenbezogenen Daten erfolgt zu bestimmten Zwecken, die Ihnen zum Zeitpunkt der Erhebung mitgeteilt werden.",
+        "p2": "Lezard Agency verpflichtet sich:",
+        "list": {
+          "item1": "Personenbezogene Daten nur für bestimmte, eindeutige und legitime Zwecke zu erheben.",
+          "item2": "Diese Daten nicht in einer Weise zu verarbeiten, die mit diesen Zwecken unvereinbar ist.",
+          "item3": "Nur Daten zu verarbeiten, die angemessen, relevant und auf das Notwendige beschränkt sind."
+        },
+        "p3": "Die wichtigsten Rechtsgrundlagen für die Datenverarbeitung durch Lezard Agency sind:",
+        "legalBasis": {
+          "contract": {
+            "title": "Vertragserfüllung",
+            "description": "Wenn die Verarbeitung zur Erfüllung des Vertrags zwischen Ihnen und Lezard Agency erforderlich ist, zum Beispiel für die Bearbeitung Ihrer Angebotsanfrage, die Bereitstellung von Dienstleistungen oder die Nachverfolgung Ihrer Bestellung."
+          },
+          "legalObligations": {
+            "title": "Gesetzliche Verpflichtungen",
+            "description": "Wenn die Verarbeitung erforderlich ist, um gesetzlichen oder regulatorischen Verpflichtungen nachzukommen, wie Steuererklärungen oder Maßnahmen zur Bekämpfung der Geldwäsche."
+          },
+          "legitimateInterest": {
+            "title": "Berechtigte Interessen",
+            "description": "Wenn die Verarbeitung für die berechtigten Interessen von Lezard Agency erforderlich ist, wie zum Beispiel:",
+            "item1": "Entwicklung unserer Geschäftstätigkeiten.",
+            "item2": "Verbesserung unserer Dienstleistungen.",
+            "item3": "Wartung und Verwaltung der Website.",
+            "item4": "Betrugsbekämpfung."
+          },
+          "consent": {
+            "title": "Einwilligung",
+            "description": "Wenn die Verarbeitung auf Ihrer Einwilligung beruht, beispielsweise für den Versand von Marketingmitteilungen. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie Ihre Präferenzen in E-Mails oder auf unserer Website ändern."
+          }
+        }
+      },
+      "section6": {
+        "title": "Empfänger personenbezogener Daten",
+        "subtitle": "🔒 Vertraulichkeitsverpflichtung",
+        "p1": "Lezard Agency verpflichtet sich, Ihre personenbezogenen Daten nicht ohne Ihre vorherige ausdrückliche Zustimmung an Dritte zu verkaufen, zu vermieten oder weiterzugeben.",
+        "p2": "Dennoch können wir Ihre personenbezogenen Daten in den folgenden Fällen mit anderen Einrichtungen teilen:",
+        "recipients": {
+          "staff": {
+            "title": "👥 Autorisiertes Personal von Lezard Agency",
+            "description": "Mitarbeiter unseres Teams, die mit der Umsetzung der zuvor beschriebenen Zwecke betraut sind."
+          },
+          "providers": {
+            "title": "🛠️ Unsere Dienstleister und Subunternehmer",
+            "description": "Lezard Agency kann Drittanbieter mit der Verarbeitung Ihrer Daten beauftragen, insbesondere für:",
+            "list": {
+              "item1": "Hosting der Website",
+              "item2": "Wartung und Optimierung der Website",
+              "item3": "Versand kommerzieller Mitteilungen",
+              "item4": "Betrieb der auf der Website angebotenen Dienstleistungen"
+            }
+          },
+          "partners": {
+            "title": "🤝 Geschäftspartner von Lezard Agency",
+            "description": "Vorbehaltlich Ihrer ausdrücklichen vorherigen Zustimmung können wir Ihre Daten mit ausgewählten Geschäftspartnern teilen, damit diese Ihnen spezielle Angebote oder Werbeanzeigen unterbreiten können."
+          },
+          "legal": {
+            "title": "⚖️ Rechtsbeistände und Justizbeamte",
+            "description": "Im Falle eines Rechtsstreits können wir Ihre Daten mit Anwälten, Gerichtsvollziehern oder anderen Rechtsdienstleistern zur Streitbeilegung und Schuldeneintreibung teilen."
+          },
+          "government": {
+            "title": "🏛️ Öffentliche Behörden",
+            "description": "Wir können Ihre Daten an Verwaltungsbehörden (Steuer-, Sozialbehörden usw.) übermitteln, um gesetzlichen Verpflichtungen nachzukommen oder im Falle einer behördlichen Überprüfung."
+          },
+          "ads": {
+            "title": "📢 Werbenetzwerke und soziale Netzwerke",
+            "description": "Einige Ihrer Daten können mit Werbenetzwerken oder sozialen Plattformen geteilt werden, um Ihnen gezielte Werbung bereitzustellen."
+          },
+          "seo": {
+            "title": "🔎 Suchmaschinenanbieter",
+            "description": "Zur Optimierung unserer Website können wir Ihre Daten mit spezialisierten Dienstleistern für Suchmaschinenoptimierung und Sichtbarkeitsverbesserung teilen."
+          },
+          "consent": {
+            "title": "✅ Ausdrückliche Zustimmung",
+            "description": "Ihre Daten werden nur dann mit Dritten geteilt, wenn Sie Ihre Zustimmung gegeben haben, z. B. für gemeinsame Marketingkampagnen."
+          },
+          "sale": {
+            "title": "💰 Übertragung von Vermögenswerten",
+            "description": "Falls Lezard Agency oder ein Teil seiner Vermögenswerte verkauft oder übertragen wird, können Ihre Daten im Rahmen dieser Transaktion mit dem potenziellen Käufer geteilt werden."
+          }
+        }
+      },
+      "section7": {
+        "title": "Aufbewahrungsfrist für personenbezogene Daten",
+        "subtitle": "📁 Datenaufbewahrung",
+        "p1": "wird Ihre personenbezogenen Daten in einer sicheren Umgebung für die notwendige Dauer speichern, um die Zwecke zu erfüllen, für die sie erhoben wurden, gemäß:",
+        "list": {
+          "item1": "Empfehlungen der CNIL",
+          "item2": "Anwendbare gesetzliche Bestimmungen"
+        },
+        "p2": "Aufbewahrungsfristen für Daten:",
+        "dataRetention1": {
+          "title": "Daten für Marketing- und Werbezwecke",
+          "description": "Werden 3 Jahre nach dem letzten vom Kunden initiierten Kontakt oder dem Ende der Vertragsbeziehung gespeichert."
+        },
+        "dataRetention2": {
+          "title": "Daten im Zusammenhang mit der Vertragsverwaltung und zugehörigen Dienstleistungen",
+          "description": "Werden für die gesamte Vertragslaufzeit und bis zum Ablauf der gesetzlichen Verjährungsfristen gespeichert."
+        }
+      },
+      "section8": {
+        "title": "Sicherheit und Vertraulichkeit",
+        "subtitle": "🔐 Datensicherheit und Vertraulichkeit",
+        "p1": "ergreift geeignete Maßnahmen, um die Vertraulichkeit und Sicherheit Ihrer personenbezogenen Daten zu gewährleisten und unbefugten Zugriff, Schäden oder Löschung von Daten zu verhindern.",
+        "subtitle2": "Umgesetzte Schutzmaßnahmen",
+        "protection1": "Schutz durch Benutzername und Passwort zur Sicherung des Zugangs",
+        "protection2": "Eingeschränkter Zugang nur für autorisiertes Personal (Mitarbeiter, Auftragnehmer), die einer Vertraulichkeitspflicht unterliegen",
+        "subtitle3": "Im Falle einer Datenschutzverletzung",
+        "p2": "verpflichtet sich:",
+        "alert1": "Die zuständige Aufsichtsbehörde (wie die CNIL) zu benachrichtigen",
+        "alert2": "Sie so schnell wie möglich zu informieren, wenn die Verletzung ein hohes Risiko für Ihre Rechte und Freiheiten darstellt",
+        "alert3": "Ihnen zu ermöglichen, geeignete Maßnahmen zum Schutz Ihrer Daten zu ergreifen"
+      },
+      "section9": {
+        "title": "Ihre Rechte",
+        "subtitle": "📜 Ihre Rechte in Bezug auf Ihre personenbezogenen Daten",
+        "p1": "Gemäß der geltenden Gesetzgebung haben Sie die folgenden Rechte in Bezug auf Ihre personenbezogenen Daten:",
+        "rights": {
+          "access": {
+            "title": "Zugang",
+            "description": "Sie können beantragen, die Daten einzusehen, die wir über Sie gespeichert haben."
+          },
+          "modification": {
+            "title": "Berichtigung",
+            "description": "Sie haben das Recht, die Korrektur unrichtiger Informationen zu verlangen."
+          },
+          "deletion": {
+            "title": "Löschung",
+            "description": "Sie können die Löschung Ihrer personenbezogenen Daten beantragen ('Recht auf Vergessenwerden')."
+          },
+          "restriction": {
+            "title": "Einschränkung",
+            "description": "Sie können unter bestimmten Bedingungen die Einschränkung der Verarbeitung Ihrer Daten verlangen."
+          },
+          "portability": {
+            "title": "Datenübertragbarkeit",
+            "description": "Sie haben das Recht, Ihre Daten in einem strukturierten und maschinenlesbaren Format zu erhalten"
+          },
+          "opposition": {
+            "title": "Widerspruch",
+            "description": "Aus berechtigten Gründen können Sie der Verarbeitung Ihrer personenbezogenen Daten widersprechen."
+          },
+          "consent": {
+            "title": "Widerruf der Einwilligung",
+            "description": "Wenn die Verarbeitung auf Ihrer Einwilligung beruht, haben Sie das Recht, diese jederzeit zu widerrufen."
+          }
+        },
+        "p2": "📩 Sie können außerdem eine Beschwerde bei der ",
+        "p3": " oder einer anderen zuständigen Datenschutzbehörde in der Europäischen Union einreichen.",
+        "p4": "📝 Schließlich haben Sie die Möglichkeit, Anweisungen zur Verarbeitung Ihrer Daten nach Ihrem Tod festzulegen."
+      },
+      "section10": {
+        "title": "Kommerzielle Werbung",
+        "p1": "Bezüglich kommerzieller Werbung können Sie jederzeit dem Erhalt von Mitteilungen widersprechen, indem Sie auf den Abmeldelink in den E-Mails klicken oder auf Ihr Kundenkonto zugreifen."
+      },
+      "section11": {
+        "title": "Schutz der Daten von Minderjährigen",
+        "p1": "Die Website von Lezard Agency ist in der Regel nicht für Minderjährige unter 15 Jahren bestimmt. Wenn ein Minderjähriger personenbezogene Daten übermittelt hat, muss er sicherstellen, dass er vorher die Erlaubnis eines Elternteils oder gesetzlichen Vormunds eingeholt hat. Lezard Agency lehnt jede Verantwortung für die Übermittlung von Daten ohne diese Genehmigung ab. Wir ermutigen Eltern und Erziehungsberechtigte, die Internetnutzung ihrer Kinder zu überwachen und sie zu verantwortungsbewusstem Verhalten anzuleiten."
+      },
+      "section12": {
+        "title": "Cookies",
+        "p1": "Während Ihres Besuchs auf der Website von Lezard Agency können Cookies auf Ihrem Computer, Tablet oder Smartphone gespeichert werden, vorbehaltlich Ihrer vorherigen, ausdrücklichen und spezifischen Zustimmung."
+      },
+      "section13": {
+        "title": "Zustimmung",
+        "subtitle": "🍪 Verwaltung von Cookies",
+        "p1": "Bei Ihrem ersten Besuch auf unserer Website informiert Sie ein Banner über die Verwendung von Cookies und lädt Sie ein, Ihre Wahl zu treffen. Ihre Zustimmung wird über dieses Banner eingeholt.",
+        "subtitle2": "Mögliche Entscheidungen bezüglich Cookies",
+        "option1": "Akzeptieren: Cookies werden gespeichert, wenn Sie weiter surfen.",
+        "option2": "Ablehnen: Sie können sie über den Abschnitt",
+        "link": "„Cookies deaktivieren“",
+        "p2": "Jederzeit können Sie:",
+        "info1": "Klare Informationen über die Zwecke der verwendeten Cookies abrufen.",
+        "info2": "Ihre Zustimmung verwalten, indem Sie auf den Link im Menü der Website klicken.",
+        "info3": "Cookies über Ihre Browsereinstellungen ändern oder löschen.",
+        "warning": "Achtung: Die Ablehnung bestimmter Cookies kann den Zugriff auf einige Funktionen der Website einschränken.",
+        "p3": "Lezard Agency kann nicht für Fehlfunktionen verantwortlich gemacht werden, die durch die Deaktivierung von Cookies verursacht werden, und dies führt zu keiner Entschädigung."
+      },
+      "section14": {
+        "title": "Links zu Drittanbieter-Websites",
+        "p1": "Die Website von Lezard Agency kann Links zu Drittanbieter-Websites enthalten. Wir haben keine Kontrolle über diese Seiten und lehnen jegliche Verantwortung für deren Inhalt und die Verwendung Ihrer persönlichen Daten ab. Wir empfehlen Ihnen, die Datenschutzrichtlinien jeder Drittanbieter-Website zu lesen."
+      },
+      "section15": {
+        "title": "Änderungen der Richtlinie",
+        "p1": "Lezard Agency behält sich das Recht vor, diese Cookie-Richtlinie jederzeit zu ändern. Alle Änderungen werden auf der Website veröffentlicht und treten sofort in Kraft. Wir empfehlen Ihnen, diese Seite regelmäßig zu besuchen, um über Aktualisierungen informiert zu bleiben."
+      },
+      "section16": {
+        "title": "Kontakt",
+        "p1": "Für Fragen oder Anmerkungen zu dieser Richtlinie können Sie uns kontaktieren unter:"
+      }
+    },
+    "TermsConditions": {
+      "title": "Nutzungsbedingungen der Software",
+      "section1": {
+        "title": "Allgemeine Nutzungsbedingungen",
+        "subtitle": "Einführung",
+        "p1": "Willkommen auf der Website von Lezard Agency (",
+        "p2": "). Durch den Zugriff auf und die Nutzung unserer Website erklären Sie sich mit diesen Allgemeinen Nutzungsbedingungen (die \"Bedingungen\") einverstanden. Bitte lesen Sie sie sorgfältig durch, bevor Sie unsere Website nutzen."
+      },
+      "section2": {
+        "subtitle": "Zugang zur Website",
+        "p1": "Der Zugang zur Website ist kostenlos. Einige Dienste oder Funktionen können jedoch gebührenpflichtig sein. Wir behalten uns das Recht vor, den Zugriff auf die gesamte Website oder Teile davon mit oder ohne Vorankündigung vorübergehend oder dauerhaft zu ändern oder einzustellen."
+      },
+      "section3": {
+        "subtitle": "Nutzung der Website",
+        "p1": "Sie verpflichten sich, die Website rechtmäßig zu nutzen und die geltenden Gesetze und Vorschriften einzuhalten. Sie erklären sich damit einverstanden, Folgendes zu unterlassen:",
+        "list": {
+          "item1": "Die Website für betrügerische oder illegale Zwecke zu nutzen.",
+          "item2": "Hochladen, Posten, per E-Mail senden oder auf andere Weise Inhalte zu übermitteln, die illegal, schädlich, bedrohlich, missbräuchlich, belästigend, verleumderisch, vulgär, obszön oder anderweitig anstößig sind.",
+          "item3": "Inhalte zu übermitteln, die möglicherweise die geistigen Eigentumsrechte Dritter verletzen."
+        }
+      },
+      "section4": {
+        "subtitle": "Geistiges Eigentum",
+        "p1": "Alle Inhalte auf der Website, einschließlich, aber nicht beschränkt auf Texte, Bilder, Grafiken, Logos, Symbole und Software, sind das ausschließliche Eigentum von Lezard Agency oder deren Partnern und sind durch Gesetze zum Schutz des geistigen Eigentums geschützt. Sie sind nicht berechtigt, diese Inhalte ohne unsere vorherige schriftliche Genehmigung zu reproduzieren, zu verbreiten, zu ändern oder zu verwerten."
+      },
+      "section5": {
+        "subtitle": "Links zu Websites Dritter",
+        "p1": "Die Website kann Links zu Websites Dritter enthalten. Diese Links werden ausschließlich zu Ihrer Bequemlichkeit bereitgestellt. Wir haben keine Kontrolle über diese Websites und übernehmen keine Verantwortung für deren Inhalt oder Datenschutzrichtlinien. Der Zugriff auf diese Websites erfolgt auf Ihr eigenes Risiko."
+      },
+      "section6": {
+        "subtitle": "Haftung",
+        "p1": "Lezard Agency haftet nicht für direkte oder indirekte Schäden, einschließlich, aber nicht beschränkt auf entgangene Gewinne, Kundenverluste, Datenverluste oder andere immaterielle Verluste, die aus der Nutzung oder der Unmöglichkeit der Nutzung der Website resultieren. Wir garantieren nicht, dass die Website fehlerfrei oder ohne Unterbrechungen funktioniert."
+      },
+      "section7": {
+        "subtitle": "Änderung der Bedingungen",
+        "p1": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Die Änderungen treten in Kraft, sobald sie auf der Website veröffentlicht werden. Es liegt in Ihrer Verantwortung, die Bedingungen regelmäßig zu überprüfen, um über Aktualisierungen informiert zu bleiben. Ihre fortgesetzte Nutzung der Website nach der Veröffentlichung von Änderungen stellt Ihre Zustimmung zu den neuen Bedingungen dar."
+      },
+      "section8": {
+        "subtitle": "Anwendbares Recht",
+        "p1": "Diese Bedingungen unterliegen dem französischen Recht und werden entsprechend ausgelegt. Alle Streitigkeiten im Zusammenhang mit der Ausführung oder Auslegung dieser Bedingungen unterliegen der ausschließlichen Zuständigkeit der zuständigen Gerichte in Frankreich."
+      },
+      "section9": {
+        "subtitle": "Kontakt",
+        "p1": "Für Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte:",
+        "email": "E-Mail",
+        "phone": "Telefon"
+      }
+    }
+  },
+  "howwork": {
+    "ctaTitle": "Jetzt starten",
+    "topTitle": "So funktioniert es Schritt für Schritt",
+    "card1": {
+      "title": "Verbinde dein Konto",
+      "text": "Verbinde dein Instagram sicher: verschlüsselte Verbindung, kein Passwortspeicher.",
+      "alt": "Sichere Verbindung"
+    },
+    "card2": {
+      "title": "Richte deine Ziele ein",
+      "text": "Wähle Konkurrenzkonten, Hashtags und Regionen für eine ultrapräzise Ansprache.",
+      "alt": "Zielkonfiguration"
+    },
+    "card3": {
+      "title": "Steuere die Ergebnisse",
+      "text": "Starte das Wachstum und verfolge Follower, Engagement und Reichweite. Passe mit einem Klick an.",
+      "alt": "Ergebnissteuerung"
+    },
+    "cardTwo": {
+      "title": "Eine Oberfläche für die Besten",
+      "items": {
+        "1": {
+          "title": "Finde deine Ziele",
+          "text": "Die Ziele sind Konkurrenzkonten und Konten in deiner Nische.",
+          "alt": "Sichere Verbindung"
+        },
+        "2": {
+          "title": "Verfolge deinen Fortschritt in Echtzeit",
+          "text": "Du kannst alle deine Aktionen in Echtzeit sehen.",
+          "alt": "Zielkonfiguration"
+        },
+        "3": {
+          "title": "Verwalte deine Aktionen",
+          "text": "Du kannst alle deine Aktionen in Echtzeit verwalten. Aktiviere oder deaktiviere sie jederzeit. Verfolge deine Statistiken.",
+          "alt": "Ergebnisverwaltung"
+        },
+        "4": {
+          "title": "Sieh dir deine Ergebnisse an",
+          "text": "Story-Views, Story-Likes, neue Follower usw. Du kannst alle deine Aktionen Tag für Tag sehen.",
+          "alt": "Kontinuierliche Optimierung"
+        }
+      }
+    },
+    "howcardsix": {
+      "title": "Eine einzigartige Technologie",
+      "items": [
+        {
+          "title": "Stories massenhaft ansehen",
+          "text": "Schau dir viele Stories an, um Aufmerksamkeit auf dein Konto zu lenken.",
+          "image": "/svg/how/story_view.svg",
+          "alt": "Sichere Verbindung"
+        },
+        {
+          "title": "Story-Likes",
+          "text": "Like bis zu 1000 Stories pro Tag, um ganz oben in der Viewer-Liste zu erscheinen.",
+          "image": "/svg/how/img-2.svg",
+          "alt": "Zielkonfiguration"
+        },
+        {
+          "title": "Follow / Unfollow",
+          "text": "Folge Personen und entfolge ihnen später wieder. Optional.",
+          "image": "/svg/how/follow_unfollow.svg",
+          "alt": "Ergebnissteuerung"
+        },
+        {
+          "title": "Post-Likes",
+          "text": "Story-Views, Likes, neue Follower – du kannst alle Aktionen Tag für Tag verfolgen.",
+          "image": "/svg/how/publication.svg",
+          "alt": "Kontinuierliche Optimierung"
+        },
+        {
+          "title": "Automatische Nachrichten",
+          "text": "Erstelle personalisierte Nachrichten für neue Follower oder für die Akquise.",
+          "image": "/svg/how/welcomemessage.svg",
+          "alt": "Detaillierte Analyse"
+        },
+        {
+          "title": "An Umfragen teilnehmen",
+          "text": "Nimm an den Umfragen deiner Zielgruppe teil, um sie auf dein Profil aufmerksam zu machen.",
+          "image": "/svg/how/sondage.webp",
+          "alt": "Automatisierung"
+        }
+      ]
+    }
+  },
+  "aboutus": {
+    "title": "Jetzt starten",
+    "team": {
+      "title": "Lerne unser Team kennen"
+    },
+    "teamlarge": {
+      "roles": {
+        "gabriel": "Freelancer | Full-Stack-Entwickler",
+        "romain": "Social Media Manager | Vision & Erfahrung",
+        "hugo": "Freelancer | Full-Stack-Entwickler",
+        "mathis": "Gründer | Betrieb",
+        "theo": "Coaching & Entwicklung | Betrieb",
+        "lucien": "Full-Stack-Entwickler | Betrieb"
+      }
+    },
+    "contact": {
+      "title": "Hast du Fragen?",
+      "subtitle": "Buche deine 20-minütige Beratung mit unserem Experten!"
+    }
+  },
+  "prix": {
+    "contact": {
+      "title": "Hast du Fragen?",
+      "subtitle": "Buche deine 20-minütige Beratung mit unserem Experten!"
+    },
+    "bigtitle": "Unsere Preise"
+  },
+  "footer": {
+    "brandName": "Lezard Agentur",
+    "links": {
+      "tutorial": "Tutorial",
+      "contact": "Kontakt",
+      "terms": "Allgemeine Geschäftsbedingungen",
+      "privacy": "Datenschutzrichtlinie",
+      "sales": "Verkaufsbedingungen"
+    },
+    "banner": {
+      "brand": "Lezard Agentur",
+      "rights": "© 2025 Alle Rechte vorbehalten."
+    }
+  },
+  "menu": {
+    "EN": "Englisch",
+    "FR": "Französisch",
+    "ES": "Spanisch",
+    "DE": "Deutsch",
+    "howiswork": "Wie es funktioniert",
+    "results": "Ergebnisse",
+    "pricing": "Preise",
+    "about": "Über uns",
+    "cta": "Jetzt starten"
+  },
+  "tarif": {
+    "loading": "Preise werden geladen...",
+    "tabs": {
+      "monthly": "Monatlich",
+      "3mois": "3 Monate",
+      "promo3": "-10%",
+      "6mois": "6 Monate",
+      "promo6": "-20%"
+    },
+    "periods": {
+      "twoWeeks": "/2 Wochen",
+      "month": "/Monat"
+    },
+    "card": {
+      "demo": {
+        "title": "Demo",
+        "desc": "Software-Vorschau",
+        "button": "Entdecken",
+        "features": [
+          "Entdecken Sie die Benutzeroberfläche",
+          "Überblick über die wichtigsten Aktionen",
+          "Sehen Sie, wie es funktioniert",
+          "Stellen Sie sich Ihre zukünftigen Ergebnisse vor"
+        ]
+      },
+      "free": {
+        "title": "Entdeckung",
+        "desc": "~ 100 - 300 Follower / 2 Wochen",
+        "button": "Jetzt starten →",
+        "soustitle": "2 Wochen unverbindlich, danach professioneller Monatsplan",
+        "features": [
+          "400 Personen pro Tag erreicht",
+          "Erweitertes KI-Follower-Targeting",
+          "100% automatisches Wachstum",
+          "Automatische Akquise-Nachrichten",
+          "Wachstums-Dashboard"
+        ],
+        "extra": [
+          "Persönlicher Berater 7/7 über WhatsApp",
+          "Wöchentliche ROI-Optimierungen",
+          "Dashboard und Tagesbericht"
+        ]
+      },
+      "pro": {
+        "title": "Professionell",
+        "desc": "~ 300 - 600 Follower / Monat",
+        "badge": "Empfohlener Plan",
+        "button": "Jetzt starten →",
+        "soustitle": "Mit Verpflichtung",
+        "features": [
+          "600 Personen pro Tag erreicht",
+          "Erweitertes KI-Follower-Targeting",
+          "100% automatisches Wachstum",
+          "Automatische Akquise-Nachrichten",
+          "Wachstums-Dashboard",
+          "Persönlicher Berater 7/7 über WhatsApp",
+          "Wöchentliche ROI-Optimierungen",
+          "Dashboard und Tagesbericht"
+        ]
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Besteht das Risiko, dass mein Konto gesperrt oder shadowbanned wird?",
+        "answer": "Keiner unserer Kunden wurde jemals aufgrund unseres Dienstes gesperrt. Seit 2017 haben wir einen fortschrittlichen Algorithmus entwickelt, der ein natürliches menschliches Verhalten simuliert, mit sicheren Verbindungen von einem iPhone und einer europäischen IP-Adresse, wodurch eine Erkennung durch Instagram verhindert wird. Darüber hinaus sind unsere Sicherheitsprozesse so konzipiert, dass sie Ihr Konto schützen, indem sie die von Instagram festgelegten Grenzen einhalten. Anstatt einen Shadowban zu verursachen, trägt unsere Technologie dazu bei, Ihr Engagement zu verbessern und Ihre Sichtbarkeit auf organische Weise zu stärken."
+      },
+      {
+        "question": "Wie viele Follower kann ich erwarten zu gewinnen?",
+        "answer": "Die Anzahl der Follower, die Sie gewinnen können, hängt von mehreren Faktoren ab, einschließlich der Qualität und Häufigkeit Ihrer Inhalte sowie der Attraktivität Ihres Brandings. Unsere Nutzer sehen im Allgemeinen ein stetiges Wachstum dank unseres präzisen Targetings und des Engagements der gewonnenen Follower. Wir versprechen keine genauen Zahlen, da das Wachstum von Konto zu Konto unterschiedlich ist. Unsere Methoden stellen jedoch sicher, dass nur qualifizierte Follower, die an Ihren Inhalten interessiert sind, Ihnen folgen, was ein relevantes und engagiertes Publikum garantiert."
+      },
+      {
+        "question": "Sind die Follower echt und engagiert?",
+        "answer": "Ja, absolut! Wir verkaufen weder Fake-Follower noch künstliche Interaktionen. Unsere Technologie wählt nur aktive Profile aus, die an Ihrer Nische interessiert sind, indem sie die Follower Ihrer Wettbewerber und die engagiertesten Nutzer analysiert. Im Gegensatz zu Diensten, die die Followerzahl künstlich aufblähen, konzentrieren wir uns auf authentisches und natürliches Wachstum. Dies zieht nicht nur ein qualitativ hochwertiges Publikum an, sondern verbessert auch langfristig Ihre Engagement-Rate."
+      },
+      {
+        "question": "Kann ich den Service für mehrere Konten nutzen?",
+        "answer": "Ja, unsere Pläne sind flexibel und können an mehrere Konten angepasst werden. Wenn Sie mehrere Instagram-Konten mit unserer Lösung verwalten möchten, bieten wir Vorzugspreise für Multi-Account-Abonnements an. Jedes Konto profitiert von einer optimierten Einrichtung entsprechend seiner Nische und Zielgruppe. Kontaktieren Sie uns, um die besten Optionen für Ihre Bedürfnisse zu besprechen."
+      },
+      {
+        "question": "Werden Sie Nachrichten senden oder in meinem Namen kommentieren?",
+        "answer": "Sofern Sie keine Willkommensnachricht für Ihre neuen Follower einrichten, werden wir weder kommentieren noch Nachrichten in Ihrem Namen senden. Unsere Aktionen konzentrieren sich auf natürliche und effektive Interaktionen, wie gezielte Follows, Likes für Beiträge/Stories und Story-Ansichten. Dies hilft, interessierte Follower anzuziehen, ohne deren Nutzererfahrung auf Instagram zu beeinträchtigen."
+      },
+      {
+        "question": "Kann ich mein Abonnement leicht kündigen?",
+        "answer": "Ja, Sie können Ihr Abonnement jederzeit kündigen. Unsere Abonnements laufen monatlich, und Ihnen wird die folgende Periode nicht in Rechnung gestellt, sobald die Kündigung abgeschlossen ist. Wir glauben an Transparenz und Flexibilität. Unser Ziel ist es, Ihnen einen hochwertigen Service ohne verpflichtende Bindung zu bieten, damit Sie unsere Lösung sorgenfrei nutzen können. Gleiches gilt für unser kostenloses Probeangebot, das wirklich kostenlos ist."
+      }
+    ]
+  },
+  "resultats": {
+    "subtitle": "Ergebnisse",
+    "bigtitle": "Wir versprechen nicht den Mond 🌙 … aber fast",
+    "litletitle": "Öffentliches Profil",
+    "blocks": [
+      "Follower/Monat",
+      "Likes/Monat",
+      "Engagement-Rate",
+      "Website-Traffic"
+    ],
+    "story": {
+      "1": "Spanische Mode-Influencerin mit einer engagierten Community.",
+      "2": "Unternehmen, das auf den Verkauf von CBD und abgeleiteten Produkten spezialisiert ist.",
+      "3": "Portugiesische Modemarke, inspiriert vom Mittelmeer.",
+      "4": "Bekleidungsmarke aus dem Extremsport und Kollektiv von Ridern.",
+      "5": "Französische Mode- und Lifestyle-Influencerin mit einer engagierten Community.",
+      "6": "Engagiertes Café in den Vereinigten Staaten, das eine Auswahl an Kaffees und verwandten Produkten anbietet."
+    },
+    "chart1": {
+      "title": "Follower & Likes im Zeitverlauf",
+      "description": "Tägliche Entwicklung neuer Follower und Likes",
+      "range": {
+        "90d": "Letzte 3 Monate",
+        "30d": "Letzte 30 Tage",
+        "7d": "Letzte 7 Tage"
+      },
+      "legend1": {
+        "new_followers": "Neue Follower",
+        "new_likes": "Neue Likes"
+      }
+    },
+    "chart2": {
+      "title": "Aktionen im Zeitverlauf",
+      "description": "Anzahl der „Likes“, „Follows“, „Story Likes“ und „Swipe Feed“ pro Tag",
+      "range": {
+        "90d": "Letzte 3 Monate",
+        "30d": "Letzte 30 Tage",
+        "7d": "Letzte 7 Tage"
+      },
+      "legend2": {
+        "post_like": "Post‑Likes",
+        "follow": "Follows",
+        "story_like": "Story‑Likes",
+        "swipe_feed": "Swipe‑Feed"
+      }
+    },
+    "targets": {
+      "title": "Top Ziele",
+      "subtitle": "Rangliste der 10 relevantesten Konten",
+      "header": {
+        "position": "Position",
+        "target": "Ziel",
+        "likes": "Likes",
+        "follows": "Folgen",
+        "score": "Punktzahl"
+      },
+      "label": {
+        "likes": "Likes",
+        "follows": "Folgen"
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.st0 {
+    font-family: SFProDisplay-Bold, 'SF Pro Display';
+    font-size: 33px;
+    font-weight: 700;
+  }
+  
+  .st0, .st1, .st2, .st3, .st4 {
+    isolation: isolate;
+  }
+  
+  .st0, .st5 {
+    fill: #fff;
+  }
+  
+  .st6, .st7, .st8, .st9, .st10, .st11 {
+    fill: none;
+  }
+  
+  .st12 {
+    fill: #171717;
+  }
+  
+  .st13 {
+    fill: #e5e5e5;
+  }
+  
+  .st7 {
+    stroke: #e5e5e5;
+    stroke-width: 3px;
+  }
+  
+  .st14 {
+    fill: #696969;
+  }
+  
+  .st2 {
+    font-size: 13px;
+  }
+  
+  .st2, .st3 {
+    font-family: SFProDisplay-Semibold, 'SF Pro Display';
+    font-weight: 600;
+  }
+  
+  .st15 {
+    fill: #0096f1;
+  }
+  
+  .st16 {
+    clip-path: url(#clippath-1);
+  }
+  
+  .st17 {
+    clip-path: url(#clippath-3);
+  }
+  
+  .st18 {
+    clip-path: url(#clippath-4);
+  }
+  
+  .st19 {
+    clip-path: url(#clippath-2);
+  }
+  
+  .st20 {
+    clip-path: url(#clippath-5);
+  }
+  
+  .st8 {
+    stroke: #161518;
+  }
+  
+  .st8, .st9 {
+    stroke-width: 1.5px;
+  }
+  
+  .st8, .st9, .st11 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .st3 {
+    fill: #6d6d6d;
+    font-size: 10px;
+  }
+  
+  .st9 {
+    stroke: #fff;
+  }
+  
+  .st10 {
+    stroke: #f1f1f1;
+  }
+  
+  .st21 {
+    fill: url(#Dégradé_sans_nom_271);
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: .5px;
+  }
+  
+  .st22 {
+    fill: url(#Dégradé_sans_nom_272);
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: .5px;
+  }
+  
+  .st23 {
+    fill: url(#Dégradé_sans_nom_273);
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: .5px;
+  }
+  
+  .st11 {
+    stroke: #696969;
+    stroke-width: 1.2px;
+  }
+  
+  .st4, .st25 {
+    display: none;
+  }
+  
+  .st26 {
+    fill: url(#Dégradé_sans_nom_20);
+  }
+  
+  .st27 {
+    fill: #fbfbfb;
+  }
+  
+  .st24 {
+    fill: url(#Dégradé_sans_nom_27);
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: .5px;
+  }
+  
+  .st28 {
+    clip-path: url(#clippath);
+  }
+  
+  .st29 {
+    fill: #181818;
+  }
+  
+  .st25 {
+    fill: #ff6900;
+  }
+  
