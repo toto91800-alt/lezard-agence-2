@@ -1,8 +1,10 @@
 interface CategoryPageProps {
-    params: { category: string };
+    params: Promise<{ category: string }>;
   }
   
-  export default function CategoryPage({ params }: CategoryPageProps) {
-    return <div>Catégorie : {params.category}</div>;
+  export default async function CategoryPage({ params }: CategoryPageProps) {
+    const { category } = await params;
+  
+    return <div>Catégorie : {category}</div>;
   }
   
