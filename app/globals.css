@@ -194,85 +194,98 @@
 }
 
 .custom {
-  --background: oklch(0.95 0.02 85); /* beige clair */
-  --foreground: oklch(0.35 0.12 55); /* orange doux/bruné */
-  --card: oklch(0.96 0.01 85);
+  /* 🎨 Palette principale */
+  --background: #f3ede2;          /* beige clair */
+  --foreground: #a3542a;          /* orange doux/bruné */
+  --card: #f5f0e5;                /* fond de carte beige clair */
   --card-foreground: var(--foreground);
-  --popover: oklch(0.94 0.015 85);
+  --popover: #efe7db;             /* beige un peu plus foncé */
   --popover-foreground: var(--foreground);
 
-  --primary: oklch(0.65 0.18 55); /* orange moyen */
-  --primary-foreground: oklch(0.98 0.01 85); /* clair sur fond orange */
+  --primary: #f97316;             /* orange moyen */
+  --primary-foreground: #fff7ec;  /* texte clair sur fond orange */
 
-  --secondary: oklch(0.90 0.04 80); /* ton sable */
-  --secondary-foreground: oklch(0.45 0.12 55); /* orange foncé */
+  --secondary: #f5e7cc;           /* ton sable */
+  --secondary-foreground: #a3542a;/* orange foncé */
 
-  --muted: oklch(0.92 0.01 85);
-  --muted-foreground: oklch(0.55 0.06 55);
+  --muted: #ede6db;               /* beige grisé */
+  --muted-foreground: #8a5a3a;    /* brun doux */
 
-  --accent: oklch(0.87 0.07 65); /* orangé doux */
-  --accent-foreground: oklch(0.98 0.01 85);
+  --accent: #f0b177;              /* orangé doux */
+  --accent-foreground: #fff7ec;   /* clair sur fond orangé */
 
-  --destructive: oklch(0.6 0.2 25); /* rouge-orangé */
-  --border: oklch(0.85 0.01 85);
-  --input: oklch(0.9 0.01 85);
-  --ring: oklch(0.6 0.14 55);
+  --destructive: #9c3a1a;         /* rouge-orangé */
+  --border: #d8cbb7;              /* beige neutre pour bordures */
+  --input: #e5d8c4;               /* beige clair (input) */
+  --ring: #b35b28;                /* orange bruné pour effet focus */
 
-  --chart-1: oklch(0.66 0.28 27); /* 🔴 Rouge vif */
-  --chart-2: oklch(0.7 0.24 265); /* 🔵 Bleu vif */
-  --chart-3: oklch(0.7 0.22 145); /* 🟢 Vert vif */
-  --chart-4: oklch(0.85 0.18 95);  /* 🟡 Jaune vif */
-  --chart-5: oklch(0.78 0.17 55);  /* 🟠 Orange */
-  --chart-6: oklch(0.68 0.22 300); /* 🟣 Violet soutenu */
+  /* 📊 Couleurs de graphiques */
+  --chart-1: #e34234;             /* 🔴 Rouge vif */
+  --chart-2: #3a5fd4;             /* 🔵 Bleu vif */
+  --chart-3: #3ab659;             /* 🟢 Vert vif */
+  --chart-4: #f5d64b;             /* 🟡 Jaune vif */
+  --chart-5: #f97316;             /* 🟠 Orange */
+  --chart-6: #a144d2;             /* 🟣 Violet soutenu */
 
-  --sidebar: oklch(0.93 0.015 85);
-  --sidebar-foreground: oklch(0.35 0.12 55);
-  --sidebar-primary: oklch(0.6 0.18 55);
-  --sidebar-primary-foreground: oklch(0.98 0.01 85);
-  --sidebar-accent: oklch(0.9 0.07 55);
-  --sidebar-accent-foreground: oklch(0.3 0.13 45);
-  --sidebar-border: oklch(0.82 0.01 85);
-  --sidebar-ring: oklch(0.55 0.14 55);
+  /* 📚 Sidebar */
+  --sidebar: #ede7db;             /* beige clair */
+  --sidebar-foreground: #a3542a;  /* orange doux/bruné */
+  --sidebar-primary: #c65d1a;     /* orange soutenu */
+  --sidebar-primary-foreground: #fff7ec; /* texte clair */
+  --sidebar-accent: #e7c7a3;      /* beige orangé */
+  --sidebar-accent-foreground: #6c3e1e;  /* brun orangé */
+  --sidebar-border: #d9cdb9;      /* beige doux */
+  --sidebar-ring: #8c4a2a;        /* brun foncé orangé */
 
+  /* 🌈 Variantes de fond */
+  --colorbackground-2: #ff9a4d;   /* orange moyen (accent) */
+  --colorbackground-3: #b5511d;   /* orange bruné (foncé) */
+  --colorbackground-4: #f5eee0;   /* beige clair */
+  --colorbackground-5: #f5eee0;
+  --colorbackground-6: #f5eee0;
 
-  --colorbackground-2: 255 154 77;  /* orange moyen (accent) */
-  --colorbackground-3: 181 81 29;   /* orange bruné (foncé) */
-  --colorbackground-4: 245 238 224;
-  --colorbackground-5: 245 238 224;
-  --colorbackground-6: 245 238 224;
+  /* 🧱 Section "About" */
+  --AboutTitle: #000000;          /* noir */
+  --AboutText: #f97316;           /* orange moyen */
+  --AboutBackground: #ffffff;     /* blanc */
 
-  --AboutTitle: oklch(0.145 0 0); /* Noir */
-  --AboutText: oklch(0.65 0.18 55); /* orange moyen */
-  --AboutBackground: #ffffff;  /* white */
+  /* 🏠 Section "Main" */
+  --MainTitle: #a3542a;           /* orange foncé */
+  --MainTitleSecond: #ffffff;     /* blanc */
 
-  --MainTitle: oklch(0.45 0.12 55); /* orange foncé */
-  --MainTitleSecond: #ffffff;  /* white */
-
+  /* 🧭 Navbar */
   --navbar-bg: transparent;
-  --navbar-bg-visible: #FFF2E6; /* orangé doux */
+  --navbar-bg-visible: #fff2e6;   /* orangé doux */
   --navbar-fg: #ffffff;
-  --navbar-fg-visible: oklch(0.45 0.12 55); /* orange foncé */
+  --navbar-fg-visible: #a3542a;   /* orange foncé */
   --navbar-hover: color-mix(in oklch, var(--navbar-fg-visible) 12%, transparent);
 
+  /* 📱 Menu mobile */
   --mobile-menu-bg: var(--navbar-bg-visible);
   --mobile-menu-fg: var(--navbar-fg-visible);
 
-  --toggle-bg: #FFF2E6;          /* plus clair orangé */
-  --toggle-fg: #111827;
+  /* 🔘 Toggle */
+  --toggle-bg: #fff2e6;           /* orangé clair */
+  --toggle-fg: #1f2937;           /* gris très foncé */
   --toggle-border: color-mix(in oklch, var(--toggle-fg) 14%, transparent);
   --toggle-ring: color-mix(in oklch, var(--toggle-fg) 30%, transparent);
 
-  --Prixtextcolor: oklch(0.45 0.12 55); /* orange foncé */
+  /* 💸 Prix */
+  --Prixtextcolor: #a3542a;       /* orange foncé */
 
-  --Footertextcolor: oklch(0.45 0.12 55); /* orange foncé */
+  /* 🦎 Footer */
+  --Footertextcolor: #a3542a;     /* orange foncé */
 
+  /* ✉️ Contact */
   --backgroundcontactcolor: #ffffff;  
-  --contactextecolor: #f97316; /* orange moyen */
+  --contactextecolor: #f97316;    /* orange moyen */
 
-  --HowBackground: #fff9f3;
-  --HowTitle: #f97316; /* orange moyen */
-  --HowTexte: #000000; /* exemple dark */
+  /* 💡 Section "How" */
+  --HowBackground: #fff9f3;       /* beige rosé clair */
+  --HowTitle: #f97316;            /* orange moyen */
+  --HowTexte: #000000;            /* noir */
 }
+
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {
   mask-image: var(--avif-url);
