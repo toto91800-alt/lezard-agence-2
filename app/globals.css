@@ -79,53 +79,50 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   
-  /* 🌈 Variantes de fond */
-  --colorbackground-2: #ff9a4d;   /* orange moyen (accent) */
-  --colorbackground-3: #b5511d;   /* orange bruné (foncé) */
-  --colorbackground-4: #f5eee0;   /* beige clair */
-  --colorbackground-5: #f5eee0;
-  --colorbackground-6: #f5eee0;
+  --colorbackground-2: 240 243 247; /* blanc cassé / gris très clair */
+  --colorbackground-3: 208 213 221; /* gris clair */
+  --colorbackground-4: 255 255 255;
+  --colorbackground-5: 255 255 255;
+  --colorbackground-6: 255 255 255;
 
-  /* 🧱 Section "About" */
-  --AboutTitle: #000000;          /* noir */
-  --AboutText: #f97316;           /* orange moyen */
-  --AboutBackground: #ffffff;     /* blanc */
+  --AboutTitle: #ffffff; 
+  --AboutText: oklch(0.65 0.18 55); /* orange moyen */
+  --AboutBackground: #171717;  /* white */
 
-  /* 🏠 Section "Main" */
-  --MainTitle: #a3542a;           /* orange foncé */
-  --MainTitleSecond: #ffffff;     /* blanc */
+  --MainTitle: oklch(0.145 0 0); 
+  --MainTitleSecond: #000000;  /* white */
 
-  /* 🧭 Navbar */
-  --navbar-bg: transparent;
-  --navbar-bg-visible: #fff2e6;   /* orangé doux */
-  --navbar-fg: #ffffff;
-  --navbar-fg-visible: #a3542a;   /* orange foncé */
-  --navbar-hover: color-mix(in oklch, var(--navbar-fg-visible) 12%, transparent);
+  --navbar-bg: transparent;                  /* fond avant scroll */
+  --navbar-bg-visible: rgba(255 255 255 / .85); /* fond après scroll */
+  --navbar-fg: #ffffff;                      /* texte avant scroll (blanc) */
+  --navbar-fg-visible: #111827;              /* texte après scroll (neutral-900) */
+  --navbar-hover: rgba(255 255 255 / .15);   /* pastille hover quand texte est blanc */
 
-  /* 📱 Menu mobile */
-  --mobile-menu-bg: var(--navbar-bg-visible);
-  --mobile-menu-fg: var(--navbar-fg-visible);
+  --mobile-menu-bg: #ffffff;                 /* panneau menu mobile */
+  --mobile-menu-fg: #111827;
 
-  /* 🔘 Toggle */
-  --toggle-bg: #fff2e6;           /* orangé clair */
-  --toggle-fg: #1f2937;           /* gris très foncé */
-  --toggle-border: color-mix(in oklch, var(--toggle-fg) 14%, transparent);
-  --toggle-ring: color-mix(in oklch, var(--toggle-fg) 30%, transparent);
+  --toggle-bg: #ffffff;          /* carré blanc (par défaut) */
+  --toggle-fg: #111827;          /* icône/text */
+  --toggle-border: rgba(0 0 0 / .08);
+  --toggle-ring: rgba(249 115 22 / .35); /* option focus ring */
 
-  /* 💸 Prix */
-  --Prixtextcolor: #a3542a;       /* orange foncé */
+  --Prixtextcolor: #111827;
 
-  /* 🦎 Footer */
-  --Footertextcolor: #a3542a;     /* orange foncé */
+  --Footertextcolor: hsl(0 0% 5%);
 
-  /* ✉️ Contact */
-  --backgroundcontactcolor: #ffffff;  
-  --contactextecolor: #f97316;    /* orange moyen */
+  --backgroundcontactcolor: #fdf7f1; /* fond clair par défaut */
+  --contactextecolor: #111111;      /* texte par défaut */
 
-  /* 💡 Section "How" */
-  --HowBackground: #fff9f3;       /* beige rosé clair */
-  --HowTitle: #f97316;            /* orange moyen */
-  --HowTexte: #000000;            /* noir */
+  --HowBackground: #fff9f3;
+  --HowTitle: #f97316; /* orange moyen */
+  --HowTexte: #6b7280;   /* gris moyen */
+
+
+  --blog-text: #1a1a1a;
+  --blog-title: #f97316;
+  --blog-border: #001d56;
+  --blog-card-bg: #ffffff;
+  --blog-card-hover: #f9fafb;
 }
 
 .dark {
@@ -200,6 +197,12 @@
   --HowBackground: #fff9f3;
   --HowTitle: #f97316; /* orange moyen */
   --HowTexte: #000000;   /* gris moyen */
+
+  --blog-text: #e5e5e5;
+  --blog-title: #f97316;
+  --blog-border: #888888;
+  --blog-card-bg: #1a1a1a;
+  --blog-card-hover: #2a2a2a;
   
 }
 
@@ -235,14 +238,14 @@
   --chart-5: oklch(0.78 0.17 55);  /* 🟠 Orange */
   --chart-6: oklch(0.68 0.22 300); /* 🟣 Violet soutenu */
 
-  --sidebar: oklch(0.93 0.015 85);
-  --sidebar-foreground: oklch(0.35 0.12 55);
-  --sidebar-primary: oklch(0.6 0.18 55);
-  --sidebar-primary-foreground: oklch(0.98 0.01 85);
-  --sidebar-accent: oklch(0.9 0.07 55);
-  --sidebar-accent-foreground: oklch(0.3 0.13 45);
-  --sidebar-border: oklch(0.82 0.01 85);
-  --sidebar-ring: oklch(0.55 0.14 55);
+    --sidebar: #efefe6;
+    --sidebar-foreground: #5b4730;
+    --sidebar-primary: #8d6e41;
+    --sidebar-primary-foreground: #fafaf3;
+    --sidebar-accent: #e1d3b1;
+    --sidebar-accent-foreground: #4a3a25;
+    --sidebar-border: #d5d2c7;
+    --sidebar-ring: #7a5d38;
 
 
   --colorbackground-2: 255 154 77;  /* orange moyen (accent) */
@@ -251,8 +254,8 @@
   --colorbackground-5: 245 238 224;
   --colorbackground-6: 245 238 224;
 
-  --AboutTitle: oklch(0.145 0 0); /* Noir */
-  --AboutText: oklch(0.65 0.18 55); /* orange moyen */
+  --AboutTitle: #000000;
+  --AboutText: #9d7f4f;
   --AboutBackground: #ffffff;  /* white */
 
   --MainTitle: oklch(0.45 0.12 55); /* orange foncé */
@@ -282,7 +285,17 @@
   --HowBackground: #fff9f3;
   --HowTitle: #f97316; /* orange moyen */
   --HowTexte: #000000; /* exemple dark */
+
+  --blog-text: #000000;
+  --blog-title: #7d420b;
+  --blog-border: #f97316;
+  --blog-card-bg: #ffffff;
+  --blog-card-hover: #fcf6f3;
 }
+
+
+
+
 
 /* AVIF → masque ; couleur pilotée par --avif-color (défaut = colorbackground-1) */
 .avif-mask {

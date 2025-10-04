@@ -10,7 +10,10 @@ export default function VosPostsInstagramGooglePage() {
       <HeaderArticle />
 
       {/* ✅ Contenu principal */}
-      <article className="mx-auto max-w-4xl px-4 py-12">
+      <article
+        className="mx-auto max-w-4xl px-4 py-12"
+        style={{ color: "var(--blog-text)" }}
+      >
         {/* 🖼️ Image principale */}
         <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
           <Image
@@ -22,7 +25,10 @@ export default function VosPostsInstagramGooglePage() {
         </div>
 
         {/* 📝 Titre */}
-        <h1 className="text-4xl font-bold mb-2">
+        <h1
+          className="text-4xl font-bold mb-2"
+          style={{ color: "var(--blog-title)" }}
+        >
           Vos posts Instagram indexés sur Google
         </h1>
 
@@ -35,8 +41,8 @@ export default function VosPostsInstagramGooglePage() {
           />
         </div>
 
-        {/* 🧠 Contenu principal */}
-        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+        {/* 🧠 Introduction */}
+        <p className="text-lg leading-relaxed mb-4">
           Depuis le 10 juillet 2025, Instagram a franchi une étape majeure : les
           publications publiques des comptes professionnels — Business et
           Créateur — sont désormais indexées par Google et d’autres moteurs de
@@ -45,78 +51,99 @@ export default function VosPostsInstagramGooglePage() {
           bien au-delà de la plateforme.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ Section 1 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           Une évolution qui change la donne
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Jusqu’ici, les publications Instagram avaient une durée de vie
-          limitée. Avec cette nouvelle indexation, vos contenus peuvent vivre
-          durablement et continuer à attirer du trafic des mois, voire des
-          années après leur mise en ligne. C’est une véritable révolution SEO :
-          vos publications deviennent de véritables micro-contenus capables de
-          toucher une audience bien plus large.
+        <p className="leading-relaxed mb-4">
+          Jusqu’ici, les publications Instagram avaient une durée de vie très
+          courte. Désormais, vos contenus peuvent continuer à générer du trafic
+          des mois, voire des années après leur publication. C’est une
+          véritable révolution SEO : vos publications deviennent des micro
+          contenus capables d’attirer une audience au-delà de votre communauté
+          Instagram.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ Section 2 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           Comment tirer parti de cette opportunité
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Pour exploiter pleinement cette nouvelle visibilité, adoptez une
-          approche éditoriale orientée SEO :
+        <p className="leading-relaxed mb-4">
+          Pour maximiser cette nouvelle visibilité, intégrez des pratiques SEO à
+          votre stratégie de contenu :
         </p>
-        <ul className="list-disc pl-6 text-gray-700 mb-4">
+        <ul className="list-disc pl-6 mb-4">
           <li>
-            Rédigez vos légendes comme des titres d’article, avec des mots-clés
-            recherchés par vos clients potentiels.
+            Rédigez vos légendes comme de véritables titres d’article avec des
+            mots-clés pertinents et recherchés.
           </li>
           <li>
-            Utilisez un texte alternatif (alt-text) descriptif et pertinent pour
-            chaque visuel.
+            Utilisez un texte alternatif (alt-text) clair et descriptif pour
+            chaque image afin d’améliorer l’accessibilité et le référencement.
           </li>
           <li>
-            Choisissez des hashtags combinant termes génériques et localisation
-            afin de toucher à la fois le public social et celui de la recherche.
+            Combinez hashtags génériques et localisés pour toucher à la fois le
+            public social et celui des moteurs de recherche.
           </li>
           <li>
-            Optimisez votre bio avec des mots-clés liés à votre activité, votre
-            secteur et votre localisation.
+            Optimisez votre biographie avec des mots-clés liés à votre activité,
+            votre secteur et votre localisation.
           </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ Section 3 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           Vers un nouvel équilibre entre social et SEO
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Instagram devient désormais un point d’entrée vers le web. Vos
-          publications jouent un double rôle : elles engagent votre communauté
-          sur la plateforme et attirent une audience externe via les moteurs de
-          recherche. Cette approche crée une stratégie omnicanale où chaque post
-          devient une porte d’entrée potentielle vers votre marque.
+        <p className="leading-relaxed mb-4">
+          Instagram devient un point d’entrée vers le web. Vos contenus
+          remplissent désormais une double fonction : entretenir l’engagement
+          sur la plateforme et attirer une audience via les moteurs de
+          recherche. En combinant les codes du social media et du SEO, chaque
+          publication devient un levier d’acquisition omnicanal.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ Section 4 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           Ce qu’il faut surveiller
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Cette visibilité élargie implique une vigilance accrue : vos contenus
-          publics peuvent apparaître dans des contextes externes ou refléter une
-          image ancienne de votre marque. Il est donc essentiel d’entretenir
-          régulièrement votre profil.
+        <p className="leading-relaxed mb-4">
+          Cette exposition accrue implique une vigilance particulière. Les
+          contenus publics peuvent apparaître dans des contextes externes ou
+          refléter une image datée de votre marque. Il est donc essentiel de
+          maintenir un profil cohérent et à jour.
         </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Pour limiter la diffusion de certains contenus, vous pouvez passer en
-          compte privé ou désactiver l’indexation dans les paramètres de
+        <p className="leading-relaxed mb-4">
+          Si vous préférez rester discret, deux options existent : passer votre
+          compte en privé ou désactiver l’indexation via les paramètres de
           confidentialité.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-3">En résumé</h2>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        {/* ✅ Conclusion */}
+        <h2
+          className="text-2xl font-semibold mt-10 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
+          En résumé
+        </h2>
+        <p className="leading-relaxed mb-6">
           L’indexation d’Instagram par Google transforme chaque publication en
-          actif digital durable. En optimisant vos contenus selon une logique
-          SEO, vous renforcez votre présence en ligne et multipliez les points
-          d’entrée vers votre marque. Une avancée majeure pour toutes les
-          entreprises cherchant à développer leur visibilité de manière
-          pérenne.
+          actif digital durable. En adoptant une logique SEO, vous renforcez
+          votre présence sur le long terme et multipliez les points de contact
+          avec votre audience. Une évolution majeure pour toutes les entreprises
+          souhaitant gagner en visibilité et en autorité.
         </p>
       </article>
 

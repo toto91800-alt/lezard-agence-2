@@ -10,8 +10,11 @@ export default function EvolutionInstagram2025Page() {
       <HeaderArticle />
 
       {/* ✅ Contenu principal */}
-      <article className="mx-auto max-w-4xl px-4 py-12">
-        {/* Image principale */}
+      <article
+        className="mx-auto max-w-4xl px-4 py-12"
+        style={{ color: "var(--blog-text)" }}
+      >
+        {/* 🖼️ Image principale */}
         <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
           <Image
             src="/images/blog/insta5.jpg"
@@ -21,12 +24,15 @@ export default function EvolutionInstagram2025Page() {
           />
         </div>
 
-        {/* Titre */}
-        <h1 className="text-4xl font-bold mb-2">
+        {/* 📝 Titre */}
+        <h1
+          className="text-4xl font-bold mb-2"
+          style={{ color: "var(--blog-title)" }}
+        >
           Instagram : Comment booster votre visibilité
         </h1>
 
-        {/* Auteur */}
+        {/* 👤 Auteur */}
         <div className="flex justify-start py-6">
           <WriterBlog
             image="/images/blog/auteur-theo.webp"
@@ -35,8 +41,8 @@ export default function EvolutionInstagram2025Page() {
           />
         </div>
 
-        {/* Contenu */}
-        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+        {/* 🧠 Introduction */}
+        <p className="text-lg leading-relaxed mb-4">
           Instagram évolue rapidement. Entre nouvelles fonctionnalités et
           ajustements d’algorithmes, il est essentiel d’adapter sa stratégie
           pour rester visible et performant. Voici les bonnes pratiques clés
@@ -44,76 +50,100 @@ export default function EvolutionInstagram2025Page() {
           sur la plateforme.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ 1 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           1. Publier régulièrement avec les bons formats
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
+        <p className="leading-relaxed mb-4">
           Instagram valorise les comptes actifs et cohérents. Pour maximiser
-          votre visibilité, publiez trois à cinq Reels par semaine et restez
-          présent en story pour maintenir un lien régulier avec votre communauté.
-          Le format éphémère des stories favorise l’engagement et la proximité.
+          votre visibilité, publiez entre trois et cinq Reels par semaine et
+          maintenez une présence régulière en story. Ce format éphémère reste un
+          excellent levier pour entretenir la proximité et stimuler
+          l’engagement.
         </p>
-        <p className="text-gray-700 mb-4">
+        <p className="mb-4">
           <strong>Conseil Propulse :</strong> misez sur la régularité et la
-          qualité. Un contenu bien pensé et utile aura toujours plus d’impact
-          qu’une publication sans direction claire.
+          valeur. Mieux vaut publier moins souvent, mais avec un contenu
+          pertinent et structuré, qu’une série de posts sans stratégie claire.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ 2 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           2. Interagir avant et après chaque publication
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          L’algorithme repose sur la réciprocité : plus vous interagissez avec
-          votre audience, plus vous gagnez en visibilité. Prenez le temps de
-          commenter, répondre aux messages, partager du contenu pertinent et
-          échanger avec les comptes de votre secteur.
+        <p className="leading-relaxed mb-4">
+          L’algorithme repose sur la réciprocité. Plus vous interagissez avec
+          votre audience, plus Instagram mettra vos publications en avant.
+          Commentez, répondez aux messages, partagez du contenu pertinent et
+          échangez avec les comptes de votre secteur.
         </p>
-        <p className="text-gray-700 mb-4">
+        <p className="mb-4">
           <strong>Conseil Propulse :</strong> consacrez 15 à 30 minutes avant et
-          après chaque publication à ces interactions. C’est un petit effort
-          pour un gain de visibilité considérable.
+          après chaque publication pour interagir. Cet investissement régulier
+          améliore significativement votre portée organique.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ 3 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           3. Analyser ses statistiques et ajuster sa stratégie
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Les outils Insights et les nouvelles fonctionnalités d’analyse offrent
-          une lecture claire de vos performances. Identifiez les contenus qui
-          suscitent le plus d’interactions, les horaires de forte activité et
-          les publications les plus partagées.
+        <p className="leading-relaxed mb-4">
+          Les outils Insights et les nouvelles fonctionnalités d’analyse
+          d’Instagram permettent d’identifier ce qui fonctionne réellement :
+          types de contenus, taux d’engagement, horaires d’activité ou encore
+          taux de partage.
         </p>
-        <p className="text-gray-700 mb-4">
-          <strong>Conseil Propulse :</strong> basez vos décisions sur la donnée.
-          Une stratégie pilotée par l’analyse produit des résultats durables.
+        <p className="mb-4">
+          <strong>Conseil Propulse :</strong> prenez l’habitude d’analyser vos
+          performances chaque semaine. Les données orientent vos choix et
+          garantissent une amélioration continue.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        {/* ✅ 4 */}
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           4. Miser sur le partage plutôt que sur les likes
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          En 2025, l’algorithme d’Instagram valorise davantage les contenus
-          partagés que les simples mentions “J’aime”. Un post envoyé en message
-          privé ou repartagé en story est perçu comme hautement engageant.
+        <p className="leading-relaxed mb-4">
+          En 2025, l’algorithme d’Instagram privilégie les publications
+          partagées. Un contenu diffusé en message privé ou en story indique une
+          forte valeur perçue, ce qui renforce sa portée organique.
         </p>
-        <p className="text-gray-700 mb-4">
-          <strong>Conseil Propulse :</strong> privilégiez des contenus utiles et
-          percutants : carrousels pratiques, citations inspirantes, études de
-          cas ou témoignages clients. Plus votre contenu sera pertinent, plus il
-          sera partagé, et donc visible.
+        <p className="mb-4">
+          <strong>Conseil Propulse :</strong> favorisez les formats à fort
+          potentiel de partage : carrousels pratiques, études de cas, citations
+          inspirantes ou tutoriels synthétiques. Plus votre contenu sera utile,
+          plus il sera relayé.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-3">Conclusion</h2>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        {/* ✅ Conclusion */}
+        <h2
+          className="text-2xl font-semibold mt-10 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
+          Conclusion
+        </h2>
+        <p className="leading-relaxed mb-6">
           Instagram récompense la constance, la pertinence et la proximité. En
-          appliquant ces bonnes pratiques, vous développerez non seulement votre
-          visibilité, mais aussi un engagement plus qualifié et durable.
+          appliquant ces bonnes pratiques, vous développerez une visibilité
+          accrue, un engagement plus qualifié et une stratégie durable.
         </p>
 
-        <p className="text-gray-700 leading-relaxed font-medium">
+        <p className="leading-relaxed font-medium">
           Besoin d’un accompagnement pour structurer votre stratégie Instagram ?
           L’équipe Propulse vous aide à concevoir une approche claire,
-          mesurable et performante adaptée à votre marque.
+          mesurable et performante, adaptée à votre marque et à vos objectifs.
         </p>
       </article>
 

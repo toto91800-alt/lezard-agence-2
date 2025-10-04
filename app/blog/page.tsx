@@ -102,76 +102,104 @@ export default function BlogPage() {
       : sortedArticles.filter((a) => a.category === filter);
 
   return (
-    <section className="w-full">
-      <HeaderBlog />
+    <section
+  className="w-full transition-colors duration-300"
+  style={{
+    color: "var(--blog-text)",
+  }}
+>
+  <HeaderBlog />
 
-      <div className="mx-auto max-w-6xl px-4 py-8">
-        {/* ✅ Titre du blog */}
-        <div className="text-center mb-6">
-          <h1 className="text-4xl font-bold mb-2">Nos articles</h1>
-          <p className="text-gray-600 text-sm">
-            Découvrez nos dernières actualités et conseils pour booster votre présence digitale.
-          </p>
-        </div>
+  <div className="mx-auto max-w-6xl px-4 py-8">
+    {/* ✅ Titre du blog */}
+    <div className="text-center mb-6">
+      <h1
+        className="text-4xl font-bold mb-2"
+        style={{ color: "var(--blog-title)" }}
+      >
+        Nos articles
+      </h1>
+      <p className="text-sm opacity-80">
+        Découvrez nos dernières actualités et conseils pour booster votre présence digitale.
+      </p>
+    </div>
 
-        {/* ✅ Boutons de catégories */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {categories.map((cat) => {
-            const Icon = cat.icon;
-            const isActive = filter === cat.value;
+    {/* ✅ Boutons de catégories */}
+    <div className="flex flex-wrap justify-center gap-3 mb-10">
+      {categories.map((cat) => {
+        const Icon = cat.icon;
+        const isActive = filter === cat.value;
 
-            return (
-              <button
-                key={cat.value}
-                onClick={() => setFilter(cat.value)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium transition ${
-                  isActive
-                    ? "bg-black text-white border-black shadow-md"
-                    : "bg-white text-gray-700 hover:bg-gray-100 border-gray-300"
-                }`}
-              >
-                <Icon className="w-4 h-4" />
-                {cat.label}
-              </button>
-            );
-          })}
-        </div>
+        return (
+          <button
+            key={cat.value}
+            onClick={() => setFilter(cat.value)}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-medium transition`}
+            style={{
+              backgroundColor: isActive
+                ? "var(--blog-title)"
+                : "var(--blog-card-bg)",
+              color: isActive ? "#fff" : "var(--blog-text)",
+              borderColor: "var(--blog-border)",
+            }}
+          >
+            <Icon className="w-4 h-4" />
+            {cat.label}
+          </button>
+        );
+      })}
+    </div>
 
-        {/* ✅ Grille des articles */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredArticles.map((article) => (
-            <a
-              key={article.href}
-              href={article.href}
-              className="border rounded-lg overflow-hidden hover:shadow-lg transition bg-white"
+    {/* ✅ Grille des articles */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {filteredArticles.map((article) => (
+        <a
+          key={article.href}
+          href={article.href}
+          className="border rounded-lg overflow-hidden transition transform hover:-translate-y-1"
+          style={{
+            backgroundColor: "var(--blog-card-bg)",
+            borderColor: "var(--blog-border)",
+          }}
+        >
+          {/* Image */}
+          <div className="relative w-full h-48">
+            <Image
+              src={article.image}
+              alt={article.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
+            />
+          </div>
+
+          {/* Contenu texte */}
+          <div
+            className="p-4 transition-colors duration-300 hover:bg-[var(--blog-card-hover)]"
+            style={{
+              color: "var(--blog-text)",
+            }}
+          >
+            <h3
+              className="font-semibold text-lg mb-2"
+              style={{ color: "var(--blog-title)" }}
             >
-              {/* Image */}
-              <div className="relative w-full h-48">
-                <Image
-                  src={article.image}
-                  alt={article.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
+              {article.title}
+            </h3>
+            <p className="text-sm opacity-80 mb-2">{article.subtitle}</p>
+            <p className="text-xs opacity-60">
+              {new Date(article.date).toLocaleDateString("fr-FR", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
 
-              {/* Contenu texte */}
-              <div className="p-4">
-                <h3 className="font-semibold text-lg mb-2">{article.title}</h3>
-                <p className="text-sm text-gray-600 mb-2">{article.subtitle}</p>
-                <p className="text-xs text-gray-400">
-                  {new Date(article.date).toLocaleDateString("fr-FR", {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  })}
-                </p>
-              </div>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }

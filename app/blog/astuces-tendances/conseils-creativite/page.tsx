@@ -10,7 +10,10 @@ export default function ConseilsCreativite() {
       <HeaderArticle />
 
       {/* ✅ Contenu de l’article */}
-      <article className="mx-auto max-w-4xl px-4 py-12">
+      <article
+        className="mx-auto max-w-4xl px-4 py-12"
+        style={{ color: "var(--blog-text)" }}
+      >
         {/* 🖼️ Image de couverture */}
         <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
           <Image
@@ -22,7 +25,10 @@ export default function ConseilsCreativite() {
         </div>
 
         {/* 📝 Titre */}
-        <h1 className="text-4xl font-bold mb-2">
+        <h1
+          className="text-4xl font-bold mb-2"
+          style={{ color: "var(--blog-title)" }}
+        >
           Instagram 2025 : 3 best practices clés
         </h1>
 
@@ -31,134 +37,145 @@ export default function ConseilsCreativite() {
           <WriterBlog
             image="/images/blog/auteur-theo.webp"
             name="Théo Leraillez"
-            date="28 Septembre 2025"
+            date="28 septembre 2025"
           />
         </div>
 
         {/* 🧠 Contenu principal */}
-        <p className="text-lg text-gray-700 leading-relaxed mb-4">
-          Ces bonnes pratiques ont été validées tout au long de 2025, mais si
-          vous les avez manquées, il est temps d’y revenir ! L’algorithme
-          Instagram a profondément évolué, redéfinissant la façon dont les
-          marques et créateurs atteignent leur audience. Voici les trois leviers
-          essentiels à maîtriser pour performer durablement sur la plateforme.
+        <p className="text-lg leading-relaxed mb-4">
+          Ces bonnes pratiques, confirmées tout au long de 2025, redéfinissent la
+          manière de croître sur Instagram. L’algorithme évolue vers plus
+          d’authenticité et d’interaction réelle. Voici les trois leviers clés à
+          maîtriser pour performer durablement sur la plateforme.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           1. L’engagement avant les followers
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-3">
-          L’algorithme d’Instagram valorise désormais l’engagement authentique
-          plutôt que la taille de la communauté. Les petits comptes de niche
-          deviennent les grands gagnants, tandis que les gros comptes plus
-          passifs voient leur portée organique diminuer.
+        <p className="leading-relaxed mb-3">
+          L’algorithme Instagram privilégie désormais les échanges authentiques
+          plutôt que la taille des communautés. Les petits comptes de niche
+          deviennent plus visibles, tandis que les gros comptes passifs perdent
+          en portée organique.
         </p>
 
-        <p className="text-gray-700 mb-3">
+        <p className="mb-3">
           <strong>Conseil Propulse :</strong> concentrez-vous sur des contenus
           qui génèrent de vraies conversations. Une publication avec 50 likes et
-          20 commentaires engagés sera mieux valorisée qu’une autre avec 500
+          20 commentaires pertinents sera mieux valorisée qu’une autre avec 500
           likes sans interaction.
         </p>
 
-        <ul className="list-disc pl-6 text-gray-700 mb-4">
+        <ul className="list-disc pl-6 mb-4">
           <li>Posez des questions ouvertes dans vos légendes.</li>
           <li>Répondez à tous les commentaires.</li>
-          <li>Proposez du contenu polarisant pour encourager le débat.</li>
-          <li>
-            Utilisez des stories interactives (quiz, sondages, stickers
-            questions).
-          </li>
+          <li>Créez du contenu polarisant pour encourager le débat.</li>
+          <li>Exploitez les stories interactives (quiz, sondages, questions).</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           2. La géolocalisation : l’atout local confirmé
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-3">
-          Instagram met en avant les contenus géolocalisés pour encourager les
-          interactions locales. Les publications avec une localisation précise
-          bénéficient d’un gain de visibilité notable.
+        <p className="leading-relaxed mb-3">
+          Instagram met désormais en avant les contenus géolocalisés pour
+          stimuler les interactions locales. Les publications associées à une
+          zone géographique spécifique bénéficient d’une meilleure portée.
         </p>
 
-        <ul className="list-disc pl-6 text-gray-700 mb-4">
-          <li>Apparaître dans les recherches et suggestions locales.</li>
-          <li>
-            Booster la visibilité auprès des utilisateurs d’une même zone.
-          </li>
-          <li>Avantage algorithmique fort pour les entreprises locales.</li>
+        <ul className="list-disc pl-6 mb-4">
+          <li>Augmentez votre visibilité dans les recherches locales.</li>
+          <li>Apparaissez dans les recommandations des utilisateurs proches.</li>
+          <li>Bénéficiez d’un avantage algorithmique pour les comptes locaux.</li>
         </ul>
 
-        <p className="text-gray-700 mb-3">
-          <strong>Conseil Propulse :</strong> même si votre activité est
-          digitale, ajoutez une géolocalisation pertinente pour renforcer votre
-          portée.
+        <p className="mb-3">
+          <strong>Conseil Propulse :</strong> même si votre activité est 100%
+          digitale, ajoutez une géolocalisation stratégique à vos posts pour
+          renforcer votre ancrage local.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           3. Le contenu natif : l’authenticité récompensée
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-3">
-          Instagram favorise désormais les contenus créés directement dans
-          l’application. L’algorithme pénalise les vidéos ou visuels importés
-          d’autres plateformes (TikTok, Canva…).
+        <p className="leading-relaxed mb-3">
+          Instagram favorise les contenus créés directement depuis l’application.
+          Les visuels et vidéos importés d’autres plateformes comme TikTok ou
+          Canva sont désormais moins valorisés.
         </p>
 
-        <ul className="list-disc pl-6 text-gray-700 mb-4">
+        <ul className="list-disc pl-6 mb-4">
           <li>Créez vos Reels, Stories et publications directement sur Instagram.</li>
-          <li>Évitez les watermarks et formats non adaptés.</li>
-          <li>Ajoutez la musique et les effets via la bibliothèque native.</li>
+          <li>Évitez les watermarks et formats non optimisés.</li>
+          <li>Ajoutez musiques et effets via la bibliothèque intégrée.</li>
         </ul>
 
-        <p className="text-gray-700 mb-3">
-          <strong>Conseil Propulse :</strong> finalisez vos contenus directement
-          dans l’app pour qu’ils soient reconnus comme “natifs” par
+        <p className="mb-3">
+          <strong>Conseil Propulse :</strong> finalisez vos contenus dans
+          l’application pour qu’ils soient reconnus comme natifs par
           l’algorithme.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-3">
+        <h2
+          className="text-2xl font-semibold mt-8 mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           L’évolution des hashtags en 2025
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-3">
-          Instagram mise désormais sur les mots-clés naturels dans vos légendes
-          et commentaires. Le SEO remplace peu à peu les hashtags massifs.
+        <p className="leading-relaxed mb-3">
+          Instagram délaisse les hashtags massifs au profit du référencement par
+          mots-clés. Le SEO devient un pilier de visibilité au sein de
+          l’application.
         </p>
 
-        <ul className="list-disc pl-6 text-gray-700 mb-4">
+        <ul className="list-disc pl-6 mb-4">
           <li>Intégrez 5 à 10 mots-clés pertinents dans vos descriptions.</li>
           <li>Optimisez votre bio et le nom de votre compte.</li>
-          <li>
-            Utilisez les hashtags uniquement en complément contextuel.
-          </li>
+          <li>Utilisez les hashtags uniquement à des fins contextuelles.</li>
         </ul>
 
-        <p className="text-gray-700 leading-relaxed mb-6">
-          Ces changements confirment un retour aux fondamentaux : authenticité,
+        <p className="leading-relaxed mb-6">
+          Ces évolutions marquent un retour aux fondamentaux : authenticité,
           proximité et interactions humaines sincères.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-3">
+        <h2
+          className="text-2xl font-semibold mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           L’approche Propulse 2025
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
+        <p className="leading-relaxed mb-4">
           Nous intégrons ces leviers dans nos stratégies : audit de
           l’engagement, optimisation locale, formation au contenu natif et
-          stratégie SEO spécifique à Instagram.
+          stratégie SEO dédiée à Instagram.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-3">
+        <h2
+          className="text-2xl font-semibold mb-3"
+          style={{ color: "var(--blog-title)" }}
+        >
           Recommandations pratiques
         </h2>
-        <ul className="list-disc pl-6 text-gray-700 mb-6">
+        <ul className="list-disc pl-6 mb-6">
           <li>Analysez vos publications les plus engageantes.</li>
           <li>Testez la géolocalisation sur vos prochains posts.</li>
           <li>Créez du contenu 100 % natif pendant deux semaines.</li>
           <li>Remplacez vos hashtags par des mots-clés contextuels.</li>
         </ul>
 
-        <p className="text-gray-700 leading-relaxed">
-          🚀 Ces évolutions ne sont pas temporaires : elles redéfinissent
-          durablement les bases de la croissance sur Instagram. Les marques qui
-          s’y adaptent maintenant prennent une longueur d’avance.
+        <p className="leading-relaxed font-medium">
+          Ces évolutions ne sont pas temporaires : elles redéfinissent durablement
+          les bases de la croissance sur Instagram. Les marques qui s’adaptent
+          rapidement prendront une longueur d’avance durable.
         </p>
       </article>
 

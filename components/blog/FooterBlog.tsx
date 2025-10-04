@@ -16,8 +16,8 @@ export default function FooterBlog({ nextArticle }: FooterBlogProps) {
           <span
             className="flex items-center gap-2 px-5 py-2 rounded-full border border-transparent transition hover:opacity-90"
             style={{
-              backgroundColor: "var(--MainTitle)",
-              color: "var(--MainTitleSecond)",
+              backgroundColor: "var(--blog-title)",
+              color: "var(--blog-card-bg)",
             }}
           >
             <ArrowLeft className="w-4 h-4" />
@@ -31,8 +31,8 @@ export default function FooterBlog({ nextArticle }: FooterBlogProps) {
             <span
               className="flex items-center gap-2 px-5 py-2 rounded-full border border-transparent transition text-right hover:opacity-90"
               style={{
-                backgroundColor: "var(--MainTitle)",
-                color: "var(--MainTitleSecond)",
+                backgroundColor: "var(--blog-title)",
+                color: "var(--blog-card-bg)",
               }}
             >
               {nextArticle.title}
