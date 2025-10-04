@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeaderBlog from "@/components/blog/HeaderBlog";
 
 export const metadata: Metadata = {
   title: "Blog | Lézard Agency",
@@ -7,14 +8,12 @@ export const metadata: Metadata = {
  
 export default function BlogPage() {
   return (
-    <section className="w-full py-16">
+    <section className="w-full">
+        <HeaderBlog />
       <div className="mx-auto max-w-5xl px-4">
-        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-center">Blog</h1>
-        <p className="mt-4 text-base sm:text-lg text-muted-foreground text-center">
-          Parcourez nos sujets de blog — nous parlons uniquement d&apos;Instagram.
-        </p>
+       
 
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a href="/blog/croissance-optimisation" className="p-4 rounded-lg border hover:bg-muted transition">
             Croissance & Optimisation
           </a>
