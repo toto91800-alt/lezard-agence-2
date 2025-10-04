@@ -9,36 +9,63 @@ import {
   BarChart,
   TrendingUp,
   Sparkles,
-} from "lucide-react"; // Icônes
+} from "lucide-react";
 
-// 📰 Données simulées
+// ✅ Liste des articles
 const articles = [
+  {
+    title: "Instagram : 3 nouveautés vidéo à intégrer",
+    subtitle:
+      "Trois mises à jour lancées en janvier 2025 qui transforment votre façon de créer du contenu sur Instagram.",
+    date: "2025-01-15",
+    category: "actualites-infos",
+    image: "/images/blog/insta7.jpg",
+    href: "/blog/actualites-infos/instagram-nouveautes-video",
+  },
+  {
+    title: "Plus d’interactions sociales sur Instagram",
+    subtitle:
+      "Instagram déploie de nouvelles fonctionnalités pour renforcer les échanges entre amis : onglet Amis, repost natif et partage de lieu.",
+    date: "2025-10-10",
+    category: "actualites-infos",
+    image: "/images/blog/insta2.jpg",
+    href: "/blog/actualites-infos/plus-d-interactions",
+  },
   {
     title: "Nouveautés 2025 : Ce qui change dans le digital",
     subtitle:
       "Découvrez les grandes tendances du marketing digital en 2025, les innovations des réseaux sociaux et les outils à surveiller.",
     date: "2025-10-04",
     category: "actualites-infos",
-    image: "/image/blog/digital-news.jpg",
+    image: "/images/blog/insta1.jpg",
     href: "/blog/actualites-infos/nouveautes-2025",
   },
   {
-    title: "5 conseils pour booster ta créativité en 2025",
+    title: "Vos posts Instagram indexés sur Google",
     subtitle:
-      "Découvre des astuces simples et efficaces pour libérer ton potentiel créatif et te démarquer sur les réseaux sociaux.",
-    date: "2025-09-28",
-    category: "astuces-tendances",
-    image: "/image/blog/creativite.jpg",
-    href: "/blog/astuces-tendances/conseils-creativite",
+      "Depuis juillet 2025, les contenus des comptes pros sont indexés par Google. Découvrez comment optimiser vos posts pour renforcer votre visibilité.",
+    date: "2025-07-10",
+    category: "tendances-algorithme",
+    image: "/images/blog/insta6.jpg",
+    href: "/blog/tendances-algorithme/vos-posts-instagram-google",
   },
   {
     title: "L’évolution de l’algorithme Instagram en 2025",
     subtitle:
-      "Comprends comment les nouvelles règles de visibilité d’Instagram influenceront ta stratégie de contenu cette année.",
+      "Comprenez comment les nouvelles règles de visibilité d’Instagram influencent votre stratégie de contenu cette année.",
     date: "2025-09-20",
     category: "tendances-algorithme",
-    image: "/image/blog/instagram-algo.jpg",
+    image: "/images/blog/insta5.jpg",
     href: "/blog/tendances-algorithme/evolution-instagram-2025",
+  },
+  {
+    title: "5 conseils pour booster ta créativité en 2025",
+    subtitle:
+      "Découvre des astuces concrètes pour libérer ton potentiel créatif et te démarquer sur les réseaux sociaux.",
+    date: "2025-09-28",
+    category: "astuces-tendances",
+    image: "/images/blog/insta3.jpg",
+    href: "/blog/astuces-tendances/conseils-creativite",
   },
   {
     title: "Stratégie de growth marketing : les bases à connaître",
@@ -46,7 +73,7 @@ const articles = [
       "Apprends les fondamentaux du growth marketing pour accélérer la croissance de ton entreprise en ligne.",
     date: "2025-09-10",
     category: "croissance-optimisation",
-    image: "/image/blog/growth-marketing.jpg",
+    image: "/images/blog/insta4.jpg",
     href: "/blog/croissance-optimisation/strategie-growth-marketing",
   },
 ];
@@ -87,7 +114,7 @@ export default function BlogPage() {
           </p>
         </div>
 
-        {/* ✅ Boutons de catégories (alignés sur une ligne) */}
+        {/* ✅ Boutons de catégories */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {categories.map((cat) => {
             const Icon = cat.icon;
